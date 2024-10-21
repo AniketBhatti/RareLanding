@@ -1,0 +1,12 @@
+:root {
+  @font-face {
+    font-family: impact;
+    src: url("../src/assets/fonts/Impact-Font/impact.ttf");
+  }
+
+  font-family: impact;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

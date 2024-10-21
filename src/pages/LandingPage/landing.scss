@@ -1,0 +1,771 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: roboto-slab;
+    src: url("../../assets/fonts/Roboto_Slab/static/RobotoSlab-Regular.ttf");
+}
+
+@font-face {
+    font-family: roboto-slab-light;
+    src: url("../../assets/fonts/Roboto_Slab/static/RobotoSlab-Light.ttf");
+}
+
+main {
+
+    .every-pixel {
+        padding: 120px 50px 0px 50px;
+        // height: 100vh;
+
+        .start-your-project {
+            position: absolute;
+            top: 50px;
+            right: 100px;
+            font-size: 36px;
+            font-weight: 600;
+            font-family: roboto-slab;
+            text-decoration: none;
+            color: black;
+            transition: 0.5s ease-in-out;
+
+
+            &::before {
+                content: "";
+                position: absolute;
+                height: 3px;
+                width: 100%;
+                background-color: #ed1080;
+                left: -50%;
+                top: calc(100% + 10px);
+                transition: 0.5s ease-in-out;
+                opacity: 0;
+            }
+
+            &::after {
+                right: -15%;
+                top: 30%;
+                position: absolute;
+                content: "";
+                height: 20px;
+                width: 20px;
+                background-color: black;
+                transition: 0.5s ease-in-out;
+            }
+
+
+            &:hover {
+                color: #ed1080;
+
+                &::after {
+                    background-color: #ed1080;
+                    transform: rotate(45deg);
+                }
+
+                &::before {
+
+                    left: 0%;
+                    opacity: 1;
+                }
+            }
+
+
+        }
+
+        .bring-idea {
+            margin: 290px 0 0 27px;
+            font-size: 48px;
+            line-height: 58px;
+            letter-spacing: 4px;
+            position: relative;
+            width: fit-content;
+
+            &::before {
+                top: -400px;
+                left: 490px;
+                position: absolute;
+                content: "";
+                height: 800px;
+                width: 800px;
+                background-image: url("../../assets/images/01_everyPixel/RareLanding-BG-cube.png");
+                background-repeat: no-repeat;
+                background-position: center;
+                z-index: -1;
+                animation: rotate 3s ease-in-out, slideDown 3s ease-in-out; /* Add animation */
+
+            }
+
+            @keyframes slideDown {
+                from {
+                  top: -700px;
+                  left: 10px;
+                }
+                to {
+                  top: -400px;
+                  left: 490px;
+                }
+              }
+        }
+
+        .headers {
+            width: calc(100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            h1 {
+                display: inline-block;
+                text-transform: uppercase;
+                font-size: 290px;
+                letter-spacing: 25px;
+                font-weight: 400;
+
+                span {
+                    background-image: url("../../assets/images/01_everyPixel/RareLanding-PIXEL-BG.png");
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-position: 20% 10%;
+
+                }
+            }
+
+            // @keyframes background-scroll {
+            //     0% {
+            //         background-position: 0% 0%;
+            //     }
+            //     50% {
+            //         background-position: 0% 100%;
+            //     }
+            //     100% {
+            //         background-position: 0% 0%;
+            //     }
+            // }
+
+        }
+
+        .tells-your-story {
+            padding-right: 5%;
+            font-weight: 400;
+            // text-transform: uppercase;
+            font-size: 100px;
+            letter-spacing: 8px;
+            text-align: right;
+        }
+
+
+        @media screen and (min-width: 1927px) {
+            
+            .bring-idea {
+                margin: 290px 0 0 130px;
+                font-size: 70px;
+                line-height: 58px;
+                letter-spacing: 4px;
+                position: relative;
+
+                &::before {
+                    top: -400px;
+                    left: 706px;
+                    position: absolute;
+                    content: "";
+                    height: 800px;
+                    width: 800px;
+                    background-image: url("../../assets/images/01_everyPixel/RareLanding-BG-cube.png");
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    z-index: -1;
+                }
+            }
+
+            .tells-your-story {
+                padding-right: 4%;
+                font-size: 140px;
+            }
+        }
+
+        @media screen and (max-width: 1926px) and (min-width: 1440px) {
+            
+            .bring-idea {
+                margin: 300px 0 0 10px;
+                font-size: 48px;
+                line-height: 58px;
+                letter-spacing: 4px;
+                position: relative;
+
+                &::before {
+                    top: -400px;
+                    left: 490px;
+                    position: absolute;
+                    content: "";
+                    height: 800px;
+                    width: 800px;
+                    background-image: url("../../assets/images/01_everyPixel/RareLanding-BG-cube.png");
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    z-index: -1;
+                }
+            }
+
+
+            .headers {
+                width: calc(100%);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                h1 {
+                    font-size: 14vw;
+                }
+
+            }
+
+            .tells-your-story {
+                padding-right: 2%;
+                font-weight: 400;
+                font-size: 5vw;
+                letter-spacing: 8px;
+                text-align: right;
+            }
+        }
+
+        @media screen and (max-width: 1439px) and (min-width: 1024px) {
+            // height: 80vh;
+            .start-your-project {
+                position: absolute;
+                top: 50px;
+                right: 100px;
+                font-size: 30px;
+                font-weight: 600;
+                width: fit-content;
+            }
+
+            .bring-idea {
+                margin: 380px 0 0 20px;
+                font-size: 40px;
+                line-height: 58px;
+                letter-spacing: 4px;
+                position: relative;
+
+                &::before {
+                    top: -400px;
+                    left: 100px;
+                    position: absolute;
+                    content: "";
+                    height: 600px;
+                    background-image: url("../../assets/images/01_everyPixel/RareLanding-BG-cube.png");
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    z-index: -1;
+                    background-size: contain;
+                }
+            }
+
+
+            .headers {
+                width: calc(100%);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                h1 {
+                    font-size: 11vw;
+                }
+
+            }
+
+            .tells-your-story {
+                padding-right: 2%;
+                font-weight: 400;
+                font-size: 5vw;
+                letter-spacing: 8px;
+                text-align: right;
+            }
+
+        }
+
+        @media screen and (max-width: 1023px) and (min-width: 768px) {
+            // height: 80vh;
+
+            .start-your-project {
+                position: absolute;
+                top: 50px;
+                right: 60px;
+                font-size: 20px;
+                font-weight: 600;
+                width: fit-content;
+
+                &::after {
+                    right: -15%;
+                    top: 30%;
+                    position: absolute;
+                    content: "";
+                    height: 15px;
+                    width: 15px;
+                    background-color: black;
+                    transition: 0.5s ease-in-out;
+                }
+            }
+
+            .bring-idea {
+                margin: 150px 0 0 60px;
+                font-size: 30px;
+                line-height: 58px;
+                letter-spacing: 4px;
+                position: relative;
+
+                &::before {
+                    top: -200px;
+                    left: 200px;
+                    position: absolute;
+                    content: "";
+                    height: 300px;
+                    width: 300px;
+                    background-image: url("../../assets/images/01_everyPixel/RareLanding-BG-cube.png");
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    z-index: -1;
+                    background-size: contain;
+                }
+            }
+
+
+            .headers {
+
+                h1 {
+                    font-size: 9vw;
+                    font-weight: bold;
+                }
+
+            }
+
+            .tells-your-story {
+                padding-right: 4%;
+                font-weight: 400;
+                font-size: 4vw;
+                letter-spacing: 8px;
+                text-align: right;
+            }
+
+        }
+
+        @media screen and (max-width: 767px) {
+            // height: 50vh;
+
+            .start-your-project {
+                position: absolute;
+                top: 50px;
+                right: 40px;
+                font-size: 14px;
+                font-weight: 600;
+                width: fit-content;
+
+                &::after {
+                    right: -15%;
+                    top: 30%;
+                    position: absolute;
+                    content: "";
+                    height: 10px;
+                    width: 10px;
+                    background-color: black;
+                    transition: 0.5s ease-in-out;
+                }
+            }
+
+            .bring-idea {
+                margin: 60px 0 0 -10px;
+                font-size: 18px;
+                line-height: 28px;
+                letter-spacing: 4px;
+                position: relative;
+                width: 100%;
+
+                &::before {
+                    top: -100px;
+                    left: 15px;
+                    position: absolute;
+                    content: "";
+                    height: 200px;
+                    width: 200px;
+                    background-image: url("../../assets/images/01_everyPixel/RareLanding-BG-cube.png");
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    z-index: -1;
+                    background-size: contain;
+                }
+            }
+
+
+            .headers {
+                h1 {
+                    margin-left: 30px;
+                    font-size: 22vw;
+                    font-weight: bold;
+                    letter-spacing: 20px;
+                }
+
+            }
+
+            .tells-your-story {
+                margin-left: -10px;
+                font-size: 8vw;
+                letter-spacing: 5px;
+                text-align: left;
+                width: 100%;
+            }
+
+        }
+
+    }
+
+    .intro{
+        position: relative;
+
+        .welcome2rp {
+            // height: 100vh;
+            margin-top: 400px;
+            margin-bottom: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: sticky;
+            top: 0;
+    
+            h2 {
+                font-size: 8vmax;
+                font-weight: 300;
+                text-align: center;
+                font-family: roboto-slab-light;
+                position: relative;
+    
+                span {
+                    font-family: roboto-slab;
+                    display: block;
+                    font-weight: 400;
+                    font-size: 9vmax;
+    
+                    .x {
+                        margin: 5px;
+                        display: inline-block;
+                        position: relative;
+                        margin-right: 15px;
+                        margin-left: 10px;
+                        height: 6vmax;
+                        width: 6vmax;
+                        background-image: url("../../assets/images/02_welcomeRP/X-pixels-moving.gif");
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        transition: 1s ease-in-out;
+                        animation: rotate 4s linear infinite;
+    
+                        // &:hover {
+                        //     // background-image: url("../../assets/images/02_welcomeRP/rotating-cube-hover.gif");
+                            
+                        // }
+    
+                        @keyframes rotate {
+                            from {
+                                transform: rotate(0deg);
+                            }
+                            to {
+                                transform: rotate(360deg);
+                            }
+                        }
+                    }
+    
+                }
+    
+                &::before {
+                    position: absolute;
+                    content: "";
+                    height: 50vmax;
+                    width: 50vmax;
+                    top: -80%;
+                    left: -98%;
+                    background-image: url("../../assets/images/02_welcomeRP/left-rotating-cube.gif");
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    overflow-y: hidden;
+                }
+            }
+
+            @media screen and (min-width: 1927px) {
+                
+                h2 {
+                    font-size: 8vmax;
+                    font-weight: 300;
+                    text-align: center;
+                    font-family: roboto-slab-light;
+                    position: relative;
+        
+                    span {
+                        font-family: roboto-slab;
+                        display: block;
+                        font-weight: 400;
+                        font-size: 9vmax;
+                    }
+        
+                    &::before {
+                        position: absolute;
+                        content: "";
+                        height: 50vmax;
+                        width: 50vmax;
+                        top: -80%;
+                        left: -98%;
+                        background-image: url("../../assets/images/02_welcomeRP/left-rotating-cube.gif");
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        overflow-y: hidden;
+                    }
+                }
+            }
+
+            @media screen and (max-width: 1439px) and (min-width: 1024px){
+                margin-top: 200px;
+            }
+
+            @media screen and (max-width: 1023px) and (min-width: 768px){
+                margin-top: 180px;
+            }
+
+            @media screen and (max-width: 767px) and (min-width: 530px){
+                margin-top: 160px;
+            }
+
+            @media screen and (max-width: 529px) {
+                margin-top: 140px;
+            }
+
+
+            @media screen and (min-width: 325px) and (max-width: 450px) {
+                margin-top: 150px;
+                margin-bottom: 150px;
+                h2 {
+                    font-size: 7.5vmax;
+                    font-weight: 300;
+                    text-align: center;
+                    font-family: roboto-slab-light;
+                    position: relative;
+        
+                    span {
+                        font-size: 8vmax;
+                    }
+        
+                    &::before {
+                        position: absolute;
+                        content: "";
+                        height: 50vmax;
+                        width: 50vmax;
+                        top: -80%;
+                        left: -50%;
+                        background-image: url("../../assets/images/02_welcomeRP/left-rotating-cube.gif");
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        overflow-y: hidden;
+                    }
+                }
+            }
+
+            @media screen and (max-width: 324px) {
+                margin-top: 80px;
+            }
+
+        }
+    
+        .visually-captivating{
+            font-family: roboto-slab-light;
+            height: 100vh;
+            background-color: black;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            font-weight: 300;
+    
+            h2 {
+                width: 66%;
+                font-size: 64px;
+                line-height: 104px;
+                text-align: center;
+                
+    
+                .wind-mill{
+                    height: 100px;
+                    width: 100px;
+                    display: inline-block;
+                    background-image: url("../../assets/images/03_captivating/windMillBG.gif");
+                    object-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+    
+                .eye{
+                    position: relative;
+                    top: 10px;
+                    height: 100px;
+                    width: 110px;
+                    display: inline-block;
+                    background-image: url("../../assets/images/03_captivating/eye-cropped.gif");
+                    background-repeat: no-repeat;
+                    background-position: bottom;
+                    background-size: contain;
+                }
+            }
+
+            @media screen and (min-width: 1927px) {
+                h2 {
+                    font-size: 72px;
+                    line-height: 104px;
+                    width: 63%;
+                    
+                    .wind-mill{
+                        height: 120px;
+                        width: 120px;
+                    }
+        
+                    .eye{
+                        position: relative;
+                        top: 10px;
+                        height: 100px;
+                        width: 130px;
+                    }
+                }
+            }
+
+            @media screen and (max-width: 1885px) and (min-width: 1440px) {
+                h2 {
+                    font-size: 65px;
+                    line-height: 104px;
+                    width: 80%;
+                    
+                    .wind-mill{
+                        height: 80px;
+                        width: 70px;
+                    }
+        
+                    .eye{
+                        position: relative;
+                        top: 10px;
+                        height: 80px;
+                        width: 90px;
+                    }
+                }
+            }
+
+            @media screen and (max-width: 1439px) and (min-width: 1024px){
+                h2 {
+                    font-size: 55px;
+                    line-height: 104px;
+                    width: 85%;
+                    
+                    .wind-mill{
+                        height: 80px;
+                        width: 70px;
+                    }
+        
+                    .eye{
+                        position: relative;
+                        top: 10px;
+                        height: 80px;
+                        width: 90px;
+                    }
+                }
+            }
+
+            @media screen and (max-width: 1023px) and (min-width: 768px){
+                h2 {
+                    font-size: 40px;
+                    line-height: 104px;
+                    width: 90%;
+                    
+                    .wind-mill{
+                        height: 80px;
+                        width: 70px;
+                    }
+        
+                    .eye{
+                        position: relative;
+                        top: 10px;
+                        height: 80px;
+                        width: 90px;
+                    }
+                }
+            }
+
+            @media screen and (max-width: 767px) and (min-width: 530px){
+                h2 {
+                    font-size: 40px;
+                    line-height: 104px;
+                    width: 90%;
+                    
+                    .wind-mill{
+                        height: 80px;
+                        width: 70px;
+                    }
+        
+                    .eye{
+                        position: relative;
+                        top: 10px;
+                        height: 80px;
+                        width: 90px;
+                    }
+                }
+            }
+
+            @media screen and (max-width: 529px) {
+                h2 {
+                    font-size: 35px;
+                    line-height: 80px;
+                    width: 95%;
+                    text-align: left;
+                    
+                    .wind-mill{
+                        height: 60px;
+                        width: 50px;
+                    }
+        
+                    .eye{
+                        position: relative;
+                        top: 10px;
+                        height: 60px;
+                        width: 70px;
+                    }
+                }
+            }
+
+            @media screen and (max-width: 479px) {
+                h2 {
+                    font-size: 32px;
+                    line-height: 80px;
+                    width: 95%;
+                    text-align: left;
+                    margin: 20px;
+                    
+                    .wind-mill{
+                        height: 40px;
+                        width: 30px;
+                    }
+        
+                    .eye{
+                        position: relative;
+                        top: 10px;
+                        height: 40px;
+                        width: 50px;
+                    }
+                }
+            }
+
+        }
+
+    }
+
+
+
+
+
+
+
+}

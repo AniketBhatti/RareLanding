@@ -52,25 +52,40 @@ main {
                 height: 20px;
                 width: 20px;
                 background-color: black;
-                transition: 0.5s ease-in-out;
+                transition: 1s ease-in-out;
             }
 
 
             &:hover {
                 color: #ed1080;
+                transition: 1s ease-in-out;
 
                 &::after {
                     background-color: #ed1080;
-                    transform: rotate(45deg);
+                    transition: 1s ease-in-out;
+                    animation: rotateSquare 4s linear infinite;
                 }
 
                 &::before {
-
                     left: 0%;
                     opacity: 1;
                 }
-            }
 
+
+
+                @keyframes rotateSquare {
+                    from {
+                        transform: rotate(0deg);
+                    }
+
+                    to {
+                        transform: rotate(360deg);
+                    }
+                }
+
+
+
+            }
 
         }
 
@@ -93,20 +108,22 @@ main {
                 background-repeat: no-repeat;
                 background-position: center;
                 z-index: -1;
-                animation: rotate 3s ease-in-out, slideDown 3s ease-in-out; /* Add animation */
+                animation: rotate 3s ease-in-out, slideDown 3s ease-in-out;
+                /* Add animation */
 
             }
 
             @keyframes slideDown {
                 from {
-                  top: -700px;
-                  left: 10px;
+                    top: -700px;
+                    left: 10px;
                 }
+
                 to {
-                  top: -400px;
-                  left: 490px;
+                    top: -400px;
+                    left: 490px;
                 }
-              }
+            }
         }
 
         .headers {
@@ -157,7 +174,7 @@ main {
 
 
         @media screen and (min-width: 1927px) {
-            
+
             .bring-idea {
                 margin: 290px 0 0 130px;
                 font-size: 70px;
@@ -186,7 +203,7 @@ main {
         }
 
         @media screen and (max-width: 1926px) and (min-width: 1440px) {
-            
+
             .bring-idea {
                 margin: 300px 0 0 10px;
                 font-size: 48px;
@@ -231,6 +248,7 @@ main {
         }
 
         @media screen and (max-width: 1439px) and (min-width: 1024px) {
+
             // height: 80vh;
             .start-your-project {
                 position: absolute;
@@ -419,7 +437,7 @@ main {
 
     }
 
-    .intro{
+    .intro {
         position: relative;
 
         .welcome2rp {
@@ -431,20 +449,20 @@ main {
             align-items: center;
             position: sticky;
             top: 0;
-    
+
             h2 {
                 font-size: 8vmax;
                 font-weight: 300;
                 text-align: center;
                 font-family: roboto-slab-light;
                 position: relative;
-    
+
                 span {
                     font-family: roboto-slab;
                     display: block;
                     font-weight: 400;
                     font-size: 9vmax;
-    
+
                     .x {
                         margin: 5px;
                         display: inline-block;
@@ -459,24 +477,25 @@ main {
                         background-size: cover;
                         transition: 1s ease-in-out;
                         animation: rotate 4s linear infinite;
-    
+
                         // &:hover {
                         //     // background-image: url("../../assets/images/02_welcomeRP/rotating-cube-hover.gif");
-                            
+
                         // }
-    
+
                         @keyframes rotate {
                             from {
                                 transform: rotate(0deg);
                             }
+
                             to {
                                 transform: rotate(360deg);
                             }
                         }
                     }
-    
+
                 }
-    
+
                 &::before {
                     position: absolute;
                     content: "";
@@ -492,21 +511,21 @@ main {
             }
 
             @media screen and (min-width: 1927px) {
-                
+
                 h2 {
                     font-size: 8vmax;
                     font-weight: 300;
                     text-align: center;
                     font-family: roboto-slab-light;
                     position: relative;
-        
+
                     span {
                         font-family: roboto-slab;
                         display: block;
                         font-weight: 400;
                         font-size: 9vmax;
                     }
-        
+
                     &::before {
                         position: absolute;
                         content: "";
@@ -522,15 +541,15 @@ main {
                 }
             }
 
-            @media screen and (max-width: 1439px) and (min-width: 1024px){
+            @media screen and (max-width: 1439px) and (min-width: 1024px) {
                 margin-top: 200px;
             }
 
-            @media screen and (max-width: 1023px) and (min-width: 768px){
+            @media screen and (max-width: 1023px) and (min-width: 768px) {
                 margin-top: 180px;
             }
 
-            @media screen and (max-width: 767px) and (min-width: 530px){
+            @media screen and (max-width: 767px) and (min-width: 530px) {
                 margin-top: 160px;
             }
 
@@ -542,17 +561,18 @@ main {
             @media screen and (min-width: 325px) and (max-width: 450px) {
                 margin-top: 150px;
                 margin-bottom: 150px;
+
                 h2 {
                     font-size: 7.5vmax;
                     font-weight: 300;
                     text-align: center;
                     font-family: roboto-slab-light;
                     position: relative;
-        
+
                     span {
                         font-size: 8vmax;
                     }
-        
+
                     &::before {
                         position: absolute;
                         content: "";
@@ -573,8 +593,11 @@ main {
             }
 
         }
-    
-        .visually-captivating{
+
+
+
+
+        .visually-captivating {
             font-family: roboto-slab-light;
             height: 100vh;
             background-color: black;
@@ -584,15 +607,15 @@ main {
             justify-content: center;
             position: relative;
             font-weight: 300;
-    
+
             h2 {
                 width: 66%;
                 font-size: 64px;
                 line-height: 104px;
                 text-align: center;
-                
-    
-                .wind-mill{
+
+
+                .wind-mill {
                     height: 100px;
                     width: 100px;
                     display: inline-block;
@@ -601,8 +624,8 @@ main {
                     background-repeat: no-repeat;
                     background-size: cover;
                 }
-    
-                .eye{
+
+                .eye {
                     position: relative;
                     top: 10px;
                     height: 100px;
@@ -620,13 +643,13 @@ main {
                     font-size: 72px;
                     line-height: 104px;
                     width: 63%;
-                    
-                    .wind-mill{
+
+                    .wind-mill {
                         height: 120px;
                         width: 120px;
                     }
-        
-                    .eye{
+
+                    .eye {
                         position: relative;
                         top: 10px;
                         height: 100px;
@@ -640,13 +663,13 @@ main {
                     font-size: 65px;
                     line-height: 104px;
                     width: 80%;
-                    
-                    .wind-mill{
+
+                    .wind-mill {
                         height: 80px;
                         width: 70px;
                     }
-        
-                    .eye{
+
+                    .eye {
                         position: relative;
                         top: 10px;
                         height: 80px;
@@ -655,18 +678,18 @@ main {
                 }
             }
 
-            @media screen and (max-width: 1439px) and (min-width: 1024px){
+            @media screen and (max-width: 1439px) and (min-width: 1024px) {
                 h2 {
                     font-size: 55px;
                     line-height: 104px;
                     width: 85%;
-                    
-                    .wind-mill{
+
+                    .wind-mill {
                         height: 80px;
                         width: 70px;
                     }
-        
-                    .eye{
+
+                    .eye {
                         position: relative;
                         top: 10px;
                         height: 80px;
@@ -675,18 +698,18 @@ main {
                 }
             }
 
-            @media screen and (max-width: 1023px) and (min-width: 768px){
+            @media screen and (max-width: 1023px) and (min-width: 768px) {
                 h2 {
                     font-size: 40px;
                     line-height: 104px;
                     width: 90%;
-                    
-                    .wind-mill{
+
+                    .wind-mill {
                         height: 80px;
                         width: 70px;
                     }
-        
-                    .eye{
+
+                    .eye {
                         position: relative;
                         top: 10px;
                         height: 80px;
@@ -695,18 +718,18 @@ main {
                 }
             }
 
-            @media screen and (max-width: 767px) and (min-width: 530px){
+            @media screen and (max-width: 767px) and (min-width: 530px) {
                 h2 {
                     font-size: 40px;
                     line-height: 104px;
                     width: 90%;
-                    
-                    .wind-mill{
+
+                    .wind-mill {
                         height: 80px;
                         width: 70px;
                     }
-        
-                    .eye{
+
+                    .eye {
                         position: relative;
                         top: 10px;
                         height: 80px;
@@ -721,13 +744,13 @@ main {
                     line-height: 80px;
                     width: 95%;
                     text-align: left;
-                    
-                    .wind-mill{
+
+                    .wind-mill {
                         height: 60px;
                         width: 50px;
                     }
-        
-                    .eye{
+
+                    .eye {
                         position: relative;
                         top: 10px;
                         height: 60px;
@@ -743,13 +766,13 @@ main {
                     width: 95%;
                     text-align: left;
                     margin: 20px;
-                    
-                    .wind-mill{
+
+                    .wind-mill {
                         height: 40px;
                         width: 30px;
                     }
-        
-                    .eye{
+
+                    .eye {
                         position: relative;
                         top: 10px;
                         height: 40px;
@@ -763,8 +786,237 @@ main {
     }
 
 
+    .transform-ideas {
+        height: 500px;
+        margin: 200px 200px 0px 200px;
+        font-family: roboto-slab-light;
+        font-size: 64px;
+        font-weight: 300;
+        display: flex;
+        justify-content: center;
+        position: relative;
+
+        h2 {
+
+            width: 85%;
+            text-align: center;
+
+            div {
+                display: inline-block;
+            }
+
+            .bulbs {
+                height: 90px;
+                width: 110px;
+                background-image: url("../../assets/images/04_transformIdeas/bulb.gif");
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+
+            .squares {
+                height: 90px;
+                width: 80px;
+                background-image: url("../../assets/images/04_transformIdeas/blackWhiteSquare.gif");
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+
+            .shapes {
+                height: 90px;
+                width: 70px;
+                background-image: url("../../assets/images/04_transformIdeas/jumpingShapes.gif");
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: -250px;
+            right: -200px;
+            height: 30vmax;
+            width: 30vmax;
+            background-image: url("../../assets/images/02_welcomeRP/left-rotating-cube.gif");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
 
 
+        @media screen and (min-width: 1927px) {
+            h2 {
+                font-size: 4vw;
+
+                .bulbs,
+                .squares,
+                .shapes {
+                    height: 120px;
+                    width: 120px;
+                    background-size: contain;
+                }
+            }
+
+            &::after {
+                top: -300px;
+                right: -250px;
+                height: 35vmax;
+                width: 35vmax;
+            }
+        }
+
+        @media screen and (max-width: 1439px) and (min-width: 1024px) {
+            h2 {
+                font-size: 3.5vw;
+
+                .bulbs,
+                .squares,
+                .shapes {
+                    height: 80px;
+                    width: 80px;
+                    background-size: contain;
+                }
+            }
+
+            &::after {
+                top: -200px;
+                right: -150px;
+                height: 25vmax;
+                width: 25vmax;
+            }
+        }
+
+        @media screen and (max-width: 1023px) and (min-width: 768px) {
+            h2 {
+                font-size: 4vw;
+                width: 90%;
+
+                .bulbs,
+                .squares,
+                .shapes {
+                    height: 70px;
+                    width: 70px;
+                    background-size: contain;
+                }
+            }
+
+            &::after {
+                top: -150px;
+                right: -100px;
+                height: 20vmax;
+                width: 20vmax;
+            }
+        }
+
+        @media screen and (max-width: 767px) and (min-width: 530px) {
+
+
+            margin: 200px 70px 0px 70px;
+
+            h2 {
+                font-size: 4.5vw;
+                width: 95%;
+                text-align: left;
+                padding-left: 20px;
+
+                .bulbs,
+                .squares,
+                .shapes {
+                    height: 60px;
+                    width: 60px;
+                    background-size: contain;
+                }
+            }
+
+            &::after {
+                top: -100px;
+                right: -50px;
+                height: 15vmax;
+                width: 15vmax;
+            }
+        }
+
+        @media screen and (max-width: 529px) {
+            margin: 200px 50px 0px 50px;
+
+            h2 {
+                font-size: 5vw;
+                width: 100%;
+                text-align: left;
+                padding-left: 15px;
+
+                .bulbs,
+                .squares,
+                .shapes {
+                    height: 50px;
+                    width: 50px;
+                    background-size: contain;
+                }
+            }
+
+            &::after {
+                top: -80px;
+                right: -30px;
+                height: 12vmax;
+                width: 12vmax;
+            }
+        }
+
+        @media screen and (min-width: 325px) and (max-width: 450px) {
+
+            margin: 100px 20px 0px 20px;
+
+            h2 {
+                font-size: 5.5vw;
+                text-align: left;
+                padding-left: 10px;
+                margin-right: 10px;
+
+                .bulbs,
+                .squares,
+                .shapes {
+                    height: 40px;
+                    width: 40px;
+                    background-size: contain;
+                }
+            }
+
+            &::after {
+                top: -60px;
+                right: -20px;
+                height: 10vmax;
+                width: 10vmax;
+            }
+        }
+
+        @media screen and (max-width: 324px) {
+            margin: 100px 20px 0px 20px;
+
+            h2 {
+                font-size: 6vw;
+                text-align: left;
+                padding-left: 5px;
+                margin-right: 5px;
+
+                .bulbs,
+                .squares,
+                .shapes {
+                    height: 30px;
+                    width: 30px;
+                    background-size: contain;
+                }
+            }
+
+            &::after {
+                top: -40px;
+                right: -10px;
+                height: 8vmax;
+                width: 8vmax;
+            }
+        }
+
+
+
+    }
 
 
 

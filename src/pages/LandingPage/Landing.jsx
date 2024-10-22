@@ -8,8 +8,8 @@ import { Link } from "react-router-dom";
 
 const Landing = () => {
 
+  // FOR PATH
   const pathRef = useRef(null);
-
   React.useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
@@ -21,13 +21,34 @@ const Landing = () => {
         scrub: 1,
       },
       attr: {
-        d: "M0 4.5C1902.08 3.82732 5151.34 2.67819 7273 1.92785"
+        d: "M0 4.5C1902.08 3.82732 5151.34 2.67819 7273 1.92785",
       },
-      ease: "none"
+      ease: "none",
     });
   }, []);
 
 
+  // For HORIZONTAL SCROLL
+
+
+  React.useEffect(() => {
+    realPageAnimation();
+  }, []);
+  
+  function realPageAnimation() {
+    gsap.to(".slide", {
+      scrollTrigger: {
+        trigger: ".our-services",
+        start: "top top",
+        end: "bottom bottom",
+        scrub: 1,
+      },
+      xPercent: -200,
+      ease: "power4.inOut", // Ensure ease is a string
+    });
+  }
+
+  realPageAnimation();
 
   return (
     <main>
@@ -74,13 +95,30 @@ const Landing = () => {
         </h2>
       </section>
 
+      <section className="our-services w-full">
+        <div className="container h-[400vh] relative">
+          <div className="slides overflow-hidden sticky top-0 left-0 flex w-full h-[100vh]">
 
-      <section className="Line" style={{height:'100vh'}}>
-        <svg viewBox="0 0 1615 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <div className="slide w-full flex items-center justify-center h-screen flex-shrink-0 bg-red-500">
+              
+            </div>
+
+            <div className="slide w-full h-screen flex justify-center items-center flex-shrink-0 relative bg-pink-500">
+          
+            </div>
+
+            <div className="slide w-full h-screen flex items-center justify-center flex-shrink-0 relative bg-yellow-500">
+                
+            </div>
+          
+
+          </div>
+        </div>
+
+        {/* <svg viewBox="0 0 1615 500" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path ref={pathRef} id="animatedPath" d="M0.5 162.5C301.5 339 1385 -211.5 1614 97" stroke="#ED0180" stroke-width="2"/>
-        </svg>
+        </svg> */}
       </section>
-
     </main>
   );
 };

@@ -1018,9 +1018,70 @@ main {
 
     }
 
+    .our-work{
 
-    .our-services{
+        .lumber-craft{
+            background-color: #478590;
 
+            .lumberFrame{
+                .lumberContent{
+
+                    .main-product{
+                    }
+                }
+            }
+            
+            &::before{
+                content: "Web Design";
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100%;
+                font-size: 35vh;
+                font-family: roboto-slab-light;
+                color: #b2a3a329;
+                z-index: -1;
+            
+            }
+
+            
+        }
+
+        .regalFinance{
+            background-color: #2C2C2C;
+
+
+            &::before{
+                content: "Web Design";
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100%;
+                font-size: 35vh;
+                font-family: roboto-slab-light;
+                color: #615c5c29;
+                z-index: -1;
+            
+            }
+        }
+
+        .xtream{
+            background-color: #5A5A5A;
+
+            &::before{
+                content: "Web Design";
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100%;
+                font-size: 35vh;
+                font-family: roboto-slab-light;
+                color: #696868;
+                z-index: 1;
+            
+            }
+            
+        }
     }
 
 

@@ -7,6 +7,7 @@ import { MotionPathPlugin } from "gsap/MotionPathPlugin";
 import { useScroll } from "framer-motion";
 import { Link } from "react-router-dom";
 
+
 import research from "../../assets/images/06_ropeEffectPlayables/research_square.png"
 import strategy from "../../assets/images/06_ropeEffectPlayables/strategy_square.png"
 import uiuxdesign from "../../assets/images/06_ropeEffectPlayables/uiux_square.png"
@@ -23,6 +24,42 @@ import rewards from "../../assets/images/07_ourWorks/REGALFINANCE/rewards.png"
 import assets from "../../assets/images/07_ourWorks/REGALFINANCE/assets.png"
 
 import xtream_full from "../../assets/images/07_ourWorks/Xtream/xtreamFullImage.png"
+
+import topLeftVeggies from "../../assets/images/07_ourWorks/ORCHARD/top-left-veggies.png"
+import bottomLeftPhone from "../../assets/images/07_ourWorks/ORCHARD/bottom-left-phone.png"
+import rightHome from "../../assets/images/07_ourWorks/ORCHARD/right-orchard-home.png"
+
+import favoriteScreen from "../../assets/images/07_ourWorks/ORCHARD/VerticalScroll/favorites-screen.png"
+import filterScreen from "../../assets/images/07_ourWorks/ORCHARD/VerticalScroll/filters-screen.png"
+import homeScreen from "../../assets/images/07_ourWorks/ORCHARD/VerticalScroll/home-screen.png"
+import beveragesScreen from "../../assets/images/07_ourWorks/ORCHARD/VerticalScroll/listof-beverages.png"
+import locationScreen from "../../assets/images/07_ourWorks/ORCHARD/VerticalScroll/location-screen.png"
+import loginScreen from "../../assets/images/07_ourWorks/ORCHARD/VerticalScroll/login-screen.png"
+import mobileScreen from "../../assets/images/07_ourWorks/ORCHARD/VerticalScroll/mobile-screen.png"
+import mycartScreen from "../../assets/images/07_ourWorks/ORCHARD/VerticalScroll/mycart-screen.png"
+import productDetailsScreen from "../../assets/images/07_ourWorks/ORCHARD/VerticalScroll/product-detail-screen.png"
+import searchScreen from "../../assets/images/07_ourWorks/ORCHARD/VerticalScroll/search-screen.png"
+
+import hiLogo from "../../assets/images/07_ourWorks/HEALTHINSURANCE/hi-logo.png"
+import phoneMockup from "../../assets/images/07_ourWorks/HEALTHINSURANCE/phone-mockup.png"
+import statistics from "../../assets/images/07_ourWorks/HEALTHINSURANCE/statistics.png"
+import lineGraph from "../../assets/images/07_ourWorks/HEALTHINSURANCE/hi-linegraph.png"
+import customize from "../../assets/images/07_ourWorks/HEALTHINSURANCE/customize.png"
+
+
+import add from "../../assets/images/07_ourWorks/HEALTHINSURANCE/widgets/add.png"
+import and from "../../assets/images/07_ourWorks/HEALTHINSURANCE/widgets/and.png"
+import arrow from "../../assets/images/07_ourWorks/HEALTHINSURANCE/widgets/arrow.png"
+import bulb from "../../assets/images/07_ourWorks/HEALTHINSURANCE/widgets/bulb.png"
+import coverage from "../../assets/images/07_ourWorks/HEALTHINSURANCE/widgets/coverage.png"
+import health from "../../assets/images/07_ourWorks/HEALTHINSURANCE/widgets/health.png"
+import mind from "../../assets/images/07_ourWorks/HEALTHINSURANCE/widgets/mind.png"
+import phonebook from "../../assets/images/07_ourWorks/HEALTHINSURANCE/widgets/phonebook.png"
+import safe from "../../assets/images/07_ourWorks/HEALTHINSURANCE/widgets/safe.png"
+import schedule from "../../assets/images/07_ourWorks/HEALTHINSURANCE/widgets/schedule.png"
+import secure from "../../assets/images/07_ourWorks/HEALTHINSURANCE/widgets/secure.png"
+import teeth from "../../assets/images/07_ourWorks/HEALTHINSURANCE/widgets/teeth.png"
+
 
 
 
@@ -71,7 +108,7 @@ const Landing = () => {
 		gsap.registerPlugin(MotionPathPlugin);
 
 		gsap.set(".item-1, .item-2, .item-3, .item-4, .item-5, .item-6", {
-			xPercent:-50, yPercent:-50, transformOrigin: "50% 50%"
+			xPercent: -50, yPercent: -50, transformOrigin: "50% 50%"
 		})
 
 		gsap.to(".item-1, .item-2, .item-3, .item-4, .item-5, .item-6", {
@@ -83,59 +120,15 @@ const Landing = () => {
 				end: "bottom top",
 				scrub: 1,
 			},
-			duration:5,
+			duration: 5,
 
 		});
 
 	}, []);
 
 
-	// React.useEffect(() => {
-	// 	gsap.registerPlugin(MotionPathPlugin);
-	  
-	// 	const itemElements = gsap.utils.selector(".item-1, .item-2, .item-3, .item-4, .item-5, .item-6");
-	  
-	// 	// Calculate path length
-	// 	const pathLength = gsap.utils.getTotalLength("#myPath");
-	  
-	// 	// Set initial positions at the end of the path
-	// 	gsap.set(itemElements, {
-	// 	  motionPath: {
-	// 		path: "#myPath",
-	// 		autoRotate: false, // Disable auto-rotation for better control
-	// 		attr: "x", // Animate along the path's x-axis
-	// 		from: pathLength, // Start at the end of the path
-	// 		to: 0, // End at the beginning
-	// 	  },
-	// 	  transformOrigin: "50% 50%",
-	// 	});
-	  
-	// 	// Animate the path movement with scrollTrigger
-	// 	gsap.to(itemElements, {
-	// 	  motionPath: {
-	// 		path: "#myPath",
-	// 		autoRotate: false,
-	// 		attr: "x",
-	// 		from: pathLength,
-	// 		to: 0,
-	// 	  },
-	// 	  transformOrigin: "50% 50%",
-	// 	  scrollTrigger: {
-	// 		trigger: ".usp-list",
-	// 		start: "top top",
-	// 		end: "bottom top",
-	// 		scrub: 1,
-	// 	  },
-	// 	  duration: 5,
-	// 	});
-	//   }, []);
 
 
-
-
-
-
-	// For OUR-WORK PAGE1 Animation [LumberCraft]
 
 
 	// Hide the horizontal scrollbar during the transition
@@ -152,6 +145,8 @@ const Landing = () => {
 		return () => showScrollbar();
 	}, []);
 
+
+	// For OUR-WORK PAGE1 Animation [LumberCraft]
 
 
 	const lumberCraftRef = useRef(null);
@@ -220,8 +215,9 @@ const Landing = () => {
 	}, []);
 
 
+	// For OUR-WORK PAGE2 Animation [RegalFinance]
 
-	
+
 	const regalFinance = useRef(null);
 
 	React.useEffect(() => {
@@ -286,7 +282,6 @@ const Landing = () => {
 			}
 		);
 
-
 		gsap.fromTo(".regalNavbar",
 			{ opacity: 1, scale: 0.5, x: 200 }, // Start from below the viewport
 			{
@@ -306,6 +301,7 @@ const Landing = () => {
 	}, []);
 
 
+
 	gsap.fromTo(".xtream",
 		{ x: -600, opacity: 0 },
 		{
@@ -322,24 +318,328 @@ const Landing = () => {
 	);
 
 
-	const cuboidRef = useRef(null);
-
+	const orchard = useRef(null);
 	React.useEffect(() => {
-		gsap.fromTo(cuboidRef.current,
-			{ rotationY: 90, opacity: 0 },
+		gsap.fromTo(orchard.current,
+			{ x: 300, y: 500, opacity: 0 },
 			{
-				rotationY: 0,
+				x: 0,
+				y: 0,
 				opacity: 1,
-				duration: 1,
 				scrollTrigger: {
-					trigger: cuboidRef.current,
-					start: "top 80%", // Trigger when the top of the section is 80% down the viewport
+					trigger: orchard.current,
+					start: "top 90%",
+					end: "top 30%",
+					scrub: 1,
+				}
+			}
+		);
+
+		gsap.fromTo(".veggies",
+			{ x: -300, opacity: 1 },
+			{
+				x: 0,
+				opacity: 1,
+				duration: 2,
+				scrollTrigger: {
+					trigger: ".veggies",
+					start: "top 90%", // Trigger when the top of the section is 80% down the viewport
 					end: "top 30%", // End when the top of the section is 30% down the viewport
 					scrub: 1,
 				}
 			}
 		);
+
+
+		gsap.fromTo(".find-prods",
+			{ x: 400, opacity: 1 },
+			{
+				x: 0,
+				opacity: 1,
+				duration: 2,
+				scrollTrigger: {
+					trigger: ".find-prods",
+					start: "top bottom", // Trigger when the top of the section is 80% down the viewport
+					end: "bottom bottom", // End when the top of the section is 30% down the viewport
+					scrub: 1,
+				}
+			}
+		);
+
+
+		gsap.fromTo(".homescreen",
+			{ x: 400, opacity: 1 },
+			{
+				x: 0,
+				opacity: 1,
+				duration: 2,
+				scrollTrigger: {
+					trigger: ".homescreen",
+					start: "top 90%", // Trigger when the top of the section is 80% down the viewport
+					end: "top 30%", // End when the top of the section is 30% down the viewport
+					scrub: 1,
+				}
+			}
+		);
+
 	}, []);
+
+
+
+	const healthInsurance = useRef(null)
+	React.useEffect(() => {
+		gsap.fromTo(healthInsurance.current,
+			{ x: -300, opacity: 0 },
+			{
+				x: 0,
+				opacity: 1,
+				scrollTrigger: {
+					trigger: healthInsurance.current,
+					start: "top 90%",
+					end: "top 30%",
+					scrub: 1,
+				}
+			}
+		);
+
+		gsap.fromTo(".phoneMock",
+			{ x: 1000, y: 200, opacity: 1, scale: 2 },
+			{
+				x: 0,
+				y: 0,
+				opacity: 1,
+				scale: 1,
+				scrollTrigger: {
+					trigger: ".healthScreens",
+					start: "top 80%",
+					end: "top 30%",
+					scrub: 1,
+				}
+			}
+		);
+
+		gsap.fromTo(".statistics",
+			{ x: -1400, opacity: 1 },
+
+			{
+				x: -400,
+				opacity: 1,
+				scale: 1,
+				scrollTrigger: {
+					trigger: ".healthInsurance",
+					start: "top 50%",
+					end: "top 90%",
+					scrub: 1,
+				}
+			}
+		);
+
+		gsap.fromTo(".graph-customize",
+			{ x: 400, opacity: 1 },
+
+			{
+				x: 0,
+				opacity: 1,
+				scale: 1,
+				scrollTrigger: {
+					trigger: ".healthScreens",
+					start: "top 50%",
+					end: "top top",
+					scrub: 1,
+				}
+			}
+		);
+
+		gsap.fromTo(".widgets-container",
+			{ x: 400, opacity: 1 },
+
+			{
+				x: 0,
+				opacity: 1,
+				scale: 1,
+				scrollTrigger: {
+					trigger: ".healthScreens",
+					start: "top 50%",
+					end: "top top",
+					scrub: 1,
+				}
+			}
+		);
+
+
+
+
+
+
+
+		gsap.fromTo(".Add",
+			{ x: 0, y: 550 },
+			{
+				x: -200,
+				y: 0,
+				scrollTrigger: {
+					trigger: ".healthInsurance",
+					start: "bottom bottom",
+					end: "bottom top",
+					scrub: 1,
+				}
+			},);
+
+		gsap.fromTo(".And",
+			{ x: -200, y: 500 },
+			{
+				x: -200,
+				y: 0,
+				scrollTrigger: {
+					trigger: ".healthInsurance",
+					start: "bottom bottom",
+					end: "bottom top",
+					scrub: 1,
+				}
+			},);
+
+		gsap.fromTo(".Arrow",
+			{ x: 0, y: 500 },
+			{
+				x: -200,
+				y: 0,
+				scrollTrigger: {
+					trigger: ".healthInsurance",
+					start: "bottom bottom",
+					end: "bottom top",
+					scrub: 1,
+				}
+			},);
+
+		gsap.fromTo(".Bulb",
+			{ x: -100, y: 200 },
+			{
+				x: -700,
+				y: -200,
+				scrollTrigger: {
+					trigger: ".healthInsurance",
+					start: "bottom bottom",
+					end: "bottom top",
+					scrub: 1,
+				}
+			},);
+
+		gsap.fromTo(".Coverage",
+			{ x: -130, y: -50 },
+			{
+				x: -400,
+				y: -400,
+				scrollTrigger: {
+					trigger: ".healthInsurance",
+					start: "bottom bottom",
+					end: "bottom top",
+					scrub: 1,
+				}
+			},);
+
+		gsap.fromTo(".Health",
+			{ x: -150, y: 0 },
+			{
+				x: -300,
+				y: -300,
+				scrollTrigger: {
+					trigger: ".healthInsurance",
+					start: "bottom bottom",
+					end: "bottom top",
+					scrub: 1,
+				}
+			},);
+
+		gsap.fromTo(".Mind",
+			{ x: -300, y: -150 },
+			{
+				x: -600,
+				y: -600,
+				scrollTrigger: {
+					trigger: ".healthInsurance",
+					start: "bottom bottom",
+					end: "bottom top",
+					scrub: 1,
+				}
+			},);
+
+		gsap.fromTo(".Phonebook",
+			{ x: 0, y: -300 },
+			{
+				x: -600,
+				y: -900,
+				scrollTrigger: {
+					trigger: ".healthInsurance",
+					start: "bottom bottom",
+					end: "bottom top",
+					scrub: 1,
+				}
+			},);
+
+		gsap.fromTo(".Safe",
+			{ x: -250, y: -300 },
+			{
+				x: -800,
+				y: -600,
+				scrollTrigger: {
+					trigger: ".healthInsurance",
+					start: "bottom bottom",
+					end: "bottom top",
+					scrub: 1,
+				}
+			},);
+
+		gsap.fromTo(".Schedule",
+			{ x: -100, y: -420 },
+			{
+				x: -600,
+				y: -800,
+				scrollTrigger: {
+					trigger: ".healthInsurance",
+					start: "bottom bottom",
+					end: "bottom top",
+					scrub: 1,
+				}
+			},);
+
+		gsap.fromTo(".Secure",
+			{ x: -200, y: -500 },
+			{
+				x: -250,
+				y: -1200,
+				scrollTrigger: {
+					trigger: ".healthInsurance",
+					start: "bottom bottom",
+					end: "bottom top",
+					scrub: 1,
+				}
+			},);
+
+		gsap.fromTo(".Teeth",
+			{ x: -350, y: -700 },
+			{
+				x: -600,
+				y: -1200,
+				scrollTrigger: {
+					trigger: ".healthInsurance",
+					start: "bottom bottom",
+					end: "bottom top",
+					scrub: 1,
+				}
+			},);
+
+
+
+
+
+
+	}, []);
+
+	
+	
+	const dinaRollings = useRef(null)
+
+
 
 
 
@@ -518,6 +818,94 @@ const Landing = () => {
 				<div className="xtream h-screen w-screen flex justify-center items-center">
 					<img className="image absolute h-[90%] w-[90%] z-10" src={xtream_full} alt="" />
 				</div>
+
+				<div ref={orchard} className="orchard h-screen w-screen">
+
+					<div className="orchardScreens absolute top-0 left-0 h-screen w-screen">
+						<div className="screen-showcase">
+							<div className="veggie-menu">
+								<div className="relative h-full">
+									<img className="veggies absolute top-0 left-0 z-1" src={topLeftVeggies} alt="" />
+									<img className="find-prods relative z-2 top-[25%] left-[12.5%]" src={bottomLeftPhone} alt="" />
+								</div>
+							</div>
+
+
+							<div className="vertical-scroll">
+
+								<div className="marquee">
+									<img src={favoriteScreen} alt="" />
+									<img src={filterScreen} alt="" />
+									<img src={homeScreen} alt="" />
+									<img src={beveragesScreen} alt="" />
+									<img src={locationScreen} alt="" />
+									<img src={loginScreen} alt="" />
+									<img src={mobileScreen} alt="" />
+									<img src={mycartScreen} alt="" />
+									<img src={productDetailsScreen} alt="" />
+									<img src={searchScreen} alt="" />
+								</div>
+
+							</div>
+						</div>
+						<div className="homescreen">
+							<img src={rightHome} alt="" />
+						</div>
+					</div>
+
+
+				</div>
+
+				<div ref={healthInsurance} className="healthInsurance h-[200vh] w-screen">
+					<div className="healthScreens h-screen w-screen flex">
+
+						<div className="screenContainer absolute top-0 left-0 flex z-10">
+
+							<div className="phone flex relative left-[-250px]">
+								<img className="phoneMock h-[1100px] relative z-10" src={phoneMockup} alt="" />
+								<img className="statistics h-[700px] relative z-2 top-[180px]" src={statistics} alt="" />
+							</div>
+
+							<div className="graph-customize flex items-start justify-center relative top-[200px] left-[-300px]">
+								<img src={lineGraph} alt="" />
+								<img className="relative top-[65px] left-[-100px]" src={customize} alt="" />
+							</div>
+
+							<div className="hiLogo">
+								<img className="relative left-[-200px] top-[100px]" src={hiLogo} alt="" />
+							</div>
+						</div>
+
+						<div className="widgets-container relative right-[1px]">
+							<img src={add} alt="" className="Add" />
+							<img src={and} alt="" className="And" />
+							<img src={arrow} alt="" className="Arrow" />
+							<img src={bulb} alt="" className="Bulb" />
+							<img src={coverage} alt="" className="Coverage" />
+							<img src={health} alt="" className="Health" />
+							<img src={mind} alt="" className="Mind" />
+							<img src={phonebook} alt="" className="Phonebook" />
+							<img src={safe} alt="" className="Safe" />
+							<img src={schedule} alt="" className="Schedule" />
+							<img src={secure} alt="" className="Secure" />
+							<img src={teeth} alt="" className="Teeth" />
+						</div>
+
+
+					</div>
+
+				</div>
+
+				<div ref={dinaRollings} className="dinaRollings h-screen w-screen bg-pink-200">
+					
+				</div>
+
+
+
+
+
+
+				<div className="h-screen w-screen bg-red-500"></div>
 
 
 			</section>

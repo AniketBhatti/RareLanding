@@ -1018,20 +1018,12 @@ main {
 
     }
 
-    .our-work{
+    .our-work {
 
-        .lumber-craft{
+        .lumber-craft {
             background-color: #478590;
 
-            .lumberFrame{
-                .lumberContent{
-
-                    .main-product{
-                    }
-                }
-            }
-            
-            &::before{
+            &::before {
                 content: "Web Design";
                 display: flex;
                 align-items: center;
@@ -1041,17 +1033,16 @@ main {
                 font-family: roboto-slab-light;
                 color: #b2a3a329;
                 z-index: -1;
-            
+
             }
 
-            
         }
 
-        .regalFinance{
+        .regalFinance {
             background-color: #2C2C2C;
 
 
-            &::before{
+            &::before {
                 content: "Web Design";
                 display: flex;
                 align-items: center;
@@ -1061,14 +1052,14 @@ main {
                 font-family: roboto-slab-light;
                 color: #615c5c29;
                 z-index: -1;
-            
+
             }
         }
 
-        .xtream{
+        .xtream {
             background-color: #5A5A5A;
 
-            &::before{
+            &::before {
                 content: "Web Design";
                 display: flex;
                 align-items: center;
@@ -1078,10 +1069,137 @@ main {
                 font-family: roboto-slab-light;
                 color: #696868;
                 z-index: 1;
-            
+
             }
-            
+
         }
+
+        .orchard {
+            background-color: #8FE5E0;
+
+            &::before {
+                content: "Mobile App";
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100%;
+                font-size: 35vh;
+                font-family: roboto-slab-light;
+                color: #a2a2a236;
+                z-index: 1;
+
+            }
+
+
+            .orchardScreens {
+                display: flex;
+
+                .screen-showcase {
+                    width: 50%;
+                    display: flex;
+
+                    .veggie-menu {
+                        width: 50%;
+                    }
+
+                    .vertical-scroll {
+                        width: 50%;
+                        height: 100%;
+                        overflow: hidden;
+                        position: relative;
+                        box-sizing: border-box;
+
+
+                        
+
+
+                        .marquee {
+                            width: 320px;
+                            top: 100%;
+                            position: relative;
+                            box-sizing: border-box;
+                            animation: marquee 20s linear infinite 2s;
+                            margin: 0 auto;
+                            text-align: center;
+                            color: #ffffff;
+                            white-space: nowrap; 
+
+                            @keyframes marquee {
+                                from {
+                                    transform: translateY(0);
+                                }
+                                to {
+                                    transform: translateY(-150%);
+                                }
+                            }
+
+                            img{
+                                margin-bottom: 20px;
+                            }
+
+                            &:hover {
+                                animation-play-state: paused;
+                            }
+                        }
+
+
+
+
+                    }
+
+
+                }
+
+                .homescreen {
+                    width: 50%;
+                    display: flex;
+                    align-items: end;
+                }
+            }
+        }
+
+        .healthInsurance {
+            
+            .healthScreens {
+                position: sticky;
+                top: 0;
+                z-index: 1;
+                background-color: #F5F5DC;
+    
+                &::before {
+                    content: "Mobile App";
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 100%;
+                    font-size: 34vh;
+                    font-family: roboto-slab-light;
+                    color: #a2a2a210;
+                    z-index: -1;
+    
+                }
+            }
+        }
+
+        .dinaRollings{
+            background-color: #F2F4F7;
+
+            &::before {
+                content: "Mobile App";
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100%;
+                font-size: 34vh;
+                font-family: roboto-slab-light;
+                color: #a2a2a210;
+                z-index: -1;
+
+            }
+        }
+          
+        
+
     }
 
 

@@ -3,6 +3,8 @@ import "./landing.scss";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { MotionPathPlugin } from "gsap/MotionPathPlugin";
+import Marquee from "react-fast-marquee";
+
 
 import { useScroll } from "framer-motion";
 import { Link } from "react-router-dom";
@@ -61,6 +63,47 @@ import secure from "../../assets/images/07_ourWorks/HEALTHINSURANCE/widgets/secu
 import teeth from "../../assets/images/07_ourWorks/HEALTHINSURANCE/widgets/teeth.png"
 
 
+import dinaHome from "../../assets/images/07_ourWorks/DINAROLLING/phone-mock-homeScreen.png"
+import dinaSmall from "../../assets/images/07_ourWorks/DINAROLLING/dina-bonus-small.png"
+import dinaBig from "../../assets/images/07_ourWorks/DINAROLLING/dina-bonus-big.png"
+import dinaActual from "../../assets/images/07_ourWorks/DINAROLLING/dina-bonus-actual.png"
+import gameGraph from "../../assets/images/07_ourWorks/DINAROLLING/game-metrics-graph.png"
+import connectionsBuild from "../../assets/images/07_ourWorks/DINAROLLING/connection-building.png"
+import felindra from "../../assets/images/07_ourWorks/DINAROLLING/felindra-lucen.png"
+import sessions from "../../assets/images/07_ourWorks/DINAROLLING/sessions.png"
+
+import creativeInfo from "../../assets/images/07_ourWorks/VIVIDSPARK/creativedesigninfo.png"
+import continueInnovation from "../../assets/images/07_ourWorks/VIVIDSPARK/continueInnovation.png"
+import ladyModel from "../../assets/images/07_ourWorks/VIVIDSPARK/ladyCutout.png"
+
+import cocktailCultureLogo from "../../assets/images/07_ourWorks/COCKTAILCULTURE/pngs/cocktailCulture.png"
+import experienceASip from "../../assets/images/07_ourWorks/COCKTAILCULTURE/pngs/ExperienceASip.png"
+import startMakingDrink from "../../assets/images/07_ourWorks/COCKTAILCULTURE/pngs/startMakingDrink.png"
+import orangeJuice from "../../assets/images/07_ourWorks/COCKTAILCULTURE/pngs/orangeJuice.png"
+import lemonJuice from "../../assets/images/07_ourWorks/COCKTAILCULTURE/pngs/lemonJuice.png"
+import kiwiJuice from "../../assets/images/07_ourWorks/COCKTAILCULTURE/pngs/kiwiJuice.png"
+import beHappyKiwi from "../../assets/images/07_ourWorks/COCKTAILCULTURE/pngs/kiwiBeHappy.png"
+import visitCocktail from "../../assets/images/07_ourWorks/COCKTAILCULTURE/pngs/visitOurCocktailRestro.png"
+import strippingLine from "../../assets/images/07_ourWorks/COCKTAILCULTURE/pngs/stripImage.png"
+import sipSavor from "../../assets/images/07_ourWorks/COCKTAILCULTURE/pngs/sipSavorMarquee.png"
+
+
+import girl from "../../assets/images/09_companyOverview/imgs/girlPotrait.png"
+import flower from "../../assets/images/09_companyOverview/imgs/flowerInPeach.png"
+import ovalSpring from "../../assets/images/09_companyOverview/gifs/springAnimation.gif"
+import satisfactionGraph from "../../assets/images//09_companyOverview/imgs/customerSatisfactionGraph.png"
+import movingEye from "../../assets/images/09_companyOverview/gifs/movingEyeCropped.mp4"
+import arrowAnimation from "../../assets/images/09_companyOverview/gifs/arrowAnimation.gif"
+import movingBallAnimation from "../../assets/images/09_companyOverview/gifs/ballInTheBox.gif"
+import circleAnimation from "../../assets/images/09_companyOverview/gifs/greenBallAnimations.gif"
+
+
+import arrowPinkHeadSmall from "../../assets/images/08_designProcess/arrowPinkHeadSmall.png"
+
+import onboarding from "../../assets/images/08_designProcess/onBoarding.png"
+import startProject from "../../assets/images/08_designProcess/startProject.png"
+import design from "../../assets/images/08_designProcess/design.png"
+import delivery from "../../assets/images/08_designProcess/delivery.png"
 
 
 const Landing = () => {
@@ -389,7 +432,7 @@ const Landing = () => {
 	const healthInsurance = useRef(null)
 	React.useEffect(() => {
 		gsap.fromTo(healthInsurance.current,
-			{ x: -300, opacity: 0 },
+			{ x: -300, opacity: 0, },
 			{
 				x: 0,
 				opacity: 1,
@@ -635,9 +678,908 @@ const Landing = () => {
 
 	}, []);
 
-	
-	
+
+
 	const dinaRollings = useRef(null)
+	React.useEffect(() => {
+		gsap.fromTo(dinaRollings.current,
+			{ x: 500, opacity: 0 },
+			{
+				x: 0,
+				opacity: 1,
+				scrollTrigger: {
+					trigger: dinaRollings.current,
+					start: "top 90%",
+					end: "top 30%",
+					// scrub: 1,
+				},
+			}
+		);
+
+		gsap.fromTo(".dina",
+			{ x: 0, y: 0, scale: 0.5, opacity: 0 },
+
+			{
+				x: 1100,
+				y: -500,
+				scale: 0.8,
+				opacity: 1,
+				scrollTrigger: {
+					trigger: ".dinaRollings",
+					start: "top top",
+					end: "bottom 40%",
+					// scrub: 1,
+				},
+				// attr: {
+				// 	src: "path/to/your/image.jpg" // Replace with the actual image path
+				// },
+			},
+
+		);
+
+		gsap.fromTo(".gameGraph",
+			{ x: 0, y: 0, scale: 0.5, opacity: 0 },
+
+			{
+				x: 550,
+				y: 120,
+				scale: 1.2,
+				opacity: 1,
+				scrollTrigger: {
+					trigger: ".dinaRollings",
+					start: "top top",
+					end: "bottom 40%",
+					// scrub: 1,
+				},
+
+			},
+
+		);
+
+		gsap.fromTo(".connectionBuild",
+			{ x: 0, y: 0, scale: 0.5, opacity: 0 },
+
+			{
+				x: 900,
+				y: -300,
+				scale: 1,
+				opacity: 1,
+				scrollTrigger: {
+					trigger: ".dinaRollings",
+					start: "top top",
+					end: "bottom 40%",
+					// scrub: 1,
+				},
+
+			},
+
+		);
+
+		gsap.fromTo(".felindra",
+			{ x: 0, y: 0, scale: 0.3, opacity: 0 },
+
+			{
+				x: 700,
+				y: 300,
+				scale: 0.8,
+				opacity: 1,
+				scrollTrigger: {
+					trigger: ".dinaRollings",
+					start: "top top",
+					end: "bottom 40%",
+					// scrub: 1,
+				},
+
+			},
+
+		);
+
+
+		gsap.fromTo(".sessions",
+			{ x: 0, y: 0, scale: 0.3, opacity: 0 },
+
+			{
+				x: 1000,
+				y: 400,
+				scale: 0.9,
+				opacity: 1,
+				scrollTrigger: {
+					trigger: ".dinaRollings",
+					start: "top top",
+					end: "bottom 40%",
+					// scrub: 1,
+				},
+
+			},
+
+		);
+
+	}, []);
+
+
+	// const vividSpark = useRef(null)
+	React.useEffect(() => {
+
+		gsap.fromTo(".vividText",
+			{
+				left: "100%",
+			},
+
+			{
+				left: "0%",
+				scrollTrigger: {
+					trigger: ".vividContainer",
+					start: "top top",
+					end: "top -50%",
+					// scrub: 1,
+				},
+			},
+
+		);
+
+		gsap.fromTo(".connectRevealSquare",
+			{
+				x: -700
+			},
+
+			{
+				x: 0,
+				scrollTrigger: {
+					trigger: ".vividContainer",
+					start: "top -50%",
+					end: "top -70%",
+					// scrub: 1,
+				},
+			},
+		)
+
+		gsap.fromTo(".creativeInfo",
+			{
+				x: -780, y: 300,
+			},
+			{
+				x: "100%", y: 300,
+				scrollTrigger: {
+					trigger: ".vividContainer",
+					start: "top -70%",
+					end: "top -75%",
+					// scrub: 1,
+				},
+			});
+
+		gsap.fromTo(".continueInnovation",
+			{
+				x: -650,
+				y: 580,
+			},
+			{
+				x: 60,
+				y: 580,
+				scrollTrigger: {
+					trigger: ".vividContainer",
+					start: "top -75%",
+					end: "top -80%",
+					// scrub: 1,
+				},
+			},
+		);
+
+		gsap.fromTo(".ladyModel",
+			{
+				x: 550,
+				scale: 1,
+			},
+			{
+				x: 0,
+				scrollTrigger: {
+					trigger: ".vividContainer",
+					start: "top -75%",
+					end: "top -80%",
+					// scrub: 1,
+				},
+			},
+		);
+
+		gsap.fromTo(".whyUsReveal",
+			{
+				x: 0,
+				y: 700,
+				scale: 0.5,
+				opacity: 0,
+
+			},
+			{
+				x: -450,
+				scale: 1,
+				opacity: 1,
+				scrollTrigger: {
+					trigger: ".vividContainer",
+					start: "top -82%",
+					end: "top -90%",
+					// scrub: 1,
+				},
+			},
+		);
+
+	});
+
+	// const cocktailCulture = useRef(null)
+	React.useEffect(() => {
+
+		gsap.fromTo(".rainbowRevealBox",
+			{
+				y: 0,
+			},
+
+			{
+				y: "100%",
+				scrollTrigger: {
+					trigger: ".cocktailCultureContainer",
+					start: "top top",
+					end: "top -50%",
+					// scrub: 1,
+				},
+			},
+
+		);
+
+		gsap.fromTo(".logo",
+			{
+				x: 1200,
+				y: -200,
+			},
+
+			{
+				y: "30%",
+				scrollTrigger: {
+					trigger: ".cocktailCultureContainer",
+					start: "top -51%",
+					end: "top -55%",
+					// scrub: 1,
+				},
+			},
+
+		);
+
+		gsap.fromTo(".introPara",
+			{
+				x: 1220,
+				y: -320,
+			},
+
+			{
+				y: "50%",
+				scrollTrigger: {
+					trigger: ".cocktailCultureContainer",
+					start: "top -55%",
+					end: "top -56%",
+					// scrub: 1,
+				},
+			},
+
+		);
+
+		gsap.fromTo(".startMakingDrink",
+			{
+				x: -550,
+				y: -300,
+			},
+
+			{
+				x: 150,
+				y: -120,
+				scrollTrigger: {
+					trigger: ".cocktailCultureContainer",
+					start: "top -56%",
+					end: "top -60%",
+					// scrub: 1,
+				},
+			},
+
+		);
+
+		gsap.fromTo(".orangeJuice",
+			{
+				x: 350,
+				y: -100,
+				scale: 0,
+			},
+
+			{
+				x: 350,
+				y: -100,
+				scale: 1,
+				scrollTrigger: {
+					trigger: ".cocktailCultureContainer",
+					start: "top -65%",
+					end: "top -70%",
+					// scrub: 1,
+				},
+			},
+
+		);
+
+
+		gsap.fromTo(".lemonJuice",
+			{
+				x: 600,
+				y: -500,
+				scale: 0,
+			},
+
+			{
+				scale: .9,
+				scrollTrigger: {
+					trigger: ".cocktailCultureContainer",
+					start: "top -70%",
+					end: "top -75%",
+					// scrub: 1,
+				},
+			},
+
+		);
+
+		gsap.fromTo(".kiwiJuice",
+			{
+				x: 100,
+				y: -900,
+				scale: 0,
+			},
+
+			{
+				scale: 1.2,
+				scrollTrigger: {
+					trigger: ".cocktailCultureContainer",
+					start: "top -70%",
+					end: "top -75%",
+					// scrub: 1,
+				},
+			},
+
+		);
+
+		gsap.fromTo(".beHappyKiwi",
+			{
+				x: 2000,
+				y: -1500,
+			},
+
+			{
+				x: 1500,
+				scrollTrigger: {
+					trigger: ".cocktailCultureContainer",
+					start: "top -80%",
+					end: "top -85%",
+					// scrub: 1,
+				},
+			},
+
+		);
+
+		gsap.fromTo(".visitCocktail",
+			{
+				x: 300,
+				y: 600
+			},
+
+			{
+				x: -380,
+				y: 600,
+				scrollTrigger: {
+					trigger: ".cocktailCultureContainer",
+					start: "top -85%",
+					end: "top -87%",
+					// scrub: 1,
+				},
+
+			});
+
+		gsap.fromTo(".strippingEffect",
+			{
+				x: 620,
+				y: 850,
+			},
+
+			{
+				x: -100,
+				y: 850,
+				scrollTrigger: {
+					trigger: ".cocktailCultureContainer",
+					start: "top -87%",
+					end: "top -90%",
+					// scrub: 1,
+				},
+
+			});
+
+		gsap.fromTo(".sivSavor",
+			{
+				x: 0,
+				y: -55,
+			},
+
+			{
+				x: 50,
+				y: -55,
+				scrollTrigger: {
+					trigger: ".cocktailCultureContainer",
+					start: "top -87%",
+					end: "top -90%",
+					// scrub: 1,
+				},
+
+			});
+
+
+
+	});
+
+
+
+	// DESIGN PROCESS SECTION ANIMATIONS
+
+
+	React.useEffect(() => {
+		gsap.fromTo(".designRevealAnimation",
+			{
+				x: -820,
+			},
+			{
+				x: 0,
+				scrollTrigger: {
+					trigger: ".design-process",
+					start: "top top",
+					end: "top -0.2%",
+					scrub: 1
+				}
+			},
+		);
+
+		gsap.fromTo(".dp-headers h2 span",
+			{
+				color: "black",
+			},
+			{
+				color: "white",
+				scrollTrigger: {
+					trigger: ".design-process",
+					start: "top top",
+					end: "top -0.2%",
+					scrub: 1,
+				}
+			},
+		);
+
+
+		gsap.set(".arrowBlack", {
+			xPercent: -50,
+			yPercent: -1500,
+			transformOrigin: "50% 50%"
+		});
+		gsap.to(".arrowBlack", {
+			motionPath: {
+				path: ".arrowPath svg path",
+				autoRotate: true,
+			},
+			transformOrigin: "50% 50%",
+			scrollTrigger: {
+				trigger: ".design-process",
+				start: "top -15%",
+				end: "top -25%",
+				scrub: 1,
+			},
+		});
+
+	}, []);
+
+
+	// MOVING ANIMATION EFFECT
+
+
+	React.useEffect(() => {
+
+
+		// PAGE BLACK AND WHITE ANIMATION SO LEFTSCREEN WILL APPEAR WITH B/W  MOVING SQUARE
+		gsap.fromTo(".processAnimationStart",
+			{
+				background: "black",
+			},
+
+			{
+				background: "white",
+				scrollTrigger: {
+					trigger: ".design-process",
+					start: "top -60%",
+					end: "top -65%",
+					scrub: 1,
+				},
+			}
+		);
+
+
+		// MOVING SQUARE SET TO THE MIDDILE AND ROTATE THERE
+		gsap.fromTo(".movingSquare",
+			{
+				opacity: 1,
+				x: 500,
+				y: 0,
+				rotation:45,
+			},
+
+			{
+				opacity: 1,
+				x: 385,
+				y: 0,
+				rotation:135,
+				zIndex: 200,
+				scrollTrigger: {
+					trigger: ".design-process",
+					start: "top -55%",
+					end: "top -60%",
+					scrub: 1,
+				},
+			}
+		);
+
+		// sACLLING UP THE INNER SQUARE
+		gsap.fromTo(".innerSquare",
+			{
+				scale: 1,
+			},
+			{
+				scale: 2,
+				scrollTrigger: {
+					trigger: ".design-process",
+					start: "top -55%",
+					end: "top -60%",
+					scrub: 1,
+				},
+			}
+		);
+
+
+
+
+		// ACCTUAL SLIDES ROTATION ANIMATION STARTS FROM HERE
+
+
+
+
+		// MOVING WHOLE DIV 0 DEGREE FROM -90 DEGREE
+		gsap.fromTo(".movableDiv",
+			{
+				opacity: 1,
+				rotation: -90,
+			},
+
+			{
+				opacity: 1,
+				rotation: 0,
+				scrollTrigger: {
+					trigger: ".design-process",
+					start: "top -60%",
+					end: "top -70%",
+					scrub: 1,
+				},
+			}
+		);
+
+		// SET OPACITY 0 TO 1 FOR LEFT SCREEN FOR VISIBLE IMPACT
+		gsap.fromTo(".leftScreen",
+			{
+				opacity: 0,
+			},
+
+			{
+				opacity: 1,
+				scrollTrigger: {
+					trigger: ".design-process",
+					start: "top -60%",
+					end: "top -70%",
+					scrub: 1,
+				},
+			}
+		);
+
+		// ONBOARDING TEXT REVEAL EFFECT
+		gsap.fromTo(".onboarding",
+			{
+				x:"-100%",
+				y:"-110%",
+				opacity:0,
+			},
+
+			{
+				x:50,
+				opacity:1,
+				scrollTrigger: {
+					trigger: ".design-process",
+					start: "top -70%",
+					end: "top -75%",
+					scrub: 1,
+				},
+			}
+		);
+
+		// ONBOARDING TEXT HIDE AGAIN EFFECT
+		gsap.fromTo(".onboarding",
+			{
+				x:50,
+			},
+			
+			{
+				x:"-100%",
+				scrollTrigger: {
+					trigger: ".design-process",
+					start: "top -100%",
+					end: "top -120%",
+					scrub: 1,
+				},
+			}
+		);
+
+		// SET OPACITY 1 TO 0 FOR LEFT SCREEN FOR VISIBLE IMPACT
+		gsap.fromTo(".leftScreen",
+			{
+				opacity: 1,
+			},
+
+			{
+				opacity: 0,
+				scrollTrigger: {
+					trigger: ".design-process",
+					start: "top -110%",
+					end: "top -120%",
+					scrub: 1,
+				},
+			}
+		);
+
+
+
+		// ROTATION 222222222222222222222222
+
+		// MOVING WHOLE DIV 180 DEGREE FROM 0 DEGREE
+		gsap.fromTo(".movableDiv",
+			{
+				rotation: 0,
+			},
+
+			{
+				rotation: 180,
+				scrollTrigger: {
+					trigger: ".design-process",
+					start: "top -120%",
+					end: "top -140%",
+					scrub: 1,
+				},
+			}
+		);
+
+		// SET OPACITY 0 TO 1 FOR LEFT SCREEN FOR VISIBLE IMPACT
+		gsap.fromTo(".leftScreen",
+			{
+				opacity: 0,
+			},
+
+			{
+				opacity: 1,
+				scrollTrigger: {
+					trigger: ".design-process",
+					start: "top -130%",
+					end: "top -140%",
+					scrub: 1,
+				},
+			}
+		);
+
+		// START PROJECT TEXT REVEAL EFFECT
+		gsap.fromTo(".startProject",
+			{
+				x:0,
+				y:100,
+				zIndex:-1,
+			},
+			
+			{
+				x:"-110%",
+				zIndex:10,
+				y:100,
+				scrollTrigger: {
+					trigger: ".design-process",
+					start: "top -140%",
+					end: "top -145%",
+					scrub: 1,
+				},
+			}
+		);
+
+		// START PROJECT TEXT HIDE AGAIN SCALE-0 EFFECT
+		gsap.fromTo(".startProject",
+			{
+			
+			},
+			{
+				x:0,
+				y:100,
+				scrollTrigger: {
+					trigger: ".design-process",
+					start: "top -150%",
+					end: "top -165%",
+					scrub: 1,
+				},
+			}
+		);
+		
+		// SET OPACITY 1 TO 0 FOR LEFT SCREEN FOR VISIBLE IMPACT
+		gsap.fromTo(".leftScreen",
+			{
+				opacity: 1,
+			},
+
+			{
+				opacity: 0,
+				scrollTrigger: {
+					trigger: ".design-process",
+					start: "top -155%",
+					end: "top -165%",
+					scrub: 1,
+				},
+			}
+		);
+
+
+		// ROTATION 3333333333333333333333
+
+		// MOVING WHOLE DIV 360 DEGREE FROM 180 DEGREE
+		gsap.fromTo(".movableDiv",
+			{
+				rotation: 180,
+			},
+
+			{
+				rotation: 360,
+				scrollTrigger: {
+					trigger: ".design-process",
+					start: "top -160%",
+					end: "top -170%",
+					scrub: 1,
+				},
+			}
+		);
+
+		// SET OPACITY 0 TO 1 FOR LEFT SCREEN FOR VISIBLE IMPACT
+		gsap.fromTo(".leftScreen",
+			{
+				opacity: 0,
+			},
+
+			{
+				opacity: 1,
+				scrollTrigger: {
+					trigger: ".design-process",
+					start: "top -165%",
+					end: "top -170%",
+					scrub: 1,
+				},
+			}
+		);
+
+		// DESIGN TEXT REVEAL EFFECT
+		gsap.fromTo(".design",
+			{
+				x:"-100%",
+				// y:"-110%",
+				opacity:0,
+			},
+
+			{
+				x:0,
+				y:0,
+				opacity: 1,
+				scrollTrigger: {
+					trigger: ".design-process",
+					start: "top -170%",
+					end: "top -180%",
+					scrub: 1,
+				},
+			}
+		);
+
+		// DESIGN TEXT HIDE AGAIN SCALE-0 EFFECT
+		gsap.fromTo(".design",
+			{
+				
+			},
+
+			{
+				x:"-100%",
+				scrollTrigger: {
+					trigger: ".design-process",
+					start: "top -185%",
+					end: "top -190%",
+					scrub: 1,
+				},
+			}
+		);
+
+		// SET OPACITY 1 TO 0 FOR LEFT SCREEN FOR VISIBLE IMPACT
+		gsap.fromTo(".leftScreen",
+			{
+				opacity: 1,
+			},
+
+			{
+				opacity: 0,
+				scrollTrigger: {
+					trigger: ".design-process",
+					start: "top -190%",
+					end: "top -200%",
+					scrub: 1,
+				},
+			}
+		);
+
+
+
+		// ROTATION 44444444444444444444
+
+		// MOVING WHOLE DIV 360 DEGREE FROM 180 DEGREE
+		gsap.fromTo(".movableDiv",
+			{
+				rotation: 0,
+			},
+
+			{
+				rotation: 180,
+				scrollTrigger: {
+					trigger: ".design-process",
+					start: "top -195%",
+					end: "top -205%",
+					scrub: 1,
+				},
+			}
+		);
+
+		gsap.fromTo(".leftScreen",
+			{
+				opacity: 0,
+			},
+
+			{
+				opacity: 1,
+				scrollTrigger: {
+					trigger: ".design-process",
+					start: "top -200%",
+					end: "top -205%",
+					scrub: 1,
+				},
+			}
+		);
+		
+		gsap.fromTo(".delivery",
+			{
+				x:0,
+				opacity:0,
+			},
+
+			{
+				x:"-100%",
+				y:"10%",
+				opacity: 1,
+				scrollTrigger: {
+					trigger: ".design-process",
+					start: "top -205%",
+					end: "top -215%",
+					scrub: 1,
+				},
+			}
+		);
+
+
+
+	}, []);
+
 
 
 
@@ -896,21 +1838,388 @@ const Landing = () => {
 
 				</div>
 
-				<div ref={dinaRollings} className="dinaRollings h-screen w-screen bg-pink-200">
-					
+				<div className="dinaRollings-container h-[200vh] w-screen">
+					<div ref={dinaRollings} className="dinaRollings h-screen w-screen overflow-hidden">
+						<div className="dinaRollings-data-container absolute top-0 left-0">
+							<img src={dinaHome} alt="" />
+							<img src={dinaActual} alt="" className="dina absolute top-[560px] left-[350px]" />
+							<img src={gameGraph} alt="" className="gameGraph absolute top-[0px] left-[50px]" />
+							<img src={connectionsBuild} alt="" className="connectionBuild absolute top-[400px] left-[50px]" />
+							<img src={felindra} alt="" className="felindra absolute top-[0px] left-[0px]" />
+							<img src={sessions} alt="" className="sessions absolute top-[100px] left-[250px]" />
+						</div>
+					</div>
 				</div>
 
+				<div className="vividContainer h-[200vh] w-screen">
+					<div className="vividSpark h-screen w-screen overflow-hidden">
+
+						<div className="vividText absolute top-0 left-0">
+							<p>Connect</p>
+							<h2>
+								Vivid<span>spark</span>
+							</h2>
+						</div>
+
+						<div className="connectRevealSquare h-[205px] w-[620px] bg-[#FFF5DE] absolute top-[80px] left-[50px]"></div>
+
+						<img src={creativeInfo} alt="" className="creativeInfo absolute top-0" />
+						<img src={continueInnovation} alt="" className="continueInnovation absolute top-0" />
+						<img src={ladyModel} alt="" className="ladyModel absolute top-[150px] right-0 z-10" />
+
+						<div className="whyUsReveal absolute top-0 right-0">
+							<h2>Why<span><br />us?</span></h2>
+						</div>
 
 
 
+					</div>
+				</div>
+
+				<div className="cocktailCultureContainer h-[200vh] w-screen">
+					<div className="cocktailCulture h-screen w-screen overflow-hidden">
+
+						<div className="rainBows">
+							<div className="pinkRainbow absolute top-0 left-[50%]">
+								<svg width="257" height="956" viewBox="0 0 257 956" fill="none" xmlns="http://www.w3.org/2000/svg" className="relative">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M222.396 0H256.25V684H256.26L94.4256 976.801H0L222.391 684H222.396V0Z" fill="#ED2390" />
+								</svg>
+							</div>
+
+							<div className="blueRainbow absolute top-0 left-[58%]">
+								<svg width="162" height="956" viewBox="0 0 162 956" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M127.562 0H161.415V684.013H161.399L95.2309 976.801H0.805359L127.358 684H127.562V0Z" fill="#05AFE6" />
+								</svg>
+
+							</div>
+
+							<div className="greenRainbow absolute top-0 left-[66.2%]">
+								<svg width="95" height="956" viewBox="0 0 95 956" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M30.7156 0H64.5689V684.013H64.5271L94.6014 976.814H0.175903L30.6716 684.013H30.7156V0Z" fill="#59BA47" />
+								</svg>
+
+							</div>
+
+							<div className="yellowRainbow absolute top-0 left-[70.8%]">
+								<svg width="162" height="956" viewBox="0 0 162 956" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M0.881104 0H34.7344V684.006H34.7367L161.689 976.807H67.2518L0.887744 684.013H0.881104V0Z" fill="#FED401" />
+								</svg>
+
+							</div>
+
+							<div className="redRainbow absolute top-0 left-[74%]">
+								<svg width="257" height="956" viewBox="0 0 257 956" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M0.03479 0H33.8881L33.8884 684.006L256.776 976.807H162.339L0.0433792 684.013H0.03479V0Z" fill="#E41E26" />
+								</svg>
+
+							</div>
+
+							<div className="rainbowRevealBox absolute top-[0] left-[50%] h-[100%] w-[720px] bg-[#575757]">
+							</div>
+						</div>
+
+						<div className="layerForReadablity absolute h-screen w-screen">
+
+						</div>
+
+						<div className="cocktailData relative">
+
+							<div className="strippingEffect absolute top-0 right-0 w-[620px] z-9">
+								<Marquee direction="right">
+									<img src={strippingLine} alt="" />
+								</Marquee>
+								<img src={sipSavor} alt="" className="sivSavor absolute z-10" />
+
+							</div>
+
+							<img className="logo" src={cocktailCultureLogo} alt="" />
+							<img className="introPara" src={experienceASip} alt="" />
+							<img className="startMakingDrink" src={startMakingDrink} alt="" />
+							<img className="orangeJuice" src={orangeJuice} alt="" />
+							<img className="lemonJuice" src={lemonJuice} alt="" />
+							<img className="kiwiJuice" src={kiwiJuice} alt="" />
+							<img className="beHappyKiwi z-10" src={beHappyKiwi} alt="" />
+							<img src={visitCocktail} className="visitCocktail absolute top-0 right-0" alt="" />
+
+						</div>
+
+					</div>
 
 
-				<div className="h-screen w-screen bg-red-500"></div>
-
+				</div>
 
 			</section>
+
+			<section className="design-process">
+				<div className="data">
+
+					<div className="dp-headers h-screen w-screen bg-white h-full">
+						<p>Explore how our</p>
+						<h2><span className="relative z-10">design</span> process</h2>
+						<p>works</p>
+
+						<div className="designRevealAnimation h-[180px] w-[820px] bg-black absolute top-[300px] left-0"></div>
+
+						{/* <div className="arrowPath absolute mt-[700px] left-0">
+							<svg width="1472" height="564" viewBox="0 0 1472 564" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M0 287.501C927.6 287.501 1263.5 241.5 1337.5 232.5C1430.5 239.5 1492.9 198.201 1464.5 101.001C1429 -20.4994 1342 4.00011 1359 2.00011C1319.83 8.00008 1251.1 40.6 1289.5 123C1327.9 205.4 963 369.5 1019 699.5"
+									stroke="none" />
+							</svg>
+
+							<img className="arrowBlack" src={arrowPinkHeadSmall} alt="" />
+
+						</div> */}
+					</div>
+
+					<div className="processAnimationStart h-[200vh]">
+						
+
+						<div className="movableDiv relative bg-black-500 h-[100vh] w-[100vw] flex items-center justify-center">
+							<div className="movingSquare h-[200px] w-[200px] bg-white relative flex justify-center items-center rounded-[10px] transform rotate-45 z-10">
+								<div className="innerSquare h-[60px] w-[60px] bg-black rounded-[5px]"></div>
+							</div>
+
+							<div className="leftScreen absolute top-0 left-0 bg-black h-screen w-[70%]"></div>
+							<div className="rightScreen absolute top-0 h-screen right-0 w-[30%]"></div>
+
+
+						</div>
+
+
+
+						<div className="processPoints ml-9 text-white">
+
+							<div className="onboarding w-[50vw] h-[80vh]">
+								<h2 className=" text-[64px]">ONBOARDING</h2>
+
+								<div className="OBimageAndData flex flex-col items-center justify-center h-[80vh] gap-[30px]">
+									<img src={onboarding} alt="" />
+									<p className="w-[50%]">Lorem ipsum dolor sit amet consectetur. Neque magna risus suscipit nisl lorem ut commodo. Sagittis ac eleifend at praesent magna neque vel. Id cras tempor eget blandit. Fermentum etiam enim egestas morbi nulla dolor eros.</p>
+								</div>
+								
+							</div>
+
+
+							<div className="startProject absolute top-0 left-[100%] w-[50vw] h-[80vh]">
+								<h2 className="text-[64px]">START PROJECT</h2>
+
+								<div className="SPimageAndData flex flex-col items-center justify-center h-[80vh] gap-[30px]">
+									<img src={startProject} alt="" />
+									<p className="w-[50%]">Lorem ipsum dolor sit amet consectetur. Neque magna risus suscipit nisl lorem ut commodo. Sagittis ac eleifend at praesent magna neque vel. Id cras tempor eget blandit. Fermentum etiam enim egestas morbi nulla dolor eros.</p>
+								</div>
+
+							</div>
+
+
+							<div className="design absolute top-0 left-0 w-[50vw] h-[80vh]">
+								<h2 className="text-[64px] pl-[100px] pt-[100px]">DESIGN</h2>
+
+								<div className="DSimageAndData flex flex-col items-center justify-center h-[80vh] gap-[30px]">
+									<img src={design} alt="" />
+									<p className="w-[50%]">Lorem ipsum dolor sit amet consectetur. Neque magna risus suscipit nisl lorem ut commodo. Sagittis ac eleifend at praesent magna neque vel. Id cras tempor eget blandit. Fermentum etiam enim egestas morbi nulla dolor eros.</p>
+								</div>
+
+							</div>
+
+							
+							<div className="delivery absolute top-0 left-[100%] w-[50vw] h-[80vh]">
+								<h2 className="text-[64px]">DELIVERY</h2>
+
+								<div className="DLVRimageAndData flex flex-col items-center justify-center h-[80vh] gap-[30px]">
+									<img src={delivery} alt="" />
+									<p className="w-[50%]">Lorem ipsum dolor sit amet consectetur. Neque magna risus suscipit nisl lorem ut commodo. Sagittis ac eleifend at praesent magna neque vel. Id cras tempor eget blandit. Fermentum etiam enim egestas morbi nulla dolor eros.</p>
+								</div>
+
+							</div>
+
+
+						</div>
+
+
+
+
+					</div>
+
+
+					{/* <div className="h-[500vh]"></div> */}
+				</div>
+			</section>
+
+			<section className="relative z-10 companyOverview">
+				<div className="boxContainer h-screen w-screen flex">
+
+					<div className="left h-screen w-[50%]">
+
+						<div className="leftRow flex h-[33.33%] w-[100%]">
+
+							<div className="h-[100%] w-[33.33%] bg-white flex flex-col items-center justify-center gap-8">
+								<p className="text-5xl">Team Size</p>
+								<p className="text-8xl">9</p>
+							</div>
+
+							<div className="h-[100%] w-[33.33%] bg-black text-white flex flex-col pl-12 justify-center gap-4">
+								<p className="text-3xl">3 Founders</p>
+								<p className="text-3xl">1 Operations</p>
+								<p className="text-3xl">3 Creative</p>
+								<p className="text-3xl">1 Communications</p>
+								<p className="text-3xl">1 UX Writer</p>
+							</div>
+
+							<div className="h-[100%] w-[33.33%] bg-white">
+								<div className="h-[100%] w-[100%] rounded-[20px]" style={{ backgroundImage: `url(${girl})` }}>
+									<div className="h-[100%] w-[100%] rounded-[20px] flex flex-col justify-end pl-6 pb-8" style={{ background: 'linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(141, 139, 136, 0.5))' }}>
+										<p className="text-[40px] text-white">Joanne Billings</p>
+										<p className="text-[24px] text-white" style={{ fontFamily: 'roboto-slab-light', fontWeight: "bold", lineHeight: "10px" }}>Operations</p>
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+						<div className="leftRow flex h-[33.33%] w-[100%]">
+							<div className="flower-hover-effect h-[100%] w-[33.33%] bg-black flex items-center justify-center ">
+								<img src={flower} alt="" />
+							</div>
+
+							<div className="h-[100%] w-[33.33%] bg-white flex flex-col justify-center pl-12">
+								<p className="text-4xl"><span className="text-6xl">50 </span>projects</p>
+								<p className="text-4xl">for</p>
+								<p className="text-4xl">40 clients</p>
+							</div>
+
+							<div className="h-[100%] w-[33.33%] bg-black flex items-center justify-center">
+								<img src={ovalSpring} alt="" />
+							</div>
+						</div>
+
+						<div className="leftRow flex h-[33.33%] w-[100%]">
+							<div className="h-[100%] w-[33.33%] bg-white overflow-hidden">
+								<div className="text-5xl flex justify-end mr-4"><p>+</p></div>
+								<div className="h-[100%] flex flex-col justify-center items-left pl-12 pb-4">
+									<p className="text-5xl">Company</p>
+									<p className="text-5xl">satisfaction</p>
+									<p className="text-5xl">survey</p>
+								</div>
+							</div>
+							<div className="h-[100%] w-[33.33%] bg-black text-white text-4xl flex justify-end pr-1">
+								<p>Survey</p>
+							</div>
+							<div className="h-[100%] w-[33.33%] bg-white text-4xl pl-1">
+								<p>data</p>
+							</div>
+
+							<div className="absolute left-[18%] mt-14">
+								<img src={satisfactionGraph} alt="" />
+							</div>
+						</div>
+					</div>
+
+
+					<div className="right h-screen w-[50%]">
+						<div className="rightRow flex h-[33.33%] w-[100%]">
+							<div className="h-[100%] w-[33.33%] bg-black">
+								<img src={circleAnimation} alt="" className="pb-5" />
+							</div>
+
+							<div className="h-[100%] w-[33.33%] bg-white flex justify-between p-6">
+								<div className="text-5xl pl-4 pt-2">
+									<p>Art Not</p>
+									<p>Evidence</p>
+								</div>
+								<div className="text-5xl">+</div>
+							</div>
+
+							<div className="h-[100%] w-[33.33%] bg-black flex items-center justify-center p-4">
+								<video autoPlay muted loop src={movingEye}></video>
+							</div>
+						</div>
+
+						<div className="rightRow flex h-[33.33%] w-[100%]">
+							<div className="h-[100%] w-[33.33%] bg-white flex justify-between pr-4">
+								<div className="flex flex-col justify-center pl-12 text-5xl" style={{ lineHeight: "60px" }}>
+									<p>A route of</p>
+									<p>impact</p>
+									<p>through</p>
+									<p>design</p>
+								</div>
+								<div className="text-5xl">+</div>
+							</div>
+
+							<div className="h-[100%] w-[33.33%] bg-black flex items-center justify-center pl-[50px] overflow-hidden">
+								<img src={arrowAnimation} alt="" style={{ scale: "1.5" }} />
+							</div>
+
+							<div className="h-[100%] w-[33.33%] bg-white flex justify-between pr-4">
+								<div className="flex flex-col justify-center pl-12 text-4xl" style={{ lineHeight: "50px" }}>
+									<p>Guiding</p>
+									<p>principles on</p>
+									<p>design and</p>
+									<p>impact</p>
+								</div>
+								<div className="text-5xl">+</div>
+							</div>
+
+						</div>
+
+						<div className="rightRow flex h-[33.33%] w-[100%]">
+							<div className="h-[100%] w-[33.33%] bg-black text-white flex items-center justify-center text-8xl">
+								<p>98%</p>
+							</div>
+
+							<div className="h-[100%] w-[33.33%] bg-white">
+
+								<div className="flex justify-between">
+									<p className="text-4xl pl-4 pt-4">Services</p>
+									<p className="text-5xl pr-4 pt-2">+</p>
+								</div>
+
+								<div className=" overflow-hidden mt-[58px]">
+									<div className="transform rotate-[-20deg] mt-[100px]" style={{ scale: '1.8' }}>
+										<div className="m-4">
+											<Marquee>
+												<p className="h-full w-full ml-2 mr-2">GRAPHIC DESIGN</p>
+												<p className="h-full w-full ml-2 mr-2">UI/UX</p>
+												<p className="h-full w-full ml-2 mr-2">LOGO</p>
+												<p className="h-full w-full ml-2 mr-2">WEBSITE DESIGN</p>
+												<p className="h-full w-full ml-2 mr-2">BRANDING</p>
+											</Marquee>
+										</div>
+										<div className="m-4">
+											<Marquee direction="right">
+												<p className="h-full w-full ml-2 mr-2">GRAPHIC DESIGN</p>
+												<p className="h-full w-full ml-2 mr-2">UI/UX</p>
+												<p className="h-full w-full ml-2 mr-2">LOGO</p>
+												<p className="h-full w-full ml-2 mr-2">WEBSITE DESIGN</p>
+												<p className="h-full w-full ml-2 mr-2">BRANDING</p>
+											</Marquee>
+										</div>
+										<div>
+											<Marquee>
+												<p className="h-full w-full ml-2 mr-2">GRAPHIC DESIGN</p>
+												<p className="h-full w-full ml-2 mr-2">UI/UX</p>
+												<p className="h-full w-full ml-2 mr-2">LOGO</p>
+												<p className="h-full w-full ml-2 mr-2">WEBSITE DESIGN</p>
+												<p className="h-full w-full ml-2 mr-2">BRANDING</p>
+											</Marquee>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div className="h-[100%] w-[33.33%] bg-black flex items-center justify-center">
+								<img src={movingBallAnimation} alt="" />
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</section>
+
+
 		</main>
 	);
 };
 
 export default Landing;
+

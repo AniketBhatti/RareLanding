@@ -1,0 +1,95 @@
+<section className="design-process">
+				<div className="data">
+
+					<div className="dp-headers h-screen w-screen bg-white h-full">
+						<p>Explore how our</p>
+						<h2><span className="relative z-10">design</span> process</h2>
+						<p>works</p>
+
+						<div className="designRevealAnimation h-[180px] w-[820px] bg-black absolute top-[300px] left-0"></div>
+
+						{/* <div className="arrowPath absolute mt-[700px] left-0">
+							<svg width="1472" height="564" viewBox="0 0 1472 564" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M0 287.501C927.6 287.501 1263.5 241.5 1337.5 232.5C1430.5 239.5 1492.9 198.201 1464.5 101.001C1429 -20.4994 1342 4.00011 1359 2.00011C1319.83 8.00008 1251.1 40.6 1289.5 123C1327.9 205.4 963 369.5 1019 699.5"
+									stroke="none" />
+							</svg>
+
+							<img className="arrowBlack" src={arrowPinkHeadSmall} alt="" />
+
+						</div> */}
+					</div>
+
+					<div className="processAnimationStart h-[200vh]">
+						
+
+						<div className="movableDiv relative bg-black-500 h-[100vh] w-[100vw] flex items-center justify-center">
+							<div className="movingSquare h-[200px] w-[200px] bg-white relative flex justify-center items-center rounded-[10px] transform rotate-45 z-10">
+								<div className="innerSquare h-[60px] w-[60px] bg-black rounded-[5px]"></div>
+							</div>
+
+							<div className="leftScreen absolute top-0 left-0 bg-black h-screen w-[70%]"></div>
+							<div className="rightScreen absolute top-0 h-screen right-0 w-[30%]"></div>
+
+
+						</div>
+
+
+
+						<div className="processPoints ml-9 text-white">
+
+							<div className="onboarding w-[50vw] h-[80vh]">
+								<h2 className=" text-[64px]">ONBOARDING</h2>
+
+								<div className="OBimageAndData flex flex-col items-center justify-center h-[80vh] gap-[30px]">
+									<img src={onboarding} alt="" />
+									<p className="w-[50%]">Lorem ipsum dolor sit amet consectetur. Neque magna risus suscipit nisl lorem ut commodo. Sagittis ac eleifend at praesent magna neque vel. Id cras tempor eget blandit. Fermentum etiam enim egestas morbi nulla dolor eros.</p>
+								</div>
+								
+							</div>
+
+
+							<div className="startProject absolute top-0 left-[100%] w-[50vw] h-[80vh]">
+								<h2 className="text-[64px]">START PROJECT</h2>
+
+								<div className="SPimageAndData flex flex-col items-center justify-center h-[80vh] gap-[30px]">
+									<img src={startProject} alt="" />
+									<p className="w-[50%]">Lorem ipsum dolor sit amet consectetur. Neque magna risus suscipit nisl lorem ut commodo. Sagittis ac eleifend at praesent magna neque vel. Id cras tempor eget blandit. Fermentum etiam enim egestas morbi nulla dolor eros.</p>
+								</div>
+
+							</div>
+
+
+							<div className="design absolute top-0 left-0 w-[50vw] h-[80vh]">
+								<h2 className="text-[64px] pl-[100px] pt-[100px]">DESIGN</h2>
+
+								<div className="DSimageAndData flex flex-col items-center justify-center h-[80vh] gap-[30px]">
+									<img src={design} alt="" />
+									<p className="w-[50%]">Lorem ipsum dolor sit amet consectetur. Neque magna risus suscipit nisl lorem ut commodo. Sagittis ac eleifend at praesent magna neque vel. Id cras tempor eget blandit. Fermentum etiam enim egestas morbi nulla dolor eros.</p>
+								</div>
+
+							</div>
+
+							
+							<div className="delivery absolute top-0 left-[100%] w-[50vw] h-[80vh]">
+								<h2 className="text-[64px]">DELIVERY</h2>
+
+								<div className="DLVRimageAndData flex flex-col items-center justify-center h-[80vh] gap-[30px]">
+									<img src={delivery} alt="" />
+									<p className="w-[50%]">Lorem ipsum dolor sit amet consectetur. Neque magna risus suscipit nisl lorem ut commodo. Sagittis ac eleifend at praesent magna neque vel. Id cras tempor eget blandit. Fermentum etiam enim egestas morbi nulla dolor eros.</p>
+								</div>
+
+							</div>
+
+
+						</div>
+
+
+
+
+					</div>
+
+
+					{/* <div className="h-[500vh]"></div> */}
+				</div>
+			</section>

@@ -1,0 +1,169 @@
+<section className="relative z-10 companyOverview">
+				<div className="boxContainer h-screen w-screen flex">
+
+					<div className="left h-screen w-[50%]">
+
+						<div className="leftRow flex h-[33.33%] w-[100%]">
+
+							<div className="h-[100%] w-[33.33%] bg-white flex flex-col items-center justify-center gap-8">
+								<p className="text-5xl">Team Size</p>
+								<p className="text-8xl">9</p>
+							</div>
+
+							<div className="h-[100%] w-[33.33%] bg-black text-white flex flex-col pl-12 justify-center gap-4">
+								<p className="text-3xl">3 Founders</p>
+								<p className="text-3xl">1 Operations</p>
+								<p className="text-3xl">3 Creative</p>
+								<p className="text-3xl">1 Communications</p>
+								<p className="text-3xl">1 UX Writer</p>
+							</div>
+
+							<div className="h-[100%] w-[33.33%] bg-white">
+								<div className="h-[100%] w-[100%] rounded-[20px]" style={{ backgroundImage: `url(${girl})` }}>
+									<div className="h-[100%] w-[100%] rounded-[20px] flex flex-col justify-end pl-6 pb-8" style={{ background: 'linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(141, 139, 136, 0.5))' }}>
+										<p className="text-[40px] text-white">Joanne Billings</p>
+										<p className="text-[24px] text-white" style={{ fontFamily: 'roboto-slab-light', fontWeight: "bold", lineHeight: "10px" }}>Operations</p>
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+						<div className="leftRow flex h-[33.33%] w-[100%]">
+							<div className="flower-hover-effect h-[100%] w-[33.33%] bg-black flex items-center justify-center ">
+								<img src={flower} alt="" />
+							</div>
+
+							<div className="h-[100%] w-[33.33%] bg-white flex flex-col justify-center pl-12">
+								<p className="text-4xl"><span className="text-6xl">50 </span>projects</p>
+								<p className="text-4xl">for</p>
+								<p className="text-4xl">40 clients</p>
+							</div>
+
+							<div className="h-[100%] w-[33.33%] bg-black flex items-center justify-center">
+								<img src={ovalSpring} alt="" />
+							</div>
+						</div>
+
+						<div className="leftRow flex h-[33.33%] w-[100%]">
+							<div className="h-[100%] w-[33.33%] bg-white overflow-hidden">
+								<div className="text-5xl flex justify-end mr-4"><p>+</p></div>
+								<div className="h-[100%] flex flex-col justify-center items-left pl-12 pb-4">
+									<p className="text-5xl">Company</p>
+									<p className="text-5xl">satisfaction</p>
+									<p className="text-5xl">survey</p>
+								</div>
+							</div>
+							<div className="h-[100%] w-[33.33%] bg-black text-white text-4xl flex justify-end pr-1">
+								<p>Survey</p>
+							</div>
+							<div className="h-[100%] w-[33.33%] bg-white text-4xl pl-1">
+								<p>data</p>
+							</div>
+
+							<div className="absolute left-[18%] mt-14">
+								<img src={satisfactionGraph} alt="" />
+							</div>
+						</div>
+					</div>
+
+
+					<div className="right h-screen w-[50%]">
+						<div className="rightRow flex h-[33.33%] w-[100%]">
+							<div className="h-[100%] w-[33.33%] bg-black">
+								<img src={circleAnimation} alt="" className="pb-5" />
+							</div>
+
+							<div className="h-[100%] w-[33.33%] bg-white flex justify-between p-6">
+								<div className="text-5xl pl-4 pt-2">
+									<p>Art Not</p>
+									<p>Evidence</p>
+								</div>
+								<div className="text-5xl">+</div>
+							</div>
+
+							<div className="h-[100%] w-[33.33%] bg-black flex items-center justify-center p-4">
+								<video autoPlay muted loop src={movingEye}></video>
+							</div>
+						</div>
+
+						<div className="rightRow flex h-[33.33%] w-[100%]">
+							<div className="h-[100%] w-[33.33%] bg-white flex justify-between pr-4">
+								<div className="flex flex-col justify-center pl-12 text-5xl" style={{ lineHeight: "60px" }}>
+									<p>A route of</p>
+									<p>impact</p>
+									<p>through</p>
+									<p>design</p>
+								</div>
+								<div className="text-5xl">+</div>
+							</div>
+
+							<div className="h-[100%] w-[33.33%] bg-black flex items-center justify-center pl-[50px] overflow-hidden">
+								<img src={arrowAnimation} alt="" style={{ scale: "1.5" }} />
+							</div>
+
+							<div className="h-[100%] w-[33.33%] bg-white flex justify-between pr-4">
+								<div className="flex flex-col justify-center pl-12 text-4xl" style={{ lineHeight: "50px" }}>
+									<p>Guiding</p>
+									<p>principles on</p>
+									<p>design and</p>
+									<p>impact</p>
+								</div>
+								<div className="text-5xl">+</div>
+							</div>
+
+						</div>
+
+						<div className="rightRow flex h-[33.33%] w-[100%]">
+							<div className="h-[100%] w-[33.33%] bg-black text-white flex items-center justify-center text-8xl">
+								<p>98%</p>
+							</div>
+
+							<div className="h-[100%] w-[33.33%] bg-white">
+
+								<div className="flex justify-between">
+									<p className="text-4xl pl-4 pt-4">Services</p>
+									<p className="text-5xl pr-4 pt-2">+</p>
+								</div>
+
+								<div className=" overflow-hidden mt-[58px]">
+									<div className="transform rotate-[-20deg] mt-[100px]" style={{ scale: '1.8' }}>
+										<div className="m-4">
+											<Marquee>
+												<p className="h-full w-full ml-2 mr-2">GRAPHIC DESIGN</p>
+												<p className="h-full w-full ml-2 mr-2">UI/UX</p>
+												<p className="h-full w-full ml-2 mr-2">LOGO</p>
+												<p className="h-full w-full ml-2 mr-2">WEBSITE DESIGN</p>
+												<p className="h-full w-full ml-2 mr-2">BRANDING</p>
+											</Marquee>
+										</div>
+										<div className="m-4">
+											<Marquee direction="right">
+												<p className="h-full w-full ml-2 mr-2">GRAPHIC DESIGN</p>
+												<p className="h-full w-full ml-2 mr-2">UI/UX</p>
+												<p className="h-full w-full ml-2 mr-2">LOGO</p>
+												<p className="h-full w-full ml-2 mr-2">WEBSITE DESIGN</p>
+												<p className="h-full w-full ml-2 mr-2">BRANDING</p>
+											</Marquee>
+										</div>
+										<div>
+											<Marquee>
+												<p className="h-full w-full ml-2 mr-2">GRAPHIC DESIGN</p>
+												<p className="h-full w-full ml-2 mr-2">UI/UX</p>
+												<p className="h-full w-full ml-2 mr-2">LOGO</p>
+												<p className="h-full w-full ml-2 mr-2">WEBSITE DESIGN</p>
+												<p className="h-full w-full ml-2 mr-2">BRANDING</p>
+											</Marquee>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div className="h-[100%] w-[33.33%] bg-black flex items-center justify-center">
+								<img src={movingBallAnimation} alt="" />
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</section>

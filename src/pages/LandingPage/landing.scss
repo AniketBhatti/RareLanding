@@ -1023,17 +1023,49 @@ main {
         .lumber-craft {
             background-color: #478590;
 
-            &::before {
-                content: "Web Design";
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                height: 100%;
-                font-size: 35vh;
-                font-family: roboto-slab-light;
-                color: #b2a3a329;
-                z-index: -1;
+            .lumberFrame{
+                position: sticky;
+                top: 0;
+                z-index: 1;
 
+                // &::before {
+                //     content: "Web Design";
+                //     display: flex;
+                //     align-items: center;
+                //     justify-content: center;
+                //     height: 100%;
+                //     font-size: 35vh;
+                //     font-family: roboto-slab-light;
+                //     color: #b2a3a329;
+                //     z-index: -1;
+    
+                // } 
+
+                .lumberContent{
+                    .all-products{
+
+                        position: relative;
+                        z-index: 10;
+
+                        .all-list{
+                            height: 600px;
+                        }
+
+                        .place-it{
+                            position: absolute;
+                            bottom: 0;
+                            right: -80px;
+                        }
+                    }
+
+                    .main-product{
+                        img{
+                            height: 800px;
+                            position: relative;
+                            z-index: 9;
+                        }
+                    }
+                }
             }
 
         }
@@ -1042,16 +1074,24 @@ main {
             background-color: #2C2C2C;
 
 
-            &::before {
-                content: "Web Design";
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                height: 100%;
-                font-size: 35vh;
-                font-family: roboto-slab-light;
-                color: #615c5c29;
-                z-index: -1;
+            // &::before {
+            //     content: "Web Design";
+            //     display: flex;
+            //     align-items: center;
+            //     justify-content: center;
+            //     height: 100%;
+            //     font-size: 35vh;
+            //     font-family: roboto-slab-light;
+            //     color: #615c5c29;
+            //     z-index: -1;
+
+            // }
+            
+
+            .regalFrame{
+                position: sticky;
+                top: 0;
+                z-index: 1;
 
             }
         }
@@ -1077,22 +1117,24 @@ main {
         .orchard {
             background-color: #8FE5E0;
 
-            &::before {
-                content: "Mobile App";
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                height: 100%;
-                font-size: 35vh;
-                font-family: roboto-slab-light;
-                color: #a2a2a236;
-                z-index: 1;
-
-            }
+            // &::before {
+            //     content: "Mobile App";
+            //     display: flex;
+            //     align-items: center;
+            //     justify-content: center;
+            //     height: 100%;
+            //     font-size: 35vh;
+            //     font-family: roboto-slab-light;
+            //     color: #a2a2a236;
+            //     z-index: 1;
+            // }
 
 
             .orchardScreens {
                 display: flex;
+                position: sticky;
+                top: 0;
+                z-index: 1;
 
                 .screen-showcase {
                     width: 50%;
@@ -1143,7 +1185,6 @@ main {
 
 
                     }
-
 
                 }
 

@@ -3,12 +3,16 @@ import "./landing.scss";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { MotionPathPlugin } from "gsap/MotionPathPlugin";
-import Marquee from "react-fast-marquee";
-
-
-import { useScroll } from "framer-motion";
 import { Link } from "react-router-dom";
 
+
+import Marquee from "react-fast-marquee";
+import { useScroll } from "framer-motion";
+
+import lumber_main from "../../assets/images/07_ourWorks/LUMBERCRAFT/lumbercraft-main-product.png"
+import lumber_all_products from "../../assets/images/07_ourWorks/LUMBERCRAFT/lumbercraft-all-products-list.png"
+import lumber_customer from "../../assets/images/07_ourWorks/LUMBERCRAFT/lumbercraft-customer-services.png"
+import place_it from "../../assets/images/07_ourWorks/LUMBERCRAFT/place-it.png"
 
 import research from "../../assets/images/06_ropeEffectPlayables/research_square.png"
 import strategy from "../../assets/images/06_ropeEffectPlayables/strategy_square.png"
@@ -16,9 +20,6 @@ import uiuxdesign from "../../assets/images/06_ropeEffectPlayables/uiux_square.p
 import branding from "../../assets/images/06_ropeEffectPlayables/branding_square.png"
 import build from "../../assets/images/06_ropeEffectPlayables/build_square.png"
 
-import lumber_main from "../../assets/images/07_ourWorks/LUMBERCRAFT/lumbercraft-main-product.png"
-import lumber_all_products from "../../assets/images/07_ourWorks/LUMBERCRAFT/lumbercraft-all-products-list.png"
-import lumber_customer from "../../assets/images/07_ourWorks/LUMBERCRAFT/lumbercraft-customer-services.png"
 
 import regal_navbar from "../../assets/images/07_ourWorks/REGALFINANCE/navbar.png"
 import regal_leftpanel from "../../assets/images/07_ourWorks/REGALFINANCE/leftPanal.png"
@@ -72,9 +73,11 @@ import connectionsBuild from "../../assets/images/07_ourWorks/DINAROLLING/connec
 import felindra from "../../assets/images/07_ourWorks/DINAROLLING/felindra-lucen.png"
 import sessions from "../../assets/images/07_ourWorks/DINAROLLING/sessions.png"
 
+
 import creativeInfo from "../../assets/images/07_ourWorks/VIVIDSPARK/creativedesigninfo.png"
 import continueInnovation from "../../assets/images/07_ourWorks/VIVIDSPARK/continueInnovation.png"
 import ladyModel from "../../assets/images/07_ourWorks/VIVIDSPARK/ladyCutout.png"
+
 
 import cocktailCultureLogo from "../../assets/images/07_ourWorks/COCKTAILCULTURE/pngs/cocktailCulture.png"
 import experienceASip from "../../assets/images/07_ourWorks/COCKTAILCULTURE/pngs/ExperienceASip.png"
@@ -203,7 +206,7 @@ const Landing = () => {
 				scrollTrigger: {
 					trigger: lumberCraftRef.current,
 					start: "top 80%", // Trigger when the top of the section is 80% down the viewport
-					end: "top 30%", // End when the top of the section is 30% down the viewport
+					end: "top top", // End when the top of the section is 30% down the viewport
 					scrub: 1,
 				},
 
@@ -218,8 +221,8 @@ const Landing = () => {
 				duration: 1,
 				scrollTrigger: {
 					trigger: ".main-product",
-					start: "top 80%", // Trigger when the top of the section is 80% down the viewport
-					end: "top 40%", // End when the top of the section is 30% down the viewport
+					start: "top top", // Trigger when the top of the section is 80% down the viewport
+					end: "top -20%", // End when the top of the section is 30% down the viewport
 					scrub: 1,
 				}
 			}
@@ -233,8 +236,8 @@ const Landing = () => {
 				duration: 2,
 				scrollTrigger: {
 					trigger: ".all-products",
-					start: "top 80%", // Trigger when the top of the section is 80% down the viewport
-					end: "top 40%", // End when the top of the section is 30% down the viewport
+					start: "top -20%", // Trigger when the top of the section is 80% down the viewport
+					end: "top -40%", // End when the top of the section is 30% down the viewport
 					scrub: 1,
 				}
 			}
@@ -248,8 +251,8 @@ const Landing = () => {
 				duration: 2,
 				scrollTrigger: {
 					trigger: ".customer-services",
-					start: "top 80%", // Trigger when the top of the section is 80% down the viewport
-					end: "top 40%", // End when the top of the section is 30% down the viewport
+					start: "top -30%", // Trigger when the top of the section is 80% down the viewport
+					end: "top -50%", // End when the top of the section is 30% down the viewport
 					scrub: 1,
 				}
 			}
@@ -273,7 +276,7 @@ const Landing = () => {
 				scrollTrigger: {
 					trigger: regalFinance.current,
 					start: "top 90%", // Trigger when the top of the section is 80% down the viewport
-					end: "top 30%", // End when the top of the section is 30% down the viewport
+					end: "top top", // End when the top of the section is 30% down the viewport
 					scrub: 1,
 				}
 			}
@@ -379,15 +382,15 @@ const Landing = () => {
 		);
 
 		gsap.fromTo(".veggies",
-			{ x: -300, opacity: 1 },
+			{ x: -300, opacity: 0 },
 			{
 				x: 0,
 				opacity: 1,
 				duration: 2,
 				scrollTrigger: {
-					trigger: ".veggies",
-					start: "top 90%", // Trigger when the top of the section is 80% down the viewport
-					end: "top 30%", // End when the top of the section is 30% down the viewport
+					trigger: orchard.current,
+					start: "top top", // Trigger when the top of the section is 80% down the viewport
+					end: "top -20%", // End when the top of the section is 30% down the viewport
 					scrub: 1,
 				}
 			}
@@ -395,31 +398,32 @@ const Landing = () => {
 
 
 		gsap.fromTo(".find-prods",
-			{ x: 400, opacity: 1 },
+			{ x: -400, opacity: 0 },
 			{
 				x: 0,
 				opacity: 1,
 				duration: 2,
 				scrollTrigger: {
-					trigger: ".find-prods",
-					start: "top bottom", // Trigger when the top of the section is 80% down the viewport
-					end: "bottom bottom", // End when the top of the section is 30% down the viewport
+					trigger: orchard.current,
+					start: "top -30%", // Trigger when the top of the section is 80% down the viewport
+					end: "top -40%", // End when the top of the section is 30% down the viewport
 					scrub: 1,
 				}
 			}
 		);
 
 
+
 		gsap.fromTo(".homescreen",
-			{ x: 400, opacity: 1 },
+			{ x: 400, opacity: 0 },
 			{
 				x: 0,
 				opacity: 1,
 				duration: 2,
 				scrollTrigger: {
-					trigger: ".homescreen",
-					start: "top 90%", // Trigger when the top of the section is 80% down the viewport
-					end: "top 30%", // End when the top of the section is 30% down the viewport
+					trigger: orchard.current,
+					start: "top -40%", // Trigger when the top of the section is 80% down the viewport
+					end: "top -50%", // End when the top of the section is 30% down the viewport
 					scrub: 1,
 				}
 			}
@@ -1589,6 +1593,8 @@ const Landing = () => {
 
 	return (
 		<main>
+
+
 			<section className="every-pixel">
 				<Link className="start-your-project">Start your Project</Link>
 
@@ -1632,84 +1638,20 @@ const Landing = () => {
 				</h2>
 			</section>
 
-			<section className="our-services w-full">
-				<div className="container h-[200vh] relative">
-
-					<div className="slides overflow-hidden sticky top-0 left-0 flex w-full h-[100vh]">
-						<div className="slide w-full flex items-center justify-center h-screen flex-shrink-0 bg-green-500">
-							<svg
-								viewBox="0 0 1615 500"
-								fill="none"
-								xmlns="http://www.w3.org/2000/svg"
-							>
-								<path
-									ref={pathRef}
-									id="animatedPath"
-									d="M0.5 162.5C301.5 339 1385 -211.5 1614 97"
-									stroke="#ED0180"
-									stroke-width="3"
-								/>
-							</svg>
-						</div>
-
-						<div className="slide w-full h-screen flex items-center justify-center flex-shrink-0 relative bg-yellow-500">
-							<svg
-								viewBox="0 0 1615 500"
-								fill="none"
-								xmlns="http://www.w3.org/2000/svg"
-							>
-								<path
-									id="myPath"
-									// d="M0 351C188.6 479.4 338.167 404.5 389.5 351C439.833 322 555.9 267.9 617.5 283.5C694.5 303 701 216.5 778 197C855 177.5 1013 216 1019 283.5C1025 351 1189 280.5 1189 351C1189 421.5 1298 399 1311 351C1324 303 1465 322 1497 351C1522.6 374.2 1591.33 339.333 1622.5 319C1638.67 308.333 1661.3 278 1622.5 242C1574 197 1731.5 123 1786 136C1829.6 146.4 1864.17 50.3333 1876 1"
-									d="M3433 1C3444.33 62.8333 3436.2 190.5 3313 206.5C3189.8 222.5 3117.33 315.833 3096.5 360.5C3088 405.167 3015.1 467.7 2791.5 360.5C2512 226.5 2569 468.5 2503.5 414.5C2451.1 371.3 2240.33 386.833 2141.5 400C2096.67 413.5 2007.6 424.5 2010 360.5C2012.4 296.5 1840 333.833 1753.5 360.5H0"
-									stroke="#ED0180"
-									stroke-width="3"
-								/>
-							</svg>
-
-
-							<div className="usp-list h-screen w-[100% - 100vw] absolute flex items-center justify-center">
-								<div className="item-1 h-[300px] w-[300px]">
-									<img src={research} alt="" />
-								</div>
-
-								<div className="item-2 h-[400px] w-[400px]">
-									<img src={strategy} alt="" />
-								</div>
-
-								<div className="item-3 h-[300px] w-[300px]">
-									<img src={uiuxdesign} alt="" />
-								</div>
-
-								<div className="item-4 h-[400px] w-[400px]">
-									<img src={branding} alt="" />
-								</div>
-
-								<div className="item-5 h-[300px] w-[300px]">
-									<img src={build} alt="" />
-								</div>
-
-							</div>
-
-						</div>
-
-					</div>
-
-				</div>
-			</section>
 
 			<section className="our-work">
 
-				<div ref={lumberCraftRef} className="lumber-craft w-full h-screen">
-					<div className="lumberFrame absolute top-0 left-0 h-full w-full">
+				<div ref={lumberCraftRef} className="lumber-craft w-screen h-[200vh]">
+					<div className="lumberFrame h-[100vh] w-screen overflow-hidden">
 
-						<div className="lumberContent flex justify-center items-center gap-20 h-full w-full">
+						<div className="lumberContent flex justify-center items-center gap-20 h-screen w-screen">
 							<div className="all-products">
-								<img src={lumber_all_products} alt="" />
+								<img className="all-list" src={lumber_all_products} alt="" />
+								<img className="place-it" src={place_it} alt="" />
 							</div>
 
 							<div className="main-product">
-								<img className="h-[800px]" src={lumber_main} alt="" />
+								<img src={lumber_main} alt="" />
 							</div>
 
 							<div className="customer-services">
@@ -1720,13 +1662,14 @@ const Landing = () => {
 					</div>
 				</div>
 
-				<div ref={regalFinance} className="regalFinance w-full h-screen">
-					<div className="regalFrame absolute top-0 left-0 h-full w-full">
+		
+				<div ref={regalFinance} className="regalFinance w-screen h-[200vh]">
+					<div className="regalFrame h-screen w-screen">
 
-						<div className="regalContent flex flex-col gap-20 h-full w-full pt-10">
+						<div className="regalContent flex flex-col items-center justify-center gap-20 h-screen w-screen pt-10">
 
 							<div className="regalNavbar">
-								<div className="w-full flex items-center justify-center">
+								<div className="w-screen flex items-center justify-center">
 									<img src={regal_navbar} alt="" />
 								</div>
 							</div>
@@ -1746,7 +1689,7 @@ const Landing = () => {
 								</div>
 
 								<div className="assets">
-									<div className="relative top-[-200px]">
+									<div className="relative top-[-150px]">
 										<img className="h-[400px]" src={assets} alt="" />
 									</div>
 								</div>
@@ -1757,21 +1700,26 @@ const Landing = () => {
 					</div>
 				</div>
 
+
+
+
 				<div className="xtream h-screen w-screen flex justify-center items-center">
 					<img className="image absolute h-[90%] w-[90%] z-10" src={xtream_full} alt="" />
 				</div>
 
-				<div ref={orchard} className="orchard h-screen w-screen">
 
-					<div className="orchardScreens absolute top-0 left-0 h-screen w-screen">
+
+				<div ref={orchard} className="orchard h-[200vh] w-screen">
+
+					<div className="orchardScreens h-screen w-screen ">
 						<div className="screen-showcase">
+
 							<div className="veggie-menu">
 								<div className="relative h-full">
 									<img className="veggies absolute top-0 left-0 z-1" src={topLeftVeggies} alt="" />
 									<img className="find-prods relative z-2 top-[25%] left-[12.5%]" src={bottomLeftPhone} alt="" />
 								</div>
 							</div>
-
 
 							<div className="vertical-scroll">
 
@@ -1789,14 +1737,19 @@ const Landing = () => {
 								</div>
 
 							</div>
+
 						</div>
+
+
 						<div className="homescreen">
 							<img src={rightHome} alt="" />
 						</div>
+
 					</div>
 
 
 				</div>
+
 
 				<div ref={healthInsurance} className="healthInsurance h-[200vh] w-screen">
 					<div className="healthScreens h-screen w-screen flex">
@@ -1919,7 +1872,6 @@ const Landing = () => {
 						</div>
 
 						<div className="layerForReadablity absolute h-screen w-screen">
-
 						</div>
 
 						<div className="cocktailData relative">
@@ -1944,277 +1896,10 @@ const Landing = () => {
 						</div>
 
 					</div>
-
-
 				</div>
 
 			</section>
-
-			<section className="design-process">
-				<div className="data">
-
-					<div className="dp-headers h-screen w-screen bg-white h-full">
-						<p>Explore how our</p>
-						<h2><span className="relative z-10">design</span> process</h2>
-						<p>works</p>
-
-						<div className="designRevealAnimation h-[180px] w-[820px] bg-black absolute top-[300px] left-0"></div>
-
-						{/* <div className="arrowPath absolute mt-[700px] left-0">
-							<svg width="1472" height="564" viewBox="0 0 1472 564" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path
-									d="M0 287.501C927.6 287.501 1263.5 241.5 1337.5 232.5C1430.5 239.5 1492.9 198.201 1464.5 101.001C1429 -20.4994 1342 4.00011 1359 2.00011C1319.83 8.00008 1251.1 40.6 1289.5 123C1327.9 205.4 963 369.5 1019 699.5"
-									stroke="none" />
-							</svg>
-
-							<img className="arrowBlack" src={arrowPinkHeadSmall} alt="" />
-
-						</div> */}
-					</div>
-
-					<div className="processAnimationStart h-[200vh]">
-						
-
-						<div className="movableDiv relative bg-black-500 h-[100vh] w-[100vw] flex items-center justify-center">
-							<div className="movingSquare h-[200px] w-[200px] bg-white relative flex justify-center items-center rounded-[10px] transform rotate-45 z-10">
-								<div className="innerSquare h-[60px] w-[60px] bg-black rounded-[5px]"></div>
-							</div>
-
-							<div className="leftScreen absolute top-0 left-0 bg-black h-screen w-[70%]"></div>
-							<div className="rightScreen absolute top-0 h-screen right-0 w-[30%]"></div>
-
-
-						</div>
-
-
-
-						<div className="processPoints ml-9 text-white">
-
-							<div className="onboarding w-[50vw] h-[80vh]">
-								<h2 className=" text-[64px]">ONBOARDING</h2>
-
-								<div className="OBimageAndData flex flex-col items-center justify-center h-[80vh] gap-[30px]">
-									<img src={onboarding} alt="" />
-									<p className="w-[50%]">Lorem ipsum dolor sit amet consectetur. Neque magna risus suscipit nisl lorem ut commodo. Sagittis ac eleifend at praesent magna neque vel. Id cras tempor eget blandit. Fermentum etiam enim egestas morbi nulla dolor eros.</p>
-								</div>
-								
-							</div>
-
-
-							<div className="startProject absolute top-0 left-[100%] w-[50vw] h-[80vh]">
-								<h2 className="text-[64px]">START PROJECT</h2>
-
-								<div className="SPimageAndData flex flex-col items-center justify-center h-[80vh] gap-[30px]">
-									<img src={startProject} alt="" />
-									<p className="w-[50%]">Lorem ipsum dolor sit amet consectetur. Neque magna risus suscipit nisl lorem ut commodo. Sagittis ac eleifend at praesent magna neque vel. Id cras tempor eget blandit. Fermentum etiam enim egestas morbi nulla dolor eros.</p>
-								</div>
-
-							</div>
-
-
-							<div className="design absolute top-0 left-0 w-[50vw] h-[80vh]">
-								<h2 className="text-[64px] pl-[100px] pt-[100px]">DESIGN</h2>
-
-								<div className="DSimageAndData flex flex-col items-center justify-center h-[80vh] gap-[30px]">
-									<img src={design} alt="" />
-									<p className="w-[50%]">Lorem ipsum dolor sit amet consectetur. Neque magna risus suscipit nisl lorem ut commodo. Sagittis ac eleifend at praesent magna neque vel. Id cras tempor eget blandit. Fermentum etiam enim egestas morbi nulla dolor eros.</p>
-								</div>
-
-							</div>
-
-							
-							<div className="delivery absolute top-0 left-[100%] w-[50vw] h-[80vh]">
-								<h2 className="text-[64px]">DELIVERY</h2>
-
-								<div className="DLVRimageAndData flex flex-col items-center justify-center h-[80vh] gap-[30px]">
-									<img src={delivery} alt="" />
-									<p className="w-[50%]">Lorem ipsum dolor sit amet consectetur. Neque magna risus suscipit nisl lorem ut commodo. Sagittis ac eleifend at praesent magna neque vel. Id cras tempor eget blandit. Fermentum etiam enim egestas morbi nulla dolor eros.</p>
-								</div>
-
-							</div>
-
-
-						</div>
-
-
-
-
-					</div>
-
-
-					{/* <div className="h-[500vh]"></div> */}
-				</div>
-			</section>
-
-			<section className="relative z-10 companyOverview">
-				<div className="boxContainer h-screen w-screen flex">
-
-					<div className="left h-screen w-[50%]">
-
-						<div className="leftRow flex h-[33.33%] w-[100%]">
-
-							<div className="h-[100%] w-[33.33%] bg-white flex flex-col items-center justify-center gap-8">
-								<p className="text-5xl">Team Size</p>
-								<p className="text-8xl">9</p>
-							</div>
-
-							<div className="h-[100%] w-[33.33%] bg-black text-white flex flex-col pl-12 justify-center gap-4">
-								<p className="text-3xl">3 Founders</p>
-								<p className="text-3xl">1 Operations</p>
-								<p className="text-3xl">3 Creative</p>
-								<p className="text-3xl">1 Communications</p>
-								<p className="text-3xl">1 UX Writer</p>
-							</div>
-
-							<div className="h-[100%] w-[33.33%] bg-white">
-								<div className="h-[100%] w-[100%] rounded-[20px]" style={{ backgroundImage: `url(${girl})` }}>
-									<div className="h-[100%] w-[100%] rounded-[20px] flex flex-col justify-end pl-6 pb-8" style={{ background: 'linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(141, 139, 136, 0.5))' }}>
-										<p className="text-[40px] text-white">Joanne Billings</p>
-										<p className="text-[24px] text-white" style={{ fontFamily: 'roboto-slab-light', fontWeight: "bold", lineHeight: "10px" }}>Operations</p>
-									</div>
-								</div>
-
-							</div>
-						</div>
-
-						<div className="leftRow flex h-[33.33%] w-[100%]">
-							<div className="flower-hover-effect h-[100%] w-[33.33%] bg-black flex items-center justify-center ">
-								<img src={flower} alt="" />
-							</div>
-
-							<div className="h-[100%] w-[33.33%] bg-white flex flex-col justify-center pl-12">
-								<p className="text-4xl"><span className="text-6xl">50 </span>projects</p>
-								<p className="text-4xl">for</p>
-								<p className="text-4xl">40 clients</p>
-							</div>
-
-							<div className="h-[100%] w-[33.33%] bg-black flex items-center justify-center">
-								<img src={ovalSpring} alt="" />
-							</div>
-						</div>
-
-						<div className="leftRow flex h-[33.33%] w-[100%]">
-							<div className="h-[100%] w-[33.33%] bg-white overflow-hidden">
-								<div className="text-5xl flex justify-end mr-4"><p>+</p></div>
-								<div className="h-[100%] flex flex-col justify-center items-left pl-12 pb-4">
-									<p className="text-5xl">Company</p>
-									<p className="text-5xl">satisfaction</p>
-									<p className="text-5xl">survey</p>
-								</div>
-							</div>
-							<div className="h-[100%] w-[33.33%] bg-black text-white text-4xl flex justify-end pr-1">
-								<p>Survey</p>
-							</div>
-							<div className="h-[100%] w-[33.33%] bg-white text-4xl pl-1">
-								<p>data</p>
-							</div>
-
-							<div className="absolute left-[18%] mt-14">
-								<img src={satisfactionGraph} alt="" />
-							</div>
-						</div>
-					</div>
-
-
-					<div className="right h-screen w-[50%]">
-						<div className="rightRow flex h-[33.33%] w-[100%]">
-							<div className="h-[100%] w-[33.33%] bg-black">
-								<img src={circleAnimation} alt="" className="pb-5" />
-							</div>
-
-							<div className="h-[100%] w-[33.33%] bg-white flex justify-between p-6">
-								<div className="text-5xl pl-4 pt-2">
-									<p>Art Not</p>
-									<p>Evidence</p>
-								</div>
-								<div className="text-5xl">+</div>
-							</div>
-
-							<div className="h-[100%] w-[33.33%] bg-black flex items-center justify-center p-4">
-								<video autoPlay muted loop src={movingEye}></video>
-							</div>
-						</div>
-
-						<div className="rightRow flex h-[33.33%] w-[100%]">
-							<div className="h-[100%] w-[33.33%] bg-white flex justify-between pr-4">
-								<div className="flex flex-col justify-center pl-12 text-5xl" style={{ lineHeight: "60px" }}>
-									<p>A route of</p>
-									<p>impact</p>
-									<p>through</p>
-									<p>design</p>
-								</div>
-								<div className="text-5xl">+</div>
-							</div>
-
-							<div className="h-[100%] w-[33.33%] bg-black flex items-center justify-center pl-[50px] overflow-hidden">
-								<img src={arrowAnimation} alt="" style={{ scale: "1.5" }} />
-							</div>
-
-							<div className="h-[100%] w-[33.33%] bg-white flex justify-between pr-4">
-								<div className="flex flex-col justify-center pl-12 text-4xl" style={{ lineHeight: "50px" }}>
-									<p>Guiding</p>
-									<p>principles on</p>
-									<p>design and</p>
-									<p>impact</p>
-								</div>
-								<div className="text-5xl">+</div>
-							</div>
-
-						</div>
-
-						<div className="rightRow flex h-[33.33%] w-[100%]">
-							<div className="h-[100%] w-[33.33%] bg-black text-white flex items-center justify-center text-8xl">
-								<p>98%</p>
-							</div>
-
-							<div className="h-[100%] w-[33.33%] bg-white">
-
-								<div className="flex justify-between">
-									<p className="text-4xl pl-4 pt-4">Services</p>
-									<p className="text-5xl pr-4 pt-2">+</p>
-								</div>
-
-								<div className=" overflow-hidden mt-[58px]">
-									<div className="transform rotate-[-20deg] mt-[100px]" style={{ scale: '1.8' }}>
-										<div className="m-4">
-											<Marquee>
-												<p className="h-full w-full ml-2 mr-2">GRAPHIC DESIGN</p>
-												<p className="h-full w-full ml-2 mr-2">UI/UX</p>
-												<p className="h-full w-full ml-2 mr-2">LOGO</p>
-												<p className="h-full w-full ml-2 mr-2">WEBSITE DESIGN</p>
-												<p className="h-full w-full ml-2 mr-2">BRANDING</p>
-											</Marquee>
-										</div>
-										<div className="m-4">
-											<Marquee direction="right">
-												<p className="h-full w-full ml-2 mr-2">GRAPHIC DESIGN</p>
-												<p className="h-full w-full ml-2 mr-2">UI/UX</p>
-												<p className="h-full w-full ml-2 mr-2">LOGO</p>
-												<p className="h-full w-full ml-2 mr-2">WEBSITE DESIGN</p>
-												<p className="h-full w-full ml-2 mr-2">BRANDING</p>
-											</Marquee>
-										</div>
-										<div>
-											<Marquee>
-												<p className="h-full w-full ml-2 mr-2">GRAPHIC DESIGN</p>
-												<p className="h-full w-full ml-2 mr-2">UI/UX</p>
-												<p className="h-full w-full ml-2 mr-2">LOGO</p>
-												<p className="h-full w-full ml-2 mr-2">WEBSITE DESIGN</p>
-												<p className="h-full w-full ml-2 mr-2">BRANDING</p>
-											</Marquee>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<div className="h-[100%] w-[33.33%] bg-black flex items-center justify-center">
-								<img src={movingBallAnimation} alt="" />
-							</div>
-						</div>
-					</div>
-
-				</div>
-			</section>
+			
 
 
 		</main>
@@ -2222,4 +1907,6 @@ const Landing = () => {
 };
 
 export default Landing;
+
+
 

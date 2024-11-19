@@ -1,0 +1,65 @@
+<section className="our-services w-full">
+				<div className="container h-[200vh] relative">
+
+					<div className="slides overflow-hidden sticky top-0 left-0 flex w-full h-[100vh]">
+						<div className="slide w-full flex items-center justify-center h-screen flex-shrink-0 bg-green-500">
+							<svg
+								viewBox="0 0 1615 500"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									ref={pathRef}
+									id="animatedPath"
+									d="M0.5 162.5C301.5 339 1385 -211.5 1614 97"
+									stroke="#ED0180"
+									stroke-width="3"
+								/>
+							</svg>
+						</div>
+
+						<div className="slide w-full h-screen flex items-center justify-center flex-shrink-0 relative bg-yellow-500">
+							<svg
+								viewBox="0 0 1615 500"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									id="myPath"
+									// d="M0 351C188.6 479.4 338.167 404.5 389.5 351C439.833 322 555.9 267.9 617.5 283.5C694.5 303 701 216.5 778 197C855 177.5 1013 216 1019 283.5C1025 351 1189 280.5 1189 351C1189 421.5 1298 399 1311 351C1324 303 1465 322 1497 351C1522.6 374.2 1591.33 339.333 1622.5 319C1638.67 308.333 1661.3 278 1622.5 242C1574 197 1731.5 123 1786 136C1829.6 146.4 1864.17 50.3333 1876 1"
+									d="M3433 1C3444.33 62.8333 3436.2 190.5 3313 206.5C3189.8 222.5 3117.33 315.833 3096.5 360.5C3088 405.167 3015.1 467.7 2791.5 360.5C2512 226.5 2569 468.5 2503.5 414.5C2451.1 371.3 2240.33 386.833 2141.5 400C2096.67 413.5 2007.6 424.5 2010 360.5C2012.4 296.5 1840 333.833 1753.5 360.5H0"
+									stroke="#ED0180"
+									stroke-width="3"
+								/>
+							</svg>
+
+
+							<div className="usp-list h-screen w-[100% - 100vw] absolute flex items-center justify-center">
+								<div className="item-1 h-[300px] w-[300px]">
+									<img src={research} alt="" />
+								</div>
+
+								<div className="item-2 h-[400px] w-[400px]">
+									<img src={strategy} alt="" />
+								</div>
+
+								<div className="item-3 h-[300px] w-[300px]">
+									<img src={uiuxdesign} alt="" />
+								</div>
+
+								<div className="item-4 h-[400px] w-[400px]">
+									<img src={branding} alt="" />
+								</div>
+
+								<div className="item-5 h-[300px] w-[300px]">
+									<img src={build} alt="" />
+								</div>
+
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+			</section>

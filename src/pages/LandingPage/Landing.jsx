@@ -207,7 +207,7 @@ const Landing = () => {
 					trigger: lumberCraftRef.current,
 					start: "top 80%", // Trigger when the top of the section is 80% down the viewport
 					end: "top top", // End when the top of the section is 30% down the viewport
-					scrub: 1,
+					// scrub: 1,
 				},
 
 			}
@@ -223,7 +223,7 @@ const Landing = () => {
 					trigger: ".main-product",
 					start: "top top", // Trigger when the top of the section is 80% down the viewport
 					end: "top -20%", // End when the top of the section is 30% down the viewport
-					scrub: 1,
+					// scrub: 1,
 				}
 			}
 		);
@@ -238,7 +238,7 @@ const Landing = () => {
 					trigger: ".all-products",
 					start: "top -20%", // Trigger when the top of the section is 80% down the viewport
 					end: "top -40%", // End when the top of the section is 30% down the viewport
-					scrub: 1,
+					// scrub: 1,
 				}
 			}
 		);
@@ -253,7 +253,7 @@ const Landing = () => {
 					trigger: ".customer-services",
 					start: "top -30%", // Trigger when the top of the section is 80% down the viewport
 					end: "top -50%", // End when the top of the section is 30% down the viewport
-					scrub: 1,
+					// scrub: 1,
 				}
 			}
 		);
@@ -277,7 +277,7 @@ const Landing = () => {
 					trigger: regalFinance.current,
 					start: "top 90%", // Trigger when the top of the section is 80% down the viewport
 					end: "top top", // End when the top of the section is 30% down the viewport
-					scrub: 1,
+					// scrub: 1,
 				}
 			}
 		);
@@ -292,7 +292,7 @@ const Landing = () => {
 					trigger: ".leftPanel",
 					start: "top 90%", // Trigger when the top of the section is 80% down the viewport
 					end: "top 30%", // End when the top of the section is 30% down the viewport
-					scrub: 1,
+					// scrub: 1,
 				}
 			}
 		);
@@ -307,7 +307,7 @@ const Landing = () => {
 					trigger: ".rewards",
 					start: "top 90%", // Trigger when the top of the section is 90% down the viewport
 					end: "top 30%", // End when the top of the section is 30% down the viewport
-					scrub: 1,
+					// scrub: 1,
 				}
 			}
 		);
@@ -323,7 +323,7 @@ const Landing = () => {
 					trigger: ".assets",
 					start: "top 90%", // Trigger when the top of the section is 90% down the viewport
 					end: "top 30%", // End when the top of the section is 30% down the viewport
-					scrub: 1,
+					// scrub: 1,
 				}
 			}
 		);
@@ -339,7 +339,7 @@ const Landing = () => {
 					trigger: ".regalNavbar",
 					start: "top 90%", // Trigger when the top of the section is 90% down the viewport
 					end: "top 30%", // End when the top of the section is 30% down the viewport
-					scrub: 1,
+					// scrub: 1,
 				}
 			}
 		);
@@ -376,7 +376,7 @@ const Landing = () => {
 					trigger: orchard.current,
 					start: "top 90%",
 					end: "top 30%",
-					scrub: 1,
+					// scrub: 1,
 				}
 			}
 		);
@@ -407,7 +407,7 @@ const Landing = () => {
 					trigger: orchard.current,
 					start: "top -30%", // Trigger when the top of the section is 80% down the viewport
 					end: "top -40%", // End when the top of the section is 30% down the viewport
-					scrub: 1,
+					// scrub: 1,
 				}
 			}
 		);
@@ -424,7 +424,7 @@ const Landing = () => {
 					trigger: orchard.current,
 					start: "top -40%", // Trigger when the top of the section is 80% down the viewport
 					end: "top -50%", // End when the top of the section is 30% down the viewport
-					scrub: 1,
+					// scrub: 1,
 				}
 			}
 		);
@@ -460,7 +460,7 @@ const Landing = () => {
 					trigger: ".healthScreens",
 					start: "top 80%",
 					end: "top 30%",
-					scrub: 1,
+					// scrub: 1,
 				}
 			}
 		);
@@ -492,7 +492,7 @@ const Landing = () => {
 					trigger: ".healthScreens",
 					start: "top 50%",
 					end: "top top",
-					scrub: 1,
+					// scrub: 1,
 				}
 			}
 		);

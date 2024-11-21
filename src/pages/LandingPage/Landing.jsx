@@ -208,8 +208,8 @@ const Landing = () => {
 				opacity: 1,
 				scrollTrigger: {
 					trigger: lumberCraftRef.current,
-					start: "top 80%", // Trigger when the top of the section is 80% down the viewport
-					end: "top -30%", // End when the top of the section is 30% down the viewport
+					start: "top 80%",
+					end: "top top",
 					scrub: 1,
 				},
 
@@ -221,11 +221,10 @@ const Landing = () => {
 			{
 				y: 0,
 				opacity: 1,
-				duration: 1,
 				scrollTrigger: {
 					trigger: ".main-product",
-					start: "top -50%", 
-					end: "top -70%", 
+					start: "top -10%", 
+					end: "top -30%", 
 					// scrub: 1,
 				}
 			}
@@ -236,11 +235,10 @@ const Landing = () => {
 			{
 				x: 150,
 				opacity: 1,
-				duration: 1,
 				scrollTrigger: {
 					trigger: ".all-products",
-					start: "top -70%", 
-					end: "top -80%",	
+					start: "top -30%", 
+					end: "top -50%",	
 					// scrub: 1,
 				}
 			}
@@ -251,11 +249,10 @@ const Landing = () => {
 			{
 				x: -130,
 				opacity: 1,
-				duration: 1,
 				scrollTrigger: {
 					trigger: ".customer-services",
-					start: "top -80%", 
-					end: "top -90%", 
+					start: "top -50%", 
+					end: "top -70%", 
 					// scrub: 1,
 				}
 			}
@@ -271,81 +268,81 @@ const Landing = () => {
 
 	React.useEffect(() => {
 		gsap.fromTo(regalFinance.current,
-			{ x: 300, y: 200, opacity: 0 },
+			{ x: 100, y: 100, opacity: 0 },
 			{
 				x: 0,
 				y: 0,
 				opacity: 1,
 				scrollTrigger: {
 					trigger: regalFinance.current,
-					start: "top 90%", // Trigger when the top of the section is 80% down the viewport
+					start: "top 80%", // Trigger when the top of the section is 80% down the viewport
 					end: "top top", // End when the top of the section is 30% down the viewport
 					scrub: 1,
 				}
 			}
 		);
 
-		gsap.fromTo(".leftPanel",
-			{ x: -400, opacity: 1 },
-			{
-				x: 150,
-				opacity: 1,
-				duration: 2,
-				scrollTrigger: {
-					trigger: ".leftPanel",
-					start: "top 90%", // Trigger when the top of the section is 80% down the viewport
-					end: "top 30%", // End when the top of the section is 30% down the viewport
-					scrub: 1,
-				}
-			}
-		);
+		// gsap.fromTo(".leftPanel",
+		// 	{ x: -400, opacity: 1 },
+		// 	{
+		// 		x: 150,
+		// 		opacity: 1,
+		// 		duration: 2,
+		// 		scrollTrigger: {
+		// 			trigger: ".leftPanel",
+		// 			start: "top 90%", // Trigger when the top of the section is 80% down the viewport
+		// 			end: "top 30%", // End when the top of the section is 30% down the viewport
+		// 			scrub: 1,
+		// 		}
+		// 	}
+		// );
 
-		gsap.fromTo(".rewards",
-			{ opacity: 1, scale: 0.5 }, // Start from below the viewport
-			{
-				opacity: 1,
-				scale: 1,
-				duration: 1,
-				scrollTrigger: {
-					trigger: ".rewards",
-					start: "top 90%", // Trigger when the top of the section is 90% down the viewport
-					end: "top 30%", // End when the top of the section is 30% down the viewport
-					scrub: 1,
-				}
-			}
-		);
+		// gsap.fromTo(".rewards",
+		// 	{ opacity: 1, scale: 0.5 }, // Start from below the viewport
+		// 	{
+		// 		opacity: 1,
+		// 		scale: 1,
+		// 		duration: 1,
+		// 		scrollTrigger: {
+		// 			trigger: ".rewards",
+		// 			start: "top 90%", // Trigger when the top of the section is 90% down the viewport
+		// 			end: "top 30%", // End when the top of the section is 30% down the viewport
+		// 			scrub: 1,
+		// 		}
+		// 	}
+		// );
 
-		gsap.fromTo(".assets",
-			{ opacity: 1, scale: 0.5, x: 200 }, // Start from below the viewport
-			{
-				opacity: 1,
-				scale: 1,
-				x: -100,
-				duration: 1,
-				scrollTrigger: {
-					trigger: ".assets",
-					start: "top 90%", // Trigger when the top of the section is 90% down the viewport
-					end: "top 30%", // End when the top of the section is 30% down the viewport
-					scrub: 1,
-				}
-			}
-		);
+		// gsap.fromTo(".assets",
+		// 	{ opacity: 1, scale: 0.5, x: 200 }, // Start from below the viewport
+		// 	{
+		// 		opacity: 1,
+		// 		scale: 1,
+		// 		x: -100,
+		// 		duration: 1,
+		// 		scrollTrigger: {
+		// 			trigger: ".assets",
+		// 			start: "top 90%", // Trigger when the top of the section is 90% down the viewport
+		// 			end: "top 30%", // End when the top of the section is 30% down the viewport
+		// 			scrub: 1,
+		// 		}
+		// 	}
+		// );
 
-		gsap.fromTo(".regalNavbar",
-			{ opacity: 1, scale: 0.5, x: 200 }, // Start from below the viewport
-			{
-				opacity: 1,
-				scale: 1,
-				x: 0,
-				duration: 1,
-				scrollTrigger: {
-					trigger: ".regalNavbar",
-					start: "top 90%", // Trigger when the top of the section is 90% down the viewport
-					end: "top 30%", // End when the top of the section is 30% down the viewport
-					scrub: 1,
-				}
-			}
-		);
+		// gsap.fromTo(".regalNavbar",
+		// 	{ opacity: 1, scale: 0.5, x: 200 }, // Start from below the viewport
+		// 	{
+		// 		opacity: 1,
+		// 		scale: 1,
+		// 		x: 0,
+		// 		duration: 1,
+		// 		scrollTrigger: {
+		// 			trigger: ".regalNavbar",
+		// 			start: "top 90%", // Trigger when the top of the section is 90% down the viewport
+		// 			end: "top 30%", // End when the top of the section is 30% down the viewport
+		// 			scrub: 1,
+		// 		}
+		// 	}
+		// );
 
 	}, []);
 
@@ -1120,7 +1117,6 @@ const Landing = () => {
 	});
 
 
-
 	// DESIGN PROCESS SECTION ANIMATIONS
 
 
@@ -1644,7 +1640,7 @@ const Landing = () => {
 				<div ref={lumberCraftRef} className="lumber-craft w-screen h-[200vh]">
 					<div className="lumberFrame h-screen w-screen flex items-center justify-center">
 
-						<div className="lumberContent flex justify-between items-center h-screen w-[90vw]">
+						<div className="lumberContent h-screen">
 							<div className="all-products flex items-center justify-center">
 								<img className="all-list" src={lumber_all_products} alt="" />
 								<img className="place-it" src={place_it} alt="" />
@@ -1663,7 +1659,7 @@ const Landing = () => {
 				</div>
 
 		
-				{/* <div ref={regalFinance} className="regalFinance w-screen h-[200vh]">
+				<div ref={regalFinance} className="regalFinance w-screen h-[200vh]">
 					<div className="regalFrame h-screen w-screen">
 
 						<div className="regalContent flex flex-col items-center justify-center gap-20 h-screen w-screen pt-10">
@@ -1675,7 +1671,7 @@ const Landing = () => {
 							</div>
 
 
-							<div className="regalData flex justify-center items-center gap-20">
+							{/* <div className="regalData flex justify-center items-center gap-20">
 								<div className="leftPanel">
 									<div className="">
 										<img className="h-[600px]" src={regal_leftpanel} alt="" />
@@ -1693,12 +1689,12 @@ const Landing = () => {
 										<img className="h-[400px]" src={assets} alt="" />
 									</div>
 								</div>
-							</div>
+							</div> */}
 
 						</div>
 
 					</div>
-				</div> */}
+				</div>
 
 
 				{/* <div className="xtream h-screen w-screen flex justify-center items-center">

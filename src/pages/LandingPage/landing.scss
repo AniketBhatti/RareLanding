@@ -18,7 +18,6 @@ main {
 
     .every-pixel {
         padding: 120px 50px 0px 50px;
-        // height: 100vh;
 
         .start-your-project {
             position: absolute;
@@ -166,7 +165,6 @@ main {
         .tells-your-story {
             padding-right: 5%;
             font-weight: 400;
-            // text-transform: uppercase;
             font-size: 100px;
             letter-spacing: 8px;
             text-align: right;
@@ -785,7 +783,6 @@ main {
 
     }
 
-
     .transform-ideas {
         margin: 200px 200px 0px 200px;
         font-family: roboto-slab-light;
@@ -1023,7 +1020,7 @@ main {
         .lumber-craft {
             background-color: #478590;
 
-            .lumberFrame{
+            .lumberFrame {
                 position: sticky;
                 top: 0;
                 z-index: 1;
@@ -1038,36 +1035,41 @@ main {
                 //     font-family: roboto-slab-light;
                 //     color: #b2a3a329;
                 //     z-index: -1;
-    
+
                 // } 
 
-                .lumberContent{
-                    .all-products{
+                .lumberContent {
+                    width: 90vw;
+                    height: 100vh;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    .all-products {
 
                         position: relative;
                         z-index: 10;
 
-                        .all-list{
+                        .all-list {
                             height: 35vmax;
                             width: 20vmax;
                             object-fit: contain;
-                            
                         }
 
-                        .place-it{
+                        .place-it {
                             height: 8vmax;
                             width: 8vmax;
                             object-fit: contain;
                             position: absolute;
                             bottom: 0;
                             right: -80px;
-                            
+
                         }
                     }
 
-                    .main-product{
-                        
-                        img{
+                    .main-product {
+
+                        img {
                             height: 50vmax;
                             width: 45vmax;
                             object-fit: contain;
@@ -1076,11 +1078,248 @@ main {
                         }
                     }
 
-                    .customer-services{
+                    .customer-services {
                         height: 35vmax;
                         width: 15vmax;
                         object-fit: contain;
-                        
+
+                    }
+                }
+            }
+
+
+            @media screen and (min-width: 1927px) {
+
+                .lumberFrame {
+
+                    // &::before {
+                    //     content: "Web Design";
+                    //     height: 100%;
+                    //     font-size: 35vh;
+                    // } 
+
+                    .lumberContent {
+                        width: 90vw;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+
+                        .all-products {
+
+                            .all-list {
+                                height: 40vmax;
+                                width: 20vmax;
+                                object-fit: contain;
+                            }
+
+                            .place-it {
+                                height: 8vmax;
+                                width: 8vmax;
+                                object-fit: contain;
+                                position: absolute;
+                                bottom: -50px;
+                                right: -80px;
+                            }
+                        }
+
+                        .main-product {
+
+                            img {
+                                height: 60vmax;
+                                width: 55vmax;
+                                object-fit: contain;
+                                position: relative;
+                                z-index: 9;
+                            }
+                        }
+
+                        .customer-services {
+
+                            img {
+                                height: 40vmax;
+                                width: 20vmax;
+                                object-fit: contain;
+                                // background-color: red;
+                            }
+                        }
+                    }
+                }
+
+            }
+
+            @media screen and (max-width: 1439px) and (min-width: 1024px) {
+
+                .lumberFrame {
+
+                    // &::before {
+                    //     content: "Web Design";
+                    //     height: 100%;
+                    //     font-size: 35vh;
+                    // } 
+
+                    .lumberContent {
+                        width: 95vw;
+                        height: 100vh;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        gap: 50px;
+
+                        .all-products {
+
+                            .all-list {
+                                height: 40vmax;
+                                width: 15vmax;
+                                object-fit: contain;
+                            }
+
+                            .place-it {
+                                height: 6vmax;
+                                width: 6vmax;
+                                object-fit: contain;
+                                position: absolute;
+                                bottom: 20px;
+                                right: -30px;
+                            }
+                        }
+
+                        .main-product {
+
+                            img {
+                                height: 50vmax;
+                                width: 45vmax;
+                                object-fit: contain;
+                                position: relative;
+                                z-index: 9;
+                                padding-left: 10px;
+                            }
+                        }
+
+                        .customer-services {
+
+                            img {
+                                height: 40vmax;
+                                width: 20vmax;
+                                object-fit: contain;
+                            }
+                        }
+                    }
+                }
+
+            }
+
+            @media screen and (max-width: 1023px) and (min-width: 768px) {
+                .lumberFrame {
+
+                    // &::before {
+                    //     content: "Web Design";
+                    //     height: 100%;
+                    //     font-size: 35vh;
+                    // } 
+
+                    .lumberContent {
+                        width: 100vw;
+                        height: 100vh;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        gap: 100px;
+
+                        .all-products {
+                            .all-list {
+                                height: 40vmax;
+                                width: 15vmax;
+                                object-fit: contain;
+                            }
+
+                            .place-it {
+                                height: 6vmax;
+                                width: 6vmax;
+                                object-fit: contain;
+                                position: absolute;
+                                bottom: 40px;
+                                right: -30px;
+                            }
+                        }
+
+                        .main-product {
+
+                            img {
+                                height: 50vmax;
+                                width: 45vmax;
+                                object-fit: contain;
+                                position: relative;
+                                z-index: 9;
+                                padding-left: 10px;
+                            }
+                        }
+
+                        .customer-services {
+
+                            img {
+                                height: 40vmax;
+                                width: 20vmax;
+                                object-fit: contain;
+                            }
+                        }
+                    }
+                }
+            }
+
+            @media screen and (max-width: 767px) and (min-width: 530px) {
+                .lumberFrame {
+
+
+                    .lumberContent {
+                        width: 100vw;
+                        height: 100vh;
+                        display: flex;
+                        flex-wrap: wrap;
+                        align-items: center;
+                        justify-content: space-between;
+                        background-color: yellow;
+                        gap: 100px;
+
+                        .all-products {
+
+                            position: relative;
+                            .all-list {
+                                height: 30vmax;
+                                width: 20vmax;
+                                object-fit: contain;
+                            }
+
+                            .place-it {
+                                height: 5vmax;
+                                width: 5vmax;
+                                object-fit: contain;
+                                position: absolute;
+                                bottom: 30px;
+                                right: -20px;
+                            }
+                        }
+
+                        .main-product {
+
+                            img {
+                                height: 50vmax;
+                                width: 100vmax;
+                                object-fit: contain;
+                                position: relative;
+                                z-index: 9;
+                                // padding-left: 10px;
+                            }
+                        }
+
+                        .customer-services {
+                            height: 100px;
+                            background-color: green;
+                            img {
+                                height: 35vmax;
+                                width: 20vmax;
+                                object-fit: contain;
+                            }
+                        }
                     }
                 }
             }
@@ -1103,9 +1342,9 @@ main {
             //     z-index: -1;
 
             // }
-            
 
-            .regalFrame{
+
+            .regalFrame {
                 position: sticky;
                 top: 0;
                 z-index: 1;

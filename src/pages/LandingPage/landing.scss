@@ -787,7 +787,6 @@ main {
 
 
     .transform-ideas {
-        height: 500px;
         margin: 200px 200px 0px 200px;
         font-family: roboto-slab-light;
         font-size: 64px;
@@ -840,6 +839,7 @@ main {
             background-image: url("../../assets/images/02_welcomeRP/left-rotating-cube.gif");
             background-repeat: no-repeat;
             background-size: cover;
+            // background: red;
         }
 
 
@@ -858,7 +858,7 @@ main {
 
             &::after {
                 top: -300px;
-                right: -250px;
+                right: -220px;
                 height: 35vmax;
                 width: 35vmax;
             }
@@ -1048,22 +1048,39 @@ main {
                         z-index: 10;
 
                         .all-list{
-                            height: 600px;
+                            height: 35vmax;
+                            width: 20vmax;
+                            object-fit: contain;
+                            
                         }
 
                         .place-it{
+                            height: 8vmax;
+                            width: 8vmax;
+                            object-fit: contain;
                             position: absolute;
                             bottom: 0;
                             right: -80px;
+                            
                         }
                     }
 
                     .main-product{
+                        
                         img{
-                            height: 800px;
+                            height: 50vmax;
+                            width: 45vmax;
+                            object-fit: contain;
                             position: relative;
                             z-index: 9;
                         }
+                    }
+
+                    .customer-services{
+                        height: 35vmax;
+                        width: 15vmax;
+                        object-fit: contain;
+                        
                     }
                 }
             }
@@ -1099,18 +1116,18 @@ main {
         .xtream {
             background-color: #5A5A5A;
 
-            &::before {
-                content: "Web Design";
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                height: 100%;
-                font-size: 35vh;
-                font-family: roboto-slab-light;
-                color: #696868;
-                z-index: 1;
+            // &::before {
+            //     content: "Web Design";
+            //     display: flex;
+            //     align-items: center;
+            //     justify-content: center;
+            //     height: 100%;
+            //     font-size: 35vh;
+            //     font-family: roboto-slab-light;
+            //     color: #696868;
+            //     z-index: 1;
 
-            }
+            // }
 
         }
 
@@ -1153,7 +1170,7 @@ main {
 
                         .marquee {
                             width: 320px;
-                            top: 100%;
+                            top: 10 0%;
                             position: relative;
                             box-sizing: border-box;
                             animation: marquee 20s linear infinite 2s;
@@ -1204,18 +1221,18 @@ main {
                 z-index: 1;
                 background-color: #F5F5DC;
 
-                &::before {
-                    content: "Mobile App";
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    height: 100%;
-                    font-size: 34vh;
-                    font-family: roboto-slab-light;
-                    color: #a2a2a210;
-                    z-index: -1;
+                // &::before {
+                //     content: "Mobile App";
+                //     display: flex;
+                //     align-items: center;
+                //     justify-content: center;
+                //     height: 100%;
+                //     font-size: 34vh;
+                //     font-family: roboto-slab-light;
+                //     color: #a2a2a210;
+                //     z-index: -1;
 
-                }
+                // }
             }
         }
 
@@ -1225,18 +1242,18 @@ main {
             z-index: 1;
             background-color: #F2F4F7;
 
-            &::before {
-                content: "Mobile App";
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                height: 100%;
-                font-size: 34vh;
-                font-family: roboto-slab-light;
-                color: #a2a2a210;
-                z-index: -1;
+            // &::before {
+            //     content: "Mobile App";
+            //     display: flex;
+            //     align-items: center;
+            //     justify-content: center;
+            //     height: 100%;
+            //     font-size: 34vh;
+            //     font-family: roboto-slab-light;
+            //     color: #a2a2a210;
+            //     z-index: -1;
 
-            }
+            // }
         }
 
         .vividSpark {
@@ -1245,18 +1262,17 @@ main {
             z-index: 1;
             background-color: #1E1E1E;
 
-            &::before {
-                content: "Branding";
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                height: 100%;
-                font-size: 34vh;
-                font-family: roboto-slab-light;
-                color: #a2a2a210;
-                z-index: -1;
-
-            }
+            // &::before {
+            //     content: "Branding";
+            //     display: flex;
+            //     align-items: center;
+            //     justify-content: center;
+            //     height: 100%;
+            //     font-size: 34vh;
+            //     font-family: roboto-slab-light;
+            //     color: #a2a2a210;
+            //     z-index: -1;
+            // }
 
             .vividText {
                 height: 30%;

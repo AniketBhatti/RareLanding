@@ -192,22 +192,25 @@ const Landing = () => {
 	}, []);
 
 
-	// For OUR-WORK PAGE1 Animation [LumberCraft]
-
-
+	
+	
+	
+	
 	const lumberCraftRef = useRef(null);
+	const isMobile = window.innerWidth < 768;
 
 	React.useEffect(() => {
+
 		gsap.fromTo(lumberCraftRef.current,
-			{ x: 1800, opacity: 0 },
+			{ x: 100, opacity: 0,},
 			{
 				x: 0,
 				opacity: 1,
 				scrollTrigger: {
 					trigger: lumberCraftRef.current,
 					start: "top 80%", // Trigger when the top of the section is 80% down the viewport
-					end: "top top", // End when the top of the section is 30% down the viewport
-					// scrub: 1,
+					end: "top -30%", // End when the top of the section is 30% down the viewport
+					scrub: 1,
 				},
 
 			}
@@ -221,8 +224,8 @@ const Landing = () => {
 				duration: 1,
 				scrollTrigger: {
 					trigger: ".main-product",
-					start: "top top", // Trigger when the top of the section is 80% down the viewport
-					end: "top -20%", // End when the top of the section is 30% down the viewport
+					start: "top -50%", 
+					end: "top -70%", 
 					// scrub: 1,
 				}
 			}
@@ -233,26 +236,26 @@ const Landing = () => {
 			{
 				x: 150,
 				opacity: 1,
-				duration: 2,
+				duration: 1,
 				scrollTrigger: {
 					trigger: ".all-products",
-					start: "top -20%", // Trigger when the top of the section is 80% down the viewport
-					end: "top -40%", // End when the top of the section is 30% down the viewport
+					start: "top -70%", 
+					end: "top -80%",	
 					// scrub: 1,
 				}
 			}
 		);
 
 		gsap.fromTo(".customer-services",
-			{ x: 300, opacity: 0 },
+			{ x: 100, opacity: 0 },
 			{
 				x: -130,
 				opacity: 1,
-				duration: 2,
+				duration: 1,
 				scrollTrigger: {
 					trigger: ".customer-services",
-					start: "top -30%", // Trigger when the top of the section is 80% down the viewport
-					end: "top -50%", // End when the top of the section is 30% down the viewport
+					start: "top -80%", 
+					end: "top -90%", 
 					// scrub: 1,
 				}
 			}
@@ -261,7 +264,7 @@ const Landing = () => {
 	}, []);
 
 
-	// For OUR-WORK PAGE2 Animation [RegalFinance]
+
 
 
 	const regalFinance = useRef(null);
@@ -277,7 +280,7 @@ const Landing = () => {
 					trigger: regalFinance.current,
 					start: "top 90%", // Trigger when the top of the section is 80% down the viewport
 					end: "top top", // End when the top of the section is 30% down the viewport
-					// scrub: 1,
+					scrub: 1,
 				}
 			}
 		);
@@ -292,7 +295,7 @@ const Landing = () => {
 					trigger: ".leftPanel",
 					start: "top 90%", // Trigger when the top of the section is 80% down the viewport
 					end: "top 30%", // End when the top of the section is 30% down the viewport
-					// scrub: 1,
+					scrub: 1,
 				}
 			}
 		);
@@ -307,7 +310,7 @@ const Landing = () => {
 					trigger: ".rewards",
 					start: "top 90%", // Trigger when the top of the section is 90% down the viewport
 					end: "top 30%", // End when the top of the section is 30% down the viewport
-					// scrub: 1,
+					scrub: 1,
 				}
 			}
 		);
@@ -323,7 +326,7 @@ const Landing = () => {
 					trigger: ".assets",
 					start: "top 90%", // Trigger when the top of the section is 90% down the viewport
 					end: "top 30%", // End when the top of the section is 30% down the viewport
-					// scrub: 1,
+					scrub: 1,
 				}
 			}
 		);
@@ -339,7 +342,7 @@ const Landing = () => {
 					trigger: ".regalNavbar",
 					start: "top 90%", // Trigger when the top of the section is 90% down the viewport
 					end: "top 30%", // End when the top of the section is 30% down the viewport
-					// scrub: 1,
+					scrub: 1,
 				}
 			}
 		);
@@ -376,7 +379,7 @@ const Landing = () => {
 					trigger: orchard.current,
 					start: "top 90%",
 					end: "top 30%",
-					// scrub: 1,
+					scrub: 1,
 				}
 			}
 		);
@@ -407,7 +410,7 @@ const Landing = () => {
 					trigger: orchard.current,
 					start: "top -30%", // Trigger when the top of the section is 80% down the viewport
 					end: "top -40%", // End when the top of the section is 30% down the viewport
-					// scrub: 1,
+					scrub: 1,
 				}
 			}
 		);
@@ -424,13 +427,12 @@ const Landing = () => {
 					trigger: orchard.current,
 					start: "top -40%", // Trigger when the top of the section is 80% down the viewport
 					end: "top -50%", // End when the top of the section is 30% down the viewport
-					// scrub: 1,
+					scrub: 1,
 				}
 			}
 		);
 
 	}, []);
-
 
 
 	const healthInsurance = useRef(null)
@@ -460,7 +462,7 @@ const Landing = () => {
 					trigger: ".healthScreens",
 					start: "top 80%",
 					end: "top 30%",
-					// scrub: 1,
+					scrub: 1,
 				}
 			}
 		);
@@ -492,7 +494,7 @@ const Landing = () => {
 					trigger: ".healthScreens",
 					start: "top 50%",
 					end: "top top",
-					// scrub: 1,
+					scrub: 1,
 				}
 			}
 		);
@@ -683,7 +685,6 @@ const Landing = () => {
 	}, []);
 
 
-
 	const dinaRollings = useRef(null)
 	React.useEffect(() => {
 		gsap.fromTo(dinaRollings.current,
@@ -695,7 +696,7 @@ const Landing = () => {
 					trigger: dinaRollings.current,
 					start: "top 90%",
 					end: "top 30%",
-					// scrub: 1,
+					scrub: 1,
 				},
 			}
 		);
@@ -712,7 +713,7 @@ const Landing = () => {
 					trigger: ".dinaRollings",
 					start: "top top",
 					end: "bottom 40%",
-					// scrub: 1,
+					scrub: 1,
 				},
 				// attr: {
 				// 	src: "path/to/your/image.jpg" // Replace with the actual image path
@@ -733,7 +734,7 @@ const Landing = () => {
 					trigger: ".dinaRollings",
 					start: "top top",
 					end: "bottom 40%",
-					// scrub: 1,
+					scrub: 1,
 				},
 
 			},
@@ -752,7 +753,7 @@ const Landing = () => {
 					trigger: ".dinaRollings",
 					start: "top top",
 					end: "bottom 40%",
-					// scrub: 1,
+					scrub: 1,
 				},
 
 			},
@@ -771,7 +772,7 @@ const Landing = () => {
 					trigger: ".dinaRollings",
 					start: "top top",
 					end: "bottom 40%",
-					// scrub: 1,
+					scrub: 1,
 				},
 
 			},
@@ -791,7 +792,7 @@ const Landing = () => {
 					trigger: ".dinaRollings",
 					start: "top top",
 					end: "bottom 40%",
-					// scrub: 1,
+					scrub: 1,
 				},
 
 			},
@@ -815,7 +816,7 @@ const Landing = () => {
 					trigger: ".vividContainer",
 					start: "top top",
 					end: "top -50%",
-					// scrub: 1,
+					scrub: 1,
 				},
 			},
 
@@ -832,7 +833,7 @@ const Landing = () => {
 					trigger: ".vividContainer",
 					start: "top -50%",
 					end: "top -70%",
-					// scrub: 1,
+					scrub: 1,
 				},
 			},
 		)
@@ -847,7 +848,7 @@ const Landing = () => {
 					trigger: ".vividContainer",
 					start: "top -70%",
 					end: "top -75%",
-					// scrub: 1,
+					scrub: 1,
 				},
 			});
 
@@ -863,7 +864,7 @@ const Landing = () => {
 					trigger: ".vividContainer",
 					start: "top -75%",
 					end: "top -80%",
-					// scrub: 1,
+					scrub: 1,
 				},
 			},
 		);
@@ -879,7 +880,7 @@ const Landing = () => {
 					trigger: ".vividContainer",
 					start: "top -75%",
 					end: "top -80%",
-					// scrub: 1,
+					scrub: 1,
 				},
 			},
 		);
@@ -900,7 +901,7 @@ const Landing = () => {
 					trigger: ".vividContainer",
 					start: "top -82%",
 					end: "top -90%",
-					// scrub: 1,
+					scrub: 1,
 				},
 			},
 		);
@@ -921,7 +922,7 @@ const Landing = () => {
 					trigger: ".cocktailCultureContainer",
 					start: "top top",
 					end: "top -50%",
-					// scrub: 1,
+					scrub: 1,
 				},
 			},
 
@@ -939,7 +940,7 @@ const Landing = () => {
 					trigger: ".cocktailCultureContainer",
 					start: "top -51%",
 					end: "top -55%",
-					// scrub: 1,
+					scrub: 1,
 				},
 			},
 
@@ -957,7 +958,7 @@ const Landing = () => {
 					trigger: ".cocktailCultureContainer",
 					start: "top -55%",
 					end: "top -56%",
-					// scrub: 1,
+					scrub: 1,
 				},
 			},
 
@@ -976,7 +977,7 @@ const Landing = () => {
 					trigger: ".cocktailCultureContainer",
 					start: "top -56%",
 					end: "top -60%",
-					// scrub: 1,
+					scrub: 1,
 				},
 			},
 
@@ -997,7 +998,7 @@ const Landing = () => {
 					trigger: ".cocktailCultureContainer",
 					start: "top -65%",
 					end: "top -70%",
-					// scrub: 1,
+					scrub: 1,
 				},
 			},
 
@@ -1017,7 +1018,7 @@ const Landing = () => {
 					trigger: ".cocktailCultureContainer",
 					start: "top -70%",
 					end: "top -75%",
-					// scrub: 1,
+					scrub: 1,
 				},
 			},
 
@@ -1036,7 +1037,7 @@ const Landing = () => {
 					trigger: ".cocktailCultureContainer",
 					start: "top -70%",
 					end: "top -75%",
-					// scrub: 1,
+					scrub: 1,
 				},
 			},
 
@@ -1054,7 +1055,7 @@ const Landing = () => {
 					trigger: ".cocktailCultureContainer",
 					start: "top -80%",
 					end: "top -85%",
-					// scrub: 1,
+					scrub: 1,
 				},
 			},
 
@@ -1073,7 +1074,7 @@ const Landing = () => {
 					trigger: ".cocktailCultureContainer",
 					start: "top -85%",
 					end: "top -87%",
-					// scrub: 1,
+					scrub: 1,
 				},
 
 			});
@@ -1091,7 +1092,7 @@ const Landing = () => {
 					trigger: ".cocktailCultureContainer",
 					start: "top -87%",
 					end: "top -90%",
-					// scrub: 1,
+					scrub: 1,
 				},
 
 			});
@@ -1109,7 +1110,7 @@ const Landing = () => {
 					trigger: ".cocktailCultureContainer",
 					start: "top -87%",
 					end: "top -90%",
-					// scrub: 1,
+					scrub: 1,
 				},
 
 			});
@@ -1630,7 +1631,7 @@ const Landing = () => {
 				</section>
 			</div>
 
-			<section className="transform-ideas">
+			<section className="transform-ideas h-full">
 				<h2>
 					We transform ideas <div className="bulbs" /> into memorable
 					experiences <div className="squares" /> through branding{" "}
@@ -1638,23 +1639,22 @@ const Landing = () => {
 				</h2>
 			</section>
 
-
-			<section className="our-work">
+			<section className="our-work mt-12">
 
 				<div ref={lumberCraftRef} className="lumber-craft w-screen h-[200vh]">
-					<div className="lumberFrame h-[100vh] w-screen overflow-hidden">
+					<div className="lumberFrame h-screen w-screen flex items-center justify-center">
 
-						<div className="lumberContent flex justify-center items-center gap-20 h-screen w-screen">
-							<div className="all-products">
+						<div className="lumberContent flex justify-between items-center h-screen w-[90vw]">
+							<div className="all-products flex items-center justify-center">
 								<img className="all-list" src={lumber_all_products} alt="" />
 								<img className="place-it" src={place_it} alt="" />
 							</div>
 
-							<div className="main-product">
+							<div className="main-product flex items-center justify-center">
 								<img src={lumber_main} alt="" />
 							</div>
 
-							<div className="customer-services">
+							<div className="customer-services flex items-center justify-center">
 								<img src={lumber_customer} alt="" />
 							</div>
 						</div>
@@ -1663,7 +1663,7 @@ const Landing = () => {
 				</div>
 
 		
-				<div ref={regalFinance} className="regalFinance w-screen h-[200vh]">
+				{/* <div ref={regalFinance} className="regalFinance w-screen h-[200vh]">
 					<div className="regalFrame h-screen w-screen">
 
 						<div className="regalContent flex flex-col items-center justify-center gap-20 h-screen w-screen pt-10">
@@ -1698,18 +1698,15 @@ const Landing = () => {
 						</div>
 
 					</div>
-				</div>
+				</div> */}
 
 
-
-
-				<div className="xtream h-screen w-screen flex justify-center items-center">
+				{/* <div className="xtream h-screen w-screen flex justify-center items-center">
 					<img className="image absolute h-[90%] w-[90%] z-10" src={xtream_full} alt="" />
-				</div>
+				</div> */}
 
 
-
-				<div ref={orchard} className="orchard h-[200vh] w-screen">
+				{/* <div ref={orchard} className="orchard h-[200vh] w-screen">
 
 					<div className="orchardScreens h-screen w-screen ">
 						<div className="screen-showcase">
@@ -1748,10 +1745,10 @@ const Landing = () => {
 					</div>
 
 
-				</div>
+				</div> */}
 
 
-				<div ref={healthInsurance} className="healthInsurance h-[200vh] w-screen">
+				{/* <div ref={healthInsurance} className="healthInsurance h-[200vh] w-screen">
 					<div className="healthScreens h-screen w-screen flex">
 
 						<div className="screenContainer absolute top-0 left-0 flex z-10">
@@ -1769,9 +1766,11 @@ const Landing = () => {
 							<div className="hiLogo">
 								<img className="relative left-[-200px] top-[100px]" src={hiLogo} alt="" />
 							</div>
+
+							
 						</div>
 
-						<div className="widgets-container relative right-[1px]">
+						<div className="widgets-container relative top-0 left-[90%]">
 							<img src={add} alt="" className="Add" />
 							<img src={and} alt="" className="And" />
 							<img src={arrow} alt="" className="Arrow" />
@@ -1789,9 +1788,10 @@ const Landing = () => {
 
 					</div>
 
-				</div>
+				</div> */}
 
-				<div className="dinaRollings-container h-[200vh] w-screen">
+
+				{/* <div className="dinaRollings-container h-[200vh] w-screen">
 					<div ref={dinaRollings} className="dinaRollings h-screen w-screen overflow-hidden">
 						<div className="dinaRollings-data-container absolute top-0 left-0">
 							<img src={dinaHome} alt="" />
@@ -1802,9 +1802,10 @@ const Landing = () => {
 							<img src={sessions} alt="" className="sessions absolute top-[100px] left-[250px]" />
 						</div>
 					</div>
-				</div>
+				</div> */}
 
-				<div className="vividContainer h-[200vh] w-screen">
+
+				{/* <div className="vividContainer h-[200vh] w-screen">
 					<div className="vividSpark h-screen w-screen overflow-hidden">
 
 						<div className="vividText absolute top-0 left-0">
@@ -1827,9 +1828,10 @@ const Landing = () => {
 
 
 					</div>
-				</div>
+				</div> */}
 
-				<div className="cocktailCultureContainer h-[200vh] w-screen">
+
+				{/* <div className="cocktailCultureContainer h-[200vh] w-screen">
 					<div className="cocktailCulture h-screen w-screen overflow-hidden">
 
 						<div className="rainBows">
@@ -1896,10 +1898,13 @@ const Landing = () => {
 						</div>
 
 					</div>
-				</div>
+				</div> */}
 
 			</section>
 			
+			<div className="testing w-screen h-screen bg-red-500">
+
+			</div>
 
 
 		</main>

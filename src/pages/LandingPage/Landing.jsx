@@ -1662,34 +1662,26 @@ const Landing = () => {
 				<div ref={regalFinance} className="regalFinance w-screen h-[200vh]">
 					<div className="regalFrame h-screen w-screen">
 
-						<div className="regalContent flex flex-col items-center justify-center gap-20 h-screen w-screen pt-10">
+						<div className="regalContent">
 
 							<div className="regalNavbar">
-								<div className="w-screen flex items-center justify-center">
-									<img src={regal_navbar} alt="" />
-								</div>
+								<img src={regal_navbar} alt="" />
 							</div>
 
 
-							{/* <div className="regalData flex justify-center items-center gap-20">
+							<div className="regalData">
 								<div className="leftPanel">
-									<div className="">
-										<img className="h-[600px]" src={regal_leftpanel} alt="" />
-									</div>
+									<img className="" src={regal_leftpanel} alt="" />
 								</div>
 
 								<div className="rewards">
-									<div className="">
-										<img className="h-[400px]" src={rewards} alt="" />
-									</div>
+									<img className="" src={rewards} alt="" />
 								</div>
 
 								<div className="assets">
-									<div className="relative top-[-150px]">
-										<img className="h-[400px]" src={assets} alt="" />
-									</div>
+									<img className="" src={assets} alt="" />
 								</div>
-							</div> */}
+							</div>
 
 						</div>
 

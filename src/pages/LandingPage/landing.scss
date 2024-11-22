@@ -1348,8 +1348,395 @@ main {
                 position: sticky;
                 top: 0;
                 z-index: 1;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .regalContent{
+                    width: 80vw;
+                    height: 100vh;
+                    // background-color: green;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 50px;
+
+                    .regalNavbar{
+                        img{
+                            height: 100%;
+                            width: 100vmax;
+                            padding: 0 10% 0 0px;
+                        }
+                    }
+
+                    .regalData{
+                        width: 100%;
+                        height: 80%;
+                        display: flex;
+
+                        .leftPanel{
+                            // background-color: yellow;
+                            height: 100%;
+                            width: 100%;
+
+                            img{
+                                width: 80%;
+                            }
+                        }
+
+                        .rewards{
+                            // background-color: lime;
+                            height: 100%;
+                            width: 100%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            
+                            img{
+                                width: 100%;
+                            }
+                        }
+
+                        .assets{
+                            // background-color: goldenrod;
+                            height: 100%;
+                            width: 100%;
+                            display: flex;
+                            align-items: start;
+                            justify-content: end;
+
+                            img{
+                                width: 80%;
+                            }
+                        }
+                    }
+                }
 
             }
+
+            @media screen and (min-width: 1927px) {
+                .regalFrame {
+                    
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+    
+                    .regalContent{
+                        width: 80vw;
+                        height: 100vh;
+                        // background-color: green;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 50px;
+    
+                        .regalData{
+                            width: 100%;
+                            height: 80%;
+                            display: flex;
+    
+                            .leftPanel{
+                                // background-color: yellow;
+                                height: 100%;
+                                width: 100%;
+    
+                                img{
+                                    width: 80%;
+                                }
+                            }
+    
+                            .rewards{
+                                // background-color: lime;
+                                height: 60%;
+                                width: 100%;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                
+                                img{
+                                    width: 100%;
+                                }
+                            }
+    
+                            .assets{
+                                // background-color: goldenrod;
+                                height: 100%;
+                                width: 100%;
+                                justify-content: start;
+    
+                                img{
+                                    width: 80%;
+                                }
+                            }
+                        }
+                    }
+    
+                }
+            }
+
+            @media screen and (max-width: 1926px) and (min-width: 1440px) {
+                .regalFrame {
+                    
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+    
+                    .regalContent{
+                        width: 80vw;
+                        height: 100vh;
+                        // background-color: green;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 50px;
+    
+                        .regalData{
+                            width: 100%;
+                            height: 60%;
+                            display: flex;
+    
+                            .leftPanel{
+                                // background-color: yellow;
+                                height: 100%;
+                                width: 100%;
+    
+                                img{
+                                    width: 80%;
+                                }
+                            }
+    
+                            .rewards{
+                                // background-color: lime;
+                                height: 10  0%;
+                                width: 100%;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                
+                                img{
+                                    width: 100%;
+                                }
+                            }
+    
+                            .assets{
+                                // background-color: goldenrod;
+                                height: 100%;
+                                width: 100%;
+                                justify-content: start;
+    
+                                img{
+                                    width: 80%;
+                                }
+                            }
+                        }
+                    }
+    
+                }
+            }
+
+            @media screen and (max-width: 1439px) and (min-width: 1024px) {
+                .regalFrame {
+
+    
+                    .regalContent{
+                        width: 80vw;
+                        height: 100vh;
+                        // background-color: green;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 50px;
+    
+                        .regalData{
+                            width: 100%;
+                            height: 60%;
+                            display: flex;
+    
+                            .leftPanel{
+                                // background-color: yellow;
+                                height: 100%;
+                                width: 100%;
+    
+                                img{
+                                    width: 80%;
+                                }
+                            }
+    
+                            .rewards{
+                                // background-color: lime;
+                                height: 80%;
+                                width: 100%;
+                                
+                                img{
+                                    width: 100%;
+                                }
+                            }
+    
+                            .assets{
+                                // background-color: goldenrod;
+                                height: 100%;
+                                width: 100%;
+                                justify-content: start;
+    
+                                img{
+                                    width: 80%;
+                                }
+                            }
+                        }
+                    }
+    
+                }
+            }
+
+            @media screen and (max-width: 1023px) and (min-width: 768px) {
+                .regalFrame {
+                    .regalContent{
+                        width: 80vw;
+                        height: 100vh;
+                        
+    
+                        .regalData{
+                            width: 100%;
+                            height: 40%;
+                            display: flex;
+    
+                            .rewards{
+                                // background-color: lime;
+                                height: 60%;
+                                width: 100%;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                
+                                img{
+                                    width: 100%;
+                                }
+                            }
+    
+                            
+                        }
+                    }
+    
+                }
+            }
+
+            @media screen and (max-width: 767px) and (min-width: 530px) {
+                .regalFrame {
+                    .regalContent{
+                        width: 80vw;
+                        height: 100vh;
+                        
+    
+                        .regalData{
+                            width: 100%;
+                            height: 40%;
+                            display: flex;
+    
+                            .rewards{
+                                // background-color: lime;
+                                height: 60%;
+                                width: 100%;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                
+                                img{
+                                    width: 100%;
+                                }
+                            }
+    
+                            
+                        }
+                    }
+    
+                }
+            }
+
+            @media screen and (max-width: 529px) {
+                .regalFrame {
+                    position: sticky;
+                    top: 0;
+                    z-index: 1;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+    
+                    .regalContent{
+                        width: 80vw;
+                        height: 100vh;
+                        // background-color: green;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 70px;
+    
+                        .regalNavbar{
+                            
+                            img{
+                                height: 100%;
+                                width: 100%;
+                                padding: 0 0 0 0;
+                            }
+                        }
+    
+                        .regalData{
+                            width: 100%;
+                            height: 80%;
+                            display: block;
+    
+                            .leftPanel{
+                                height: 30%;
+                                width: 100%;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+    
+                                img{
+                                    width: 60%;
+                                }
+                            }
+    
+                            .rewards{
+                                // background-color: lime;
+                                height: 50%;
+                                width: 100%;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                
+                                img{
+                                    width: 70%;
+                                }
+                            }
+    
+                            .assets{
+                                // background-color: goldenrod;
+                                height: 50%;
+                                width: 100%;
+                                display: flex;
+                                align-items: start;
+                                justify-content: center;
+    
+                                img{
+                                    width: 60%;
+                                }
+                            }
+                        }
+                    }
+    
+                }
+            }
+
+
+
+
+
+
         }
 
         .xtream {

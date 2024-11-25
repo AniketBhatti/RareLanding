@@ -445,69 +445,69 @@ const Landing = () => {
 			}
 		);
 
-		gsap.fromTo(".phoneMock",
-			{ x: 1000, y: 200, opacity: 1, scale: 2 },
-			{
-				x: 0,
-				y: 0,
-				opacity: 1,
-				scale: 1,
-				scrollTrigger: {
-					trigger: ".healthScreens",
-					start: "top 80%",
-					end: "top 30%",
-					scrub: 1,
-				}
-			}
-		);
+		// gsap.fromTo(".phoneMock",
+		// 	{ x: 1000, y: 200, opacity: 1, scale: 2 },
+		// 	{
+		// 		x: 0,
+		// 		y: 0,
+		// 		opacity: 1,
+		// 		scale: 1,
+		// 		scrollTrigger: {
+		// 			trigger: ".healthScreens",
+		// 			start: "top 80%",
+		// 			end: "top 30%",
+		// 			scrub: 1,
+		// 		}
+		// 	}
+		// );
 
-		gsap.fromTo(".statistics",
-			{ x: -1400, opacity: 1 },
+		// gsap.fromTo(".statistics",
+		// 	{ x: -1400, opacity: 1 },
 
-			{
-				x: -400,
-				opacity: 1,
-				scale: 1,
-				scrollTrigger: {
-					trigger: ".healthInsurance",
-					start: "top 50%",
-					end: "top 90%",
-					scrub: 1,
-				}
-			}
-		);
+		// 	{
+		// 		x: -400,
+		// 		opacity: 1,
+		// 		scale: 1,
+		// 		scrollTrigger: {
+		// 			trigger: ".healthInsurance",
+		// 			start: "top 50%",
+		// 			end: "top 90%",
+		// 			scrub: 1,
+		// 		}
+		// 	}
+		// );
 
-		gsap.fromTo(".graph-customize",
-			{ x: 400, opacity: 1 },
+		// gsap.fromTo(".graph-customize",
+		// 	{ x: 400, opacity: 1 },
 
-			{
-				x: 0,
-				opacity: 1,
-				scale: 1,
-				scrollTrigger: {
-					trigger: ".healthScreens",
-					start: "top 50%",
-					end: "top top",
-					scrub: 1,
-				}
-			}
-		);
+		// 	{
+		// 		x: 0,
+		// 		opacity: 1,
+		// 		scale: 1,
+		// 		scrollTrigger: {
+		// 			trigger: ".healthScreens",
+		// 			start: "top 50%",
+		// 			end: "top top",
+		// 			scrub: 1,
+		// 		}
+		// 	}
+		// );
 
-		gsap.fromTo(".widgets-container",
-			{ x: 400, opacity: 1 },
+		// gsap.fromTo(".widgets-container",
+		// 	{ x: 400, opacity: 1 },
 
-			{
-				x: 0,
-				opacity: 1,
-				scale: 1,
-				scrollTrigger: {
-					trigger: ".healthScreens",
-					start: "top 50%",
-					end: "top top",
-					scrub: 1,
-				}
-			}
-		);
+		// 	{
+		// 		x: 0,
+		// 		opacity: 1,
+		// 		scale: 1,
+		// 		scrollTrigger: {
+		// 			trigger: ".healthScreens",
+		// 			start: "top 50%",
+		// 			end: "top top",
+		// 			scrub: 1,
+		// 		}
+		// 	}
+		// );
 
 
 

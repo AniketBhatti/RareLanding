@@ -28,7 +28,6 @@ import assets from "../../assets/images/07_ourWorks/REGALFINANCE/assets.png"
 
 import xtream_full from "../../assets/images/07_ourWorks/Xtream/xtreamFullImage.png"
 
-import topLeftVeggies from "../../assets/images/07_ourWorks/ORCHARD/top-left-veggies.png"
 import bottomLeftPhone from "../../assets/images/07_ourWorks/ORCHARD/bottom-left-phone.png"
 import rightHome from "../../assets/images/07_ourWorks/ORCHARD/right-orchard-home.png"
 
@@ -262,8 +261,6 @@ const Landing = () => {
 
 
 
-
-
 	const regalFinance = useRef(null);
 
 	React.useEffect(() => {
@@ -282,67 +279,67 @@ const Landing = () => {
 			}
 		);
 
-		// gsap.fromTo(".leftPanel",
-		// 	{ x: -400, opacity: 1 },
-		// 	{
-		// 		x: 150,
-		// 		opacity: 1,
-		// 		duration: 2,
-		// 		scrollTrigger: {
-		// 			trigger: ".leftPanel",
-		// 			start: "top 90%", // Trigger when the top of the section is 80% down the viewport
-		// 			end: "top 30%", // End when the top of the section is 30% down the viewport
-		// 			scrub: 1,
-		// 		}
-		// 	}
-		// );
+		gsap.fromTo(".leftPanel",
+			{ x: -400, opacity: 1 },
+			{
+				x: 0,
+				opacity: 1,
+				duration: 2,
+				scrollTrigger: {
+					trigger: ".leftPanel",
+					start: "top 90%", // Trigger when the top of the section is 80% down the viewport
+					end: "top 30%", // End when the top of the section is 30% down the viewport
+					scrub: 1,
+				}
+			}
+		);
 
-		// gsap.fromTo(".rewards",
-		// 	{ opacity: 1, scale: 0.5 }, // Start from below the viewport
-		// 	{
-		// 		opacity: 1,
-		// 		scale: 1,
-		// 		duration: 1,
-		// 		scrollTrigger: {
-		// 			trigger: ".rewards",
-		// 			start: "top 90%", // Trigger when the top of the section is 90% down the viewport
-		// 			end: "top 30%", // End when the top of the section is 30% down the viewport
-		// 			scrub: 1,
-		// 		}
-		// 	}
-		// );
+		gsap.fromTo(".rewards",
+			{ opacity: 1, scale: 0.5 }, // Start from below the viewport
+			{
+				opacity: 1,
+				scale: 1,
+				duration: 1,
+				scrollTrigger: {
+					trigger: ".rewards",
+					start: "top 90%", // Trigger when the top of the section is 90% down the viewport
+					end: "top 30%", // End when the top of the section is 30% down the viewport
+					scrub: 1,
+				}
+			}
+		);
 
-		// gsap.fromTo(".assets",
-		// 	{ opacity: 1, scale: 0.5, x: 200 }, // Start from below the viewport
-		// 	{
-		// 		opacity: 1,
-		// 		scale: 1,
-		// 		x: -100,
-		// 		duration: 1,
-		// 		scrollTrigger: {
-		// 			trigger: ".assets",
-		// 			start: "top 90%", // Trigger when the top of the section is 90% down the viewport
-		// 			end: "top 30%", // End when the top of the section is 30% down the viewport
-		// 			scrub: 1,
-		// 		}
-		// 	}
-		// );
+		gsap.fromTo(".assets",
+			{ opacity: 1, scale: 0.5, x: 200 }, // Start from below the viewport
+			{
+				opacity: 1,
+				scale: 1,
+				x: 0,
+				duration: 1,
+				scrollTrigger: {
+					trigger: ".assets",
+					start: "top 90%", // Trigger when the top of the section is 90% down the viewport
+					end: "top 30%", // End when the top of the section is 30% down the viewport
+					scrub: 1,
+				}
+			}
+		);
 
-		// gsap.fromTo(".regalNavbar",
-		// 	{ opacity: 1, scale: 0.5, x: 200 }, // Start from below the viewport
-		// 	{
-		// 		opacity: 1,
-		// 		scale: 1,
-		// 		x: 0,
-		// 		duration: 1,
-		// 		scrollTrigger: {
-		// 			trigger: ".regalNavbar",
-		// 			start: "top 90%", // Trigger when the top of the section is 90% down the viewport
-		// 			end: "top 30%", // End when the top of the section is 30% down the viewport
-		// 			scrub: 1,
-		// 		}
-		// 	}
-		// );
+		gsap.fromTo(".regalNavbar",
+			{ opacity: 1, scale: 0.5, x: 200 }, // Start from below the viewport
+			{
+				opacity: 1,
+				scale: 1,
+				x: 0,
+				duration: 1,
+				scrollTrigger: {
+					trigger: ".regalNavbar",
+					start: "top 90%", // Trigger when the top of the section is 90% down the viewport
+					end: "top 30%", // End when the top of the section is 30% down the viewport
+					scrub: 1,
+				}
+			}
+		);
 
 	}, []);
 
@@ -365,9 +362,9 @@ const Landing = () => {
 
 
 	const orchard = useRef(null);
-	React.useEffect(() => {
+	React.useEffect(() => {	
 		gsap.fromTo(orchard.current,
-			{ x: 300, y: 500, opacity: 0 },
+			{ x: 100, y: 100, opacity: 0 },
 			{
 				x: 0,
 				y: 0,
@@ -381,55 +378,55 @@ const Landing = () => {
 			}
 		);
 
-		gsap.fromTo(".veggies",
-			{ x: -300, opacity: 0 },
-			{
-				x: 0,
-				opacity: 1,
-				duration: 2,
-				scrollTrigger: {
-					trigger: orchard.current,
-					start: "top top", // Trigger when the top of the section is 80% down the viewport
-					end: "top -20%", // End when the top of the section is 30% down the viewport
-					scrub: 1,
-				}
-			}
-		);
+		// gsap.fromTo(".veggies",
+		// 	{ x: -300, opacity: 0 },
+		// 	{
+		// 		x: 0,
+		// 		opacity: 1,
+		// 		duration: 2,
+		// 		scrollTrigger: {
+		// 			trigger: orchard.current,
+		// 			start: "top top", // Trigger when the top of the section is 80% down the viewport
+		// 			end: "top -20%", // End when the top of the section is 30% down the viewport
+		// 			scrub: 1,
+		// 		}
+		// 	}
+		// );
 
 
-		gsap.fromTo(".find-prods",
-			{ x: -400, opacity: 0 },
-			{
-				x: 0,
-				opacity: 1,
-				duration: 2,
-				scrollTrigger: {
-					trigger: orchard.current,
-					start: "top -30%", // Trigger when the top of the section is 80% down the viewport
-					end: "top -40%", // End when the top of the section is 30% down the viewport
-					scrub: 1,
-				}
-			}
-		);
+		// gsap.fromTo(".find-prods",
+		// 	{ x: -400, opacity: 0 },
+		// 	{
+		// 		x: 0,
+		// 		opacity: 1,
+		// 		duration: 2,
+		// 		scrollTrigger: {
+		// 			trigger: orchard.current,
+		// 			start: "top -30%", // Trigger when the top of the section is 80% down the viewport
+		// 			end: "top -40%", // End when the top of the section is 30% down the viewport
+		// 			scrub: 1,
+		// 		}
+		// 	}
+		// );
 
 
-
-		gsap.fromTo(".homescreen",
-			{ x: 400, opacity: 0 },
-			{
-				x: 0,
-				opacity: 1,
-				duration: 2,
-				scrollTrigger: {
-					trigger: orchard.current,
-					start: "top -40%", // Trigger when the top of the section is 80% down the viewport
-					end: "top -50%", // End when the top of the section is 30% down the viewport
-					scrub: 1,
-				}
-			}
-		);
+		// gsap.fromTo(".homescreen",
+		// 	{ x: 400, opacity: 0 },
+		// 	{
+		// 		x: 0,
+		// 		opacity: 1,
+		// 		duration: 2,
+		// 		scrollTrigger: {
+		// 			trigger: orchard.current,
+		// 			start: "top -40%", // Trigger when the top of the section is 80% down the viewport
+		// 			end: "top -50%", // End when the top of the section is 30% down the viewport
+		// 			scrub: 1,
+		// 		}
+		// 	}
+		// );
 
 	}, []);
+
 
 
 	const healthInsurance = useRef(null)
@@ -1689,42 +1686,37 @@ const Landing = () => {
 				</div>
 
 
-				{/* <div className="xtream h-screen w-screen flex justify-center items-center">
+				<div className="xtream h-screen w-screen flex justify-center items-center">
 					<img className="image absolute h-[90%] w-[90%] z-10" src={xtream_full} alt="" />
-				</div> */}
+				</div>
 
 
-				{/* <div ref={orchard} className="orchard h-[200vh] w-screen">
+				<div ref={orchard} className="orchard h-[200vh] w-screen">
 
 					<div className="orchardScreens h-screen w-screen ">
 						<div className="screen-showcase">
-
 							<div className="veggie-menu">
-								<div className="relative h-full">
-									<img className="veggies absolute top-0 left-0 z-1" src={topLeftVeggies} alt="" />
-									<img className="find-prods relative z-2 top-[25%] left-[12.5%]" src={bottomLeftPhone} alt="" />
+
+								<div className="find-products">
+									<img className="" src={bottomLeftPhone} alt="" />
 								</div>
 							</div>
 
 							<div className="vertical-scroll">
-
 								<div className="marquee">
-									<img src={favoriteScreen} alt="" />
-									<img src={filterScreen} alt="" />
-									<img src={homeScreen} alt="" />
-									<img src={beveragesScreen} alt="" />
-									<img src={locationScreen} alt="" />
 									<img src={loginScreen} alt="" />
+									<img src={locationScreen} alt="" />
 									<img src={mobileScreen} alt="" />
+									<img src={homeScreen} alt="" />
+									<img src={filterScreen} alt="" />
+									<img src={beveragesScreen} alt="" />
+									<img src={favoriteScreen} alt="" />
+									<img src={searchScreen} alt="" />
 									<img src={mycartScreen} alt="" />
 									<img src={productDetailsScreen} alt="" />
-									<img src={searchScreen} alt="" />
 								</div>
-
 							</div>
-
 						</div>
-
 
 						<div className="homescreen">
 							<img src={rightHome} alt="" />
@@ -1733,7 +1725,7 @@ const Landing = () => {
 					</div>
 
 
-				</div> */}
+				</div>
 
 
 				{/* <div ref={healthInsurance} className="healthInsurance h-[200vh] w-screen">

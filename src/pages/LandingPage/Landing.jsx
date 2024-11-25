@@ -411,7 +411,7 @@ const Landing = () => {
 
 
 		gsap.fromTo(".homescreen",
-			{ x: 400, opacity: 0 },
+			{ x: 100, opacity: 0 },
 			{
 				x: 0,
 				opacity: 1,

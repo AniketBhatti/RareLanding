@@ -378,52 +378,52 @@ const Landing = () => {
 			}
 		);
 
-		// gsap.fromTo(".veggies",
-		// 	{ x: -300, opacity: 0 },
-		// 	{
-		// 		x: 0,
-		// 		opacity: 1,
-		// 		duration: 2,
-		// 		scrollTrigger: {
-		// 			trigger: orchard.current,
-		// 			start: "top top", // Trigger when the top of the section is 80% down the viewport
-		// 			end: "top -20%", // End when the top of the section is 30% down the viewport
-		// 			scrub: 1,
-		// 		}
-		// 	}
-		// );
+		gsap.fromTo(".veggies",
+			{ x: -300, opacity: 0 },
+			{
+				x: 0,
+				opacity: 1,
+				duration: 2,
+				scrollTrigger: {
+					trigger: orchard.current,
+					start: "top top", // Trigger when the top of the section is 80% down the viewport
+					end: "top -20%", // End when the top of the section is 30% down the viewport
+					scrub: 1,
+				}
+			}
+		);
 
 
-		// gsap.fromTo(".find-prods",
-		// 	{ x: -400, opacity: 0 },
-		// 	{
-		// 		x: 0,
-		// 		opacity: 1,
-		// 		duration: 2,
-		// 		scrollTrigger: {
-		// 			trigger: orchard.current,
-		// 			start: "top -30%", // Trigger when the top of the section is 80% down the viewport
-		// 			end: "top -40%", // End when the top of the section is 30% down the viewport
-		// 			scrub: 1,
-		// 		}
-		// 	}
-		// );
+		gsap.fromTo(".find-prods",
+			{ x: -400, opacity: 0 },
+			{
+				x: 0,
+				opacity: 1,
+				duration: 2,
+				scrollTrigger: {
+					trigger: orchard.current,
+					start: "top -30%", // Trigger when the top of the section is 80% down the viewport
+					end: "top -40%", // End when the top of the section is 30% down the viewport
+					scrub: 1,
+				}
+			}
+		);
 
 
-		// gsap.fromTo(".homescreen",
-		// 	{ x: 400, opacity: 0 },
-		// 	{
-		// 		x: 0,
-		// 		opacity: 1,
-		// 		duration: 2,
-		// 		scrollTrigger: {
-		// 			trigger: orchard.current,
-		// 			start: "top -40%", // Trigger when the top of the section is 80% down the viewport
-		// 			end: "top -50%", // End when the top of the section is 30% down the viewport
-		// 			scrub: 1,
-		// 		}
-		// 	}
-		// );
+		gsap.fromTo(".homescreen",
+			{ x: 400, opacity: 0 },
+			{
+				x: 0,
+				opacity: 1,
+				duration: 2,
+				scrollTrigger: {
+					trigger: orchard.current,
+					start: "top -40%", // Trigger when the top of the section is 80% down the viewport
+					end: "top -50%", // End when the top of the section is 30% down the viewport
+					scrub: 1,
+				}
+			}
+		);
 
 	}, []);
 
@@ -1728,7 +1728,7 @@ const Landing = () => {
 				</div>
 
 
-				{/* <div ref={healthInsurance} className="healthInsurance h-[200vh] w-screen">
+				<div ref={healthInsurance} className="healthInsurance h-[200vh] w-screen">
 					<div className="healthScreens h-screen w-screen flex">
 
 						<div className="screenContainer absolute top-0 left-0 flex z-10">
@@ -1768,7 +1768,7 @@ const Landing = () => {
 
 					</div>
 
-				</div> */}
+				</div>
 
 
 				{/* <div className="dinaRollings-container h-[200vh] w-screen">

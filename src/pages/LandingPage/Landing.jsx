@@ -191,17 +191,13 @@ const Landing = () => {
 	}, []);
 
 
-	
-	
-	
-	
 	const lumberCraftRef = useRef(null);
 	const isMobile = window.innerWidth < 768;
 
 	React.useEffect(() => {
 
 		gsap.fromTo(lumberCraftRef.current,
-			{ x: 100, opacity: 0,},
+			{ x: 100, opacity: 0, },
 			{
 				x: 0,
 				opacity: 1,
@@ -222,8 +218,8 @@ const Landing = () => {
 				opacity: 1,
 				scrollTrigger: {
 					trigger: ".main-product",
-					start: "top -10%", 
-					end: "top -30%", 
+					start: "top -10%",
+					end: "top -30%",
 					// scrub: 1,
 				}
 			}
@@ -236,8 +232,8 @@ const Landing = () => {
 				opacity: 1,
 				scrollTrigger: {
 					trigger: ".all-products",
-					start: "top -30%", 
-					end: "top -50%",	
+					start: "top -30%",
+					end: "top -50%",
 					// scrub: 1,
 				}
 			}
@@ -250,8 +246,8 @@ const Landing = () => {
 				opacity: 1,
 				scrollTrigger: {
 					trigger: ".customer-services",
-					start: "top -50%", 
-					end: "top -70%", 
+					start: "top -50%",
+					end: "top -70%",
 					// scrub: 1,
 				}
 			}
@@ -344,7 +340,6 @@ const Landing = () => {
 	}, []);
 
 
-
 	gsap.fromTo(".xtream",
 		{ x: -600, opacity: 0 },
 		{
@@ -360,9 +355,8 @@ const Landing = () => {
 		}
 	);
 
-
 	const orchard = useRef(null);
-	React.useEffect(() => {	
+	React.useEffect(() => {
 		gsap.fromTo(orchard.current,
 			{ x: 100, y: 100, opacity: 0 },
 			{
@@ -1171,11 +1165,9 @@ const Landing = () => {
 	}, []);
 
 
-	// MOVING ANIMATION EFFECT
-
+	// MOVING SCREEN ANIMATION EFFECT
 
 	React.useEffect(() => {
-
 
 		// PAGE BLACK AND WHITE ANIMATION SO LEFTSCREEN WILL APPEAR WITH B/W  MOVING SQUARE
 		gsap.fromTo(".processAnimationStart",
@@ -1201,14 +1193,14 @@ const Landing = () => {
 				opacity: 1,
 				x: 500,
 				y: 0,
-				rotation:45,
+				rotation: 45,
 			},
 
 			{
 				opacity: 1,
 				x: 385,
 				y: 0,
-				rotation:135,
+				rotation: 135,
 				zIndex: 200,
 				scrollTrigger: {
 					trigger: ".design-process",
@@ -1219,7 +1211,7 @@ const Landing = () => {
 			}
 		);
 
-		// sACLLING UP THE INNER SQUARE
+		// SACLLING UP THE INNER SQUARE
 		gsap.fromTo(".innerSquare",
 			{
 				scale: 1,
@@ -1239,8 +1231,6 @@ const Landing = () => {
 
 
 		// ACCTUAL SLIDES ROTATION ANIMATION STARTS FROM HERE
-
-
 
 
 		// MOVING WHOLE DIV 0 DEGREE FROM -90 DEGREE
@@ -1282,14 +1272,14 @@ const Landing = () => {
 		// ONBOARDING TEXT REVEAL EFFECT
 		gsap.fromTo(".onboarding",
 			{
-				x:"-100%",
-				y:"-110%",
-				opacity:0,
+				x: "-100%",
+				y: "-110%",
+				opacity: 0,
 			},
 
 			{
-				x:50,
-				opacity:1,
+				x: 50,
+				opacity: 1,
 				scrollTrigger: {
 					trigger: ".design-process",
 					start: "top -70%",
@@ -1302,11 +1292,11 @@ const Landing = () => {
 		// ONBOARDING TEXT HIDE AGAIN EFFECT
 		gsap.fromTo(".onboarding",
 			{
-				x:50,
+				x: 50,
 			},
-			
+
 			{
-				x:"-100%",
+				x: "-100%",
 				scrollTrigger: {
 					trigger: ".design-process",
 					start: "top -100%",
@@ -1374,15 +1364,15 @@ const Landing = () => {
 		// START PROJECT TEXT REVEAL EFFECT
 		gsap.fromTo(".startProject",
 			{
-				x:0,
-				y:100,
-				zIndex:-1,
+				x: 0,
+				y: 100,
+				zIndex: -1,
 			},
-			
+
 			{
-				x:"-110%",
-				zIndex:10,
-				y:100,
+				x: "-110%",
+				zIndex: 10,
+				y: 100,
 				scrollTrigger: {
 					trigger: ".design-process",
 					start: "top -140%",
@@ -1395,11 +1385,11 @@ const Landing = () => {
 		// START PROJECT TEXT HIDE AGAIN SCALE-0 EFFECT
 		gsap.fromTo(".startProject",
 			{
-			
+
 			},
 			{
-				x:0,
-				y:100,
+				x: 0,
+				y: 100,
 				scrollTrigger: {
 					trigger: ".design-process",
 					start: "top -150%",
@@ -1408,7 +1398,7 @@ const Landing = () => {
 				},
 			}
 		);
-		
+
 		// SET OPACITY 1 TO 0 FOR LEFT SCREEN FOR VISIBLE IMPACT
 		gsap.fromTo(".leftScreen",
 			{
@@ -1466,14 +1456,14 @@ const Landing = () => {
 		// DESIGN TEXT REVEAL EFFECT
 		gsap.fromTo(".design",
 			{
-				x:"-100%",
+				x: "-100%",
 				// y:"-110%",
-				opacity:0,
+				opacity: 0,
 			},
 
 			{
-				x:0,
-				y:0,
+				x: 0,
+				y: 0,
 				opacity: 1,
 				scrollTrigger: {
 					trigger: ".design-process",
@@ -1487,11 +1477,11 @@ const Landing = () => {
 		// DESIGN TEXT HIDE AGAIN SCALE-0 EFFECT
 		gsap.fromTo(".design",
 			{
-				
+
 			},
 
 			{
-				x:"-100%",
+				x: "-100%",
 				scrollTrigger: {
 					trigger: ".design-process",
 					start: "top -185%",
@@ -1554,16 +1544,16 @@ const Landing = () => {
 				},
 			}
 		);
-		
+
 		gsap.fromTo(".delivery",
 			{
-				x:0,
-				opacity:0,
+				x: 0,
+				opacity: 0,
 			},
 
 			{
-				x:"-100%",
-				y:"10%",
+				x: "-100%",
+				y: "10%",
 				opacity: 1,
 				scrollTrigger: {
 					trigger: ".design-process",
@@ -1655,7 +1645,7 @@ const Landing = () => {
 					</div>
 				</div>
 
-		
+
 				<div ref={regalFinance} className="regalFinance w-screen h-[200vh]">
 					<div className="regalFrame h-screen w-screen">
 
@@ -1729,25 +1719,27 @@ const Landing = () => {
 
 
 				<div ref={healthInsurance} className="healthInsurance h-[200vh] w-screen">
-					<div className="healthScreens h-screen w-screen flex">
+					<div className="healthScreens h-screen w-screen">
 
-						<div className="screenContainer absolute top-0 left-0 flex z-10">
+						<div className="screenContainer absolute top-0 left-0 z-10">
 
-							<div className="phone flex relative left-[-250px]">
-								<img className="phoneMock h-[1100px] relative z-10" src={phoneMockup} alt="" />
-								<img className="statistics h-[700px] relative z-2 top-[180px]" src={statistics} alt="" />
+							<div className="hiLogo w-screen">
+								<img className="" src={hiLogo} alt="" />
 							</div>
 
-							<div className="graph-customize flex items-start justify-center relative top-[200px] left-[-300px]">
-								<img src={lineGraph} alt="" />
-								<img className="relative top-[65px] left-[-100px]" src={customize} alt="" />
+							<div className="Screens-Graphs">
+								<div className="phoneScreens">
+									<img className="phoneMock" src={phoneMockup} alt="" />
+									<img className="statistics" src={statistics} alt="" />
+								</div>
+
+								<div className="graph-customize">
+									<img src={lineGraph} alt="" />
+									<img className="" src={customize} alt="" />
+								</div>
 							</div>
 
-							<div className="hiLogo">
-								<img className="relative left-[-200px] top-[100px]" src={hiLogo} alt="" />
-							</div>
 
-							
 						</div>
 
 						<div className="widgets-container relative top-0 left-[90%]">
@@ -1881,7 +1873,7 @@ const Landing = () => {
 				</div> */}
 
 			</section>
-			
+
 			<div className="testing w-screen h-screen bg-red-500">
 
 			</div>

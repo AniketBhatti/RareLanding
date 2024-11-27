@@ -1769,11 +1769,11 @@ const Landing = () => {
 							</div>
 
 							<div className="smallElements">
-							{/* <img src={dinaActual} alt="" className="dina absolute top-[560px] left-[350px]" />
-							<img src={gameGraph} alt="" className="gameGraph absolute top-[0px] left-[50px]" />
-							<img src={connectionsBuild} alt="" className="connectionBuild absolute top-[400px] left-[50px]" />
-							<img src={felindra} alt="" className="felindra absolute top-[0px] left-[0px]" />
-							<img src={sessions} alt="" className="sessions absolute top-[100px] left-[250px]" /> */}
+								<img src={dinaActual} alt="" className="dina" />
+								<img src={connectionsBuild} alt="" className="connectionBuild" />
+								<img src={gameGraph} alt="" className="gameGraph" />
+								<img src={felindra} alt="" className="felindra" />
+								<img src={sessions} alt="" className="sessions " />
 							</div>
 						</div>
 

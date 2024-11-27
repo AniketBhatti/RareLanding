@@ -2831,7 +2831,52 @@ main {
                 justify-content: start;
             }
 
-            .smallElements{}
+            .smallElements{
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .dina{
+                    position: relative;
+                    width: 18%;
+                    top: -30%;
+                    left: 62%;
+                }
+
+                .connectionBuild{
+                    position: absolute;
+                    width: 20%;
+                    top: 8%;
+                    left: 56%;
+                }
+
+                .gameGraph{
+                    position: absolute;
+                    width: 16%;
+                    top: 8%;
+                    left: 38%;
+                }
+
+                .felindra{
+                    position: relative;
+                    width: 26%;
+                    left: 12%;
+                
+                }
+
+                .sessions{
+                    position: relative;
+                    width: 25%;
+                    top: 5%;
+                    left: 10%;
+                }
+
+            }
 
 
             @media screen and (min-width: 1927px) {
@@ -2841,7 +2886,6 @@ main {
                     justify-content: start;
 
                     img{
-                        // height: 100%;
                         width: 40%;
                     }
                 }
@@ -2854,6 +2898,46 @@ main {
                         width: 50%;
                     }
                 }
+
+
+                .smallElements{
+    
+                    .dina{
+                        position: relative;
+                        width: 18%;
+                        top: -30%;
+                        left: 62%;
+                    }
+    
+                    .connectionBuild{
+                        position: absolute;
+                        width: 20%;
+                        top: 10%;
+                        left: 56%;
+                    }
+    
+                    .gameGraph{
+                        position: absolute;
+                        width: 16%;
+                        top: 10%;
+                        left: 38%;
+                    }
+    
+                    .felindra{
+                        position: relative;
+                        width: 26%;
+                        left: 12%;
+                    
+                    }
+    
+                    .sessions{
+                        position: relative;
+                        width: 25%;
+                        top: 5%;
+                        left: 10%;
+                    }
+    
+                }
             }
 
             @media screen and (max-width: 1439px) and (min-width: 1024px) {
@@ -2862,6 +2946,45 @@ main {
                     img{
                         width: 45%;
                     }
+                }
+
+                .smallElements{
+    
+                    .dina{
+                        position: relative;
+                        width: 18%;
+                        top: -30%;
+                        left: 62%;
+                    }
+    
+                    .connectionBuild{
+                        position: absolute;
+                        width: 20%;
+                        top: 15%;
+                        left: 56%;
+                    }
+    
+                    .gameGraph{
+                        position: absolute;
+                        width: 16%;
+                        top: 15%;
+                        left: 38%;
+                    }
+    
+                    .felindra{
+                        position: relative;
+                        width: 26%;
+                        left: 12%;
+                    
+                    }
+    
+                    .sessions{
+                        position: relative;
+                        width: 25%;
+                        top: 5%;
+                        left: 10%;
+                    }
+    
                 }
             }
 
@@ -2872,15 +2995,154 @@ main {
                         width: 55%;
                     }
                 }
+
+                .smallElements{
+    
+                    .dina{
+                        position: relative;
+                        width: 22%;
+                        top: -15%;
+                        left: 64%;
+                    }
+    
+                    .connectionBuild{
+                        position: absolute;
+                        width: 28%;
+                        top: 28%;
+                        left: 45%;
+                    }
+    
+                    .gameGraph{
+                        position: absolute;
+                        width: 30%;
+                        top: 5%;
+                        left: 50%;
+                    }
+
+                    .felindra{
+                        position: relative;
+                        width: 28%;
+                        left: 15%;
+                        top: 5%;
+                    }
+    
+                    .sessions{
+                        position: relative;
+                        width: 25%;
+                        top: 25%;
+                        left: 10%;
+                    }
+    
+    
+                }
             }
 
-            @media screen and (max-width: 767px) and (min-width: 530px) {
+            @media screen and (max-width: 767px) and (min-width: 640px) {
+
                 .dinaPhoneMock{
+                    display: flex;
+                    align-items: end;
+                    justify-content: start;
 
                     img{
-                        width: 55%;
+                        width: 55%; 
                     }
                 }
+
+                .smallElements{
+    
+                    .dina{
+                        position: relative;
+                        width: 25%;
+                        top: 0%;
+                        left: 65%;
+                    }
+    
+                    .connectionBuild{
+                        position: absolute;
+                        width: 35%;
+                        top: 22%;
+                        left: 25%;
+                    }
+    
+                    .gameGraph{
+                        position: absolute;
+                        width: 30%;
+                        top: 15%;
+                        left: 65%;
+                    }
+
+                    .felindra{
+                        position: relative;
+                        width: 30%;
+                        left: 12%;
+                        top: 4%;
+                    }
+    
+                    .sessions{
+                        position: relative;
+                        width: 35%;
+                        top: 25%;
+                        left: 0%;
+                    }
+    
+    
+                }
+                
+            }
+
+            @media screen and (max-width: 639px) and (min-width: 530px) {
+
+                .dinaPhoneMock{
+                    display: flex;
+                    align-items: end;
+                    justify-content: start;
+
+                    img{
+                        width: 55%; 
+                    }
+                }
+
+                .smallElements{
+    
+                    .dina{
+                        position: relative;
+                        width: 25%;
+                        top: 0%;
+                        left: 65%;
+                    }
+    
+                    .connectionBuild{
+                        position: absolute;
+                        width: 35%;
+                        top: 32%;
+                        left: 25%;
+                    }
+    
+                    .gameGraph{
+                        position: absolute;
+                        width: 30%;
+                        top: 25%;
+                        left: 65%;
+                    }
+
+                    .felindra{
+                        position: relative;
+                        width: 30%;
+                        left: 12%;
+                        top: 4%;
+                    }
+    
+                    .sessions{
+                        position: relative;
+                        width: 35%;
+                        top: 25%;
+                        left: 0%;
+                    }
+    
+    
+                }
+                
             }
 
             @media screen and (max-width: 529px) {
@@ -2889,9 +3151,96 @@ main {
                     align-items: end;
                     justify-content: center;
 
-                    img{
-                        // height: 100%;
+                    img{    
                         width: 60%;
+                    }
+                }
+
+                .smallElements{
+                    .dina{
+                        position: relative;
+                        width: 32%;
+                        top: -12%;
+                        left: 55%;
+                    }
+    
+                    .connectionBuild{
+                        position: absolute;
+                        width: 40%;
+                        top: 15%;
+                        left: 10%;
+                    }
+    
+                    .gameGraph{
+                        position: absolute;
+                        width: 40%;
+                        top: 15%;
+                        left: 55%;
+                    }
+
+                    .felindra{
+                        position: relative;
+                        width: 40%;
+                        left: -20%;
+                        top: -10%;
+                    }
+    
+                    .sessions{
+                        position: relative;
+                        width: 35%;
+                        top: 5%;
+                        left: -10%;
+                    }
+                }
+
+            }
+
+            @media screen and (min-width: 320px) and (max-width: 450px) {
+                .dinaPhoneMock{
+                    display: flex;
+                    align-items: end;
+                    justify-content: center;
+
+                    img{    
+                        width: 70%;
+                    }
+                }
+
+
+                .smallElements{
+                    .dina{
+                        position: relative;
+                        width: 40%;
+                        top: -15%;
+                        left: 70%;
+                    }
+    
+                    .connectionBuild{
+                        position: absolute;
+                        width: 50%;
+                        top: 17%;
+                        left: 6%;
+                    }
+    
+                    .gameGraph{
+                        position: absolute;
+                        width: 50%;
+                        top: 2%;
+                        left: 45%;
+                    }
+
+                    .felindra{
+                        position: relative;
+                        width: 50%;
+                        left: -20%;
+                        top: -8%;
+                    }
+    
+                    .sessions{
+                        position: relative;
+                        width: 40%;
+                        top: 2%;
+                        left: -20%;
                     }
                 }
             }
@@ -2990,6 +3339,8 @@ main {
         }
 
     }
+
+
 
     .design-process {
         height: 340vh;

@@ -64,8 +64,7 @@ import teeth from "../../assets/images/07_ourWorks/HEALTHINSURANCE/widgets/teeth
 
 
 import dinaHome from "../../assets/images/07_ourWorks/DINAROLLING/phone-mock-homeScreen.png"
-import dinaSmall from "../../assets/images/07_ourWorks/DINAROLLING/dina-bonus-small.png"
-import dinaBig from "../../assets/images/07_ourWorks/DINAROLLING/dina-bonus-big.png"
+import dinaHomeFull from "../../assets/images/07_ourWorks/DINAROLLING/phone-mock-homeScreenFull.png"
 import dinaActual from "../../assets/images/07_ourWorks/DINAROLLING/dina-bonus-actual.png"
 import gameGraph from "../../assets/images/07_ourWorks/DINAROLLING/game-metrics-graph.png"
 import connectionsBuild from "../../assets/images/07_ourWorks/DINAROLLING/connection-building.png"
@@ -676,7 +675,7 @@ const Landing = () => {
 	const dinaRollings = useRef(null)
 	React.useEffect(() => {
 		gsap.fromTo(dinaRollings.current,
-			{ x: 500, opacity: 0 },
+			{ x: 100, opacity: 0 },
 			{
 				x: 0,
 				opacity: 1,
@@ -689,103 +688,99 @@ const Landing = () => {
 			}
 		);
 
-		gsap.fromTo(".dina",
-			{ x: 0, y: 0, scale: 0.5, opacity: 0 },
+		// gsap.fromTo(".dina",
+		// 	{ x: 0, y: 0, scale: 0.5, opacity: 0 },
 
-			{
-				x: 1100,
-				y: -500,
-				scale: 0.8,
-				opacity: 1,
-				scrollTrigger: {
-					trigger: ".dinaRollings",
-					start: "top top",
-					end: "bottom 40%",
-					scrub: 1,
-				},
-				// attr: {
-				// 	src: "path/to/your/image.jpg" // Replace with the actual image path
-				// },
-			},
+		// 	{
+		// 		x: 1100,
+		// 		y: -500,
+		// 		scale: 0.8,
+		// 		opacity: 1,
+		// 		scrollTrigger: {
+		// 			trigger: ".dinaRollings",
+		// 			start: "top top",
+		// 			end: "top -10%",
+		// 			scrub: 1,
+		// 		},
+		// 	},
 
-		);
+		// );
 
-		gsap.fromTo(".gameGraph",
-			{ x: 0, y: 0, scale: 0.5, opacity: 0 },
+		// gsap.fromTo(".gameGraph",
+		// 	{ x: 0, y: 0, scale: 0.5, opacity: 0 },
 
-			{
-				x: 550,
-				y: 120,
-				scale: 1.2,
-				opacity: 1,
-				scrollTrigger: {
-					trigger: ".dinaRollings",
-					start: "top top",
-					end: "bottom 40%",
-					scrub: 1,
-				},
+		// 	{
+		// 		x: 550,
+		// 		y: 120,
+		// 		scale: 1.2,
+		// 		opacity: 1,
+		// 		scrollTrigger: {
+		// 			trigger: ".dinaRollings",
+		// 			start: "top -10%",
+		// 			end: "top -20%",
+		// 			scrub: 1,
+		// 		},
 
-			},
+		// 	},
 
-		);
+		// );
 
-		gsap.fromTo(".connectionBuild",
-			{ x: 0, y: 0, scale: 0.5, opacity: 0 },
+		// gsap.fromTo(".connectionBuild",
+		// 	{ x: 0, y: 0, scale: 0.5, opacity: 0 },
 
-			{
-				x: 900,
-				y: -300,
-				scale: 1,
-				opacity: 1,
-				scrollTrigger: {
-					trigger: ".dinaRollings",
-					start: "top top",
-					end: "bottom 40%",
-					scrub: 1,
-				},
+		// 	{
+		// 		x: 900,
+		// 		y: -300,
+		// 		scale: 1,
+		// 		opacity: 1,
+		// 		scrollTrigger: {
+		// 			trigger: ".dinaRollings",
+		// 			start: "top -20%",
+		// 			end: "top -30%",
+		// 			scrub: 1,
+		// 		},
 
-			},
+		// 	},
 
-		);
+		// );
 
-		gsap.fromTo(".felindra",
-			{ x: 0, y: 0, scale: 0.3, opacity: 0 },
+		// gsap.fromTo(".felindra",
+		// 	{ x: 0, y: 0, scale: 0.3, opacity: 0 },
 
-			{
-				x: 700,
-				y: 300,
-				scale: 0.8,
-				opacity: 1,
-				scrollTrigger: {
-					trigger: ".dinaRollings",
-					start: "top top",
-					end: "bottom 40%",
-					scrub: 1,
-				},
+		// 	{
+		// 		x: 700,
+		// 		y: 300,
+		// 		scale: 0.8,
+		// 		opacity: 1,
+		// 		scrollTrigger: {
+		// 			trigger: ".dinaRollings",
+		// 			start: "top -30%",
+		// 			end: "top -40%",
+		// 			scrub: 1,
+		// 		},
 
-			},
+		// 	},
 
-		);
+		// );
 
+		// gsap.fromTo(".sessions",
+		// 	{ x: 0, y: 0, scale: 0.3, opacity: 0 },
 
-		gsap.fromTo(".sessions",
-			{ x: 0, y: 0, scale: 0.3, opacity: 0 },
+		// 	{
+		// 		x: 1000,
+		// 		y: 400,
+		// 		scale: 0.9,
+		// 		opacity: 1,
+		// 		scrollTrigger: {
+		// 			trigger: ".dinaRollings",
+		// 			start: "top -40%",
+		// 			end: "top -50%",
+		// 			scrub: 1,
+		// 		},
 
-			{
-				x: 1000,
-				y: 400,
-				scale: 0.9,
-				opacity: 1,
-				scrollTrigger: {
-					trigger: ".dinaRollings",
-					start: "top top",
-					end: "bottom 40%",
-					scrub: 1,
-				},
+		// 	},
 
-			},
-
-		);
+		// );
 
 	}, []);
 
@@ -1742,7 +1737,8 @@ const Landing = () => {
 
 						</div>
 
-						<div className="widgets-container relative top-0 left-[90%]">
+
+						<div className="widgets-container ml-[90%]">
 							<img src={add} alt="" className="Add" />
 							<img src={and} alt="" className="And" />
 							<img src={arrow} alt="" className="Arrow" />
@@ -1763,18 +1759,27 @@ const Landing = () => {
 				</div>
 
 
-				{/* <div className="dinaRollings-container h-[200vh] w-screen">
+				<div className="dinaRollings-container h-[200vh] w-screen">
 					<div ref={dinaRollings} className="dinaRollings h-screen w-screen overflow-hidden">
-						<div className="dinaRollings-data-container absolute top-0 left-0">
-							<img src={dinaHome} alt="" />
-							<img src={dinaActual} alt="" className="dina absolute top-[560px] left-[350px]" />
+
+
+						<div className="dinaRollings-data-container">
+							<div className="dinaPhoneMock w-screen h-screen">
+								<img src={dinaHomeFull} alt="" />
+							</div>
+
+							<div className="smallElements">
+							{/* <img src={dinaActual} alt="" className="dina absolute top-[560px] left-[350px]" />
 							<img src={gameGraph} alt="" className="gameGraph absolute top-[0px] left-[50px]" />
 							<img src={connectionsBuild} alt="" className="connectionBuild absolute top-[400px] left-[50px]" />
 							<img src={felindra} alt="" className="felindra absolute top-[0px] left-[0px]" />
-							<img src={sessions} alt="" className="sessions absolute top-[100px] left-[250px]" />
+							<img src={sessions} alt="" className="sessions absolute top-[100px] left-[250px]" /> */}
+							</div>
 						</div>
+
+
 					</div>
-				</div> */}
+				</div>
 
 
 				{/* <div className="vividContainer h-[200vh] w-screen">

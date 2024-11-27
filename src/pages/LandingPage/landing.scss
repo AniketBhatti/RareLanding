@@ -1283,6 +1283,7 @@ main {
                         .all-products {
 
                             position: relative;
+
                             .all-list {
                                 height: 30vmax;
                                 width: 20vmax;
@@ -1314,6 +1315,7 @@ main {
                         .customer-services {
                             height: 100px;
                             background-color: green;
+
                             img {
                                 height: 35vmax;
                                 width: 20vmax;
@@ -1352,7 +1354,7 @@ main {
                 align-items: center;
                 justify-content: center;
 
-                .regalContent{
+                .regalContent {
                     width: 80vw;
                     height: 100vh;
                     // background-color: green;
@@ -1362,43 +1364,43 @@ main {
                     justify-content: center;
                     gap: 50px;
 
-                    .regalNavbar{
-                        img{
+                    .regalNavbar {
+                        img {
                             height: 100%;
                             width: 100vmax;
                             padding: 0 10% 0 0px;
                         }
                     }
 
-                    .regalData{
+                    .regalData {
                         width: 100%;
                         height: 80%;
                         display: flex;
 
-                        .leftPanel{
+                        .leftPanel {
                             // background-color: yellow;
                             height: 100%;
                             width: 100%;
 
-                            img{
+                            img {
                                 width: 80%;
                             }
                         }
 
-                        .rewards{
+                        .rewards {
                             // background-color: lime;
                             height: 100%;
                             width: 100%;
                             display: flex;
                             align-items: center;
                             justify-content: center;
-                            
-                            img{
+
+                            img {
                                 width: 100%;
                             }
                         }
 
-                        .assets{
+                        .assets {
                             // background-color: goldenrod;
                             height: 100%;
                             width: 100%;
@@ -1406,7 +1408,7 @@ main {
                             align-items: start;
                             justify-content: end;
 
-                            img{
+                            img {
                                 width: 80%;
                             }
                         }
@@ -1417,12 +1419,12 @@ main {
 
             @media screen and (min-width: 1927px) {
                 .regalFrame {
-                    
+
                     display: flex;
                     align-items: center;
                     justify-content: center;
-    
-                    .regalContent{
+
+                    .regalContent {
                         width: 80vw;
                         height: 100vh;
                         // background-color: green;
@@ -1431,59 +1433,59 @@ main {
                         align-items: center;
                         justify-content: center;
                         gap: 50px;
-    
-                        .regalData{
+
+                        .regalData {
                             width: 100%;
                             height: 80%;
                             display: flex;
-    
-                            .leftPanel{
+
+                            .leftPanel {
                                 // background-color: yellow;
                                 height: 100%;
                                 width: 100%;
-    
-                                img{
+
+                                img {
                                     width: 80%;
                                 }
                             }
-    
-                            .rewards{
+
+                            .rewards {
                                 // background-color: lime;
                                 height: 60%;
                                 width: 100%;
                                 display: flex;
                                 align-items: center;
                                 justify-content: center;
-                                
-                                img{
+
+                                img {
                                     width: 100%;
                                 }
                             }
-    
-                            .assets{
+
+                            .assets {
                                 // background-color: goldenrod;
                                 height: 100%;
                                 width: 100%;
                                 justify-content: start;
-    
-                                img{
+
+                                img {
                                     width: 80%;
                                 }
                             }
                         }
                     }
-    
+
                 }
             }
 
             @media screen and (max-width: 1926px) and (min-width: 1440px) {
                 .regalFrame {
-                    
+
                     display: flex;
                     align-items: center;
                     justify-content: center;
-    
-                    .regalContent{
+
+                    .regalContent {
                         width: 80vw;
                         height: 100vh;
                         // background-color: green;
@@ -1492,56 +1494,56 @@ main {
                         align-items: center;
                         justify-content: center;
                         gap: 50px;
-    
-                        .regalData{
+
+                        .regalData {
                             width: 100%;
                             height: 60%;
                             display: flex;
-    
-                            .leftPanel{
+
+                            .leftPanel {
                                 // background-color: yellow;
                                 height: 100%;
                                 width: 100%;
-    
-                                img{
+
+                                img {
                                     width: 80%;
                                 }
                             }
-    
-                            .rewards{
+
+                            .rewards {
                                 // background-color: lime;
-                                height: 10  0%;
+                                height: 10 0%;
                                 width: 100%;
                                 display: flex;
                                 align-items: center;
                                 justify-content: center;
-                                
-                                img{
+
+                                img {
                                     width: 100%;
                                 }
                             }
-    
-                            .assets{
+
+                            .assets {
                                 // background-color: goldenrod;
                                 height: 100%;
                                 width: 100%;
                                 justify-content: start;
-    
-                                img{
+
+                                img {
                                     width: 80%;
                                 }
                             }
                         }
                     }
-    
+
                 }
             }
 
             @media screen and (max-width: 1439px) and (min-width: 1024px) {
                 .regalFrame {
 
-    
-                    .regalContent{
+
+                    .regalContent {
                         width: 80vw;
                         height: 100vh;
                         // background-color: green;
@@ -1550,109 +1552,109 @@ main {
                         align-items: center;
                         justify-content: center;
                         gap: 50px;
-    
-                        .regalData{
+
+                        .regalData {
                             width: 100%;
                             height: 60%;
                             display: flex;
-    
-                            .leftPanel{
+
+                            .leftPanel {
                                 // background-color: yellow;
                                 height: 100%;
                                 width: 100%;
-    
-                                img{
+
+                                img {
                                     width: 80%;
                                 }
                             }
-    
-                            .rewards{
+
+                            .rewards {
                                 // background-color: lime;
                                 height: 80%;
                                 width: 100%;
-                                
-                                img{
+
+                                img {
                                     width: 100%;
                                 }
                             }
-    
-                            .assets{
+
+                            .assets {
                                 // background-color: goldenrod;
                                 height: 100%;
                                 width: 100%;
                                 justify-content: start;
-    
-                                img{
+
+                                img {
                                     width: 80%;
                                 }
                             }
                         }
                     }
-    
+
                 }
             }
 
             @media screen and (max-width: 1023px) and (min-width: 768px) {
                 .regalFrame {
-                    .regalContent{
+                    .regalContent {
                         width: 80vw;
                         height: 100vh;
-                        
-    
-                        .regalData{
+
+
+                        .regalData {
                             width: 100%;
                             height: 40%;
                             display: flex;
-    
-                            .rewards{
+
+                            .rewards {
                                 // background-color: lime;
                                 height: 60%;
                                 width: 100%;
                                 display: flex;
                                 align-items: center;
                                 justify-content: center;
-                                
-                                img{
+
+                                img {
                                     width: 100%;
                                 }
                             }
-    
-                            
+
+
                         }
                     }
-    
+
                 }
             }
 
             @media screen and (max-width: 767px) and (min-width: 530px) {
                 .regalFrame {
-                    .regalContent{
+                    .regalContent {
                         width: 80vw;
                         height: 100vh;
-                        
-    
-                        .regalData{
+
+
+                        .regalData {
                             width: 100%;
                             height: 40%;
                             display: flex;
-    
-                            .rewards{
+
+                            .rewards {
                                 // background-color: lime;
                                 height: 60%;
                                 width: 100%;
                                 display: flex;
                                 align-items: center;
                                 justify-content: center;
-                                
-                                img{
+
+                                img {
                                     width: 100%;
                                 }
                             }
-    
-                            
+
+
                         }
                     }
-    
+
                 }
             }
 
@@ -1664,8 +1666,8 @@ main {
                     display: flex;
                     align-items: center;
                     justify-content: center;
-    
-                    .regalContent{
+
+                    .regalContent {
                         width: 80vw;
                         height: 100vh;
                         // background-color: green;
@@ -1674,34 +1676,34 @@ main {
                         align-items: center;
                         justify-content: center;
                         gap: 70px;
-    
-                        .regalNavbar{
-                            
-                            img{
+
+                        .regalNavbar {
+
+                            img {
                                 height: 100%;
                                 width: 100%;
                                 padding: 0 0 0 0;
                             }
                         }
-    
-                        .regalData{
+
+                        .regalData {
                             width: 100%;
                             height: 80%;
                             display: block;
-    
-                            .leftPanel{
+
+                            .leftPanel {
                                 height: 40%;
                                 width: 100%;
                                 display: flex;
                                 align-items: center;
                                 justify-content: center;
-    
-                                img{
+
+                                img {
                                     width: 55%;
                                 }
                             }
-    
-                            .rewards{
+
+                            .rewards {
                                 // background-color: lime;
                                 padding-top: 60px;
                                 height: auto;
@@ -1709,30 +1711,30 @@ main {
                                 display: flex;
                                 align-items: center;
                                 justify-content: center;
-                                
-                                img{
+
+                                img {
                                     width: 50%;
                                 }
                             }
-    
-                            .assets{
+
+                            .assets {
                                 // background-color: goldenrod;
                                 height: auto;
                                 width: 100%;
                                 display: flex;
                                 align-items: start;
                                 justify-content: center;
-    
-                                img{
+
+                                img {
                                     width: 48%;
                                 }
                             }
                         }
                     }
-    
+
                 }
             }
-            
+
 
         }
 
@@ -1808,7 +1810,7 @@ main {
                             text-align: center;
                             color: #ffffff;
                             white-space: nowrap;
-                            
+
 
                             @keyframes marquee {
                                 from {
@@ -1855,8 +1857,8 @@ main {
                             background-image: url("../../assets/images/07_ourWorks/ORCHARD/top-left-veggies.png");
                             background-repeat: no-repeat;
 
-                            .find-products{
-                                img{
+                            .find-products {
+                                img {
                                     height: 1000px;
                                     width: 100%;
                                     object-fit: contain;
@@ -1864,14 +1866,14 @@ main {
                             }
 
                         }
-    
+
                         .vertical-scroll {
                             width: 50%;
                             height: 100%;
                             overflow: hidden;
                             position: relative;
                             box-sizing: border-box;
-    
+
                             .marquee {
                                 width: 320px;
                                 top: 100%;
@@ -1883,41 +1885,41 @@ main {
                                 color: #ffffff;
                                 white-space: nowrap;
 
-                                img{
+                                img {
                                     height: 700px;
                                     width: 100%;
                                     object-fit: fill;
                                 }
-                                
-    
+
+
                                 @keyframes marquee {
                                     from {
                                         transform: translateY(0);
                                     }
-    
+
                                     to {
                                         transform: translateY(-150%);
                                     }
                                 }
-    
+
                                 img {
                                     margin-bottom: 20px;
                                 }
-    
+
                                 &:hover {
                                     animation-play-state: paused;
                                 }
                             }
                         }
                     }
-    
+
                     .homescreen {
                         width: 50%;
                         display: flex;
                         align-items: center;
                         justify-content: center;
 
-                        img{
+                        img {
                             height: 70%;
                             width: 80%;
                             object-fit: contain;
@@ -1938,14 +1940,14 @@ main {
                             align-items: end;
                         }
                     }
-    
+
                     .homescreen {
                         width: 50%;
                         display: flex;
                         align-items: center;
                         justify-content: center;
 
-                        img{
+                        img {
                             height: 70%;
                             width: 80%;
                             object-fit: contain;
@@ -1973,7 +1975,7 @@ main {
                             overflow: hidden;
                             position: relative;
                             box-sizing: border-box;
-    
+
                             .marquee {
                                 width: 320px;
                                 top: 100%;
@@ -1985,27 +1987,27 @@ main {
                                 color: #ffffff;
                                 white-space: nowrap;
 
-                                img{
+                                img {
                                     height: 100%;
                                     width: 75%;
                                     object-fit: fill;
                                 }
-                                
-    
+
+
                                 @keyframes marquee {
                                     from {
                                         transform: translateY(0);
                                     }
-    
+
                                     to {
                                         transform: translateY(-150%);
                                     }
                                 }
-    
+
                                 img {
                                     margin-bottom: 20px;
                                 }
-    
+
                                 &:hover {
                                     animation-play-state: paused;
                                 }
@@ -2019,7 +2021,7 @@ main {
                         align-items: center;
                         justify-content: center;
 
-                        img{
+                        img {
                             height: 100%;
                             width: 90%;
                             object-fit: contain;
@@ -2040,8 +2042,8 @@ main {
                             align-items: end;
                             background-size: contain;
 
-                            .find-products{
-                                img{
+                            .find-products {
+                                img {
                                     height: 1000px;
                                     width: 100%;
                                     object-fit: contain;
@@ -2055,7 +2057,7 @@ main {
                             overflow: hidden;
                             position: relative;
                             box-sizing: border-box;
-    
+
                             .marquee {
                                 width: 320px;
                                 top: 100%;
@@ -2067,27 +2069,27 @@ main {
                                 color: #ffffff;
                                 white-space: nowrap;
 
-                                img{
+                                img {
                                     height: 100%;
                                     width: 60%;
                                     object-fit: fill;
                                 }
-                                
-    
+
+
                                 @keyframes marquee {
                                     from {
                                         transform: translateY(0);
                                     }
-    
+
                                     to {
                                         transform: translateY(-150%);
                                     }
                                 }
-    
+
                                 img {
                                     margin-bottom: 20px;
                                 }
-    
+
                                 &:hover {
                                     animation-play-state: paused;
                                 }
@@ -2101,7 +2103,7 @@ main {
                         align-items: center;
                         justify-content: center;
 
-                        img{
+                        img {
                             height: 100%;
                             width: 100%;
                             object-fit: contain;
@@ -2116,13 +2118,13 @@ main {
                     top: 0;
                     z-index: 1;
                     display: block;
-    
+
                     .screen-showcase {
                         width: 100%;
                         height: 65%;
                         display: block;
                         // background-color: red;
-                        
+
                         .veggie-menu {
                             width: 100%;
                             height: 50%;
@@ -2133,23 +2135,23 @@ main {
                             background-image: url("../../assets/images/07_ourWorks/ORCHARD/top-left-veggies.png");
                             background-size: 30%;
 
-                            .find-products{
-                                img{
+                            .find-products {
+                                img {
                                     height: 250px;
                                     width: 100%;
                                     object-fit: contain;
                                 }
                             }
-    
+
                         }
-    
+
                         .vertical-scroll {
                             width: 100%;
                             height: 50%;
                             overflow: hidden;
                             position: relative;
                             box-sizing: border-box;
-    
+
                             .marquee {
                                 width: 100%;
                                 top: 0%;
@@ -2161,34 +2163,34 @@ main {
                                 white-space: nowrap;
                                 display: flex;
                                 gap: 20px;
-                                
-                                img{
+
+                                img {
                                     height: 30%;
                                     width: 17%;
                                     object-fit: fill;
                                     margin-bottom: 0px;
                                 }
-                                
-                                
-    
+
+
+
                                 @keyframes marquee {
                                     from {
                                         transform: translateX(0);
                                     }
-    
+
                                     to {
                                         transform: translateX(-150%);
                                     }
                                 }
 
-    
+
                                 &:hover {
                                     animation-play-state: paused;
                                 }
                             }
                         }
                     }
-    
+
                     .homescreen {
                         width: 100%;
                         height: 35%;
@@ -2196,7 +2198,7 @@ main {
                         align-items: start;
                         justify-content: center;
 
-                        img{
+                        img {
                             height: 100%;
                             width: 100%;
                             object-fit: contain;
@@ -2211,13 +2213,13 @@ main {
                     top: 0;
                     z-index: 1;
                     display: block;
-    
+
                     .screen-showcase {
                         width: 100%;
                         // height: 65%;
                         display: block;
                         // background-color: red;
-                        
+
                         .veggie-menu {
                             width: 100%;
                             height: 50%;
@@ -2228,17 +2230,17 @@ main {
                             background-image: url("../../assets/images/07_ourWorks/ORCHARD/top-left-veggies.png");
                             background-size: 30%;
 
-                            .find-products{
-                                img{
+                            .find-products {
+                                img {
                                     padding-top: 15px;
                                     height: 250px;
                                     width: 100%;
                                     object-fit: contain;
                                 }
                             }
-    
+
                         }
-    
+
                         .vertical-scroll {
                             width: 100%;
                             height: 50%;
@@ -2246,7 +2248,7 @@ main {
                             position: relative;
                             box-sizing: border-box;
                             margin-top: 25px;
-    
+
                             .marquee {
                                 width: 100%;
                                 top: 0%;
@@ -2258,34 +2260,34 @@ main {
                                 white-space: nowrap;
                                 display: flex;
                                 gap: 20px;
-                                
-                                img{
+
+                                img {
                                     height: 30%;
                                     width: 30%;
                                     object-fit: fill;
                                     margin-bottom: 0px;
                                 }
-                                
-                                
-    
+
+
+
                                 @keyframes marquee {
                                     from {
                                         transform: translateX(0);
                                     }
-    
+
                                     to {
                                         transform: translateX(-150%);
                                     }
                                 }
 
-    
+
                                 &:hover {
                                     animation-play-state: paused;
                                 }
                             }
                         }
                     }
-    
+
                     .homescreen {
                         width: 100%;
                         height: 35%;
@@ -2293,7 +2295,7 @@ main {
                         align-items: start;
                         justify-content: center;
 
-                        img{
+                        img {
                             height: 100%;
                             width: 100%;
                             object-fit: contain;
@@ -2327,22 +2329,23 @@ main {
 
                 // }
 
-                .screenContainer{
+                .screenContainer {
                     width: 100%;
                     height: 100%;
 
-                    .hiLogo{
+                    .hiLogo {
                         height: 15%;
                         display: flex;
                         align-items: center;
                         justify-content: end;
-                        img{
+
+                        img {
                             margin: 100px 50px 0px 0px;
                             height: 100%;
                         }
                     }
 
-                    .Screens-Graphs{
+                    .Screens-Graphs {
                         display: flex;
                         align-items: start;
                         justify-content: center;
@@ -2350,437 +2353,452 @@ main {
                         width: 100%;
                         height: 85%;
 
-                        .phoneScreens{
+                        .phoneScreens {
                             display: flex;
                             align-items: start;
                             justify-content: center;
                             width: 50%;
                             // background-color: greenyellow;
-    
-    
-                            .phoneMock{
+
+
+                            .phoneMock {
                                 margin: 0;
                             }
-                            
-                            .statistics{   
+
+                            .statistics {
                                 margin-top: 80px;
                             }
-    
+
                         }
 
-                        .graph-customize{
+                        .graph-customize {
                             margin-top: 80px;
                             display: flex;
                             align-items: center;
                         }
                     }
-                    
+
                 }
 
                 @media screen and (min-width: 1927px) {
-                    .screenContainer{
+                    .screenContainer {
                         width: 100%;
                         height: 100%;
-    
-                        .hiLogo{
+
+                        .hiLogo {
                             height: 20%;
                             display: flex;
                             align-items: center;
                             justify-content: end;
-                            img{
+
+                            img {
                                 margin: 100px 50px 0px 0px;
                                 height: 100%;
                             }
                         }
-    
-                        .Screens-Graphs{
+
+                        .Screens-Graphs {
                             display: flex;
                             align-items: start;
                             justify-content: center;
                             width: 100%;
-                            height: 80%;    
-    
-                            .phoneScreens{
+                            height: 80%;
+
+                            .phoneScreens {
                                 display: flex;
                                 align-items: start;
                                 justify-content: center;
                                 width: 50%;
-        
-        
-                                .phoneMock{
+
+
+                                .phoneMock {
                                     margin: 0;
                                     width: 35%;
                                 }
-                                
-                                .statistics{   
+
+                                .statistics {
                                     margin-top: 140px;
                                     width: 40%;
                                 }
-        
+
                             }
-    
-                            .graph-customize{
+
+                            .graph-customize {
                                 margin-top: 140px;
                                 display: flex;
                                 align-items: center;
                                 justify-content: start;
                                 width: 40%;
-                                img{
+
+                                img {
                                     width: 45%;
                                 }
                             }
                         }
-                        
+
                     }
                 }
 
                 @media screen and (max-width: 1926px) and (min-width: 1440px) {
-                    .screenContainer{
+                    .screenContainer {
                         width: 100%;
                         height: 100%;
-    
-                        .hiLogo{
+
+                        .hiLogo {
                             height: 20%;
                             display: flex;
                             align-items: center;
                             justify-content: end;
-                            img{
+
+                            img {
                                 margin: 100px 50px 0px 0px;
                                 height: 100%;
                             }
                         }
-    
-                        .Screens-Graphs{
+
+                        .Screens-Graphs {
                             display: flex;
                             align-items: start;
                             justify-content: center;
                             width: 100%;
-                            height: 80%;    
-    
-                            .phoneScreens{
+                            height: 80%;
+
+                            .phoneScreens {
                                 display: flex;
                                 align-items: start;
                                 justify-content: center;
                                 width: 50%;
-        
-        
-                                .phoneMock{
+
+
+                                .phoneMock {
                                     margin: 0;
+                                    width: 30%;
+                                }
+
+                                .statistics {
+                                    margin-top: 100px;
                                     width: 35%;
                                 }
-                                
-                                .statistics{   
-                                    margin-top: 140px;
-                                    width: 40%;
-                                }
-        
+
                             }
-    
-                            .graph-customize{
-                                margin-top: 140px;
+
+                            .graph-customize {
+                                margin-top: 100px;
                                 display: flex;
                                 align-items: center;
                                 justify-content: start;
                                 width: 40%;
-                                img{
-                                    width: 45%;
+
+                                img {
+                                    width: 40%;
                                 }
                             }
                         }
-                        
+
                     }
                 }
 
                 @media screen and (max-width: 1439px) and (min-width: 1024px) {
 
-                    .screenContainer{
+                    .screenContainer {
                         width: 100%;
                         height: 100%;
-    
-                        .hiLogo{
+
+                        .hiLogo {
                             height: 15%;
                             display: flex;
                             align-items: center;
                             justify-content: end;
-                            img{
+
+                            img {
                                 margin: 100px 50px 0px 0px;
                                 height: 100%;
                             }
                         }
-    
-                        .Screens-Graphs{
-                            height: 85%;    
+
+                        .Screens-Graphs {
+                            height: 85%;
                             width: 100%;
                             display: flex;
                             align-items: start;
                             justify-content: center;
-    
-                            .phoneScreens{
+
+                            .phoneScreens {
                                 display: flex;
                                 align-items: start;
                                 justify-content: center;
                                 width: 50%;
-        
-        
-                                .phoneMock{
+
+
+                                .phoneMock {
                                     margin: 0;
                                     width: 35%;
                                 }
-                                
-                                .statistics{   
+
+                                .statistics {
                                     margin-top: 80px;
                                     width: 40%;
                                 }
-        
+
                             }
-    
-                            .graph-customize{
+
+                            .graph-customize {
                                 margin-top: 80px;
                                 display: flex;
                                 align-items: center;
                                 justify-content: start;
                                 width: 40%;
-                                img{
+
+                                img {
                                     width: 45%;
                                 }
                             }
                         }
-                        
+
                     }
                 }
 
                 @media screen and (max-width: 1023px) and (min-width: 768px) {
-                    .screenContainer{
+                    .screenContainer {
                         width: 100%;
                         height: 100%;
-    
-                        .hiLogo{
+
+                        .hiLogo {
                             height: 30%;
                             display: flex;
                             align-items: end;
                             justify-content: end;
-                            img{
+
+                            img {
                                 margin: 0px 50px 0px 0px;
                                 height: 40%;
                             }
                         }
-    
-                        .Screens-Graphs{
+
+                        .Screens-Graphs {
                             display: flex;
                             align-items: start;
                             justify-content: center;
                             width: 100%;
-                            height: 70%;    
-    
-                            .phoneScreens{
+                            height: 70%;
+
+                            .phoneScreens {
                                 display: flex;
                                 align-items: start;
                                 justify-content: center;
                                 width: 50%;
-        
-                                .phoneMock{
+
+                                .phoneMock {
                                     margin: 0;
                                     width: 45%;
                                 }
-    
-                                .statistics{   
+
+                                .statistics {
                                     margin-top: 80px;
                                     width: 50%;
                                 }
-        
+
                             }
-    
-                            .graph-customize{
+
+                            .graph-customize {
                                 margin-top: 80px;
                                 display: flex;
                                 align-items: center;
                                 justify-content: start;
                                 width: 45%;
-                                img{
+
+                                img {
                                     width: 45%;
                                 }
                             }
                         }
-                        
+
                     }
                 }
 
                 @media screen and (max-width: 767px) and (min-width: 530px) {
-                    .screenContainer{
+                    .screenContainer {
                         width: 100%;
                         height: 100%;
-    
-                        .hiLogo{
+
+                        .hiLogo {
                             height: 20%;
                             display: flex;
                             align-items: center;
                             justify-content: end;
-                            img{
+
+                            img {
                                 margin: 0px 50px 0px 0px;
                                 height: 40%;
                             }
                         }
-    
-                        .Screens-Graphs{
+
+                        .Screens-Graphs {
                             display: flex;
                             align-items: start;
                             justify-content: center;
                             // margin-top: 100px;
                             width: 100%;
                             height: 80%;
-                            
-                            .phoneScreens{
+
+                            .phoneScreens {
                                 display: flex;
                                 align-items: start;
                                 justify-content: center;
                                 width: 60%;
-        
-                                .phoneMock{
+
+                                .phoneMock {
                                     margin: 0;
                                     width: 50%;
                                 }
-    
-                                .statistics{   
+
+                                .statistics {
                                     margin-top: 80px;
                                     width: 55%;
                                 }
-        
+
                             }
-    
-                            .graph-customize{
+
+                            .graph-customize {
                                 margin-top: 80px;
                                 display: flex;
                                 align-items: center;
                                 justify-content: start;
                                 width: 45%;
-                                img{
+
+                                img {
                                     width: 50%;
                                 }
                             }
                         }
-                        
+
                     }
-                    .widgets-container{
+
+                    .widgets-container {
                         display: none;
                     }
                 }
 
                 @media screen and (max-width: 529px) {
-                    .screenContainer{
+                    .screenContainer {
                         width: 100%;
                         height: 100%;
-    
-                        .hiLogo{
+
+                        .hiLogo {
                             height: 10%;
                             display: flex;
                             align-items: center;
                             justify-content: end;
-                            img{
+
+                            img {
                                 margin: 50px 50px 0px 0px;
                                 height: 80%;
                             }
                         }
-    
-                        .Screens-Graphs{
+
+                        .Screens-Graphs {
                             display: block;
                             width: 100%;
                             height: 90%;
-                            
-                            .phoneScreens{
+
+                            .phoneScreens {
                                 display: flex;
                                 align-items: center;
                                 justify-content: center;
                                 width: 100%;
                                 height: 50%;
-                                
-                                .phoneMock{
+
+                                .phoneMock {
                                     margin: 0;
                                     width: 30%;
                                 }
-                                
-                                .statistics{   
+
+                                .statistics {
                                     margin-top: 80px;
                                     width: 40%;
                                 }
-                                
+
                             }
-                            
-                            .graph-customize{
+
+                            .graph-customize {
                                 padding: 10px;
                                 margin-top: 80px;
                                 display: flex;
                                 align-items: center;
                                 justify-content: center;
                                 width: 100%;
-                                img{
+
+                                img {
                                     width: 50%;
                                 }
                             }
                         }
-                        
+
                     }
 
-                    .widgets-container{
+                    .widgets-container {
                         display: none;
                     }
                 }
 
                 @media screen and (min-width: 320px) and (max-width: 450px) {
-                    .screenContainer{
+                    .screenContainer {
                         width: 100%;
                         height: 100%;
-    
-                        .hiLogo{
+
+                        .hiLogo {
                             height: 10%;
                             display: flex;
                             align-items: center;
                             justify-content: end;
-                            img{
+
+                            img {
                                 margin: 50px 50px 0px 0px;
                                 height: 80%;
                             }
                         }
-    
-                        .Screens-Graphs{
+
+                        .Screens-Graphs {
                             display: block;
                             width: 100%;
                             height: 90%;
-                            
-                            .phoneScreens{
+
+                            .phoneScreens {
                                 display: flex;
                                 align-items: center;
                                 justify-content: center;
                                 width: 100%;
                                 height: 50%;
-                                
-                                .phoneMock{
+
+                                .phoneMock {
                                     margin: 0;
                                     width: 40%;
                                 }
-                                
-                                .statistics{   
+
+                                .statistics {
                                     margin-top: 80px;
                                     width: 50%;
                                 }
-                                
+
                             }
-                            
-                            .graph-customize{
+
+                            .graph-customize {
                                 padding: 10px;
                                 margin-top: 80px;
                                 display: flex;
                                 align-items: center;
                                 justify-content: center;
                                 width: 100%;
-                                img{
+
+                                img {
                                     width: 50%;
                                 }
                             }
                         }
-                        
+
                     }
 
-                    .widgets-container{
+                    .widgets-container {
                         display: none;
                     }
                 }
@@ -2804,8 +2822,79 @@ main {
             //     font-family: roboto-slab-light;
             //     color: #a2a2a210;
             //     z-index: -1;
-
             // }
+
+
+            .dinaPhoneMock{
+                display: flex;
+                align-items: center;
+                justify-content: start;
+            }
+
+            .smallElements{}
+
+
+            @media screen and (min-width: 1927px) {
+                .dinaPhoneMock{
+                    display: flex;
+                    align-items: center;
+                    justify-content: start;
+
+                    img{
+                        // height: 100%;
+                        width: 40%;
+                    }
+                }
+            }
+
+            @media screen and (max-width: 1926px) and (min-width: 1440px) {
+                .dinaPhoneMock{
+
+                    img{
+                        width: 50%;
+                    }
+                }
+            }
+
+            @media screen and (max-width: 1439px) and (min-width: 1024px) {
+                .dinaPhoneMock{
+
+                    img{
+                        width: 45%;
+                    }
+                }
+            }
+
+            @media screen and (max-width: 1023px) and (min-width: 768px) {
+                .dinaPhoneMock{
+
+                    img{
+                        width: 55%;
+                    }
+                }
+            }
+
+            @media screen and (max-width: 767px) and (min-width: 530px) {
+                .dinaPhoneMock{
+
+                    img{
+                        width: 55%;
+                    }
+                }
+            }
+
+            @media screen and (max-width: 529px) {
+                .dinaPhoneMock{
+                    display: flex;
+                    align-items: end;
+                    justify-content: center;
+
+                    img{
+                        // height: 100%;
+                        width: 60%;
+                    }
+                }
+            }
         }
 
         .vividSpark {

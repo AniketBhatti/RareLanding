@@ -2881,10 +2881,6 @@ main {
 
             @media screen and (min-width: 1927px) {
                 .dinaPhoneMock{
-                    display: flex;
-                    align-items: center;
-                    justify-content: start;
-
                     img{
                         width: 40%;
                     }
@@ -2895,7 +2891,7 @@ main {
                 .dinaPhoneMock{
 
                     img{
-                        width: 50%;
+                        width: 40%;
                     }
                 }
 
@@ -2944,7 +2940,8 @@ main {
                 .dinaPhoneMock{
 
                     img{
-                        width: 45%;
+                        padding-left: 50px;
+                        width: 38%;
                     }
                 }
 
@@ -2992,7 +2989,8 @@ main {
                 .dinaPhoneMock{
 
                     img{
-                        width: 55%;
+                        padding-left: 30px;
+                        width: 35%;
                     }
                 }
 
@@ -3045,6 +3043,7 @@ main {
                     justify-content: start;
 
                     img{
+                        padding-left: 25px;
                         width: 55%; 
                     }
                 }
@@ -3099,6 +3098,7 @@ main {
                     justify-content: start;
 
                     img{
+                        padding-left: 20px;
                         width: 55%; 
                     }
                 }
@@ -3205,7 +3205,6 @@ main {
                         width: 70%;
                     }
                 }
-
 
                 .smallElements{
                     .dina{

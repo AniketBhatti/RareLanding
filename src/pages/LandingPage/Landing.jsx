@@ -191,7 +191,6 @@ const Landing = () => {
 
 
 	const lumberCraftRef = useRef(null);
-	const isMobile = window.innerWidth < 768;
 
 	React.useEffect(() => {
 
@@ -253,8 +252,6 @@ const Landing = () => {
 		);
 
 	}, []);
-
-
 
 	const regalFinance = useRef(null);
 
@@ -673,6 +670,17 @@ const Landing = () => {
 
 
 	const dinaRollings = useRef(null)
+
+	
+	const is4k = window.innerWidth < 2700 && window.innerWidth > 1927; 
+	const isLargeLaptop = window.innerWidth < 1926 && window.innerWidth > 1440;
+	const isMediumLaptop = window.innerWidth < 1440 && window.innerWidth > 1024;
+	const isSmallLaptop = window.innerWidth < 1024 && window.innerWidth > 768;
+	const isTablet = window.innerWidth < 768 && window.innerWidth > 530;
+	const isLargeMobile = window.innerWidth < 530;
+	const isAnyMobile = window.innerWidth < 450 && window.innerWidth > 320;
+
+
 	React.useEffect(() => {
 		gsap.fromTo(dinaRollings.current,
 			{ x: 100, opacity: 0 },
@@ -688,99 +696,103 @@ const Landing = () => {
 			}
 		);
 
-		// gsap.fromTo(".dina",
-		// 	{ x: 0, y: 0, scale: 0.5, opacity: 0 },
+		gsap.fromTo(".dina",
+			{  x: is4k ? 200 : isLargeLaptop ? 100 : isMediumLaptop ? 50 : isSmallLaptop ? 25 : isTablet ? 12 : isLargeMobile ? 6 : isAnyMobile ? 3 : 0,
+				scale: 0, 
+				opacity:0,
+			},
 
-		// 	{
-		// 		x: 1100,
-		// 		y: -500,
-		// 		scale: 0.8,
-		// 		opacity: 1,
-		// 		scrollTrigger: {
-		// 			trigger: ".dinaRollings",
-		// 			start: "top top",
-		// 			end: "top -10%",
-		// 			scrub: 1,
-		// 		},
-		// 	},
+			{
+				x: 0,
+				y: 0,
+				scale: 1,
+				opacity: 1,
+				scrollTrigger: {
+					trigger: ".dinaRollings",
+					start: "top top",
+					end: "top -10%",
+					scrub: 1,
+				},
+			},
 
-		// );
+		);
 
-		// gsap.fromTo(".gameGraph",
-		// 	{ x: 0, y: 0, scale: 0.5, opacity: 0 },
+		gsap.fromTo(".gameGraph",
+			{ x: 0, y: 0, scale: 0, opacity: 0 },
 
-		// 	{
-		// 		x: 550,
-		// 		y: 120,
-		// 		scale: 1.2,
-		// 		opacity: 1,
-		// 		scrollTrigger: {
-		// 			trigger: ".dinaRollings",
-		// 			start: "top -10%",
-		// 			end: "top -20%",
-		// 			scrub: 1,
-		// 		},
+			{
+				x: 0,
+				y: 0,
+				scale: 1,
+				opacity: 1,
+				scrollTrigger: {
+					trigger: ".dinaRollings",
+					start: "top -10%",
+					end: "top -20%",
+					scrub: 1,
+				},
 
-		// 	},
+			},
 
-		// );
+		);
 
-		// gsap.fromTo(".connectionBuild",
-		// 	{ x: 0, y: 0, scale: 0.5, opacity: 0 },
+		gsap.fromTo(".connectionBuild",
+			{ x: 0, y: 0, scale: 0, opacity: 0 },
 
-		// 	{
-		// 		x: 900,
-		// 		y: -300,
-		// 		scale: 1,
-		// 		opacity: 1,
-		// 		scrollTrigger: {
-		// 			trigger: ".dinaRollings",
-		// 			start: "top -20%",
-		// 			end: "top -30%",
-		// 			scrub: 1,
-		// 		},
+			{
+				x: 0,
+				y: 0,
+				scale: 1,
+				opacity: 1,
+				scrollTrigger: {
+					trigger: ".dinaRollings",
+					start: "top -20%",
+					end: "top -30%",
+					scrub: 1,
+				},
 
-		// 	},
+			},
 
-		// );
+		);
 
-		// gsap.fromTo(".felindra",
-		// 	{ x: 0, y: 0, scale: 0.3, opacity: 0 },
+		gsap.fromTo(".felindra",
+			{ x: 0, y: 0, scale: 0, opacity: 0 },
 
-		// 	{
-		// 		x: 700,
-		// 		y: 300,
-		// 		scale: 0.8,
-		// 		opacity: 1,
-		// 		scrollTrigger: {
-		// 			trigger: ".dinaRollings",
-		// 			start: "top -30%",
-		// 			end: "top -40%",
-		// 			scrub: 1,
-		// 		},
+			{
+				x: 0,
+				y: 0,
+				scale: 1,
+				opacity: 1,
+				scrollTrigger: {
+					trigger: ".dinaRollings",
+					start: "top -30%",
+					end: "top -40%",
+					scrub: 1,
+				},
 
-		// 	},
+			},
 
-		// );
+		);
 
-		// gsap.fromTo(".sessions",
-		// 	{ x: 0, y: 0, scale: 0.3, opacity: 0 },
+		gsap.fromTo(".sessions",
+			{ x: 0, y: 0, scale: 0, opacity: 0 },
 
-		// 	{
-		// 		x: 1000,
-		// 		y: 400,
-		// 		scale: 0.9,
-		// 		opacity: 1,
-		// 		scrollTrigger: {
-		// 			trigger: ".dinaRollings",
-		// 			start: "top -40%",
-		// 			end: "top -50%",
-		// 			scrub: 1,
-		// 		},
+			{
+				x: 0,
+				y: 0,
+				scale: 1,
+				opacity: 1,
+				scrollTrigger: {
+					trigger: ".dinaRollings",
+					start: "top -40%",
+					end: "top -50%",
+					scrub: 1,
+				},
 
-		// 	},
+			},
 
-		// );
+		);
+		
 
 	}, []);
 

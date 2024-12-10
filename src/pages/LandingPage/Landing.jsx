@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from 'react';
 import "./landing.scss";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 
 import Marquee from "react-fast-marquee";
 import { useScroll } from "framer-motion";
+
 
 import lumber_main from "../../assets/images/07_ourWorks/LUMBERCRAFT/lumbercraft-main-product.png"
 import lumber_all_products from "../../assets/images/07_ourWorks/LUMBERCRAFT/lumbercraft-all-products-list.png"
@@ -107,6 +108,26 @@ import design from "../../assets/images/08_designProcess/design.png"
 import delivery from "../../assets/images/08_designProcess/delivery.png"
 
 
+import movingPen from "../../assets/images/10_amazingTools/movingPen.gif"
+
+
+import ashlynn from "../../assets/images/11_testimonial/Ashlynn.png"
+import ann from "../../assets/images/11_testimonial/Ann.png"
+import talan from "../../assets/images/11_testimonial/Talan.png"
+
+import maria from "../../assets/images/12_peoples/mariaRosser.png"
+import brandon from "../../assets/images/12_peoples/brandonPhilips.png"
+import hannah from "../../assets/images/12_peoples/blackWhiteShirt.png"
+import dua from "../../assets/images/12_peoples/whiteTshirt.png"
+
+
+import Splide from '@splidejs/splide';
+
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+
+
+
+
 const Landing = () => {
 	// FOR PATH
 	const pathRef = useRef(null);
@@ -147,7 +168,6 @@ const Landing = () => {
 		});
 	}
 
-
 	React.useEffect(() => {
 		gsap.registerPlugin(MotionPathPlugin);
 
@@ -172,9 +192,6 @@ const Landing = () => {
 
 
 
-
-
-
 	// Hide the horizontal scrollbar during the transition
 	const hideScrollbar = () => {
 		document.body.style.overflowX = 'hidden';
@@ -191,7 +208,6 @@ const Landing = () => {
 
 
 	const lumberCraftRef = useRef(null);
-
 	React.useEffect(() => {
 
 		gsap.fromTo(lumberCraftRef.current,
@@ -253,8 +269,8 @@ const Landing = () => {
 
 	}, []);
 
-	const regalFinance = useRef(null);
 
+	const regalFinance = useRef(null);
 	React.useEffect(() => {
 		gsap.fromTo(regalFinance.current,
 			{ x: 100, y: 100, opacity: 0 },
@@ -350,6 +366,7 @@ const Landing = () => {
 			}
 		}
 	);
+
 
 	const orchard = useRef(null);
 	React.useEffect(() => {
@@ -669,10 +686,7 @@ const Landing = () => {
 	}, []);
 
 
-	const dinaRollings = useRef(null)
-
-	
-	const is4k = window.innerWidth < 2700 && window.innerWidth > 1927; 
+	const is4k = window.innerWidth < 2700 && window.innerWidth > 1927;
 	const isLargeLaptop = window.innerWidth < 1926 && window.innerWidth > 1440;
 	const isMediumLaptop = window.innerWidth < 1440 && window.innerWidth > 1024;
 	const isSmallLaptop = window.innerWidth < 1024 && window.innerWidth > 768;
@@ -681,6 +695,7 @@ const Landing = () => {
 	const isAnyMobile = window.innerWidth < 450 && window.innerWidth > 320;
 
 
+	const dinaRollings = useRef(null)
 	React.useEffect(() => {
 		gsap.fromTo(dinaRollings.current,
 			{ x: 100, opacity: 0 },
@@ -697,9 +712,10 @@ const Landing = () => {
 		);
 
 		gsap.fromTo(".dina",
-			{  x: is4k ? 200 : isLargeLaptop ? 100 : isMediumLaptop ? 50 : isSmallLaptop ? 25 : isTablet ? 12 : isLargeMobile ? 6 : isAnyMobile ? 3 : 0,
-				scale: 0, 
-				opacity:0,
+			{
+				x: is4k ? 200 : isLargeLaptop ? 100 : isMediumLaptop ? 50 : isSmallLaptop ? 25 : isTablet ? 12 : isLargeMobile ? 6 : isAnyMobile ? 3 : 0,
+				scale: 0,
+				opacity: 0,
 			},
 
 			{
@@ -792,7 +808,7 @@ const Landing = () => {
 			},
 
 		);
-		
+
 
 	}, []);
 
@@ -817,21 +833,21 @@ const Landing = () => {
 
 		);
 
-		gsap.fromTo(".connectRevealSquare",
-			{
-				x: -700
-			},
+		// gsap.fromTo(".connect",
+		// 	{
+		// 		x: -700
+		// 	},
 
-			{
-				x: 0,
-				scrollTrigger: {
-					trigger: ".vividContainer",
-					start: "top -50%",
-					end: "top -70%",
-					scrub: 1,
-				},
-			},
-		)
+		// 	{
+		// 		x: 0,
+		// 		scrollTrigger: {
+		// 			trigger: ".vividContainer",
+		// 			start: "top -50%",
+		// 			end: "top -70%",
+		// 			scrub: 1,
+		// 		},
+		// 	},
+		// );
 
 		gsap.fromTo(".creativeInfo",
 			{
@@ -845,7 +861,8 @@ const Landing = () => {
 					end: "top -75%",
 					scrub: 1,
 				},
-			});
+			}
+		);
 
 		gsap.fromTo(".continueInnovation",
 			{
@@ -923,60 +940,60 @@ const Landing = () => {
 
 		);
 
-		gsap.fromTo(".logo",
-			{
-				x: 1200,
-				y: -200,
-			},
+		// gsap.fromTo(".logo",
+		// 	{
+		// 		x: 1200,
+		// 		y: -200,
+		// 	},
 
-			{
-				y: "30%",
-				scrollTrigger: {
-					trigger: ".cocktailCultureContainer",
-					start: "top -51%",
-					end: "top -55%",
-					scrub: 1,
-				},
-			},
+		// 	{
+		// 		y: "30%",
+		// 		scrollTrigger: {
+		// 			trigger: ".cocktailCultureContainer",
+		// 			start: "top -51%",
+		// 			end: "top -55%",
+		// 			scrub: 1,
+		// 		},
+		// 	},
 
-		);
+		// );
 
-		gsap.fromTo(".introPara",
-			{
-				x: 1220,
-				y: -320,
-			},
+		// gsap.fromTo(".introPara",
+		// 	{
+		// 		x: 1220,
+		// 		y: -320,
+		// 	},
 
-			{
-				y: "50%",
-				scrollTrigger: {
-					trigger: ".cocktailCultureContainer",
-					start: "top -55%",
-					end: "top -56%",
-					scrub: 1,
-				},
-			},
+		// 	{
+		// 		y: "50%",
+		// 		scrollTrigger: {
+		// 			trigger: ".cocktailCultureContainer",
+		// 			start: "top -55%",
+		// 			end: "top -56%",
+		// 			scrub: 1,
+		// 		},
+		// 	},
 
-		);
+		// );
 
-		gsap.fromTo(".startMakingDrink",
-			{
-				x: -550,
-				y: -300,
-			},
+		// gsap.fromTo(".startMakingDrink",
+		// 	{
+		// 		x: -550,
+		// 		y: -300,
+		// 	},
 
-			{
-				x: 150,
-				y: -120,
-				scrollTrigger: {
-					trigger: ".cocktailCultureContainer",
-					start: "top -56%",
-					end: "top -60%",
-					scrub: 1,
-				},
-			},
+		// 	{
+		// 		x: 150,
+		// 		y: -120,
+		// 		scrollTrigger: {
+		// 			trigger: ".cocktailCultureContainer",
+		// 			start: "top -56%",
+		// 			end: "top -60%",
+		// 			scrub: 1,
+		// 		},
+		// 	},
 
-		);
+		// );
 
 		gsap.fromTo(".orangeJuice",
 			{
@@ -998,7 +1015,6 @@ const Landing = () => {
 			},
 
 		);
-
 
 		gsap.fromTo(".lemonJuice",
 			{
@@ -1072,7 +1088,8 @@ const Landing = () => {
 					scrub: 1,
 				},
 
-			});
+			}
+		);
 
 		gsap.fromTo(".strippingEffect",
 			{
@@ -1090,9 +1107,10 @@ const Landing = () => {
 					scrub: 1,
 				},
 
-			});
+			}
+		);
 
-		gsap.fromTo(".sivSavor",
+		gsap.fromTo(".sipSavor",
 			{
 				x: 0,
 				y: -55,
@@ -1108,16 +1126,13 @@ const Landing = () => {
 					scrub: 1,
 				},
 
-			});
-
-
+			}
+		);
 
 	});
 
 
 	// DESIGN PROCESS SECTION ANIMATIONS
-
-
 	React.useEffect(() => {
 		gsap.fromTo(".designRevealAnimation",
 			{
@@ -1173,7 +1188,6 @@ const Landing = () => {
 
 
 	// MOVING SCREEN ANIMATION EFFECT
-
 	React.useEffect(() => {
 
 		// PAGE BLACK AND WHITE ANIMATION SO LEFTSCREEN WILL APPEAR WITH B/W  MOVING SQUARE
@@ -1576,6 +1590,80 @@ const Landing = () => {
 	}, []);
 
 
+	// TESTIMONIAL BLACK AND WHITE ANIMATIONS
+
+	React.useEffect(() => {
+
+		// BLACK TO WHITE TEXT
+		gsap.fromTo(".ttmnalWhiteBlack",
+			{
+				x: "-100%",
+			},
+
+			{
+				x: 0,
+				scrollTrigger: {
+					trigger: ".RPtestimonialsContainer",
+					start: "top 30%",
+					end: "top 20%",
+					scrub: 1,
+				},
+			}
+		);
+
+
+		// TEXT BLACK TO WHITE
+		gsap.to(".testimonialText h2",
+			{
+				color: "#fff",
+				scrollTrigger: {
+					trigger: ".RPtestimonialsContainer",
+					start: "top 30%",
+					end: "top 20%",
+					scrub: 1,
+				},
+			}
+		)
+
+
+		// BLACK BG HEIGHT INCREASE
+
+		gsap.fromTo(".ttmnalWhiteBlack",
+			{
+				height: "300px",
+			},
+			{
+				height: "100vh",
+				scrollTrigger: {
+					trigger: ".RPtestimonialsContainer",
+					start: "top 10%",
+					end: "top top",
+					scrub: 1,
+				},
+			}
+		)
+
+
+		gsap.fromTo(".testimonialsList",
+			{
+				scale: 0
+			},
+			{
+				scale: 1,
+				scrollTrigger: {
+					trigger: ".RPtestimonialsContainer",
+					start: "top top",
+					end: "bottom bottom",
+					scrub: 1,
+				},
+			},
+		);
+
+	}, []);
+
+
+
+
 
 
 
@@ -1584,7 +1672,6 @@ const Landing = () => {
 
 	return (
 		<main>
-
 
 			<section className="every-pixel">
 				<Link className="start-your-project">Start your Project</Link>
@@ -1601,7 +1688,7 @@ const Landing = () => {
 			</section>
 
 			<div className="intro">
-				<section className="welcome2rp">
+				{/* <section className="welcome2rp">
 					<h2>
 						Welcome to
 						<span>
@@ -1610,7 +1697,7 @@ const Landing = () => {
 							els
 						</span>
 					</h2>
-				</section>
+				</section> */}
 
 				<section className="visually-captivating">
 					<h2>
@@ -1688,7 +1775,7 @@ const Landing = () => {
 				</div>
 
 
-				<div ref={orchard} className="orchard h-[200vh] w-screen">
+				{/* <div ref={orchard} className="orchard h-[200vh] w-screen">
 
 					<div className="orchardScreens h-screen w-screen ">
 						<div className="screen-showcase">
@@ -1715,14 +1802,14 @@ const Landing = () => {
 							</div>
 						</div>
 
-						<div className="homescreen">
+						<div className="homescreen" style={{display:"none"}}>
 							<img src={rightHome} alt="" />
 						</div>
 
 					</div>
 
 
-				</div>
+				</div> */}
 
 
 				<div ref={healthInsurance} className="healthInsurance h-[200vh] w-screen">
@@ -1793,34 +1880,35 @@ const Landing = () => {
 					</div>
 				</div>
 
-
-				{/* <div className="vividContainer h-[200vh] w-screen">
+				<div className="vividContainer h-[200vh] w-screen">
 					<div className="vividSpark h-screen w-screen overflow-hidden">
 
 						<div className="vividText absolute top-0 left-0">
-							<p>Connect</p>
+
+							<div className="connectText">
+								<p className="connect">Connect</p>
+							</div>
+
 							<h2>
 								Vivid<span>spark</span>
 							</h2>
+
 						</div>
 
-						<div className="connectRevealSquare h-[205px] w-[620px] bg-[#FFF5DE] absolute top-[80px] left-[50px]"></div>
 
-						<img src={creativeInfo} alt="" className="creativeInfo absolute top-0" />
-						<img src={continueInnovation} alt="" className="continueInnovation absolute top-0" />
-						<img src={ladyModel} alt="" className="ladyModel absolute top-[150px] right-0 z-10" />
+						<img src={creativeInfo} alt="" className="creativeInfo absolute" />
+						<img src={continueInnovation} alt="" className="continueInnovation absolute" />
+						<img src={ladyModel} alt="" className="ladyModel absolute z-10" />
 
-						<div className="whyUsReveal absolute top-0 right-0">
+						<div className="whyUsReveal absolute">
 							<h2>Why<span><br />us?</span></h2>
 						</div>
 
 
-
 					</div>
-				</div> */}
+				</div>
 
-
-				{/* <div className="cocktailCultureContainer h-[200vh] w-screen">
+				<div className="cocktailCultureContainer h-[200vh] w-screen">
 					<div className="cocktailCulture h-screen w-screen overflow-hidden">
 
 						<div className="rainBows">
@@ -1862,22 +1950,28 @@ const Landing = () => {
 							</div>
 						</div>
 
-						<div className="layerForReadablity absolute h-screen w-screen">
-						</div>
+						<div className="layerForReadablity absolute h-screen w-screen"></div>
 
 						<div className="cocktailData relative">
 
-							<div className="strippingEffect absolute top-0 right-0 w-[620px] z-9">
+							{/* <div className="strippingEffect absolute top-0 right-0 w-[620px] z-9">
 								<Marquee direction="right">
 									<img src={strippingLine} alt="" />
 								</Marquee>
-								<img src={sipSavor} alt="" className="sivSavor absolute z-10" />
+								<img src={sipSavor} alt="" className="sipSavor absolute z-10" />
+							</div> */}
 
+							<div className="cockTailLogoAndTextContainer">
+								<div className="startMaking">
+									<img className="startMakingDrink" src={startMakingDrink} alt="" />
+								</div>
+
+								<div className="cockTailLogo">
+									<img className="logo" src={cocktailCultureLogo} alt="" />
+									<img className="introPara" src={experienceASip} alt="" />
+								</div>
 							</div>
 
-							<img className="logo" src={cocktailCultureLogo} alt="" />
-							<img className="introPara" src={experienceASip} alt="" />
-							<img className="startMakingDrink" src={startMakingDrink} alt="" />
 							<img className="orangeJuice" src={orangeJuice} alt="" />
 							<img className="lemonJuice" src={lemonJuice} alt="" />
 							<img className="kiwiJuice" src={kiwiJuice} alt="" />
@@ -1887,14 +1981,488 @@ const Landing = () => {
 						</div>
 
 					</div>
-				</div> */}
+				</div>
 
 			</section>
 
-			<div className="testing w-screen h-screen bg-red-500">
+			<section className="design-process">
+				<div className="data">
 
-			</div>
+					<div className="dp-headers h-screen w-screen bg-white h-full">
+						<p>Explore how our</p>
+						<h2><span className="relative z-10">design</span> process</h2>
+						<p>works</p>
 
+						<div className="designRevealAnimation h-[180px] w-[820px] bg-black absolute top-[300px] left-0"></div>
+
+						{/* <div className="arrowPath absolute mt-[700px] left-0">
+							<svg width="1472" height="564" viewBox="0 0 1472 564" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M0 287.501C927.6 287.501 1263.5 241.5 1337.5 232.5C1430.5 239.5 1492.9 198.201 1464.5 101.001C1429 -20.4994 1342 4.00011 1359 2.00011C1319.83 8.00008 1251.1 40.6 1289.5 123C1327.9 205.4 963 369.5 1019 699.5"
+									stroke="none" />
+							</svg>
+
+							<img className="arrowBlack" src={arrowPinkHeadSmall} alt="" />
+
+						</div> */}
+					</div>
+
+					<div className="processAnimationStart h-[200vh]">
+						
+
+						<div className="movableDiv relative bg-black-500 h-[100vh] w-[100vw] flex items-center justify-center">
+							<div className="movingSquare h-[200px] w-[200px] bg-white relative flex justify-center items-center rounded-[10px] transform rotate-45 z-10">
+								<div className="innerSquare h-[60px] w-[60px] bg-black rounded-[5px]"></div>
+							</div>
+
+							<div className="leftScreen absolute top-0 left-0 bg-black h-screen w-[70%]"></div>
+							<div className="rightScreen absolute top-0 h-screen right-0 w-[30%]"></div>
+
+
+						</div>
+
+
+
+						<div className="processPoints ml-9 text-white">
+
+							<div className="onboarding w-[50vw] h-[80vh]">
+								<h2 className=" text-[64px]">ONBOARDING</h2>
+
+								<div className="OBimageAndData flex flex-col items-center justify-center h-[80vh] gap-[30px]">
+									<img src={onboarding} alt="" />
+									<p className="w-[50%]">Lorem ipsum dolor sit amet consectetur. Neque magna risus suscipit nisl lorem ut commodo. Sagittis ac eleifend at praesent magna neque vel. Id cras tempor eget blandit. Fermentum etiam enim egestas morbi nulla dolor eros.</p>
+								</div>
+								
+							</div>
+
+
+							<div className="startProject absolute top-0 left-[100%] w-[50vw] h-[80vh]">
+								<h2 className="text-[64px]">START PROJECT</h2>
+
+								<div className="SPimageAndData flex flex-col items-center justify-center h-[80vh] gap-[30px]">
+									<img src={startProject} alt="" />
+									<p className="w-[50%]">Lorem ipsum dolor sit amet consectetur. Neque magna risus suscipit nisl lorem ut commodo. Sagittis ac eleifend at praesent magna neque vel. Id cras tempor eget blandit. Fermentum etiam enim egestas morbi nulla dolor eros.</p>
+								</div>
+
+							</div>
+
+
+							<div className="design absolute top-0 left-0 w-[50vw] h-[80vh]">
+								<h2 className="text-[64px] pl-[100px] pt-[100px]">DESIGN</h2>
+
+								<div className="DSimageAndData flex flex-col items-center justify-center h-[80vh] gap-[30px]">
+									<img src={design} alt="" />
+									<p className="w-[50%]">Lorem ipsum dolor sit amet consectetur. Neque magna risus suscipit nisl lorem ut commodo. Sagittis ac eleifend at praesent magna neque vel. Id cras tempor eget blandit. Fermentum etiam enim egestas morbi nulla dolor eros.</p>
+								</div>
+
+							</div>
+
+							
+							<div className="delivery absolute top-0 left-[100%] w-[50vw] h-[80vh]">
+								<h2 className="text-[64px]">DELIVERY</h2>
+
+								<div className="DLVRimageAndData flex flex-col items-center justify-center h-[80vh] gap-[30px]">
+									<img src={delivery} alt="" />
+									<p className="w-[50%]">Lorem ipsum dolor sit amet consectetur. Neque magna risus suscipit nisl lorem ut commodo. Sagittis ac eleifend at praesent magna neque vel. Id cras tempor eget blandit. Fermentum etiam enim egestas morbi nulla dolor eros.</p>
+								</div>
+
+							</div>
+
+
+						</div>
+
+					</div>
+
+
+					{/* <div className="h-[500vh]"></div> */}
+				</div>
+			</section>
+
+			<section className="relative z-10 companyOverview">
+				<div className="boxContainer h-screen w-screen flex">
+
+					<div className="left h-screen w-[50%]">
+
+						<div className="leftRow flex h-[33.33%] w-[100%]">
+
+							<div className="h-[100%] w-[33.33%] bg-white flex flex-col items-center justify-center gap-8">
+								<p className="text-5xl">Team Size</p>
+								<p className="text-8xl">9</p>
+							</div>
+
+							<div className="h-[100%] w-[33.33%] bg-black text-white flex flex-col pl-12 justify-center gap-4">
+								<p className="text-3xl">3 Founders</p>
+								<p className="text-3xl">1 Operations</p>
+								<p className="text-3xl">3 Creative</p>
+								<p className="text-3xl">1 Communications</p>
+								<p className="text-3xl">1 UX Writer</p>
+							</div>
+
+							<div className="h-[100%] w-[33.33%] bg-white">
+								<div className="h-[100%] w-[100%] rounded-[20px]" style={{ backgroundImage: `url(${girl})` }}>
+									<div className="h-[100%] w-[100%] rounded-[20px] flex flex-col justify-end pl-6 pb-8" style={{ background: 'linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(141, 139, 136, 0.5))' }}>
+										<p className="text-[40px] text-white">Joanne Billings</p>
+										<p className="text-[24px] text-white" style={{ fontFamily: 'roboto-slab-light', fontWeight: "bold", lineHeight: "10px" }}>Operations</p>
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+						<div className="leftRow flex h-[33.33%] w-[100%]">
+							<div className="flower-hover-effect h-[100%] w-[33.33%] bg-black flex items-center justify-center ">
+								<img src={flower} alt="" />
+							</div>
+
+							<div className="h-[100%] w-[33.33%] bg-white flex flex-col justify-center pl-12">
+								<p className="text-4xl"><span className="text-6xl">50 </span>projects</p>
+								<p className="text-4xl">for</p>
+								<p className="text-4xl">40 clients</p>
+							</div>
+
+							<div className="h-[100%] w-[33.33%] bg-black flex items-center justify-center">
+								<img src={ovalSpring} alt="" />
+							</div>
+						</div>
+
+						<div className="leftRow flex h-[33.33%] w-[100%]">
+							<div className="h-[100%] w-[33.33%] bg-white overflow-hidden">
+								<div className="text-5xl flex justify-end mr-4"><p>+</p></div>
+								<div className="h-[100%] flex flex-col justify-center items-left pl-12 pb-4">
+									<p className="text-5xl">Company</p>
+									<p className="text-5xl">satisfaction</p>
+									<p className="text-5xl">survey</p>
+								</div>
+							</div>
+							<div className="h-[100%] w-[33.33%] bg-black text-white text-4xl flex justify-end pr-1">
+								<p>Survey</p>
+							</div>
+							<div className="h-[100%] w-[33.33%] bg-white text-4xl pl-1">
+								<p>data</p>
+							</div>
+
+							<div className="absolute left-[18%] mt-14">
+								<img src={satisfactionGraph} alt="" />
+							</div>
+						</div>
+					</div>
+
+
+					<div className="right h-screen w-[50%]">
+						<div className="rightRow flex h-[33.33%] w-[100%]">
+							<div className="h-[100%] w-[33.33%] bg-black">
+								<img src={circleAnimation} alt="" className="pb-5" />
+							</div>
+
+							<div className="h-[100%] w-[33.33%] bg-white flex justify-between p-6">
+								<div className="text-5xl pl-4 pt-2">
+									<p>Art Not</p>
+									<p>Evidence</p>
+								</div>
+								<div className="text-5xl">+</div>
+							</div>
+
+							<div className="h-[100%] w-[33.33%] bg-black flex items-center justify-center p-4">
+								<video autoPlay muted loop src={movingEye}></video>
+							</div>
+						</div>
+
+						<div className="rightRow flex h-[33.33%] w-[100%]">
+							<div className="h-[100%] w-[33.33%] bg-white flex justify-between pr-4">
+								<div className="flex flex-col justify-center pl-12 text-5xl" style={{ lineHeight: "60px" }}>
+									<p>A route of</p>
+									<p>impact</p>
+									<p>through</p>
+									<p>design</p>
+								</div>
+								<div className="text-5xl">+</div>
+							</div>
+
+							<div className="h-[100%] w-[33.33%] bg-black flex items-center justify-center pl-[50px] overflow-hidden">
+								<img src={arrowAnimation} alt="" style={{ scale: "1.5" }} />
+							</div>
+
+							<div className="h-[100%] w-[33.33%] bg-white flex justify-between pr-4">
+								<div className="flex flex-col justify-center pl-12 text-4xl" style={{ lineHeight: "50px" }}>
+									<p>Guiding</p>
+									<p>principles on</p>
+									<p>design and</p>
+									<p>impact</p>
+								</div>
+								<div className="text-5xl">+</div>
+							</div>
+
+						</div>
+
+						<div className="rightRow flex h-[33.33%] w-[100%]">
+							<div className="h-[100%] w-[33.33%] bg-black text-white flex items-center justify-center text-8xl">
+								<p>98%</p>
+							</div>
+
+							<div className="h-[100%] w-[33.33%] bg-white">
+
+								<div className="flex justify-between">
+									<p className="text-4xl pl-4 pt-4">Services</p>
+									<p className="text-5xl pr-4 pt-2">+</p>
+								</div>
+
+								<div className=" overflow-hidden mt-[58px]">
+									<div className="transform rotate-[-20deg] mt-[100px]" style={{ scale: '1.8' }}>
+										<div className="m-4">
+											<Marquee>
+												<p className="h-full w-full ml-2 mr-2">GRAPHIC DESIGN</p>
+												<p className="h-full w-full ml-2 mr-2">UI/UX</p>
+												<p className="h-full w-full ml-2 mr-2">LOGO</p>
+												<p className="h-full w-full ml-2 mr-2">WEBSITE DESIGN</p>
+												<p className="h-full w-full ml-2 mr-2">BRANDING</p>
+											</Marquee>
+										</div>
+										<div className="m-4">
+											<Marquee direction="right">
+												<p className="h-full w-full ml-2 mr-2">GRAPHIC DESIGN</p>
+												<p className="h-full w-full ml-2 mr-2">UI/UX</p>
+												<p className="h-full w-full ml-2 mr-2">LOGO</p>
+												<p className="h-full w-full ml-2 mr-2">WEBSITE DESIGN</p>
+												<p className="h-full w-full ml-2 mr-2">BRANDING</p>
+											</Marquee>
+										</div>
+										<div>
+											<Marquee>
+												<p className="h-full w-full ml-2 mr-2">GRAPHIC DESIGN</p>
+												<p className="h-full w-full ml-2 mr-2">UI/UX</p>
+												<p className="h-full w-full ml-2 mr-2">LOGO</p>
+												<p className="h-full w-full ml-2 mr-2">WEBSITE DESIGN</p>
+												<p className="h-full w-full ml-2 mr-2">BRANDING</p>
+											</Marquee>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div className="h-[100%] w-[33.33%] bg-black flex items-center justify-center">
+								<img src={movingBallAnimation} alt="" />
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</section>
+
+			<section className="RPtools h-screen w-screen">
+				<h2>OUR AMAZING TOOL</h2>
+				<div className="movingPencil">
+					<img src={movingPen} alt="" />
+				</div>
+			</section>
+
+			<section className="RPsolutions h-screen w-screen">
+
+				<div className="solutionsLeft">
+					<h2>Solutions</h2>
+
+					<div className="para-mobileApp">
+						<p>
+							We specialize in delivering innovative solutions for mobile applications,
+							website design, and enterprise application development.
+						</p>
+
+						<div className="mobileApp">
+							<h3>Mobile application</h3>
+
+							<div className="messagesListMobile">
+								<div className="msg1">
+									<p>Crafting apps for smartphones and tablets, focusing on performance, usability, and accessibility.</p>
+								</div>
+
+								<div className="msg2"></div>
+								<div className="msg3"></div>
+								<div className="msg4"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div className="solutionsRight">
+
+					<div className="websitedesign">
+						<h3>Website Design</h3>
+
+						<div className="WSlayouts">
+							<div className="WSsidebar"></div>
+
+							<div className="WScontent">
+								<div className="WSText">
+									<p>Creating layouts, graphics, and user interfaces (UI) for websites to ensure they are visually appealing, functional, and user-friendly.</p>
+								</div>
+
+								<div className="WSemptyUI">
+									<div className="row1"></div>
+									<div className="row2">
+										<div className="col1Square"></div>
+										<div className="col2Rect"></div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+					<div className="enterpriseApp">
+						<h3>Enterprise application</h3>
+
+						<div className="enterpriseUI">
+							<div className="itemsList">
+								<div className="rect1"></div>
+								<div className="rect2"></div>
+								<div className="rect3"></div>
+								<div className="rect4"></div>
+								<div className="rect5"></div>
+							</div>
+
+							<div className="enterpriseContent">
+								<div className="EPsidebar"></div>
+								<div className="EPtext">
+									<p>Developing robust software solutions to support complex business operations and processes (e.g., ERP, CRM, HRMS).</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+			{/* <section className="RPtestimonialsContainer h-[100vh]">
+				<div className="testimonialStick">
+
+					<div className="testimonialText">
+						<h2>Testimonials</h2>
+					</div>
+
+					<div className="ttmnalWhiteBlack"></div>
+
+					<div className="testimonialsList">
+						<div className="prevButton">
+							<button className='text-white'>
+								<FaChevronLeft size={36} />
+							</button>
+						</div>
+
+						<div id="splide">
+							<div className="testimon1">
+								<div className="Cardheader">
+									<div className="testimonImage">
+										<img src={ann} alt="" />
+									</div>
+
+									<div className="testimonDetails">
+										<h3>Ann Rhiel Madsen</h3>
+										<p>UX Head</p>
+									</div>
+								</div>
+
+								<div className="content">
+									<p>Lorem ipsum dolor sit amet consectetur. Nibh mauris venenatis aliquet purus et diam euismod. Lacus elementum et urna tortor egestas id purus. Donec sagittis facilisis nisl diam vestibulum. </p>
+								</div>
+							</div>
+
+							<div className="testimon2">
+								<div className="Cardheader">
+									<div className="testimonImage">
+										<img src={ashlynn} alt="" />
+									</div>
+
+									<div className="testimonDetails">
+										<h3>Ashlynn Levin</h3>
+										<p>UX Head</p>
+									</div>
+								</div>
+
+								<div className="content">
+									<p>Lorem ipsum dolor sit amet consectetur. Nibh mauris venenatis aliquet purus et diam euismod. Lacus elementum et urna tortor egestas id purus. Donec sagittis facilisis nisl diam vestibulum. </p>
+								</div>
+							</div>
+
+							<div className="testimon3">
+								<div className="Cardheader">
+									<div className="testimonImage">
+										<img src={talan} alt="" />
+									</div>
+
+									<div className="testimonDetails">
+										<h3>Talan Stanton</h3>
+										<p>UX Head</p>
+									</div>
+								</div>
+
+								<div className="content">
+									<p>Lorem ipsum dolor sit amet consectetur. Nibh mauris venenatis aliquet purus et diam euismod. Lacus elementum et urna tortor egestas id purus. Donec sagittis facilisis nisl diam vestibulum. </p>
+								</div>
+							</div>
+
+							<div className="testimon4">Testimonial 4</div>
+							<div className="testimon5">Testimonial 5</div>
+						</div>
+
+						<div className="nextButton">
+							<button className='text-white'>
+								<FaChevronRight size={36} />
+							</button>
+						</div>
+					</div>
+
+				</div>
+			</section> */}
+
+
+			<section className="RPpeoples h-screen w-screen">
+				<h2>Kind words from people we have worked with</h2>
+
+				<div className="Peopleslist">
+					<div className='person1'>
+						<div className="peopleNameRole">
+							<h3>Maria Rosser</h3>
+							<p>UX Head</p>
+						</div>
+
+						<div className="peopleImage">
+							<img src={maria} alt="" />
+						</div>
+					</div>
+
+					<div className='person2'>
+						<div className="peopleNameRole">
+							<h3>Brandon Philips</h3>
+							<p>UX Head</p>
+						</div>
+
+						<div className="peopleImage">
+							<img src={brandon} alt="" />
+						</div>
+					</div>
+
+					<div className='person3'>
+						<div className="peopleNameRole">
+							<h3>Hannah Backer</h3>
+							<p>UX Head</p>
+						</div>
+
+						<div className="peopleImage">
+							<img src={hannah} alt="" />
+						</div>    
+					</div>
+					<div className='person4'>
+						<div className="peopleNameRole">
+							<h3>Dua Lipa</h3>
+							<p>UX Head</p>
+						</div>
+
+						<div className="peopleImage">
+							<img src={dua} alt="" />
+						</div>
+
+					</div>
+				</div>
+			</section>
 
 		</main>
 	);

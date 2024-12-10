@@ -5,6 +5,11 @@
 }
 
 @font-face {
+    font-family: impact;
+    src: url("../../assets/fonts/Impact-Font/impact.ttf");
+}
+
+@font-face {
     font-family: roboto-slab;
     src: url("../../assets/fonts/Roboto_Slab/static/RobotoSlab-Regular.ttf");
 }
@@ -14,7 +19,28 @@
     src: url("../../assets/fonts/Roboto_Slab/static/RobotoSlab-Light.ttf");
 }
 
+@font-face {
+    font-family: satoshi;
+    src: url("../../assets/fonts/Satoshi/Satoshi-Medium.otf");
+}
+
+@font-face {
+    font-family: satoshi-bold;
+    src: url("../../assets/fonts/Satoshi/Satoshi-Bold.otf");
+}
+
+@keyframes rotateSquare {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 main {
+
 
     .every-pixel {
         padding: 120px 50px 0px 50px;
@@ -72,15 +98,7 @@ main {
 
 
 
-                @keyframes rotateSquare {
-                    from {
-                        transform: rotate(0deg);
-                    }
 
-                    to {
-                        transform: rotate(360deg);
-                    }
-                }
 
 
 
@@ -95,6 +113,7 @@ main {
             letter-spacing: 4px;
             position: relative;
             width: fit-content;
+            font-family: impact;
 
             &::before {
                 top: -400px;
@@ -137,6 +156,7 @@ main {
                 font-size: 290px;
                 letter-spacing: 25px;
                 font-weight: 400;
+                font-family: impact;
 
                 span {
                     background-image: url("../../assets/images/01_everyPixel/RareLanding-PIXEL-BG.png");
@@ -144,6 +164,7 @@ main {
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
                     background-position: 20% 10%;
+                    font-family: impact;
 
                 }
             }
@@ -168,6 +189,7 @@ main {
             font-size: 100px;
             letter-spacing: 8px;
             text-align: right;
+            font-family: impact;
         }
 
 
@@ -594,9 +616,7 @@ main {
 
 
 
-
         .visually-captivating {
-            font-family: roboto-slab-light;
             height: 100vh;
             background-color: black;
             color: white;
@@ -607,6 +627,7 @@ main {
             font-weight: 300;
 
             h2 {
+                font-family: satoshi;
                 width: 66%;
                 font-size: 64px;
                 line-height: 104px;
@@ -785,7 +806,7 @@ main {
 
     .transform-ideas {
         margin: 200px 200px 0px 200px;
-        font-family: roboto-slab-light;
+        
         font-size: 64px;
         font-weight: 300;
         display: flex;
@@ -796,6 +817,7 @@ main {
 
             width: 85%;
             text-align: center;
+            font-family: satoshi;
 
             div {
                 display: inline-block;
@@ -2825,13 +2847,13 @@ main {
             // }
 
 
-            .dinaPhoneMock{
+            .dinaPhoneMock {
                 display: flex;
                 align-items: center;
                 justify-content: start;
             }
 
-            .smallElements{
+            .smallElements {
                 position: absolute;
                 top: 0;
                 left: 0;
@@ -2841,35 +2863,35 @@ main {
                 justify-content: center;
                 align-items: center;
 
-                .dina{
+                .dina {
                     position: relative;
                     width: 18%;
                     top: -30%;
                     left: 62%;
                 }
 
-                .connectionBuild{
+                .connectionBuild {
                     position: absolute;
                     width: 20%;
                     top: 8%;
                     left: 56%;
                 }
 
-                .gameGraph{
+                .gameGraph {
                     position: absolute;
                     width: 16%;
                     top: 8%;
                     left: 38%;
                 }
 
-                .felindra{
+                .felindra {
                     position: relative;
                     width: 26%;
                     left: 12%;
-                
+
                 }
 
-                .sessions{
+                .sessions {
                     position: relative;
                     width: 25%;
                     top: 5%;
@@ -2880,8 +2902,8 @@ main {
 
 
             @media screen and (min-width: 1927px) {
-                .dinaPhoneMock{
-                    img{
+                .dinaPhoneMock {
+                    img {
                         width: 40%;
                         margin-left: 50px;
                     }
@@ -2889,305 +2911,305 @@ main {
             }
 
             @media screen and (max-width: 1926px) and (min-width: 1440px) {
-                .dinaPhoneMock{
+                .dinaPhoneMock {
 
-                    img{
+                    img {
                         width: 38%;
                         margin-left: 50px;
                     }
                 }
 
 
-                .smallElements{
-    
-                    .dina{
+                .smallElements {
+
+                    .dina {
                         position: relative;
                         width: 18%;
                         top: -30%;
                         left: 62%;
                     }
-    
-                    .connectionBuild{
+
+                    .connectionBuild {
                         position: absolute;
                         width: 20%;
                         top: 10%;
                         left: 56%;
                     }
-    
-                    .gameGraph{
+
+                    .gameGraph {
                         position: absolute;
                         width: 16%;
                         top: 10%;
                         left: 38%;
                     }
-    
-                    .felindra{
+
+                    .felindra {
                         position: relative;
                         width: 26%;
                         left: 12%;
-                    
+
                     }
-    
-                    .sessions{
+
+                    .sessions {
                         position: relative;
                         width: 25%;
                         top: 5%;
                         left: 10%;
                     }
-    
+
                 }
             }
 
             @media screen and (max-width: 1439px) and (min-width: 1024px) {
-                .dinaPhoneMock{
+                .dinaPhoneMock {
 
-                    img{
+                    img {
                         padding-left: 50px;
                         width: 38%;
                     }
                 }
 
-                .smallElements{
-    
-                    .dina{
+                .smallElements {
+
+                    .dina {
                         position: relative;
                         width: 18%;
                         top: -30%;
                         left: 62%;
                     }
-    
-                    .connectionBuild{
+
+                    .connectionBuild {
                         position: absolute;
                         width: 20%;
                         top: 15%;
                         left: 56%;
                     }
-    
-                    .gameGraph{
+
+                    .gameGraph {
                         position: absolute;
                         width: 16%;
                         top: 15%;
                         left: 38%;
                     }
-    
-                    .felindra{
+
+                    .felindra {
                         position: relative;
                         width: 26%;
                         left: 12%;
-                    
+
                     }
-    
-                    .sessions{
+
+                    .sessions {
                         position: relative;
                         width: 25%;
                         top: 5%;
                         left: 10%;
                     }
-    
+
                 }
             }
 
             @media screen and (max-width: 1023px) and (min-width: 768px) {
-                .dinaPhoneMock{
+                .dinaPhoneMock {
 
-                    img{
+                    img {
                         padding-left: 30px;
                         width: 35%;
                     }
                 }
 
-                .smallElements{
-    
-                    .dina{
+                .smallElements {
+
+                    .dina {
                         position: relative;
                         width: 22%;
                         top: -15%;
                         left: 64%;
                     }
-    
-                    .connectionBuild{
+
+                    .connectionBuild {
                         position: absolute;
                         width: 28%;
                         top: 28%;
                         left: 45%;
                     }
-    
-                    .gameGraph{
+
+                    .gameGraph {
                         position: absolute;
                         width: 30%;
                         top: 5%;
                         left: 50%;
                     }
 
-                    .felindra{
+                    .felindra {
                         position: relative;
                         width: 28%;
                         left: 15%;
                         top: 5%;
                     }
-    
-                    .sessions{
+
+                    .sessions {
                         position: relative;
                         width: 25%;
                         top: 25%;
                         left: 10%;
                     }
-    
-    
+
+
                 }
             }
 
             @media screen and (max-width: 767px) and (min-width: 640px) {
 
-                .dinaPhoneMock{
+                .dinaPhoneMock {
                     display: flex;
                     align-items: end;
                     justify-content: start;
 
-                    img{
+                    img {
                         padding-left: 25px;
-                        width: 55%; 
+                        width: 55%;
                     }
                 }
 
-                .smallElements{
-    
-                    .dina{
+                .smallElements {
+
+                    .dina {
                         position: relative;
                         width: 25%;
                         top: 0%;
                         left: 65%;
                     }
-    
-                    .connectionBuild{
+
+                    .connectionBuild {
                         position: absolute;
                         width: 35%;
                         top: 22%;
                         left: 25%;
                     }
-    
-                    .gameGraph{
+
+                    .gameGraph {
                         position: absolute;
                         width: 30%;
                         top: 15%;
                         left: 65%;
                     }
 
-                    .felindra{
+                    .felindra {
                         position: relative;
                         width: 30%;
                         left: 12%;
                         top: 4%;
                     }
-    
-                    .sessions{
+
+                    .sessions {
                         position: relative;
                         width: 35%;
                         top: 25%;
                         left: 0%;
                     }
-    
-    
+
+
                 }
-                
+
             }
 
             @media screen and (max-width: 639px) and (min-width: 530px) {
 
-                .dinaPhoneMock{
+                .dinaPhoneMock {
                     display: flex;
                     align-items: end;
                     justify-content: start;
 
-                    img{
+                    img {
                         padding-left: 20px;
-                        width: 55%; 
+                        width: 55%;
                     }
                 }
 
-                .smallElements{
-    
-                    .dina{
+                .smallElements {
+
+                    .dina {
                         position: relative;
                         width: 25%;
                         top: 0%;
                         left: 65%;
                     }
-    
-                    .connectionBuild{
+
+                    .connectionBuild {
                         position: absolute;
                         width: 35%;
                         top: 32%;
                         left: 25%;
                     }
-    
-                    .gameGraph{
+
+                    .gameGraph {
                         position: absolute;
                         width: 30%;
                         top: 25%;
                         left: 65%;
                     }
 
-                    .felindra{
+                    .felindra {
                         position: relative;
                         width: 30%;
                         left: 12%;
                         top: 4%;
                     }
-    
-                    .sessions{
+
+                    .sessions {
                         position: relative;
                         width: 35%;
                         top: 25%;
                         left: 0%;
                     }
-    
-    
+
+
                 }
-                
+
             }
 
             @media screen and (max-width: 529px) {
-                .dinaPhoneMock{
+                .dinaPhoneMock {
                     display: flex;
                     align-items: end;
                     justify-content: center;
 
-                    img{    
+                    img {
                         width: 60%;
                     }
                 }
 
-                .smallElements{
-                    .dina{
+                .smallElements {
+                    .dina {
                         position: relative;
                         width: 32%;
                         top: -12%;
                         left: 55%;
                     }
-    
-                    .connectionBuild{
+
+                    .connectionBuild {
                         position: absolute;
                         width: 40%;
                         top: 15%;
                         left: 10%;
                     }
-    
-                    .gameGraph{
+
+                    .gameGraph {
                         position: absolute;
                         width: 40%;
                         top: 15%;
                         left: 55%;
                     }
 
-                    .felindra{
+                    .felindra {
                         position: relative;
                         width: 40%;
                         left: -20%;
                         top: -10%;
                     }
-    
-                    .sessions{
+
+                    .sessions {
                         position: relative;
                         width: 35%;
                         top: 5%;
@@ -3198,46 +3220,46 @@ main {
             }
 
             @media screen and (min-width: 320px) and (max-width: 450px) {
-                .dinaPhoneMock{
+                .dinaPhoneMock {
                     display: flex;
                     align-items: end;
                     justify-content: center;
 
-                    img{    
+                    img {
                         width: 70%;
                     }
                 }
 
-                .smallElements{
-                    .dina{
+                .smallElements {
+                    .dina {
                         position: relative;
                         width: 40%;
                         top: -15%;
                         left: 68%;
                     }
-    
-                    .connectionBuild{
+
+                    .connectionBuild {
                         position: absolute;
                         width: 50%;
                         top: 17%;
                         left: 6%;
                     }
-    
-                    .gameGraph{
+
+                    .gameGraph {
                         position: absolute;
                         width: 50%;
                         top: 2%;
                         left: 45%;
                     }
 
-                    .felindra{
+                    .felindra {
                         position: relative;
                         width: 50%;
                         left: -24%;
                         top: -8%;
                     }
-    
-                    .sessions{
+
+                    .sessions {
                         position: relative;
                         width: 40%;
                         top: 2%;
@@ -3252,6 +3274,8 @@ main {
             top: 0;
             z-index: 1;
             background-color: #1E1E1E;
+            font-family: impact;
+
 
             // &::before {
             //     content: "Branding";
@@ -3265,6 +3289,7 @@ main {
             //     z-index: -1;
             // }
 
+
             .vividText {
                 height: 30%;
                 width: 100%;
@@ -3272,15 +3297,40 @@ main {
                 display: flex;
                 justify-content: space-around;
 
-                p {
-                    text-transform: uppercase;
-                    font-size: 140px;
+                h2 {
+                    font-family: impact;
+
+                    span {
+                        font-family: impact;
+
+                    }
+                }
+
+                .connectText {
+                    margin-top: 100px;
                     display: flex;
-                    justify-content: center;
-                    align-items: end;
-                    position: relative;
-                    z-index: 10;
-                    color: #FF3302;
+
+                    p {
+                        font-family: impact;
+                    }
+
+                    .connect {
+                        text-transform: uppercase;
+                        font-size: 120px;
+                        position: relative;
+                        z-index: 10;
+                        color: #FF3302;
+
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            height: 100%;
+                            width: 100%;
+                            left: 0%;
+                            background-color: #FFF5DE;
+                            z-index: -1;
+                        }
+                    }
                 }
 
 
@@ -3297,22 +3347,90 @@ main {
 
             }
 
+            .connectRevealSquare {
+                top: 80px;
+                left: 50px;
+                height: 205px;
+                width: 620px;
+            }
+
+            .creativeInfo {
+                top: 0px;
+            }
+
+            .continueInnovation {
+                top: 0px;
+            }
+
+            .ladyModel {
+                top: 150px;
+                right: 0px;
+            }
+
             .whyUsReveal {
                 font-size: 100px;
                 background-color: #FF3302;
                 width: 400px;
                 z-index: 1;
+                top: 0;
+                right: 0;
 
                 h2 {
                     text-wrap: wrap;
                     line-height: 100px;
                     text-align: center;
 
+                    font-family: impact;
+
                     span {
                         text-transform: uppercase;
                         color: #FFF5DE;
+
+                        font-family: impact;
                     }
                 }
+            }
+
+
+            @media screen and (min-width: 1927px) {
+
+                .vividText {
+                    height: 30%;
+                    width: 100%;
+                    background: #FF3302;
+                    display: flex;
+                    justify-content: space-around;
+
+                    p {
+                        text-transform: uppercase;
+                        font-size: 6vmax;
+                        display: flex;
+                        justify-content: center;
+                        align-items: end;
+                        position: relative;
+                        z-index: 10;
+                        // color: #FF3302;
+                        color: green;
+                    }
+
+
+                    h2 {
+                        text-transform: uppercase;
+                        font-size: 250px;
+                        margin-right: 5%;
+
+                        span {
+                            color: #FFF5DE;
+                        }
+                    }
+                }
+
+                // .connectRevealSquare{
+                //     top: 220px;
+                //     left: 100px;
+                //     height: 180px;
+                //     width: 650px;
+                // }
             }
         }
 
@@ -3337,11 +3455,21 @@ main {
             .layerForReadablity {
                 background: linear-gradient(90deg, rgba(255, 255, 255, 0), rgb(0, 0, 0, 0.30));
             }
+
+            .cocktailData {
+
+
+                .cockTailLogoAndTextContainer {
+                    margin-top: 100px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    justify-content: space-around;
+                }
+            }
         }
 
     }
-
-
 
     .design-process {
         height: 340vh;
@@ -3380,7 +3508,6 @@ main {
         }
     }
 
-
     .companyOverview {
 
         .flower-hover-effect {
@@ -3417,6 +3544,617 @@ main {
 
     }
 
+    .RPtools {
+        padding: 10px 50px;
+        display: flex;
+
+        h2 {
+            font-family: impact;
+            font-size: 200px;
+            width: 60%;
+        }
+    }
+
+    .RPsolutions {
+        padding: 50px 0 0 50px;
+        display: flex;
+        overflow: hidden;
+
+        .solutionsLeft {
+            width: 50%;
+            height: 100%;
+
+            h2 {
+                text-transform: uppercase;
+                font-size: 200px;
+                line-height: 220px;
+                font-family: impact;
+            }
+
+            .para-mobileApp {
+                margin: 50px 0 0 30px;
+                display: flex;
+                height: 100%;
+
+                p {
+                    width: 40%;
+                    font-size: 32px;
+                    font-family: roboto-slab-light;
+                }
+
+                .mobileApp {
+                    background-color: #82c59c3b;
+                    border-radius: 30px;
+                    height: 100%;
+                    width: 60%;
+
+                    h3 {
+                        font-size: 64px;
+                        font-weight: 400;
+                        line-height: 74px;
+                        text-align: center;
+                        padding-top: 20px;
+                        font-family: impact;
+                    }
+
+                    .messagesListMobile {
+                        padding: 0 50px;
+                        height: 100%;
+
+                        .msg1 {
+                            float: right;
+                            margin-top: 20px;
+                            height: 25%;
+                            width: 80%;
+                            background-color: #fff;
+                            border-radius: 30px 0px 30px 30px;
+                            padding-top: 20px;
+
+                            p {
+                                font-size: 24px;
+                                width: 100%;
+                                padding: 20px;
+                            }
+                        }
+
+                        .msg2 {
+                            margin-top: 20px;
+                            float: left;
+                            height: 8%;
+                            width: 80%;
+                            background-color: #fff;
+                            border-radius: 0px 30px 30px 30px;
+                        }
+
+                        .msg3 {
+                            margin-top: 20px;
+                            float: left;
+                            height: 8%;
+                            width: 50%;
+                            background-color: #fff;
+                            border-radius: 0px 30px 30px 30px;
+                        }
+
+                        .msg4 {
+                            margin-top: 20px;
+                            float: right;
+                            height: 15%;
+                            width: 70%;
+                            background-color: #fff;
+                            border-radius: 30px 0px 30px 30px;
+                        }
+                    }
+
+                }
+            }
+
+        }
+
+        .solutionsRight {
+            width: 50%;
+            padding: 60px 0 10px 50px;
+
+            .websitedesign {
+                border-radius: 30px 0 0 30px;
+                float: right;
+                width: 100%;
+                height: 50%;
+                background-color: #e6b0e06c;
+                overflow: hidden;
+
+                h3 {
+                    font-size: 64px;
+                    font-weight: 400;
+                    line-height: 74px;
+                    text-align: left;
+                    padding: 30px 40px 0;
+                    font-family: impact;
+                }
+
+                .WSlayouts {
+                    margin-top: 20px;
+                    width: 100%;
+                    height: 100%;
+                    padding: 0 0 0 40px;
+                    display: flex;
+                    gap: 20px;
+
+                    .WSsidebar {
+                        width: 8%;
+                        height: 100%;
+                        background-color: #fff;
+                        border-radius: 20px 20px;
+                    }
+
+                    .WScontent {
+                        // width: 100%;
+                        height: 100%;
+                        background-color: #fff;
+                        border-radius: 20px 20px;
+                        display: flex;
+                        margin: 0;
+
+                        .WSText {
+                            width: 45%;
+                            font-family: roboto-slab-light;
+                            font-size: 24px;
+                            padding: 20px;
+
+                            p {
+                                font-family: roboto-slab-light;
+                            }
+                        }
+
+                        .WSemptyUI {
+                            width: 50%;
+                            padding: 20px 0px 0px 20px;
+                            display: flex;
+                            flex-direction: column;
+                            gap: 20px;
+
+                            .row1 {
+                                height: 30%;
+                                width: 100%;
+                                background-color: #e6b0e06c;
+                                border-radius: 20px;
+                            }
+
+                            .row2 {
+                                height: 30%;
+                                width: 100%;
+                                display: flex;
+                                gap: 20px;
+
+                                .col1Square {
+                                    height: 100%;
+                                    width: 120px;
+                                    background-color: #e6b0e06c;
+                                    border-radius: 20px;
+                                }
+
+                                .col2Rect {
+                                    height: 100%;
+                                    width: calc(100% - 140px);
+                                    background-color: #e6b0e06c;
+                                    border-radius: 20px;
+                                }
+
+                            }
+                        }
+                    }
+                }
+            }
+
+            .enterpriseApp {
+                border-radius: 30px 0 0 30px;
+                float: right;
+                display: block;
+                margin-top: 50px;
+                margin-right: -50px;
+                width: 100%;
+                height: 50%;
+                background-color: #f28a6d30;
+                padding-top: 30px;
+                padding-left: 40px;
+
+                h3 {
+                    font-family: impact;
+                    font-size: 64px;
+                    font-weight: 400;
+                    line-height: 74px;
+                    text-align: left;
+                }
+
+                .enterpriseUI {
+                    width: 100%;
+                    height: 100%;
+                    margin-top: 10px;
+                    border-radius: 20px 20px;
+
+                    .itemsList {
+                        width: 100%;
+                        height: 15%;
+                        display: flex;
+                        gap: 20px;
+
+                        .rect1 {
+                            height: 100%;
+                            width: 20%;
+                            background-color: white;
+                        }
+
+                        .rect2 {
+                            height: 100%;
+                            width: 20%;
+                            background-color: white;
+                        }
+
+                        .rect3 {
+                            height: 100%;
+                            width: 20%;
+                            background-color: white;
+                        }
+
+                        .rect4 {
+                            height: 100%;
+                            width: 20%;
+                            background-color: white;
+                        }
+
+                        .rect5 {
+                            height: 100%;
+                            width: 20%;
+                            background-color: white;
+                        }
+                    }
+
+                    .enterpriseContent {
+                        width: 100%;
+                        height: 80%;
+                        margin-top: 20px;
+                        display: flex;
+                        gap: 20px;
+
+                        .EPsidebar {
+                            height: 100%;
+                            width: 10%;
+                            background-color: #fff;
+                        }
+
+                        .EPtext {
+                            height: 100%;
+                            width: 80%;
+                            background-color: #fff;
+                            padding: 20px;
+
+                            p {
+                                font-size: 24px;
+                                font-family: roboto-slab-light;
+                                width: 85%;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+
+    }
+
+    .RPtestimonialsContainer {
+        overflow: hidden;
+
+        .testimonialStick {
+            position: sticky;
+            top: 0;
+
+            .testimonialText {
+                position: relative;
+                z-index: 10;
+
+                h2 {
+                    font-family: impact;
+                    text-transform: uppercase;
+                    font-size: 200px;
+                    margin-left: 50px;
+                }
+            }
+
+            .ttmnalWhiteBlack {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 300px;
+                width: 100%;
+                background-color: black;
+                z-index: 9;
+            }
+
+            .testimonialsList {
+
+                height: calc(100vh - 300px);
+                width: 100%;
+                position: relative;
+                z-index: 11;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                #splide {
+                    height: 100%;
+                    width: 90%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 50px;
+                    overflow: hidden;
+
+                    .testimon1,
+                    .testimon2,
+                    .testimon3,
+                    .testimon4,
+                    .testimon5 {
+                        border-radius: 30px;
+                        border: 2px solid gray;
+                        padding: 30px 30px 30px 50px;
+                        font-family: roboto-slab-light;
+                        width: 30%;
+                        height: 70%;
+                        color: white;
+                        font-size: 40px;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 30px;
 
 
+                        .Cardheader {
+                            display: flex;
+                            align-items: center;
+                            gap: 20px;
+
+                            .testimonImage {
+                                height: 100px;
+                                width: 100px;
+
+                                img {
+                                    object-fit: cover;
+                                }
+                            }
+
+                            .testimonDetails {
+                                h3 {
+                                    font-size: 34px;
+                                    font-family: roboto-slab-light;
+                                }
+
+                                p {
+                                    font-size: 26px;
+                                    font-family: roboto-slab-light;
+                                }
+                            }
+                        }
+
+                        .content {
+                            p {
+                                font-size: 24px;
+                                font-family: roboto-slab-light;
+                            }
+                        }
+
+                    }
+
+
+
+                }
+            }
+        }
+    }
+
+    .RPpeoples {
+
+        h2 {
+            padding-top: 100px;
+            font-family: impact;
+            font-size: 64px;
+            color: #646464;
+            text-align: center;
+            line-height: 100px;
+        }
+
+        .Peopleslist {
+
+            width: 100%;
+            height: calc(100% - 200px);
+            display: flex;
+            align-items: end;
+            padding: 0px 100px;
+
+            .person1 {
+                height: 85%;
+                width: 100%;
+                transition: 1s ease-in-out;
+                border-radius: 250px 250px 0px 0px;
+                overflow: hidden;
+                display: flex;
+                flex-direction: column;
+                gap: 50px;
+                border: 2px solid grey;
+
+                .peopleNameRole {
+                    h3 {
+                        text-align: center;
+                        margin-top: 100px;
+                        font-family: roboto-slab-light;
+                        font-size: 40px;
+                        font-weight: bold;
+                    }
+
+                    p {
+                        text-align: center;
+                        font-family: roboto-slab-light;
+                        font-size: 30px;
+                    }
+                }
+
+                .peopleImage {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    img {
+                        height: 80%;
+                    }
+                }
+
+
+                &:hover {
+                    height: 95%;
+                    color: white;
+                    background-color: black;
+                    border: 2px solid black;
+                }
+            }
+
+            .person2 {
+                height: 85%;
+                width: 100%;
+                transition: 1s ease-in-out;
+                border-radius: 250px 250px 0px 0px;
+                overflow: hidden;
+                display: flex;
+                flex-direction: column;
+                gap: 50px;
+                border: 2px solid grey;
+
+                .peopleNameRole {
+                    h3 {
+                        text-align: center;
+                        margin-top: 100px;
+                        font-family: roboto-slab-light;
+                        font-size: 40px;
+                        font-weight: bold;
+                    }
+
+                    p {
+                        text-align: center;
+                        font-family: roboto-slab-light;
+                        font-size: 30px;
+                    }
+                }
+
+                .peopleImage {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    img {
+                        height: 80%;
+                    }
+                }
+
+
+                &:hover {
+                    height: 95%;
+                    color: white;
+                    background-color: black;
+                    border: 2px solid black;
+                }
+            }
+
+            .person3 {
+                height: 85%;
+                width: 100%;
+                transition: 1s ease-in-out;
+                border-radius: 250px 250px 0px 0px;
+                overflow: hidden;
+                display: flex;
+                flex-direction: column;
+                gap: 50px;
+                border: 2px solid grey;
+
+                .peopleNameRole {
+                    h3 {
+                        text-align: center;
+                        margin-top: 100px;
+                        font-family: roboto-slab-light;
+                        font-size: 40px;
+                        font-weight: bold;
+                    }
+
+                    p {
+                        text-align: center;
+                        font-family: roboto-slab-light;
+                        font-size: 30px;
+                    }
+                }
+
+                .peopleImage {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    img {
+                        height: 80%;
+                    }
+                }
+
+
+                &:hover {
+                    height: 95%;
+                    color: white;
+                    background-color: black;
+                    border: 2px solid black;
+                }
+            }
+
+            .person4 {
+                height: 85%;
+                width: 100%;
+                transition: 1s ease-in-out;
+                border-radius: 250px 250px 0px 0px;
+                overflow: hidden;
+                display: flex;
+                flex-direction: column;
+                gap: 50px;
+                border: 2px solid grey;
+                
+
+                .peopleNameRole {
+                    h3 {
+                        text-align: center;
+                        margin-top: 100px;
+                        font-family: roboto-slab-light;
+                        font-size: 40px;
+                        font-weight: bold;
+                    }
+
+                    p {
+                        text-align: center;
+                        font-family: roboto-slab-light;
+                        font-size: 30px;
+                    }
+                }
+
+                .peopleImage {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    img {
+                        height: 80%;
+                    }
+                }
+
+
+                &:hover {
+                    height: 95%;
+                    color: white;
+                    background-color: black;
+                    border: 2px solid black;
+                }
+            }
+
+
+        }
+    }
 }

@@ -5,7 +5,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { MotionPathPlugin } from "gsap/MotionPathPlugin";
 import { Link } from "react-router-dom";
 
-
+import Slider from "react-slick";
 import Marquee from "react-fast-marquee";
 import { useScroll } from "framer-motion";
 
@@ -121,14 +121,35 @@ import hannah from "../../assets/images/12_peoples/blackWhiteShirt.png"
 import dua from "../../assets/images/12_peoples/whiteTshirt.png"
 
 
-import Splide from '@splidejs/splide';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
-import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
-
-
+import "https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js";
+import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 
 
 const Landing = () => {
+
+	/********* CHECKING AREA *********/
+
+	const settings = {
+		className: "center",
+		centerMode: true,
+		infinite: true,
+		centerPadding: "60px",
+		slidesToShow: 3,
+		speed: 500,
+		autoplay: true,
+		autoplaySpeed: 1000,
+	};
+
+	/******************/
+
+
+
+
+
+
 	// FOR PATH
 	const pathRef = useRef(null);
 	React.useEffect(() => {
@@ -148,6 +169,7 @@ const Landing = () => {
 			ease: "none",
 		});
 	}, []);
+
 
 
 	// For HORIZONTAL SCROLL
@@ -695,6 +717,7 @@ const Landing = () => {
 	const isAnyMobile = window.innerWidth < 450 && window.innerWidth > 320;
 
 
+
 	const dinaRollings = useRef(null)
 	React.useEffect(() => {
 		gsap.fromTo(dinaRollings.current,
@@ -920,6 +943,7 @@ const Landing = () => {
 
 	});
 
+
 	// const cocktailCulture = useRef(null)
 	React.useEffect(() => {
 
@@ -976,24 +1000,24 @@ const Landing = () => {
 
 		// );
 
-		// gsap.fromTo(".startMakingDrink",
-		// 	{
-		// 		x: -550,
-		// 		y: -300,
-		// 	},
+		gsap.fromTo(".startMakingDrink",
+			{
+				x: -550,
+				y: -300,
+			},
 
-		// 	{
-		// 		x: 150,
-		// 		y: -120,
-		// 		scrollTrigger: {
-		// 			trigger: ".cocktailCultureContainer",
-		// 			start: "top -56%",
-		// 			end: "top -60%",
-		// 			scrub: 1,
-		// 		},
-		// 	},
+			{
+				x: 150,
+				y: -120,
+				scrollTrigger: {
+					trigger: ".cocktailCultureContainer",
+					start: "top -56%",
+					end: "top -60%",
+					scrub: 1,
+				},
+			},
 
-		// );
+		);
 
 		gsap.fromTo(".orangeJuice",
 			{
@@ -1056,12 +1080,13 @@ const Landing = () => {
 
 		gsap.fromTo(".beHappyKiwi",
 			{
-				x: 2000,
-				y: -1500,
+				x: -350,
+				y: -1800,
+				scale: 0.8
 			},
 
 			{
-				x: 1500,
+				x: 20,
 				scrollTrigger: {
 					trigger: ".cocktailCultureContainer",
 					start: "top -80%",
@@ -1075,12 +1100,12 @@ const Landing = () => {
 		gsap.fromTo(".visitCocktail",
 			{
 				x: 300,
-				y: 600
+				y: 600,
 			},
 
 			{
-				x: -380,
-				y: 600,
+				x: -50,
+				y: 450,
 				scrollTrigger: {
 					trigger: ".cocktailCultureContainer",
 					start: "top -85%",
@@ -1627,7 +1652,6 @@ const Landing = () => {
 
 
 		// BLACK BG HEIGHT INCREASE
-
 		gsap.fromTo(".ttmnalWhiteBlack",
 			{
 				height: "300px",
@@ -1664,8 +1688,27 @@ const Landing = () => {
 
 
 
+	let particles = [];
+	const particlesCount = 250;
+	const particlesSize = 12;
+	const spacing = particlesSize * 12;
+
+	let gravity;
+	let deltaTime = 1 / 60;
+	let mousePrevX = 0;
+	let mousePrevY = 0;
 
 
+	class Particle {
+		constructor(x, y) {
+			this.pos = createVector(x, y);
+			this.vel = createVector(random(-20, 20), random(-20, 20));
+			this.acc = createVector(0, 0);
+			this.color = color(0, 0, 0);
+			this.lastPos = createVector(x, y);
+
+		}
+	}
 
 
 
@@ -1954,19 +1997,19 @@ const Landing = () => {
 
 						<div className="cocktailData relative">
 
-							{/* <div className="strippingEffect absolute top-0 right-0 w-[620px] z-9">
+							<div className="strippingEffect absolute top-0 right-0 w-[620px] z-9">
 								<Marquee direction="right">
 									<img src={strippingLine} alt="" />
 								</Marquee>
 								<img src={sipSavor} alt="" className="sipSavor absolute z-10" />
-							</div> */}
+							</div>
 
 							<div className="cockTailLogoAndTextContainer">
 								<div className="startMaking">
 									<img className="startMakingDrink" src={startMakingDrink} alt="" />
 								</div>
 
-								<div className="cockTailLogo">
+								<div className="cockTailLogo relative z-12">
 									<img className="logo" src={cocktailCultureLogo} alt="" />
 									<img className="introPara" src={experienceASip} alt="" />
 								</div>
@@ -1985,7 +2028,7 @@ const Landing = () => {
 
 			</section>
 
-			<section className="design-process">
+			{/* <section className="design-process">
 				<div className="data">
 
 					<div className="dp-headers h-screen w-screen bg-white h-full">
@@ -1995,16 +2038,6 @@ const Landing = () => {
 
 						<div className="designRevealAnimation h-[180px] w-[820px] bg-black absolute top-[300px] left-0"></div>
 
-						{/* <div className="arrowPath absolute mt-[700px] left-0">
-							<svg width="1472" height="564" viewBox="0 0 1472 564" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path
-									d="M0 287.501C927.6 287.501 1263.5 241.5 1337.5 232.5C1430.5 239.5 1492.9 198.201 1464.5 101.001C1429 -20.4994 1342 4.00011 1359 2.00011C1319.83 8.00008 1251.1 40.6 1289.5 123C1327.9 205.4 963 369.5 1019 699.5"
-									stroke="none" />
-							</svg>
-
-							<img className="arrowBlack" src={arrowPinkHeadSmall} alt="" />
-
-						</div> */}
 					</div>
 
 					<div className="processAnimationStart h-[200vh]">
@@ -2074,11 +2107,10 @@ const Landing = () => {
 					</div>
 
 
-					{/* <div className="h-[500vh]"></div> */}
 				</div>
-			</section>
+			</section> */}
 
-			<section className="relative z-10 companyOverview">
+			{/* <section className="relative z-10 companyOverview">
 				<div className="boxContainer h-screen w-screen flex">
 
 					<div className="left h-screen w-[50%]">
@@ -2099,10 +2131,10 @@ const Landing = () => {
 							</div>
 
 							<div className="h-[100%] w-[33.33%] bg-white">
-								<div className="h-[100%] w-[100%] rounded-[20px]" style={{ backgroundImage: `url(${girl})` }}>
+								<div className="h-full w-full rounded-[20px]" style={{ backgroundImage: `url(${girl})`, backgroundRepeat: "no-repeat", backgroundSize: "contain" }}>
 									<div className="h-[100%] w-[100%] rounded-[20px] flex flex-col justify-end pl-6 pb-8" style={{ background: 'linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(141, 139, 136, 0.5))' }}>
 										<p className="text-[40px] text-white">Joanne Billings</p>
-										<p className="text-[24px] text-white" style={{ fontFamily: 'roboto-slab-light', fontWeight: "bold", lineHeight: "10px" }}>Operations</p>
+										<p className="text-[24px] text-white" style={{ fontWeight: "bold", lineHeight: "10px" }}>Operations</p>
 									</div>
 								</div>
 
@@ -2115,7 +2147,7 @@ const Landing = () => {
 							</div>
 
 							<div className="h-[100%] w-[33.33%] bg-white flex flex-col justify-center pl-12">
-								<p className="text-4xl"><span className="text-6xl">50 </span>projects</p>
+								<p className="text-4xl"><span className="text-6xl">50</span> projects</p>
 								<p className="text-4xl">for</p>
 								<p className="text-4xl">40 clients</p>
 							</div>
@@ -2228,11 +2260,11 @@ const Landing = () => {
 										</div>
 										<div>
 											<Marquee>
-												<p className="h-full w-full ml-2 mr-2">GRAPHIC DESIGN</p>
-												<p className="h-full w-full ml-2 mr-2">UI/UX</p>
 												<p className="h-full w-full ml-2 mr-2">LOGO</p>
 												<p className="h-full w-full ml-2 mr-2">WEBSITE DESIGN</p>
+												<p className="h-full w-full ml-2 mr-2">UI/UX</p>
 												<p className="h-full w-full ml-2 mr-2">BRANDING</p>
+												<p className="h-full w-full ml-2 mr-2">GRAPHIC DESIGN</p>
 											</Marquee>
 										</div>
 									</div>
@@ -2246,10 +2278,10 @@ const Landing = () => {
 					</div>
 
 				</div>
-			</section>
+			</section> */}
 
 			<section className="RPtools h-screen w-screen">
-				<h2>OUR AMAZING TOOL</h2>
+				{/* <h2>OUR AMAZING TOOL</h2> */}
 				<div className="movingPencil">
 					<img src={movingPen} alt="" />
 				</div>
@@ -2348,59 +2380,28 @@ const Landing = () => {
 						</div>
 
 						<div id="splide">
-							<div className="testimon1">
-								<div className="Cardheader">
-									<div className="testimonImage">
-										<img src={ann} alt="" />
+							<div className="slider-container bg-red-500">
+								<Slider {...settings}>
+									<div className='h-[150px] w-[200px] bg-red-500'>
+										<h3>1</h3>
 									</div>
-
-									<div className="testimonDetails">
-										<h3>Ann Rhiel Madsen</h3>
-										<p>UX Head</p>
+									<div className='h-[150px] w-[200px] bg-green-500'>
+										<h3>2</h3>
 									</div>
-								</div>
-
-								<div className="content">
-									<p>Lorem ipsum dolor sit amet consectetur. Nibh mauris venenatis aliquet purus et diam euismod. Lacus elementum et urna tortor egestas id purus. Donec sagittis facilisis nisl diam vestibulum. </p>
-								</div>
+									<div className='h-[150px] w-[200px] bg-yellow-500'>
+										<h3>3</h3>
+									</div>
+									<div className='h-[150px] w-[200px] bg-pink-500'>
+										<h3>4</h3>
+									</div>
+									<div className='h-[150px] w-[200px] bg-blue-500'>
+										<h3>5</h3>
+									</div>
+									<div className='h-[150px] w-[200px] bg-purple-500'>
+										<h3>6</h3>
+									</div>
+								</Slider>
 							</div>
-
-							<div className="testimon2">
-								<div className="Cardheader">
-									<div className="testimonImage">
-										<img src={ashlynn} alt="" />
-									</div>
-
-									<div className="testimonDetails">
-										<h3>Ashlynn Levin</h3>
-										<p>UX Head</p>
-									</div>
-								</div>
-
-								<div className="content">
-									<p>Lorem ipsum dolor sit amet consectetur. Nibh mauris venenatis aliquet purus et diam euismod. Lacus elementum et urna tortor egestas id purus. Donec sagittis facilisis nisl diam vestibulum. </p>
-								</div>
-							</div>
-
-							<div className="testimon3">
-								<div className="Cardheader">
-									<div className="testimonImage">
-										<img src={talan} alt="" />
-									</div>
-
-									<div className="testimonDetails">
-										<h3>Talan Stanton</h3>
-										<p>UX Head</p>
-									</div>
-								</div>
-
-								<div className="content">
-									<p>Lorem ipsum dolor sit amet consectetur. Nibh mauris venenatis aliquet purus et diam euismod. Lacus elementum et urna tortor egestas id purus. Donec sagittis facilisis nisl diam vestibulum. </p>
-								</div>
-							</div>
-
-							<div className="testimon4">Testimonial 4</div>
-							<div className="testimon5">Testimonial 5</div>
 						</div>
 
 						<div className="nextButton">
@@ -2412,7 +2413,6 @@ const Landing = () => {
 
 				</div>
 			</section> */}
-
 
 			<section className="RPpeoples h-screen w-screen">
 				<h2>Kind words from people we have worked with</h2>
@@ -2427,7 +2427,15 @@ const Landing = () => {
 						<div className="peopleImage">
 							<img src={maria} alt="" />
 						</div>
+
+						<div className="hoveredData">
+							<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, quidem! Quisquam, voluptatum. Voluptatum, laboriosam! Ipsam, repellendus? Quis, vel? Ipsam, voluptatum. Voluptatum, laboriosam! Ipsam, repellendus? Quis, vel? Ipsam, voluptatum. Voluptatum, laboriosam! Ipsam, repellendus?</p>
+						</div>
+
 					</div>
+
+
+
 
 					<div className='person2'>
 						<div className="peopleNameRole">
@@ -2438,7 +2446,13 @@ const Landing = () => {
 						<div className="peopleImage">
 							<img src={brandon} alt="" />
 						</div>
+
+						<div className="hoveredData">
+							<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, quidem! Quisquam, voluptatum. Voluptatum, laboriosam! Ipsam, repellendus? Quis, vel? Ipsam, voluptatum. Voluptatum, laboriosam! Ipsam, repellendus? Quis, vel? Ipsam, voluptatum. Voluptatum, laboriosam! Ipsam, repellendus?</p>
+						</div>
 					</div>
+
+
 
 					<div className='person3'>
 						<div className="peopleNameRole">
@@ -2448,8 +2462,14 @@ const Landing = () => {
 
 						<div className="peopleImage">
 							<img src={hannah} alt="" />
-						</div>    
+						</div>
+
+						<div className="hoveredData">
+							<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, quidem! Quisquam, voluptatum. Voluptatum, laboriosam! Ipsam, repellendus? Quis, vel? Ipsam, voluptatum. Voluptatum, laboriosam! Ipsam, repellendus? Quis, vel? Ipsam, voluptatum. Voluptatum, laboriosam! Ipsam, repellendus?</p>
+						</div>
 					</div>
+
+
 					<div className='person4'>
 						<div className="peopleNameRole">
 							<h3>Dua Lipa</h3>
@@ -2460,15 +2480,21 @@ const Landing = () => {
 							<img src={dua} alt="" />
 						</div>
 
+						<div className="hoveredData">
+							<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, quidem! Quisquam, voluptatum. Voluptatum, laboriosam! Ipsam, repellendus? Quis, vel? Ipsam, voluptatum. Voluptatum, laboriosam! Ipsam, repellendus? Quis, vel? Ipsam, voluptatum. Voluptatum, laboriosam! Ipsam, repellendus?</p>
+						</div>
 					</div>
 				</div>
 			</section>
+
+
+
+
 
 		</main>
 	);
 };
 
 export default Landing;
-
 
 

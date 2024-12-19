@@ -232,20 +232,21 @@ const Landing = () => {
 	const lumberCraftRef = useRef(null);
 	React.useEffect(() => {
 
-		gsap.fromTo(lumberCraftRef.current,
-			{ x: 100, opacity: 0, },
-			{
-				x: 0,
-				opacity: 1,
-				scrollTrigger: {
-					trigger: lumberCraftRef.current,
-					start: "top 80%",
-					end: "top top",
-					scrub: 1,
-				},
+		// gsap.fromTo(lumberCraftRef.current,
+		// 	{ x: 100, opacity: 0, },
+		// 	{
+		// 		x: 0,
+		// 		overflow: 'hidden',
+		// 		opacity: 1,
+		// 		scrollTrigger: {
+		// 			trigger: lumberCraftRef.current,
+		// 			start: "top 80%",
+		// 			end: "top top",
+		// 			scrub: 1,
+		// 		},
 
-			}
-		);
+		// 	}
+		// );
 
 		gsap.fromTo(".main-product",
 			{ y: 300, opacity: 0 },
@@ -1716,7 +1717,7 @@ const Landing = () => {
 	return (
 		<main>
 
-			<section className="every-pixel">
+			{/* <section className="every-pixel">
 				<Link className="start-your-project">Start your Project</Link>
 
 				<p className="bring-idea">Bringing your ideas to life where</p>
@@ -1728,7 +1729,7 @@ const Landing = () => {
 				</div>
 
 				<p className="tells-your-story">Tells Your Story</p>
-			</section>
+			</section> */}
 
 			<div className="intro">
 				{/* <section className="welcome2rp">
@@ -1761,29 +1762,41 @@ const Landing = () => {
 
 			<section className="our-work mt-12">
 
-				<div ref={lumberCraftRef} className="lumber-craft w-screen h-[200vh]">
-					<div className="lumberFrame h-screen w-screen flex items-center justify-center">
-
-						<div className="lumberContent h-screen">
-							<div className="all-products flex items-center justify-center">
-								<img className="all-list" src={lumber_all_products} alt="" />
-								<img className="place-it" src={place_it} alt="" />
-							</div>
-
-							<div className="main-product flex items-center justify-center">
-								<img src={lumber_main} alt="" />
-							</div>
-
-							<div className="customer-services flex items-center justify-center">
-								<img src={lumber_customer} alt="" />
+				<div ref={lumberCraftRef} className="lmbr-container w-screen h-[150vh]">
+					<div className='lmbr-main'>
+						<div className="lmbr-header">
+							<h2>Lumbercraft</h2>
+							<p>Where Comfort Meets Style: Crafted for a Seamless Experience</p>
+							<hr />
+							<div className="lmbr-work">
+								<span>UI/UX Design</span>
+								<span>Mobile Application</span>
+								<span>Frontend Development</span>
 							</div>
 						</div>
 
+						<div className="lmbr-body">
+							<div className="image-container">
+								<div className='lmbr-all-prod'>
+									<img src={lumber_all_products} alt="" />
+								</div>
+
+								<div className='lmbr-main'>
+									<img src={lumber_main} alt="" />
+								</div>
+								
+								<div className='lmbr-review'>
+									<img src={lumber_customer} alt="" />
+								</div>
+
+
+							</div>
+						</div>
 					</div>
 				</div>
 
 
-				<div ref={regalFinance} className="regalFinance w-screen h-[200vh]">
+				{/* <div ref={regalFinance} className="regalFinance w-screen h-[200vh]">
 					<div className="regalFrame h-screen w-screen">
 
 						<div className="regalContent">
@@ -1810,12 +1823,12 @@ const Landing = () => {
 						</div>
 
 					</div>
-				</div>
+				</div> */}
 
 
-				<div className="xtream h-screen w-screen flex justify-center items-center">
+				{/* <div className="xtream h-screen w-screen flex justify-center items-center">
 					<img className="image absolute h-[90%] w-[90%] z-10" src={xtream_full} alt="" />
-				</div>
+				</div> */}
 
 
 				{/* <div ref={orchard} className="orchard h-[200vh] w-screen">
@@ -1855,7 +1868,7 @@ const Landing = () => {
 				</div> */}
 
 
-				<div ref={healthInsurance} className="healthInsurance h-[200vh] w-screen">
+				{/* <div ref={healthInsurance} className="healthInsurance h-[200vh] w-screen">
 					<div className="healthScreens h-screen w-screen">
 
 						<div className="screenContainer absolute top-0 left-0 z-10">
@@ -1898,10 +1911,10 @@ const Landing = () => {
 
 					</div>
 
-				</div>
+				</div> */}
 
 
-				<div className="dinaRollings-container h-[200vh] w-screen">
+				{/* <div className="dinaRollings-container h-[200vh] w-screen">
 					<div ref={dinaRollings} className="dinaRollings h-screen w-screen overflow-hidden">
 
 
@@ -1921,9 +1934,9 @@ const Landing = () => {
 
 
 					</div>
-				</div>
+				</div> */}
 
-				<div className="vividContainer h-[200vh] w-screen">
+				{/* <div className="vividContainer h-[200vh] w-screen">
 					<div className="vividSpark h-screen w-screen overflow-hidden">
 
 						<div className="vividText absolute top-0 left-0">
@@ -1949,9 +1962,9 @@ const Landing = () => {
 
 
 					</div>
-				</div>
+				</div> */}
 
-				<div className="cocktailCultureContainer h-[200vh] w-screen">
+				{/* <div className="cocktailCultureContainer h-[200vh] w-screen">
 					<div className="cocktailCulture h-screen w-screen overflow-hidden">
 
 						<div className="rainBows">
@@ -2024,7 +2037,7 @@ const Landing = () => {
 						</div>
 
 					</div>
-				</div>
+				</div> */}
 
 			</section>
 
@@ -2420,7 +2433,7 @@ const Landing = () => {
 				<div className="Peopleslist">
 					<div className='person1'>
 						<div className="peopleNameRole">
-							<h3>Maria Rosser</h3>
+							<h3>Bina Mam</h3>
 							<p>UX Head</p>
 						</div>
 
@@ -2429,17 +2442,15 @@ const Landing = () => {
 						</div>
 
 						<div className="hoveredData">
-							<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, quidem! Quisquam, voluptatum. Voluptatum, laboriosam! Ipsam, repellendus? Quis, vel? Ipsam, voluptatum. Voluptatum, laboriosam! Ipsam, repellendus? Quis, vel? Ipsam, voluptatum. Voluptatum, laboriosam! Ipsam, repellendus?</p>
+							<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, quidem! Quisquam, voluptatum. Voluptatum, laboriosam! Ipsam, repellendus? Quis, vel? Ipsam, voluptatum.</p>
 						</div>
 
 					</div>
 
 
-
-
 					<div className='person2'>
 						<div className="peopleNameRole">
-							<h3>Brandon Philips</h3>
+							<h3>Yogesh Sir</h3>
 							<p>UX Head</p>
 						</div>
 
@@ -2448,7 +2459,7 @@ const Landing = () => {
 						</div>
 
 						<div className="hoveredData">
-							<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, quidem! Quisquam, voluptatum. Voluptatum, laboriosam! Ipsam, repellendus? Quis, vel? Ipsam, voluptatum. Voluptatum, laboriosam! Ipsam, repellendus? Quis, vel? Ipsam, voluptatum. Voluptatum, laboriosam! Ipsam, repellendus?</p>
+							<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, quidem! Quisquam, voluptatum. Voluptatum, laboriosam! Ipsam, repellendus? Quis, vel? Ipsam, voluptatum.</p>
 						</div>
 					</div>
 
@@ -2456,7 +2467,7 @@ const Landing = () => {
 
 					<div className='person3'>
 						<div className="peopleNameRole">
-							<h3>Hannah Backer</h3>
+							<h3>Silveniya</h3>
 							<p>UX Head</p>
 						</div>
 
@@ -2465,14 +2476,14 @@ const Landing = () => {
 						</div>
 
 						<div className="hoveredData">
-							<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, quidem! Quisquam, voluptatum. Voluptatum, laboriosam! Ipsam, repellendus? Quis, vel? Ipsam, voluptatum. Voluptatum, laboriosam! Ipsam, repellendus? Quis, vel? Ipsam, voluptatum. Voluptatum, laboriosam! Ipsam, repellendus?</p>
+							<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, quidem! Quisquam, voluptatum. Voluptatum, laboriosam! Ipsam, repellendus? Quis, vel? Ipsam, voluptatum.</p>
 						</div>
 					</div>
 
 
 					<div className='person4'>
 						<div className="peopleNameRole">
-							<h3>Dua Lipa</h3>
+							<h3>Nirali Mam</h3>
 							<p>UX Head</p>
 						</div>
 
@@ -2481,7 +2492,7 @@ const Landing = () => {
 						</div>
 
 						<div className="hoveredData">
-							<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, quidem! Quisquam, voluptatum. Voluptatum, laboriosam! Ipsam, repellendus? Quis, vel? Ipsam, voluptatum. Voluptatum, laboriosam! Ipsam, repellendus? Quis, vel? Ipsam, voluptatum. Voluptatum, laboriosam! Ipsam, repellendus?</p>
+							<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, quidem! Quisquam, voluptatum. Voluptatum, laboriosam! Ipsam, repellendus? Quis, vel? Ipsam, voluptatum.</p>
 						</div>
 					</div>
 				</div>

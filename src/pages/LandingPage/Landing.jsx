@@ -1826,7 +1826,7 @@ const Landing = () => {
 									<img src={rgl_nav} alt="" />
 								</div>
 
-								<div className='egl-explr'>
+								<div className='rgl-explr'>
 									<img src={rgl_explore} alt="" />
 								</div>
 

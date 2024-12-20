@@ -10,11 +10,6 @@ import Marquee from "react-fast-marquee";
 import { useScroll } from "framer-motion";
 
 
-import lumber_main from "../../assets/images/07_ourWorks/LUMBERCRAFT/lumbercraft-main-product.png"
-import lumber_all_products from "../../assets/images/07_ourWorks/LUMBERCRAFT/lumbercraft-all-products-list.png"
-import lumber_customer from "../../assets/images/07_ourWorks/LUMBERCRAFT/lumbercraft-customer-services.png"
-import place_it from "../../assets/images/07_ourWorks/LUMBERCRAFT/place-it.png"
-
 import research from "../../assets/images/06_ropeEffectPlayables/research_square.png"
 import strategy from "../../assets/images/06_ropeEffectPlayables/strategy_square.png"
 import uiuxdesign from "../../assets/images/06_ropeEffectPlayables/uiux_square.png"
@@ -22,10 +17,18 @@ import branding from "../../assets/images/06_ropeEffectPlayables/branding_square
 import build from "../../assets/images/06_ropeEffectPlayables/build_square.png"
 
 
-import regal_navbar from "../../assets/images/07_ourWorks/REGALFINANCE/navbar.png"
-import regal_leftpanel from "../../assets/images/07_ourWorks/REGALFINANCE/leftPanal.png"
-import rewards from "../../assets/images/07_ourWorks/REGALFINANCE/rewards.png"
-import assets from "../../assets/images/07_ourWorks/REGALFINANCE/assets.png"
+import lumber_main from "../../assets/images/07_ourWorks/LUMBERCRAFT/lumbercraft-main-product.png"
+import lumber_all_products from "../../assets/images/07_ourWorks/LUMBERCRAFT/lumbercraft-all-products-list.png"
+import lumber_customer from "../../assets/images/07_ourWorks/LUMBERCRAFT/lumbercraft-customer-services.png"
+import place_it from "../../assets/images/07_ourWorks/LUMBERCRAFT/place-it.png"
+
+
+import intuitiveDes from "../../assets/images/07_ourWorks/REGALFINANCE/intuitiveMobile.png"
+import rgl_nav from "../../assets/images/07_ourWorks/REGALFINANCE/navbar.png"
+import rgl_explore from "../../assets/images/07_ourWorks/REGALFINANCE/exploreWorld.png"
+import rgl_freedom from "../../assets/images/07_ourWorks/REGALFINANCE/discoverFreedom.png"
+import rgl_financeCirc from "../../assets/images/07_ourWorks/REGALFINANCE/financialCircle.png"
+import rgl_assets from "../../assets/images/07_ourWorks/REGALFINANCE/assets.png"
 
 import xtream_full from "../../assets/images/07_ourWorks/Xtream/xtreamFullImage.png"
 
@@ -295,20 +298,20 @@ const Landing = () => {
 
 	const regalFinance = useRef(null);
 	React.useEffect(() => {
-		gsap.fromTo(regalFinance.current,
-			{ x: 100, y: 100, opacity: 0 },
-			{
-				x: 0,
-				y: 0,
-				opacity: 1,
-				scrollTrigger: {
-					trigger: regalFinance.current,
-					start: "top 80%", // Trigger when the top of the section is 80% down the viewport
-					end: "top top", // End when the top of the section is 30% down the viewport
-					scrub: 1,
-				}
-			}
-		);
+		// gsap.fromTo(regalFinance.current,
+		// 	{ x: 100, y: 100, opacity: 0 },
+		// 	{
+		// 		x: 0,
+		// 		y: 0,
+		// 		opacity: 1,
+		// 		scrollTrigger: {
+		// 			trigger: regalFinance.current,
+		// 			start: "top 80%", // Trigger when the top of the section is 80% down the viewport
+		// 			end: "top top", // End when the top of the section is 30% down the viewport
+		// 			scrub: 1,
+		// 		}
+		// 	}
+		// );
 
 		gsap.fromTo(".leftPanel",
 			{ x: -400, opacity: 1 },
@@ -1784,7 +1787,7 @@ const Landing = () => {
 								<div className='lmbr-main'>
 									<img src={lumber_main} alt="" />
 								</div>
-								
+
 								<div className='lmbr-review'>
 									<img src={lumber_customer} alt="" />
 								</div>
@@ -1796,34 +1799,53 @@ const Landing = () => {
 				</div>
 
 
-				{/* <div ref={regalFinance} className="regalFinance w-screen h-[200vh]">
-					<div className="regalFrame h-screen w-screen">
+				<div ref={regalFinance} className="regalFinance w-screen h-[200vh]">
+					<div className='regal-main'>
 
-						<div className="regalContent">
-
-							<div className="regalNavbar">
-								<img src={regal_navbar} alt="" />
-							</div>
-
-
-							<div className="regalData">
-								<div className="leftPanel">
-									<img className="" src={regal_leftpanel} alt="" />
-								</div>
-
-								<div className="rewards">
-									<img className="" src={rewards} alt="" />
-								</div>
-
-								<div className="assets">
-									<img className="" src={assets} alt="" />
+						<div className="regal-header">
+							<div className="headings">
+								<h2>Regal Finance</h2>
+								<p>Empowering Your Finances with Clarity and Control</p>
+								<hr />
+								<div className="regal-work">
+									<span>UI/UX Design</span>
+									<span>Website Design</span>
+									<span>Frontend Development</span>
 								</div>
 							</div>
 
+							<div className="regal-mobileApp">
+								<img src={intuitiveDes} alt="" />
+							</div>
+						</div>
+
+
+						<div className="regal-body">
+							<div className="regal-navbar">
+								<div className='rgl-nav'>
+									<img src={rgl_nav} alt="" />
+								</div>
+
+								<div className='egl-explr'>
+									<img src={rgl_explore} alt="" />
+								</div>
+
+							</div>
+
+							<div className="regal-WSContent">
+								<div className="rgl-frdm">
+									<img src={rgl_freedom} alt="" />
+									<img id='fin-cir' src={rgl_financeCirc} alt="" />
+								</div>
+
+								<div className="rgl-ast">
+									<img src={rgl_assets} alt="" />
+								</div>
+							</div>
 						</div>
 
 					</div>
-				</div> */}
+				</div>
 
 
 				{/* <div className="xtream h-screen w-screen flex justify-center items-center">
@@ -2291,14 +2313,14 @@ const Landing = () => {
 					</div>
 
 				</div>
-			</section> */}
+			</section>  */}
 
-			<section className="RPtools h-screen w-screen">
-				{/* <h2>OUR AMAZING TOOL</h2> */}
+			{/* <section className="RPtools h-screen w-screen">
+				<h2>OUR AMAZING TOOL</h2>
 				<div className="movingPencil">
 					<img src={movingPen} alt="" />
 				</div>
-			</section>
+			</section> */}
 
 			<section className="RPsolutions h-screen w-screen">
 

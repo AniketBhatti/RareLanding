@@ -1524,6 +1524,7 @@ main {
                         display: flex;
                         justify-content: end;
                         align-items: center;
+                        padding-bottom: 50px;
                     }
                 }
 
@@ -1590,7 +1591,7 @@ main {
                         width: 30%;
 
                         .headings{
-                            padding: 50px;
+                            padding: 50px 0px 0px 80px;
                             h2{
                                 font-size: 5vw;
                                 line-height: 5.5vw;
@@ -1624,9 +1625,11 @@ main {
                                     width: 100%;
                                 }
                             }
-    
+
                             .egl-explr{
                                 margin: 40px 0;
+                                display: flex;
+                                justify-content: center;
                                 img{
                                     width: 30%;
                                 }
@@ -1648,7 +1651,7 @@ main {
                             }
     
                             .rgl-ast{
-                                transform: translate(0%, -30%);
+                                transform: translate(10%, -30%);
                                 // background-color: red;
                                 width: 50%;
 
@@ -1669,7 +1672,7 @@ main {
                         width: 30%;
 
                         .headings{
-                            padding: 50px;
+                            padding: 50px 0px 0px 80px;
                             h2{
                                 font-size: 5vw;
                                 line-height: 5.5vw;
@@ -1703,9 +1706,11 @@ main {
                                     width: 100%;
                                 }
                             }
-    
+
                             .egl-explr{
                                 margin: 40px 0;
+                                display: flex;
+                                justify-content: center;
                                 img{
                                     width: 30%;
                                 }
@@ -1727,7 +1732,7 @@ main {
                             }
     
                             .rgl-ast{
-                                transform: translate(0%, -30%);
+                                transform: translate(10%, -30%);
                                 // background-color: red;
                                 width: 50%;
 
@@ -1742,102 +1747,7 @@ main {
             }
 
             @media screen and (max-width: 1366px) {
-                .regal-main{
-                position: sticky;
-                top: 0;
-                height: auto;
-                min-height: 100vh;
-                display: flex;
-                padding: 10px;
-
-                .regal-header{
-                    height: 100vh;
-                    width: 25%;
-                    
-                    .headings{
-                        padding: 40px;
-                        h2{
-                            font-size: 4vw;
-                            line-height: 5vw;
-                        }
-
-                        p{
-                            font-family: satoshi;
-                            font-size: 1vw;
-                            padding: 10px 0;
-                        }
-                        
-                        .regal-work{
-                            padding: 10px 0;
-                            span{
-                                font-family: satoshi;
-                                font-size: 1vw;
-                            }
-                        }
-                    }
-
-                    .regal-mobileApp{
-                        height: 50%;
-                        display: flex;
-                        justify-content: end;
-                        align-items: center;
-                    }
-                }
-
-                .regal-body{
-                    height: 100vh;
-                    width: 75%;
-                    padding: 50px;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-
-                    .regal-navbar{
-                        .rgl-nav{
-                            z-index: 1;
-                        }
-
-                        .egl-explr{
-                            margin: 40px 0;
-                        }
-                    }
-
-                    .regal-WSContent{
-                        display: flex;
-                        align-items: center;
-                        justify-content: space-evenly;
-                        height: 50%;
-
-                        .rgl-frdm{
-                            display: flex;
-                            justify-content: center;
-                            position: relative;
-
-                            #fin-cir{
-                                position: absolute;
-                                top: -10%;
-                                left: 90%;
-                                animation: fin-cir-rotate 10s linear infinite;
-                                width: 20%;
-
-                            @keyframes fin-cir-rotate {
-                                from {
-                                    transform: rotate(0deg);
-                                }
-                                to {
-                                    transform: rotate(360deg);
-                                }
-                            }
-                            }
-                        }
-
-                        .rgl-ast{
-                            transform: translate(0%, -30%);
-                        }
-                        
-                    }
-                }
-            }
+                
             }
 
             @media screen and (max-width: 1199px) {

@@ -1975,46 +1975,46 @@ main {
             @media screen and (max-width: 640px) {
                 .regal-main {
                     .regal-header {
-    
+
                         .headings {
                             padding: 40px;
-    
+
                             h2 {
                                 font-size: 6vw;
                                 line-height: normal;
                             }
-    
+
                             p {
                                 font-size: 2vw;
                             }
-    
+
                             .regal-work {
                                 span {
                                     font-size: 2vw;
                                 }
-    
+
                             }
                         }
                     }
-    
+
                     .regal-body {
                         justify-content: start;
                         padding: 20px 40px 50px 40px;
                         height: auto;
-    
+
                         .regal-WSContent {
-    
+
                             .rgl-frdm {
                                 display: flex;
                                 justify-content: center;
                                 position: relative;
-    
+
                             }
-    
+
                             .rgl-ast {
                                 transform: translate(25%, -30%);
                             }
-    
+
                         }
                     }
                 }
@@ -2022,64 +2022,65 @@ main {
 
             @media screen and (max-width: 500px) {
                 .regal-main {
-    
+
                     .regal-header {
                         .headings {
-    
+
                             h2 {
                                 font-size: 10vw;
                             }
-                            
+
                             p {
                                 font-size: 4vw;
                             }
 
-                            hr{
+                            hr {
                                 width: 100%;
                             }
-    
+
                             .regal-work {
                                 span {
                                     font-size: 4vw;
                                 }
-    
+
                             }
                         }
-                        
-                        .regal-mobileApp{
-                            img{
+
+                        .regal-mobileApp {
+                            img {
                                 width: 70%;
                             }
                         }
-                        
+
                     }
-    
-                    .regal-body {    
+
+                    .regal-body {
                         .regal-navbar {
                             .rgl-nav {
-                                img{
+                                img {
                                     width: 100%;
                                 }
                             }
-    
+
                             .rgl-explr {
                                 margin: 40px 0;
-                                img{
+
+                                img {
                                     width: 100%;
                                 }
 
                             }
                         }
-    
+
                         .regal-WSContent {
-                                flex-direction: column;
-                                gap: 50px;
-                                width: 100%;
+                            flex-direction: column;
+                            gap: 50px;
+                            width: 100%;
 
                             .rgl-frdm {
                                 width: 100%;
 
-                                img{
+                                img {
                                     width: 80%;
                                 }
 
@@ -2088,14 +2089,14 @@ main {
                                     left: calc(90% - 20%);
                                 }
 
-                                
+
                             }
-    
+
                             .rgl-ast {
                                 transform: translate(0%, 0%);
                                 width: 80%;
                             }
-    
+
                         }
                     }
                 }
@@ -2103,7 +2104,6 @@ main {
 
 
         }
-
 
 
         .xtream {
@@ -2124,557 +2124,119 @@ main {
 
         }
 
+
         .orchard {
-            background-color: #8FE5E0;
+            background-color: #F75C64;
 
-            // &::before {
-            //     content: "Mobile App";
-            //     display: flex;
-            //     align-items: center;
-            //     justify-content: center;
-            //     height: 100%;
-            //     font-size: 35vh;
-            //     font-family: satoshi;
-            //     color: #a2a2a236;
-            //     z-index: 1;
-            // }
-
-
-            .orchardScreens {
-                display: flex;
+            .orcd-main {
                 position: sticky;
                 top: 0;
-                z-index: 1;
+                height: 100vh;
+                padding: 50px;
+                display: flex;
+                overflow: hidden;
 
-                .screen-showcase {
+                .orcd-crnr {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    z-index: -1;
+                }
+
+                .orcd-screens {
+                    padding: 50px;
                     width: 50%;
+                    height: 100%;
                     display: flex;
 
-                    .veggie-menu {
+                    .orcd-findProducts {
+                        height: 100%;
                         width: 50%;
-                        height: calc(100% - 60px);
                         display: flex;
                         align-items: end;
-                        justify-content: center;
-                        background-repeat: no-repeat;
-                        background-image: url("../../assets/images/07_ourWorks/ORCHARD/top-left-veggies.png");
-
                     }
 
-                    .vertical-scroll {
-                        width: 50%;
-                        height: 100%;
-                        overflow: hidden;
-                        position: relative;
-                        box-sizing: border-box;
+                    .orcd-infinity-scrl {
+                        .scroller {
+                            height: 100%;
 
-                        .marquee {
-                            width: 320px;
-                            top: 100%;
-                            position: relative;
-                            box-sizing: border-box;
-                            animation: marquee 20s linear infinite 2s;
-                            margin: 0 auto;
-                            text-align: center;
-                            color: #ffffff;
-                            white-space: nowrap;
+                            .orcd-custom-scroll {
+                                display: flex;
+                                flex-direction: column;
+                                animation: scroll-up 10s linear infinite;
+                                position: relative;
+                                top: 100%;
 
+                                @keyframes scroll-up {
+                                    0% {
+                                        transform: translateY(0);
+                                    }
 
-                            @keyframes marquee {
-                                from {
-                                    transform: translateY(0);
+                                    100% {
+                                        transform: translateY(-100%);
+                                    }
                                 }
-
-                                to {
-                                    transform: translateY(-150%);
-                                }
-                            }
-
-                            img {
-                                margin-bottom: 20px;
-                            }
-
-                            &:hover {
-                                animation-play-state: paused;
                             }
                         }
-
-
-
-
                     }
-
                 }
 
-                .homescreen {
+                .orcd-header {
+                    height: 100%;
                     width: 50%;
-                    display: flex;
-                    align-items: end;
-                }
-            }
+                    color: white;
 
-            @media screen and (min-width: 1927px) {
-                .orchardScreens {
-                    .screen-showcase {
-                        .veggie-menu {
-                            width: 50%;
-                            height: calc(100% - 100px);
-                            display: flex;
-                            align-items: end;
-                            justify-content: end;
-                            background-image: url("../../assets/images/07_ourWorks/ORCHARD/top-left-veggies.png");
-                            background-repeat: no-repeat;
-
-                            .find-products {
-                                img {
-                                    height: 1000px;
-                                    width: 100%;
-                                    object-fit: contain;
-                                }
-                            }
-
-                        }
-
-                        .vertical-scroll {
-                            width: 50%;
-                            height: 100%;
-                            overflow: hidden;
-                            position: relative;
-                            box-sizing: border-box;
-
-                            .marquee {
-                                width: 320px;
-                                top: 100%;
-                                position: relative;
-                                box-sizing: border-box;
-                                animation: marquee 20s linear infinite 2s;
-                                margin: 0 auto;
-                                text-align: center;
-                                color: #ffffff;
-                                white-space: nowrap;
-
-                                img {
-                                    height: 700px;
-                                    width: 100%;
-                                    object-fit: fill;
-                                }
-
-
-                                @keyframes marquee {
-                                    from {
-                                        transform: translateY(0);
-                                    }
-
-                                    to {
-                                        transform: translateY(-150%);
-                                    }
-                                }
-
-                                img {
-                                    margin-bottom: 20px;
-                                }
-
-                                &:hover {
-                                    animation-play-state: paused;
-                                }
-                            }
-                        }
-                    }
-
-                    .homescreen {
-                        width: 50%;
+                    .headings {
+                        width: 100%;
                         display: flex;
+                        flex-direction: column;
                         align-items: center;
                         justify-content: center;
 
-                        img {
-                            height: 70%;
-                            width: 80%;
-                            object-fit: contain;
+                        h2 {
+                            font-size: 4vw;
                         }
+
+                        p {
+                            font-family: satoshi;
+                            font-size: 1vw;
+                            padding: 10px 0px;
+                        }
+
+                        hr {
+                            width: 70%;
+                        }
+
+                        .orcd-works {
+                            padding: 10px 0px;
+
+                            span {
+                                font-family: satoshi;
+                                font-size: 1vw;
+                            }
+
+                            span+span {
+                                &::before {
+                                    content: " | ";
+                                }
+                            }
+                        }
+
+                    }
+
+                    .orcd-home {
+                        width: 70%;
+                        padding: 20px;
+
                     }
                 }
             }
-
-            @media screen and (max-width: 1926px) and (min-width: 1440px) {
-                .orchardScreens {
-
-                    .screen-showcase {
-                        width: 50%;
-                        display: flex;
-
-                        .veggie-menu {
-                            height: calc(100% - 100px);
-                            align-items: end;
-                        }
-                    }
-
-                    .homescreen {
-                        width: 50%;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-
-                        img {
-                            height: 70%;
-                            width: 80%;
-                            object-fit: contain;
-                        }
-                    }
-                }
-            }
-
-            @media screen and (max-width: 1439px) and (min-width: 1024px) {
-                .orchardScreens {
-
-                    .screen-showcase {
-                        width: 60%;
-                        display: flex;
-
-                        .veggie-menu {
-                            height: calc(100% - 100px);
-                            align-items: end;
-                            background-size: contain;
-                        }
-
-                        .vertical-scroll {
-                            width: 45%;
-                            height: 100%;
-                            overflow: hidden;
-                            position: relative;
-                            box-sizing: border-box;
-
-                            .marquee {
-                                width: 320px;
-                                top: 100%;
-                                position: relative;
-                                box-sizing: border-box;
-                                animation: marquee 20s linear infinite 2s;
-                                margin: 0 auto;
-                                text-align: center;
-                                color: #ffffff;
-                                white-space: nowrap;
-
-                                img {
-                                    height: 100%;
-                                    width: 75%;
-                                    object-fit: fill;
-                                }
-
-
-                                @keyframes marquee {
-                                    from {
-                                        transform: translateY(0);
-                                    }
-
-                                    to {
-                                        transform: translateY(-150%);
-                                    }
-                                }
-
-                                img {
-                                    margin-bottom: 20px;
-                                }
-
-                                &:hover {
-                                    animation-play-state: paused;
-                                }
-                            }
-                        }
-                    }
-
-                    .homescreen {
-                        width: 40%;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-
-                        img {
-                            height: 100%;
-                            width: 90%;
-                            object-fit: contain;
-                        }
-                    }
-                }
-            }
-
-            @media screen and (max-width: 1023px) and (min-width: 768px) {
-                .orchardScreens {
-
-                    .screen-showcase {
-                        width: 60%;
-                        display: flex;
-
-                        .veggie-menu {
-                            height: calc(100%);
-                            align-items: end;
-                            background-size: contain;
-
-                            .find-products {
-                                img {
-                                    height: 1000px;
-                                    width: 100%;
-                                    object-fit: contain;
-                                }
-                            }
-                        }
-
-                        .vertical-scroll {
-                            width: 45%;
-                            height: 100%;
-                            overflow: hidden;
-                            position: relative;
-                            box-sizing: border-box;
-
-                            .marquee {
-                                width: 320px;
-                                top: 100%;
-                                position: relative;
-                                box-sizing: border-box;
-                                animation: marquee 20s linear infinite 2s;
-                                margin: 0 auto;
-                                text-align: center;
-                                color: #ffffff;
-                                white-space: nowrap;
-
-                                img {
-                                    height: 100%;
-                                    width: 60%;
-                                    object-fit: fill;
-                                }
-
-
-                                @keyframes marquee {
-                                    from {
-                                        transform: translateY(0);
-                                    }
-
-                                    to {
-                                        transform: translateY(-150%);
-                                    }
-                                }
-
-                                img {
-                                    margin-bottom: 20px;
-                                }
-
-                                &:hover {
-                                    animation-play-state: paused;
-                                }
-                            }
-                        }
-                    }
-
-                    .homescreen {
-                        width: 50%;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-
-                        img {
-                            height: 100%;
-                            width: 100%;
-                            object-fit: contain;
-                        }
-                    }
-                }
-            }
-
-            @media screen and (max-width: 767px) and (min-width: 530px) {
-                .orchardScreens {
-                    position: sticky;
-                    top: 0;
-                    z-index: 1;
-                    display: block;
-
-                    .screen-showcase {
-                        width: 100%;
-                        height: 65%;
-                        display: block;
-                        // background-color: red;
-
-                        .veggie-menu {
-                            width: 100%;
-                            height: 50%;
-                            display: flex;
-                            align-items: start;
-                            justify-content: center;
-                            background-repeat: no-repeat;
-                            background-image: url("../../assets/images/07_ourWorks/ORCHARD/top-left-veggies.png");
-                            background-size: 30%;
-
-                            .find-products {
-                                img {
-                                    height: 250px;
-                                    width: 100%;
-                                    object-fit: contain;
-                                }
-                            }
-
-                        }
-
-                        .vertical-scroll {
-                            width: 100%;
-                            height: 50%;
-                            overflow: hidden;
-                            position: relative;
-                            box-sizing: border-box;
-
-                            .marquee {
-                                width: 100%;
-                                top: 0%;
-                                position: relative;
-                                box-sizing: border-box;
-                                animation: marquee 20s linear infinite 2s;
-                                margin: 0 auto;
-                                text-align: center;
-                                white-space: nowrap;
-                                display: flex;
-                                gap: 20px;
-
-                                img {
-                                    height: 30%;
-                                    width: 17%;
-                                    object-fit: fill;
-                                    margin-bottom: 0px;
-                                }
-
-
-
-                                @keyframes marquee {
-                                    from {
-                                        transform: translateX(0);
-                                    }
-
-                                    to {
-                                        transform: translateX(-150%);
-                                    }
-                                }
-
-
-                                &:hover {
-                                    animation-play-state: paused;
-                                }
-                            }
-                        }
-                    }
-
-                    .homescreen {
-                        width: 100%;
-                        height: 35%;
-                        display: flex;
-                        align-items: start;
-                        justify-content: center;
-
-                        img {
-                            height: 100%;
-                            width: 100%;
-                            object-fit: contain;
-                        }
-                    }
-                }
-            }
-
-            @media screen and (max-width: 529px) {
-                .orchardScreens {
-                    position: sticky;
-                    top: 0;
-                    z-index: 1;
-                    display: block;
-
-                    .screen-showcase {
-                        width: 100%;
-                        // height: 65%;
-                        display: block;
-                        // background-color: red;
-
-                        .veggie-menu {
-                            width: 100%;
-                            height: 50%;
-                            display: flex;
-                            align-items: start;
-                            justify-content: center;
-                            background-repeat: no-repeat;
-                            background-image: url("../../assets/images/07_ourWorks/ORCHARD/top-left-veggies.png");
-                            background-size: 30%;
-
-                            .find-products {
-                                img {
-                                    padding-top: 15px;
-                                    height: 250px;
-                                    width: 100%;
-                                    object-fit: contain;
-                                }
-                            }
-
-                        }
-
-                        .vertical-scroll {
-                            width: 100%;
-                            height: 50%;
-                            overflow: hidden;
-                            position: relative;
-                            box-sizing: border-box;
-                            margin-top: 25px;
-
-                            .marquee {
-                                width: 100%;
-                                top: 0%;
-                                position: relative;
-                                box-sizing: border-box;
-                                animation: marquee 20s linear infinite 2s;
-                                margin: 0 auto;
-                                text-align: center;
-                                white-space: nowrap;
-                                display: flex;
-                                gap: 20px;
-
-                                img {
-                                    height: 30%;
-                                    width: 30%;
-                                    object-fit: fill;
-                                    margin-bottom: 0px;
-                                }
-
-
-
-                                @keyframes marquee {
-                                    from {
-                                        transform: translateX(0);
-                                    }
-
-                                    to {
-                                        transform: translateX(-150%);
-                                    }
-                                }
-
-
-                                &:hover {
-                                    animation-play-state: paused;
-                                }
-                            }
-                        }
-                    }
-
-                    .homescreen {
-                        width: 100%;
-                        height: 35%;
-                        display: flex;
-                        align-items: start;
-                        justify-content: center;
-
-                        img {
-                            height: 100%;
-                            width: 100%;
-                            object-fit: contain;
-                        }
-                    }
-                }
-            }
-
-
-
         }
+
+
+
+
+
 
         .healthInsurance {
 

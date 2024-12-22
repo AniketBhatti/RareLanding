@@ -32,8 +32,9 @@ import rgl_assets from "../../assets/images/07_ourWorks/REGALFINANCE/assets.png"
 
 import xtream_full from "../../assets/images/07_ourWorks/Xtream/xtreamFullImage.png"
 
-import bottomLeftPhone from "../../assets/images/07_ourWorks/ORCHARD/bottom-left-phone.png"
-import rightHome from "../../assets/images/07_ourWorks/ORCHARD/right-orchard-home.png"
+import orcd_veggies from "../../assets/images/07_ourWorks/ORCHARD/veggies.png"
+import orcd_products from "../../assets/images/07_ourWorks/ORCHARD/findProducts.png"
+import orcd_home from "../../assets/images/07_ourWorks/ORCHARD/orchardHome.png"
 
 import favoriteScreen from "../../assets/images/07_ourWorks/ORCHARD/VerticalScroll/favorites-screen.png"
 import filterScreen from "../../assets/images/07_ourWorks/ORCHARD/VerticalScroll/filters-screen.png"
@@ -45,6 +46,8 @@ import mobileScreen from "../../assets/images/07_ourWorks/ORCHARD/VerticalScroll
 import mycartScreen from "../../assets/images/07_ourWorks/ORCHARD/VerticalScroll/mycart-screen.png"
 import productDetailsScreen from "../../assets/images/07_ourWorks/ORCHARD/VerticalScroll/product-detail-screen.png"
 import searchScreen from "../../assets/images/07_ourWorks/ORCHARD/VerticalScroll/search-screen.png"
+
+
 
 import hiLogo from "../../assets/images/07_ourWorks/HEALTHINSURANCE/hi-logo.png"
 import phoneMockup from "../../assets/images/07_ourWorks/HEALTHINSURANCE/phone-mockup.png"
@@ -135,16 +138,6 @@ const Landing = () => {
 
 	/********* CHECKING AREA *********/
 
-	const settings = {
-		className: "center",
-		centerMode: true,
-		infinite: true,
-		centerPadding: "60px",
-		slidesToShow: 3,
-		speed: 500,
-		autoplay: true,
-		autoplaySpeed: 1000,
-	};
 
 	/******************/
 
@@ -396,67 +389,67 @@ const Landing = () => {
 
 	const orchard = useRef(null);
 	React.useEffect(() => {
-		gsap.fromTo(orchard.current,
-			{ x: 100, y: 100, opacity: 0 },
-			{
-				x: 0,
-				y: 0,
-				opacity: 1,
-				scrollTrigger: {
-					trigger: orchard.current,
-					start: "top 90%",
-					end: "top 30%",
-					scrub: 1,
-				}
-			}
-		);
+		// 	
+		// 	{ x: 100, y: 100, opacity: 0 },
+		// 	{
+		// 		x: 0,
+		// 		y: 0,
+		// 		opacity: 1,
+		// 		scrollTrigger: {
+		// 			trigger: orchard.current,
+		// 			start: "top 90%",
+		// 			end: "top 30%",
+		// 			scrub: 1,
+		// 		}
+		// 	}
+		// );
 
-		gsap.fromTo(".veggies",
-			{ x: -300, opacity: 0 },
-			{
-				x: 0,
-				opacity: 1,
-				duration: 2,
-				scrollTrigger: {
-					trigger: orchard.current,
-					start: "top top", // Trigger when the top of the section is 80% down the viewport
-					end: "top -20%", // End when the top of the section is 30% down the viewport
-					scrub: 1,
-				}
-			}
-		);
-
-
-		gsap.fromTo(".find-prods",
-			{ x: -400, opacity: 0 },
-			{
-				x: 0,
-				opacity: 1,
-				duration: 2,
-				scrollTrigger: {
-					trigger: orchard.current,
-					start: "top -30%", // Trigger when the top of the section is 80% down the viewport
-					end: "top -40%", // End when the top of the section is 30% down the viewport
-					scrub: 1,
-				}
-			}
-		);
+		// gsap.fromTo(".veggies",
+		// 	{ x: -300, opacity: 0 },
+		// 	{
+		// 		x: 0,
+		// 		opacity: 1,
+		// 		duration: 2,
+		// 		scrollTrigger: {
+		// 			trigger: orchard.current,
+		// 			start: "top top", // Trigger when the top of the section is 80% down the viewport
+		// 			end: "top -20%", // End when the top of the section is 30% down the viewport
+		// 			scrub: 1,
+		// 		}
+		// 	}
+		// );
 
 
-		gsap.fromTo(".homescreen",
-			{ x: 100, opacity: 0 },
-			{
-				x: 0,
-				opacity: 1,
-				duration: 2,
-				scrollTrigger: {
-					trigger: orchard.current,
-					start: "top -40%", // Trigger when the top of the section is 80% down the viewport
-					end: "top -50%", // End when the top of the section is 30% down the viewport
-					scrub: 1,
-				}
-			}
-		);
+		// gsap.fromTo(".find-prods",
+		// 	{ x: -400, opacity: 0 },
+		// 	{
+		// 		x: 0,
+		// 		opacity: 1,
+		// 		duration: 2,
+		// 		scrollTrigger: {
+		// 			trigger: orchard.current,
+		// 			start: "top -30%", // Trigger when the top of the section is 80% down the viewport
+		// 			end: "top -40%", // End when the top of the section is 30% down the viewport
+		// 			scrub: 1,
+		// 		}
+		// 	}
+		// );
+
+
+		// gsap.fromTo(".homescreen",
+		// 	{ x: 100, opacity: 0 },
+		// 	{
+		// 		x: 0,
+		// 		opacity: 1,
+		// 		duration: 2,
+		// 		scrollTrigger: {
+		// 			trigger: orchard.current,
+		// 			start: "top -40%", // Trigger when the top of the section is 80% down the viewport
+		// 			end: "top -50%", // End when the top of the section is 30% down the viewport
+		// 			scrub: 1,
+		// 		}
+		// 	}
+		// );
 
 	}, []);
 
@@ -1853,41 +1846,51 @@ const Landing = () => {
 				</div> */}
 
 
-				{/* <div ref={orchard} className="orchard h-[200vh] w-screen">
+				<div ref={orchard} className="orchard h-[200vh] w-screen">
 
-					<div className="orchardScreens h-screen w-screen ">
-						<div className="screen-showcase">
-							<div className="veggie-menu">
+					<div className="orcd-main">
+						<div className='orcd-crnr'>
+							<img src={orcd_veggies} alt="" />
+						</div>
 
-								<div className="find-products">
-									<img className="" src={bottomLeftPhone} alt="" />
+						<div className='orcd-screens'>
+							<div className="orcd-findProducts">
+								<img src={orcd_products} alt="" />
+							</div>
+
+							<div className="orcd-infinity-scrl">
+								<div className='scroller'>
+									<div className='orcd-custom-scroll'>
+										<img src={favoriteScreen} alt="" />
+										<img src={filterScreen} alt="" />
+										<img src={homeScreen} alt="" />
+										<img src={beveragesScreen} alt="" />
+									</div>
 								</div>
 							</div>
 
-							<div className="vertical-scroll">
-								<div className="marquee">
-									<img src={loginScreen} alt="" />
-									<img src={locationScreen} alt="" />
-									<img src={mobileScreen} alt="" />
-									<img src={homeScreen} alt="" />
-									<img src={filterScreen} alt="" />
-									<img src={beveragesScreen} alt="" />
-									<img src={favoriteScreen} alt="" />
-									<img src={searchScreen} alt="" />
-									<img src={mycartScreen} alt="" />
-									<img src={productDetailsScreen} alt="" />
+						</div>
+
+						<div className='orcd-header'>
+							<div className="headings">
+								<h2>Orchard</h2>
+								<p>Fresh Picks, Seamless Clicks: Designed for Everyday Ease</p>
+								<hr />
+								<div className="orcd-works">
+									<span>UI/UX design</span>
+									<span>Mobile Application</span>
+									<span>Frontend Development</span>
 								</div>
 							</div>
-						</div>
 
-						<div className="homescreen" style={{display:"none"}}>
-							<img src={rightHome} alt="" />
-						</div>
 
+							<div className="orcd-home">
+								<img src={orcd_home} alt="" />
+							</div>
+						</div>
 					</div>
 
-
-				</div> */}
+				</div>
 
 
 				{/* <div ref={healthInsurance} className="healthInsurance h-[200vh] w-screen">
@@ -2520,14 +2523,14 @@ const Landing = () => {
 				</div>
 			</section>
 
-
-
-
-
 		</main>
 	);
 };
 
 export default Landing;
+
+
+
+
 
 

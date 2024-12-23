@@ -1861,10 +1861,16 @@ const Landing = () => {
 							<div className="orcd-infinity-scrl">
 								<div className='scroller'>
 									<div className='orcd-custom-scroll'>
+										<img src={loginScreen} alt="" />
+										<img src={mobileScreen} alt="" />
+										<img src={locationScreen} alt="" />
+										<img src={homeScreen} alt="" />
+										<img src={searchScreen} alt="" />
 										<img src={favoriteScreen} alt="" />
 										<img src={filterScreen} alt="" />
-										<img src={homeScreen} alt="" />
 										<img src={beveragesScreen} alt="" />
+										<img src={productDetailsScreen} alt="" />
+										<img src={mycartScreen} alt="" />
 									</div>
 								</div>
 							</div>

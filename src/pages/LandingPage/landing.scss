@@ -2108,20 +2108,6 @@ main {
 
         .xtream {
             background-color: #5A5A5A;
-
-            // &::before {
-            //     content: "Web Design";
-            //     display: flex;
-            //     align-items: center;
-            //     justify-content: center;
-            //     height: 100%;
-            //     font-size: 35vh;
-            //     font-family: satoshi;
-            //     color: #696868;
-            //     z-index: 1;
-
-            // }
-
         }
 
 
@@ -2132,6 +2118,7 @@ main {
                 position: sticky;
                 top: 0;
                 height: 100vh;
+                width: 100%;
                 padding: 50px;
                 display: flex;
                 overflow: hidden;
@@ -2148,6 +2135,7 @@ main {
                     width: 50%;
                     height: 100%;
                     display: flex;
+                    justify-content: space-between;
 
                     .orcd-findProducts {
                         height: 100%;
@@ -2163,9 +2151,13 @@ main {
                             .orcd-custom-scroll {
                                 display: flex;
                                 flex-direction: column;
-                                animation: scroll-up 10s linear infinite;
+                                animation: scroll-up 20s linear infinite;
                                 position: relative;
                                 top: 100%;
+
+                                img ~ img{
+                                    margin-top: 50px;
+                                }
 
                                 @keyframes scroll-up {
                                     0% {
@@ -2231,11 +2223,617 @@ main {
                     }
                 }
             }
+
+            @media screen and (min-width: 1920px) {
+                .orcd-main {
+    
+                    .orcd-crnr {
+                        width: 20%;
+
+                        img{
+                            width: 100%;
+                        }
+                    }
+    
+                    .orcd-screens {
+
+                        .orcd-findProducts {
+                            img{
+                                width: 100%;
+                            }
+                        }
+    
+                        .orcd-infinity-scrl {
+                            width: 50%;
+                            .scroller {
+                                height: 100%;
+                                
+                                .orcd-custom-scroll {
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: center;
+                                    animation: scroll-up 20s linear infinite;
+                                    position: relative;
+                                    top: 100%;
+
+                                    img {
+                                        width: 75%;
+                                    }
+    
+                                    @keyframes scroll-up {
+                                        0% {
+                                            transform: translateY(0);
+                                        }
+    
+                                        100% {
+                                            transform: translateY(-100%);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+    
+                    .orcd-header {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+
+                        .orcd-home {
+                            width: 100%;
+                            
+                            img{
+                                width: 80%;
+                            }
+                        }
+                    }
+                }
+            }
+
+            @media screen and (max-width: 1919px) {  
+                .orcd-main {
+    
+                    .orcd-crnr {
+                        width: 20%;
+
+                        img{
+                            width: 100%;
+                        }
+                    }
+    
+                    .orcd-screens {
+
+                        .orcd-findProducts {
+                            img{
+                                width: 100%;
+                            }
+                        }
+    
+                        .orcd-infinity-scrl {
+                            width: 50%;
+                            .scroller {
+                                height: 100%;
+                                
+                                .orcd-custom-scroll {
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: center;
+                                    top: 100%;
+
+                                    img {
+                                        width: 75%;
+                                    }
+
+                                }
+                            }
+                        }
+                    }
+    
+                    .orcd-header {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+
+                        .orcd-home {
+                            width: 100%;
+                            
+                            img{
+                                width: 80%;
+                            }
+                        }
+                    }
+                }
+            }
+
+            @media screen and (max-width: 1366px) {
+
+                .orcd-main {
+                    .orcd-screens {
+                        width: 50%;
+                        padding: 30px;
+                        .orcd-findProducts {
+                            height: 100%;
+                            width: 50%;
+                            display: flex;
+                            align-items: center;    
+                        }
+    
+                        .orcd-infinity-scrl {
+                            .scroller {
+                                height: 100%;
+    
+                                .orcd-custom-scroll {
+                                    display: flex;
+                                    flex-direction: column;
+                                    animation: scroll-up 20s linear infinite;
+                                    position: relative;
+                                    top: 100%;
+    
+                                    img ~ img{
+                                        margin-top: 50px;
+                                    }
+    
+                                    @keyframes scroll-up {
+                                        0% {
+                                            transform: translateY(0);
+                                        }
+    
+                                        100% {
+                                            transform: translateY(-100%);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+    
+                    .orcd-header {
+    
+                        .headings {
+    
+                            h2 {
+                                font-size: 4vw;
+                            }
+    
+                            p {
+                                font-size: 1.2vw;
+                            }
+    
+                            hr {
+                                width: 80%;
+                            }
+    
+                            .orcd-works {
+                                span {
+                                    font-size: 1.2vw;
+                                }
+                            }
+    
+                        }
+    
+                        .orcd-home {
+                            padding: 10px;
+                            
+                            img{
+                                width: 90%;
+                            }
+                        }
+                    }
+                }
+            }
+
+            @media screen and (max-width: 1199px) {
+                .orcd-main {
+
+                    padding: 30px;
+
+                    .orcd-screens {
+                        padding: 30px;
+                        width: 55%;
+    
+                        .orcd-infinity-scrl {
+                            .scroller {
+                                height: 100%;
+    
+                                .orcd-custom-scroll {
+                                    img ~ img{
+                                        margin-top: 30px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .orcd-header {
+                        width: 45%;
+    
+                        .headings {
+    
+                            h2 {
+                                font-size: 5vw;
+                            }
+    
+                            p {
+                                font-size: 1.7vw;
+                                text-align: center;
+                            }
+    
+                            hr {
+                                width: 100%;
+                            }
+    
+                            .orcd-works {
+                                display: inline-block;
+                                text-align: center;
+
+                                span {
+                                    font-size: 1.7vw;
+                                }
+                            }
+    
+                        }
+    
+                        .orcd-home {
+                            width: 100%;
+                        }
+                    }
+
+                }
+            }
+
+            @media screen and (max-width: 991px) {
+                .orcd-main {
+                    padding: 50px;
+                    display: flex;
+                    flex-direction: column-reverse;
+                    
+                    .orcd-crnr {
+                        width: 20%;
+                    }
+
+                    .orcd-screens {
+                        padding: 20px;
+                        width: 100%;
+                        height: 65%;
+                        display: flex;
+                        justify-content: space-between;
+
+                        .orcd-findProducts {
+                            height: 100%;
+                            width: 40%;
+                            display: flex;
+                            align-items: start;
+                            object-fit: fill;
+                            
+                            img{
+                                width: 100%;
+                            }
+                        }
+    
+                        .orcd-infinity-scrl {
+                            // display: none;
+                            width: 60%;
+                            overflow-x: hidden;
+
+                            .scroller {
+                                height: 100%;
+    
+                                .orcd-custom-scroll {
+                                    display: flex;
+                                    flex-direction: row;
+                                    animation: scroll-right 15s linear infinite;
+                                    position: relative;
+                                    right: -100%;
+                                    top: 0%;
+
+                                    img{
+                                        width: 50%;
+                                    }
+    
+                                    img ~ img{
+                                        margin-top: 0px;
+                                        margin-left: 10px;
+                                    }
+
+
+    
+                                    @keyframes scroll-right {
+                                        0% {
+                                            transform: translateX(-800%);
+                                        }
+    
+                                        100% {
+                                            transform: translateX(0%);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+    
+                    .orcd-header {
+                        height: 35%;
+                        width: 100%;
+                        display: flex;
+                        flex-direction: row;
+                        // display: none;
+
+                        .headings {
+                            width: auto;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: start;
+                            justify-content: start;
+    
+                            h2 {
+                                font-size: 5vw;
+                            }
+    
+                            p {
+                                font-size: 1.8vw;
+                                text-align: left;
+                            }
+    
+                            hr {
+                                width: 70%;
+                            }
+    
+                            .orcd-works {
+                                padding: 10px 0px;
+                                text-align: left;
+                                span {
+                                    font-size: 1.8vw;
+                                }
+                            }
+                        }
+    
+                        .orcd-home {
+                            width: 60%;
+                            padding: 30px;    
+                        }
+                    }
+                }
+            }
+            
+            @media screen and (max-width: 767px) {
+                .orcd-main {
+                    padding: 30px;
+
+                    .orcd-crnr {
+                        width: 25%;
+                    }
+
+                    .orcd-screens {
+                        height: 55%;
+
+                        .orcd-findProducts {
+                            img{
+                                width: 90%;
+                            }
+                        }
+    
+                        .orcd-infinity-scrl {
+                            width: 60%;
+
+                            .scroller {
+                                height: 100%;
+    
+                                .orcd-custom-scroll {
+
+                                    img{
+                                        width: 45%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .orcd-header {
+                        height: 45%;
+
+                        .headings {
+                            width: 50%;
+    
+                            h2 {
+                                font-size: 6vw;
+                            }
+    
+                            p {
+                                font-size: 2vw;
+                            }
+    
+                            hr {
+                                width: 70%;
+                            }
+    
+                            .orcd-works {
+                                span {
+                                    font-size: 2vw;
+                                }
+                            }
+                        }
+    
+                        .orcd-home {
+                            width: 60%;
+                            
+                            img{
+                                width: 100%;
+                            }
+                        }
+                    }
+
+                }
+            }
+
+            @media screen and (max-width: 640px) {
+            
+                .orcd-main {
+                    padding: 30px;
+
+                    .orcd-crnr {
+                        width: 30%;
+                    }
+
+                    .orcd-screens {
+                        height: 45%;
+                        padding: 0px;
+
+                        .orcd-findProducts {
+                            img{
+                                width: 90%;
+                            }
+                        }
+    
+                        .orcd-infinity-scrl {
+                            width: 60%;
+
+                            .scroller {
+                                height: 100%;
+    
+                                .orcd-custom-scroll {
+
+                                    img{
+                                        width: 45%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .orcd-header {
+                        height: 55%;
+                        display: block;
+
+                        .headings {
+                            width: 100%;
+                            display: flex;
+                            align-items: center;
+    
+                            h2 {
+                                font-size: 6vw;
+                            }
+                            
+                            p {
+                                font-size: 2vw;
+                            }
+    
+                            hr {
+                                width: 80%;
+                            }
+    
+                            .orcd-works {
+                                span {
+                                    font-size: 2vw;
+                                }
+                            }
+                        }
+    
+                        .orcd-home {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 100%;
+                            padding-top: 0px;
+                            padding-bottom: 50px;
+
+                            img{
+                                width: 55%;
+                            }
+                        }
+                    }
+
+                }
+
+            }
+
+            @media screen and (max-width: 500px) {
+                .orcd-main {
+                    padding: 20px;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 20px;
+
+                    .orcd-crnr {
+                        width: 30%;
+                    }
+
+                    .orcd-screens {
+                        height: auto;
+                        padding: 0px;
+                        display: flex;
+                        align-items: center;
+
+                        .orcd-findProducts {
+                            align-items: center;
+                            img{
+                                width: 100%;
+                            }
+                        }
+    
+                        .orcd-infinity-scrl {
+                            width: 60%;
+
+                            .scroller {
+                                height: 100%;
+    
+                                .orcd-custom-scroll {
+
+                                    img{
+                                        width: 55%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .orcd-header {
+                        height: auto;
+                        display: block;
+
+                        .headings {
+                            width: 100%;
+                            display: block;
+                            h2 {
+                                font-size: 10vw;
+                                text-align: right;
+                            }
+                            
+                            p {
+                                font-size: 4vw;
+                                text-align: right;
+                            }
+                            
+                            hr {
+                                width: 100%;
+                            }
+    
+                            .orcd-works {
+                                text-align: right;
+                                span {
+                                    font-size: 4vw;
+                                }
+                            }
+                        }
+    
+                        .orcd-home {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 100%;
+                            padding: 0px;
+
+                            img{
+                                width: 55%;
+                            }
+                        }
+                    }
+
+                }
+            }
+
         }
-
-
-
-
 
 
         .healthInsurance {

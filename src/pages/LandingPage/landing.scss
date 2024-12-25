@@ -1722,6 +1722,26 @@ main {
                 }
             }
 
+            @media screen and (max-width: 1440px) {
+                .regal-main {
+                    .regal-header {
+                        .headings {
+                            p {
+                                font-size: 1.2vw;
+                            }
+
+                            .regal-work {
+                                span {
+                                    font-size: 1.2vw;
+                                }
+                            }
+                        }
+                    }
+
+
+                }
+            }
+
             @media screen and (max-width: 1366px) {
                 .regal-main {
 
@@ -1966,6 +1986,15 @@ main {
 
             @media screen and (max-width: 800px) {
                 .regal-main {
+
+                    .regal-header {
+                        .headings {
+                            h2 {
+                                font-size: 5vw;
+                            }
+                        }
+                    }
+
                     .regal-body {
                         margin-top: 0px;
                     }
@@ -2110,7 +2139,6 @@ main {
             background-color: #5A5A5A;
         }
 
-
         .orchard {
             background-color: #F75C64;
 
@@ -2155,7 +2183,7 @@ main {
                                 position: relative;
                                 top: 100%;
 
-                                img ~ img{
+                                img~img {
                                     margin-top: 50px;
                                 }
 
@@ -2226,28 +2254,29 @@ main {
 
             @media screen and (min-width: 1920px) {
                 .orcd-main {
-    
+
                     .orcd-crnr {
                         width: 20%;
 
-                        img{
+                        img {
                             width: 100%;
                         }
                     }
-    
+
                     .orcd-screens {
 
                         .orcd-findProducts {
-                            img{
+                            img {
                                 width: 100%;
                             }
                         }
-    
+
                         .orcd-infinity-scrl {
                             width: 50%;
+
                             .scroller {
                                 height: 100%;
-                                
+
                                 .orcd-custom-scroll {
                                     display: flex;
                                     flex-direction: column;
@@ -2259,12 +2288,12 @@ main {
                                     img {
                                         width: 75%;
                                     }
-    
+
                                     @keyframes scroll-up {
                                         0% {
                                             transform: translateY(0);
                                         }
-    
+
                                         100% {
                                             transform: translateY(-100%);
                                         }
@@ -2273,7 +2302,7 @@ main {
                             }
                         }
                     }
-    
+
                     .orcd-header {
                         display: flex;
                         flex-direction: column;
@@ -2282,8 +2311,8 @@ main {
 
                         .orcd-home {
                             width: 100%;
-                            
-                            img{
+
+                            img {
                                 width: 80%;
                             }
                         }
@@ -2291,30 +2320,31 @@ main {
                 }
             }
 
-            @media screen and (max-width: 1919px) {  
+            @media screen and (max-width: 1919px) {
                 .orcd-main {
-    
+
                     .orcd-crnr {
                         width: 20%;
 
-                        img{
+                        img {
                             width: 100%;
                         }
                     }
-    
+
                     .orcd-screens {
 
                         .orcd-findProducts {
-                            img{
+                            img {
                                 width: 100%;
                             }
                         }
-    
+
                         .orcd-infinity-scrl {
                             width: 50%;
+
                             .scroller {
                                 height: 100%;
-                                
+
                                 .orcd-custom-scroll {
                                     display: flex;
                                     flex-direction: column;
@@ -2329,7 +2359,7 @@ main {
                             }
                         }
                     }
-    
+
                     .orcd-header {
                         display: flex;
                         flex-direction: column;
@@ -2338,10 +2368,34 @@ main {
 
                         .orcd-home {
                             width: 100%;
-                            
-                            img{
+
+                            img {
                                 width: 80%;
                             }
+                        }
+                    }
+                }
+            }
+
+            @media screen and (max-width: 1440px) {
+                .orcd-main {
+
+                    .orcd-header {
+                        .headings {
+                            h2 {
+                                font-size: 4vw;
+                            }
+
+                            p {
+                                font-size: 1.2vw;
+                            }
+
+                            .orcd-works {
+                                span {
+                                    font-size: 1.2vw;
+                                }
+                            }
+
                         }
                     }
                 }
@@ -2353,33 +2407,34 @@ main {
                     .orcd-screens {
                         width: 50%;
                         padding: 30px;
+
                         .orcd-findProducts {
                             height: 100%;
                             width: 50%;
                             display: flex;
-                            align-items: center;    
+                            align-items: center;
                         }
-    
+
                         .orcd-infinity-scrl {
                             .scroller {
                                 height: 100%;
-    
+
                                 .orcd-custom-scroll {
                                     display: flex;
                                     flex-direction: column;
                                     animation: scroll-up 20s linear infinite;
                                     position: relative;
                                     top: 100%;
-    
-                                    img ~ img{
+
+                                    img~img {
                                         margin-top: 50px;
                                     }
-    
+
                                     @keyframes scroll-up {
                                         0% {
                                             transform: translateY(0);
                                         }
-    
+
                                         100% {
                                             transform: translateY(-100%);
                                         }
@@ -2388,35 +2443,35 @@ main {
                             }
                         }
                     }
-    
+
                     .orcd-header {
-    
+
                         .headings {
-    
+
                             h2 {
                                 font-size: 4vw;
                             }
-    
+
                             p {
                                 font-size: 1.2vw;
                             }
-    
+
                             hr {
                                 width: 80%;
                             }
-    
+
                             .orcd-works {
                                 span {
                                     font-size: 1.2vw;
                                 }
                             }
-    
+
                         }
-    
+
                         .orcd-home {
                             padding: 10px;
-                            
-                            img{
+
+                            img {
                                 width: 90%;
                             }
                         }
@@ -2432,13 +2487,13 @@ main {
                     .orcd-screens {
                         padding: 30px;
                         width: 55%;
-    
+
                         .orcd-infinity-scrl {
                             .scroller {
                                 height: 100%;
-    
+
                                 .orcd-custom-scroll {
-                                    img ~ img{
+                                    img~img {
                                         margin-top: 30px;
                                     }
                                 }
@@ -2448,22 +2503,22 @@ main {
 
                     .orcd-header {
                         width: 45%;
-    
+
                         .headings {
-    
+
                             h2 {
                                 font-size: 5vw;
                             }
-    
+
                             p {
                                 font-size: 1.7vw;
                                 text-align: center;
                             }
-    
+
                             hr {
                                 width: 100%;
                             }
-    
+
                             .orcd-works {
                                 display: inline-block;
                                 text-align: center;
@@ -2472,9 +2527,9 @@ main {
                                     font-size: 1.7vw;
                                 }
                             }
-    
+
                         }
-    
+
                         .orcd-home {
                             width: 100%;
                         }
@@ -2484,11 +2539,12 @@ main {
             }
 
             @media screen and (max-width: 991px) {
+
                 .orcd-main {
                     padding: 50px;
                     display: flex;
                     flex-direction: column-reverse;
-                    
+
                     .orcd-crnr {
                         width: 20%;
                     }
@@ -2499,6 +2555,7 @@ main {
                         height: 65%;
                         display: flex;
                         justify-content: space-between;
+                        align-items: end;
 
                         .orcd-findProducts {
                             height: 100%;
@@ -2506,12 +2563,12 @@ main {
                             display: flex;
                             align-items: start;
                             object-fit: fill;
-                            
-                            img{
-                                width: 100%;
+
+                            img {
+                                width: 85%;
                             }
                         }
-    
+
                         .orcd-infinity-scrl {
                             // display: none;
                             width: 60%;
@@ -2519,7 +2576,7 @@ main {
 
                             .scroller {
                                 height: 100%;
-    
+
                                 .orcd-custom-scroll {
                                     display: flex;
                                     flex-direction: row;
@@ -2528,22 +2585,22 @@ main {
                                     right: -100%;
                                     top: 0%;
 
-                                    img{
-                                        width: 50%;
+                                    img {
+                                        width: 40%;
                                     }
-    
-                                    img ~ img{
+
+                                    img~img {
                                         margin-top: 0px;
                                         margin-left: 10px;
                                     }
 
 
-    
+
                                     @keyframes scroll-right {
                                         0% {
                                             transform: translateX(-800%);
                                         }
-    
+
                                         100% {
                                             transform: translateX(0%);
                                         }
@@ -2552,7 +2609,7 @@ main {
                             }
                         }
                     }
-    
+
                     .orcd-header {
                         height: 35%;
                         width: 100%;
@@ -2566,37 +2623,38 @@ main {
                             flex-direction: column;
                             align-items: start;
                             justify-content: start;
-    
+
                             h2 {
                                 font-size: 5vw;
                             }
-    
+
                             p {
                                 font-size: 1.8vw;
                                 text-align: left;
                             }
-    
+
                             hr {
                                 width: 70%;
                             }
-    
+
                             .orcd-works {
                                 padding: 10px 0px;
                                 text-align: left;
+
                                 span {
                                     font-size: 1.8vw;
                                 }
                             }
                         }
-    
+
                         .orcd-home {
                             width: 60%;
-                            padding: 30px;    
+                            padding: 30px;
                         }
                     }
                 }
             }
-            
+
             @media screen and (max-width: 767px) {
                 .orcd-main {
                     padding: 30px;
@@ -2609,20 +2667,20 @@ main {
                         height: 55%;
 
                         .orcd-findProducts {
-                            img{
+                            img {
                                 width: 90%;
                             }
                         }
-    
+
                         .orcd-infinity-scrl {
                             width: 60%;
 
                             .scroller {
                                 height: 100%;
-    
+
                                 .orcd-custom-scroll {
 
-                                    img{
+                                    img {
                                         width: 45%;
                                     }
                                 }
@@ -2635,30 +2693,30 @@ main {
 
                         .headings {
                             width: 50%;
-    
+
                             h2 {
                                 font-size: 6vw;
                             }
-    
+
                             p {
                                 font-size: 2vw;
                             }
-    
+
                             hr {
                                 width: 70%;
                             }
-    
+
                             .orcd-works {
                                 span {
                                     font-size: 2vw;
                                 }
                             }
                         }
-    
+
                         .orcd-home {
                             width: 60%;
-                            
-                            img{
+
+                            img {
                                 width: 100%;
                             }
                         }
@@ -2668,7 +2726,7 @@ main {
             }
 
             @media screen and (max-width: 640px) {
-            
+
                 .orcd-main {
                     padding: 30px;
 
@@ -2681,20 +2739,20 @@ main {
                         padding: 0px;
 
                         .orcd-findProducts {
-                            img{
+                            img {
                                 width: 90%;
                             }
                         }
-    
+
                         .orcd-infinity-scrl {
                             width: 60%;
 
                             .scroller {
                                 height: 100%;
-    
+
                                 .orcd-custom-scroll {
 
-                                    img{
+                                    img {
                                         width: 45%;
                                     }
                                 }
@@ -2710,26 +2768,26 @@ main {
                             width: 100%;
                             display: flex;
                             align-items: center;
-    
+
                             h2 {
                                 font-size: 6vw;
                             }
-                            
+
                             p {
                                 font-size: 2vw;
                             }
-    
+
                             hr {
                                 width: 80%;
                             }
-    
+
                             .orcd-works {
                                 span {
                                     font-size: 2vw;
                                 }
                             }
                         }
-    
+
                         .orcd-home {
                             display: flex;
                             align-items: center;
@@ -2738,7 +2796,7 @@ main {
                             padding-top: 0px;
                             padding-bottom: 50px;
 
-                            img{
+                            img {
                                 width: 55%;
                             }
                         }
@@ -2767,20 +2825,21 @@ main {
 
                         .orcd-findProducts {
                             align-items: center;
-                            img{
+
+                            img {
                                 width: 100%;
                             }
                         }
-    
+
                         .orcd-infinity-scrl {
                             width: 60%;
 
                             .scroller {
                                 height: 100%;
-    
+
                                 .orcd-custom-scroll {
 
-                                    img{
+                                    img {
                                         width: 55%;
                                     }
                                 }
@@ -2795,28 +2854,30 @@ main {
                         .headings {
                             width: 100%;
                             display: block;
+
                             h2 {
                                 font-size: 10vw;
                                 text-align: right;
                             }
-                            
+
                             p {
                                 font-size: 4vw;
                                 text-align: right;
                             }
-                            
+
                             hr {
                                 width: 100%;
                             }
-    
+
                             .orcd-works {
                                 text-align: right;
+
                                 span {
                                     font-size: 4vw;
                                 }
                             }
                         }
-    
+
                         .orcd-home {
                             display: flex;
                             align-items: center;
@@ -2824,7 +2885,7 @@ main {
                             width: 100%;
                             padding: 0px;
 
-                            img{
+                            img {
                                 width: 55%;
                             }
                         }
@@ -2833,506 +2894,810 @@ main {
                 }
             }
 
+
         }
 
 
         .healthInsurance {
 
-            .healthScreens {
+            .hlth-insur-main {
                 position: sticky;
                 top: 0;
-                z-index: 1;
                 background-color: #F5F5DC;
+                overflow: hidden;
+                height: 100vh;
+                width: 100%;
+                padding: 50px;
+                display: flex;
 
-                // &::before {
-                //     content: "Mobile App";
-                //     display: flex;
-                //     align-items: center;
-                //     justify-content: center;
-                //     height: 100%;
-                //     font-size: 34vh;
-                //     font-family: satoshi;
-                //     color: #a2a2a210;
-                //     z-index: -1;
-
-                // }
-
-                .screenContainer {
-                    width: 100%;
+                .HI-phoneMock-screen {
+                    width: 40%;
                     height: 100%;
+                    display: flex;
+                    padding: 20px;
 
-                    .hiLogo {
-                        height: 15%;
-                        display: flex;
-                        align-items: center;
-                        justify-content: end;
+                    .HI-phoneMock {
+                        width: 50%;
+                        height: 100%;
 
                         img {
-                            margin: 100px 50px 0px 0px;
-                            height: 100%;
+                            width: 90%;
                         }
                     }
 
-                    .Screens-Graphs {
+                    .HI-statistic-screen {
+                        width: 50%;
+                        height: 100%;
                         display: flex;
-                        align-items: start;
-                        justify-content: center;
-                        // background-color: red;
-                        width: 100%;
-                        height: 85%;
+                        align-items: center;
 
-                        .phoneScreens {
-                            display: flex;
-                            align-items: start;
-                            justify-content: center;
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+
+                .HI-header {
+                    width: 60%;
+                    height: 100%;
+                    padding: 20px;
+
+                    .HI-heading-customize {
+                        height: 50%;
+                        display: flex;
+                        align-items: center;
+
+                        .heads {
+                            height: 100%;
                             width: 50%;
-                            // background-color: greenyellow;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
 
-
-                            .phoneMock {
-                                margin: 0;
+                            h2 {
+                                font-size: 4vw;
+                                line-height: 5vw;
                             }
 
-                            .statistics {
-                                margin-top: 80px;
+                            p {
+                                font-size: 1vw;
+                                font-family: satoshi;
+                                padding: 10px 0px;
+                                width: 80%;
                             }
 
+                            hr {
+                                width: 80%;
+                                border-color: black;
+                            }
+
+                            .HI-work {
+                                padding: 10px 0px;
+
+                                span {
+                                    font-size: 1vw;
+                                    font-family: satoshi;
+                                }
+
+                                span+span {
+                                    &::before {
+                                        content: " | ";
+                                        opacity: 0.5;
+                                    }
+                                }
+                            }
                         }
 
-                        .graph-customize {
-                            margin-top: 80px;
+                        .HI-customize {
+                            height: 100%;
+                            width: 50%;
                             display: flex;
                             align-items: center;
+
                         }
                     }
 
+
+                    .HI-individual {
+                        height: 50%;
+                    }
                 }
 
-                @media screen and (min-width: 1927px) {
-                    .screenContainer {
-                        width: 100%;
-                        height: 100%;
+                .HI-widgets-container {
+                    position: absolute;
+                    bottom: 10%;
+                    right: -10%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    height: 250px;
+                    width: 500px;
+                    transform: rotate(45deg);
 
-                        .hiLogo {
-                            height: 20%;
+                    img {
+                        scale: 1.2;
+                    }
+                }
+            }
+
+
+            @media screen and (min-width: 1920px) {
+                .hlth-insur-main {
+
+                    display: flex;
+
+                    .HI-phoneMock-screen {
+                        width: 50%;
+
+                        .HI-phoneMock {
                             display: flex;
                             align-items: center;
-                            justify-content: end;
+                            justify-content: center;
+                        }
 
-                            img {
-                                margin: 100px 50px 0px 0px;
+                    }
+
+                    .HI-header {
+                        width: 50%;
+                        height: 50%;
+
+                        .HI-heading-customize {
+                            height: 100%;
+
+                            .HI-customize {
                                 height: 100%;
+                                width: 50%;
+                                display: flex;
+                                align-items: center;
+
+                                img {
+                                    width: 100%;
+                                }
                             }
                         }
 
-                        .Screens-Graphs {
+
+                        .HI-individual {
+                            width: 50%;
+                            height: 50%;
+
+                            img {
+                                width: 100%;
+                            }
+                        }
+                    }
+
+
+                }
+            }
+
+            @media screen and (max-width: 1920px) {
+                .hlth-insur-main {
+
+                    display: flex;
+
+                    .HI-phoneMock-screen {
+                        width: 50%;
+
+                        .HI-phoneMock {
                             display: flex;
-                            align-items: start;
+                            align-items: center;
                             justify-content: center;
-                            width: 100%;
-                            height: 80%;
-
-                            .phoneScreens {
-                                display: flex;
-                                align-items: start;
-                                justify-content: center;
-                                width: 50%;
-
-
-                                .phoneMock {
-                                    margin: 0;
-                                    width: 35%;
-                                }
-
-                                .statistics {
-                                    margin-top: 140px;
-                                    width: 40%;
-                                }
-
-                            }
-
-                            .graph-customize {
-                                margin-top: 140px;
-                                display: flex;
-                                align-items: center;
-                                justify-content: start;
-                                width: 40%;
-
-                                img {
-                                    width: 45%;
-                                }
-                            }
                         }
 
                     }
-                }
 
-                @media screen and (max-width: 1926px) and (min-width: 1440px) {
-                    .screenContainer {
-                        width: 100%;
-                        height: 100%;
+                    .HI-header {
+                        width: 50%;
+                        height: 50%;
 
-                        .hiLogo {
-                            height: 20%;
-                            display: flex;
-                            align-items: center;
-                            justify-content: end;
+                        .HI-heading-customize {
+                            height: 100%;
 
-                            img {
-                                margin: 100px 50px 0px 0px;
+                            .HI-customize {
                                 height: 100%;
-                            }
-                        }
-
-                        .Screens-Graphs {
-                            display: flex;
-                            align-items: start;
-                            justify-content: center;
-                            width: 100%;
-                            height: 80%;
-
-                            .phoneScreens {
-                                display: flex;
-                                align-items: start;
-                                justify-content: center;
                                 width: 50%;
-
-
-                                .phoneMock {
-                                    margin: 0;
-                                    width: 30%;
-                                }
-
-                                .statistics {
-                                    margin-top: 100px;
-                                    width: 35%;
-                                }
-
-                            }
-
-                            .graph-customize {
-                                margin-top: 100px;
                                 display: flex;
                                 align-items: center;
-                                justify-content: start;
-                                width: 40%;
 
                                 img {
-                                    width: 40%;
+                                    width: 100%;
                                 }
                             }
                         }
 
-                    }
-                }
 
-                @media screen and (max-width: 1439px) and (min-width: 1024px) {
-
-                    .screenContainer {
-                        width: 100%;
-                        height: 100%;
-
-                        .hiLogo {
-                            height: 15%;
-                            display: flex;
-                            align-items: center;
-                            justify-content: end;
+                        .HI-individual {
+                            width: 50%;
+                            height: 50%;
 
                             img {
-                                margin: 100px 50px 0px 0px;
-                                height: 100%;
-                            }
-                        }
-
-                        .Screens-Graphs {
-                            height: 85%;
-                            width: 100%;
-                            display: flex;
-                            align-items: start;
-                            justify-content: center;
-
-                            .phoneScreens {
-                                display: flex;
-                                align-items: start;
-                                justify-content: center;
-                                width: 50%;
-
-
-                                .phoneMock {
-                                    margin: 0;
-                                    width: 35%;
-                                }
-
-                                .statistics {
-                                    margin-top: 80px;
-                                    width: 40%;
-                                }
-
-                            }
-
-                            .graph-customize {
-                                margin-top: 80px;
-                                display: flex;
-                                align-items: center;
-                                justify-content: start;
-                                width: 40%;
-
-                                img {
-                                    width: 45%;
-                                }
-                            }
-                        }
-
-                    }
-                }
-
-                @media screen and (max-width: 1023px) and (min-width: 768px) {
-                    .screenContainer {
-                        width: 100%;
-                        height: 100%;
-
-                        .hiLogo {
-                            height: 30%;
-                            display: flex;
-                            align-items: end;
-                            justify-content: end;
-
-                            img {
-                                margin: 0px 50px 0px 0px;
-                                height: 40%;
-                            }
-                        }
-
-                        .Screens-Graphs {
-                            display: flex;
-                            align-items: start;
-                            justify-content: center;
-                            width: 100%;
-                            height: 70%;
-
-                            .phoneScreens {
-                                display: flex;
-                                align-items: start;
-                                justify-content: center;
-                                width: 50%;
-
-                                .phoneMock {
-                                    margin: 0;
-                                    width: 45%;
-                                }
-
-                                .statistics {
-                                    margin-top: 80px;
-                                    width: 50%;
-                                }
-
-                            }
-
-                            .graph-customize {
-                                margin-top: 80px;
-                                display: flex;
-                                align-items: center;
-                                justify-content: start;
-                                width: 45%;
-
-                                img {
-                                    width: 45%;
-                                }
-                            }
-                        }
-
-                    }
-                }
-
-                @media screen and (max-width: 767px) and (min-width: 530px) {
-                    .screenContainer {
-                        width: 100%;
-                        height: 100%;
-
-                        .hiLogo {
-                            height: 20%;
-                            display: flex;
-                            align-items: center;
-                            justify-content: end;
-
-                            img {
-                                margin: 0px 50px 0px 0px;
-                                height: 40%;
-                            }
-                        }
-
-                        .Screens-Graphs {
-                            display: flex;
-                            align-items: start;
-                            justify-content: center;
-                            // margin-top: 100px;
-                            width: 100%;
-                            height: 80%;
-
-                            .phoneScreens {
-                                display: flex;
-                                align-items: start;
-                                justify-content: center;
-                                width: 60%;
-
-                                .phoneMock {
-                                    margin: 0;
-                                    width: 50%;
-                                }
-
-                                .statistics {
-                                    margin-top: 80px;
-                                    width: 55%;
-                                }
-
-                            }
-
-                            .graph-customize {
-                                margin-top: 80px;
-                                display: flex;
-                                align-items: center;
-                                justify-content: start;
-                                width: 45%;
-
-                                img {
-                                    width: 50%;
-                                }
-                            }
-                        }
-
-                    }
-
-                    .widgets-container {
-                        display: none;
-                    }
-                }
-
-                @media screen and (max-width: 529px) {
-                    .screenContainer {
-                        width: 100%;
-                        height: 100%;
-
-                        .hiLogo {
-                            height: 10%;
-                            display: flex;
-                            align-items: center;
-                            justify-content: end;
-
-                            img {
-                                margin: 50px 50px 0px 0px;
-                                height: 80%;
-                            }
-                        }
-
-                        .Screens-Graphs {
-                            display: block;
-                            width: 100%;
-                            height: 90%;
-
-                            .phoneScreens {
-                                display: flex;
-                                align-items: center;
-                                justify-content: center;
                                 width: 100%;
-                                height: 50%;
-
-                                .phoneMock {
-                                    margin: 0;
-                                    width: 30%;
-                                }
-
-                                .statistics {
-                                    margin-top: 80px;
-                                    width: 40%;
-                                }
-
-                            }
-
-                            .graph-customize {
-                                padding: 10px;
-                                margin-top: 80px;
-                                display: flex;
-                                align-items: center;
-                                justify-content: center;
-                                width: 100%;
-
-                                img {
-                                    width: 50%;
-                                }
                             }
                         }
-
                     }
 
-                    .widgets-container {
-                        display: none;
+
+                }
+            }
+
+            @media screen and (max-width: 1800px) {
+
+                .hlth-insur-main {
+
+                    .HI-widgets-container {
+                        height: 150px;
+                        width: 500px;
+                        z-index: -1;
+
+                        img {
+                            scale: 1;
+                        }
                     }
                 }
+            }
 
-                @media screen and (min-width: 320px) and (max-width: 450px) {
-                    .screenContainer {
-                        width: 100%;
-                        height: 100%;
+            @media screen and (max-width: 1440px) {
+                .hlth-insur-main {
 
-                        .hiLogo {
-                            height: 10%;
-                            display: flex;
-                            align-items: center;
-                            justify-content: end;
+                    .HI-header {
+                        .HI-heading-customize {
+                            .heads {
 
-                            img {
-                                margin: 50px 50px 0px 0px;
-                                height: 80%;
+                                h2 {
+                                    font-size: 4vw;
+                                }
+
+                                p {
+                                    font-size: 1.2vw;
+                                }
+
+                                hr {
+                                    width: 90%;
+                                }
+
+                                .HI-work {
+                                    span {
+                                        font-size: 1.2vw;
+                                    }
+                                }
                             }
+
+
                         }
 
-                        .Screens-Graphs {
-                            display: block;
-                            width: 100%;
-                            height: 90%;
 
-                            .phoneScreens {
-                                display: flex;
-                                align-items: center;
-                                justify-content: center;
-                                width: 100%;
-                                height: 50%;
-
-                                .phoneMock {
-                                    margin: 0;
-                                    width: 40%;
-                                }
-
-                                .statistics {
-                                    margin-top: 80px;
-                                    width: 50%;
-                                }
-
-                            }
-
-                            .graph-customize {
-                                padding: 10px;
-                                margin-top: 80px;
-                                display: flex;
-                                align-items: center;
-                                justify-content: center;
-                                width: 100%;
-
-                                img {
-                                    width: 50%;
-                                }
-                            }
-                        }
 
                     }
 
-                    .widgets-container {
-                        display: none;
+                    .HI-widgets-container {
+                        height: 150px;
+                        width: 500px;
+                        bottom: 10%;
+                        right: -15%;
+                        transform: rotate(40deg) scale(0.8);
                     }
+
+
                 }
+
 
             }
+
+            @media screen and (max-width: 1199px) {
+                .hlth-insur-main {
+                    display: flex;
+                    padding: 30px;
+
+                    .HI-phoneMock-screen {
+                        width: 55%;
+                        height: 100%;
+                        display: flex;
+                        padding: 20px;
+
+                        .HI-phoneMock {
+                            width: 50%;
+                            height: 100%;
+
+                            img {
+                                width: 90%;
+                            }
+                        }
+
+                        .HI-statistic-screen {
+                            width: 50%;
+                            display: flex;
+                            align-items: center;
+
+                            img {
+                                width: 100%;
+                            }
+                        }
+                    }
+
+                    .HI-header {
+                        width: 45%;
+                        height: 100%;
+                        padding: 0px;
+
+                        .HI-heading-customize {
+                            height: auto;
+                            width: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+
+                            .heads {
+                                width: 100%;
+
+                                h2 {
+                                    font-size: 5vw;
+                                    line-height: normal;
+                                }
+
+                                p {
+                                    font-size: 1.7vw;
+                                    font-family: satoshi;
+                                    padding: 10px 0px;
+                                    width: 100%;
+                                }
+
+                                hr {
+                                    width: 100%;
+                                    border-color: black;
+                                }
+
+                                .HI-work {
+                                    padding: 10px 0px;
+
+                                    span {
+                                        font-size: 1.7vw;
+                                    }
+                                }
+                            }
+
+                            .HI-customize {
+                                width: 100%;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+
+
+                                img {
+                                    width: 60%;
+                                }
+
+                            }
+                        }
+
+                        .HI-individual {
+                            height: 30%;
+                            width: 100%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: start;
+
+                            img {
+                                width: 60%;
+                            }
+                        }
+                    }
+
+                    .HI-widgets-container {
+                        right: -25%;
+                        height: 150px;
+                        width: 550px;
+                    }
+                }
+            }
+
+            @media screen and (max-width: 991px) {
+                .hlth-insur-main {
+
+                    .HI-phoneMock-screen {
+                        height: 100%;
+                        width: 60%;
+                        align-items: center;
+
+                        .HI-phoneMock {
+                            width: 50%;
+                            height: 50%;
+                            
+                            img {
+                                width: 100%;
+                            }
+                        }
+                        
+                        .HI-statistic-screen {
+                            width: 50%;
+
+                            img {
+                                width: 100%;
+                            }
+                        }
+                    }
+
+                    .HI-header {
+                        width: 40%;
+
+                        .HI-heading-customize {
+                            height: auto;
+
+                            .heads {
+                                width: 100%;
+
+                                p {
+                                    font-size: 1.8vw;
+                                }
+
+
+                                .HI-work {
+                                    span {
+                                        font-size: 1.8vw;
+                                    }
+                                }
+                            }
+
+                            .HI-customize {
+                                img {
+                                    width: 70%;
+                                }
+
+                            }
+                        }
+
+                        .HI-individual {
+                            height: 30%;
+                            width: 100%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+
+                            img {
+                                width: 70%;
+                            }
+                        }
+                    }
+
+                    .HI-widgets-container {
+                        right: -25%;
+                        height: 100px;
+                        width: 500px;
+                        transform: rotate(50deg) scale(0.6);
+
+                        
+                    }
+                }
+            }
+
+            @media screen and (max-width: 767px) {
+                .hlth-insur-main {
+
+                    .HI-phoneMock-screen {
+                        height: 100%;
+                        width: 50%;
+                        flex-direction: column;
+                        align-items: start;
+                        gap: 10px;
+
+                        .HI-phoneMock {
+                            width: 100%;
+                            height: 60%;
+                            justify-content: start;
+                            align-items: start;
+
+                            img {
+                                width: 65%;
+                            }
+                        }
+                        
+                        .HI-statistic-screen {
+                            width: 100%;
+                            height: 40%;
+                            align-items: center;
+                            justify-content: center;
+
+                            img {
+                                width: 60%;
+                            }
+                        }
+                    }
+
+                    .HI-header {
+                        width: 50%;
+
+                        .HI-heading-customize {
+                            height: auto;
+
+                            .heads {
+                                width: 100%;
+
+                                h2{
+                                    font-size: 5vw;
+                                }
+
+                                p {
+                                    font-size: 1.8vw;
+                                }
+
+
+                                .HI-work {
+                                    span {
+                                        font-size: 1.8vw;
+                                    }
+                                }
+                            }
+
+                            .HI-customize {
+                                img {
+                                    width: 70%;
+                                }
+
+                            }
+                        }
+
+                        .HI-individual {
+                            height: 30%;
+                            width: 100%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+
+                            img {
+                                width: 70%;
+                            }
+                        }
+                    }
+
+                    .HI-widgets-container {
+                        right: -25%;
+                        height: 100px;
+                        width: 500px;
+                        transform: rotate(20deg) scale(0.6);
+
+                        
+                    }
+                }
+            }
+
+            @media screen and (max-width: 700px) {
+                .hlth-insur-main {
+
+                    flex-direction: column-reverse;
+
+                    .HI-phoneMock-screen {
+                        margin: 0;
+                        width: 100%;
+                        height: 50%;
+                        flex-direction: row;
+
+                        .HI-phoneMock {
+                            width: 50%;
+                            height: 100%;
+                            align-items: end;
+                            justify-content: center;
+
+                            img {
+                                width: 50%;
+                            }
+                        }
+                        
+                        .HI-statistic-screen {
+                            width: 50%;
+                            height: 100%;
+                            img {
+                                width: 80%;
+                            }
+                        }
+                    }
+
+                    .HI-header {
+                        width: 100%;
+                        height: 50%;
+                        display: flex;
+                        align-items: start;
+
+                        .HI-heading-customize {
+                            height: auto;   
+                            width: 50%;
+
+                            .heads {
+                                width: 100%;
+
+                                p {
+                                    font-size: 2vw;
+                                }
+
+
+                                .HI-work {
+                                    span {
+                                        font-size: 2vw;
+                                    }
+                                }
+                            }
+
+                            .HI-customize {
+                                img {
+                                    width: 100%;
+                                }
+
+                            }
+                        }
+
+                        .HI-individual {
+                            height: 100%;
+                            width: 50%;
+                            display: flex;
+                            justify-content: end;
+                            align-items: center;
+
+                            img {
+                                width: 80%;
+                            }
+                        }
+                    }
+
+                    .HI-widgets-container {
+                        right: -40%;
+                        height: 100px;
+                        width: 500px;
+                        transform: rotate(50deg) scale(0.6);
+
+                        
+                    }
+                }
+            }
+
+            @media screen and (max-width: 600px) {
+                .hlth-insur-main {
+
+                    .HI-phoneMock-screen {
+                        margin: 0;
+                        width: 100%;
+                        height: 50%;
+                        flex-direction: row;
+
+                        .HI-phoneMock {
+                            align-items: start; 
+                            img {
+                                width: 60%;
+                            }
+                        }
+                        
+                        .HI-statistic-screen {
+                            justify-content: start;
+                            img {
+                                width: 80%;
+                            }
+                        }
+                    }
+
+                    .HI-header {
+                        .HI-heading-customize {
+                            .heads {
+                                h2 {
+                                    font-size: 5vw;
+                                }
+    
+                                p {
+                                    font-size: 2vw;
+                                }
+    
+                                hr {
+                                    width: 100%;
+                                }
+    
+                                .HI-work {
+                                    span {
+                                        font-size: 2vw;
+                                    }
+                                }
+                            }    
+                        }
+    
+    
+                        
+                    }
+    
+                }
+            }
+
+            @media screen and (max-width: 500px) {
+                .hlth-insur-main {
+                    min-height: 100vh;
+                    height: auto;
+                    padding: 20px;
+                    display: flex;
+                    align-items: start;
+                    justify-content: center;
+                    .HI-phoneMock-screen {
+                        margin: 0;
+                        width: 100%;
+                        height: auto;
+                        flex-direction: row;
+                        
+
+                        .HI-phoneMock {
+                            align-items: start; 
+                            img {
+                                width: 60%;
+                            }
+                        }
+
+                        .HI-statistic-screen {
+                            justify-content: start;
+                            img {
+                                width: 80%;
+                            }
+                        }
+                    }
+
+                    .HI-header {
+                        height: 100%;
+                        flex-direction: column;
+                        align-items: start;
+                        justify-content: start;
+                        
+                        .HI-heading-customize {
+                            width: 100%;
+                            height: auto;
+
+                            .heads {
+                                justify-content: start;
+                                height: auto;
+                                h2 {
+                                    font-size: 10vw;
+                                }
+    
+                                p {
+                                    font-size: 4vw;
+                                }
+    
+                                hr {
+                                    width: 100%;
+                                }
+    
+                                .HI-work {
+                                    span {
+                                        font-size: 4vw;
+                                    }
+                                }
+                            }   
+                            
+                            .HI-customize {
+                                height: auto;
+                                img {
+                                    width: 60%;
+                                }
+
+                            }
+                        }
+
+                        .HI-individual {
+                            width: 100%;
+                            height: auto;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+
+                            img {
+                                width: 60%;
+                            }
+                        }
+    
+    
+                        
+                    }
+
+                    .HI-widgets-container {
+                        display: none;
+                    }
+    
+                }
+            }
+
         }
+
+
 
         .dinaRollings {
             position: sticky;

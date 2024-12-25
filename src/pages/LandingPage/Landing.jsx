@@ -457,19 +457,20 @@ const Landing = () => {
 
 	const healthInsurance = useRef(null)
 	React.useEffect(() => {
-		gsap.fromTo(healthInsurance.current,
-			{ x: -300, opacity: 0, },
-			{
-				x: 0,
-				opacity: 1,
-				scrollTrigger: {
-					trigger: healthInsurance.current,
-					start: "top 90%",
-					end: "top 30%",
-					scrub: 1,
-				}
-			}
-		);
+
+		// gsap.fromTo(healthInsurance.current,
+		// 	{ x: -300, opacity: 0, },
+		// 	{
+		// 		x: 0,
+		// 		opacity: 1,
+		// 		scrollTrigger: {
+		// 			trigger: healthInsurance.current,
+		// 			start: "top 90%",
+		// 			end: "top 30%",
+		// 			scrub: 1,
+		// 		}
+		// 	}
+		// );
 
 		// gsap.fromTo(".phoneMock",
 		// 	{ x: 1000, y: 200, opacity: 1, scale: 2 },
@@ -537,169 +538,161 @@ const Landing = () => {
 
 
 
+		// gsap.fromTo(".Add",
+		// 	{ x: 0, y: 550 },
+		// 	{
+		// 		x: -200,
+		// 		y: 0,
+		// 		scrollTrigger: {
+		// 			trigger: ".healthInsurance",
+		// 			start: "bottom bottom",
+		// 			end: "bottom top",
+		// 			scrub: 1,
+		// 		}
+		// 	},);
 
+		// gsap.fromTo(".And",
+		// 	{ x: -200, y: 500 },
+		// 	{
+		// 		x: -200,
+		// 		y: 0,
+		// 		scrollTrigger: {
+		// 			trigger: ".healthInsurance",
+		// 			start: "bottom bottom",
+		// 			end: "bottom top",
+		// 			scrub: 1,
+		// 		}
+		// 	},);
 
+		// gsap.fromTo(".Arrow",
+		// 	{ x: 0, y: 500 },
+		// 	{
+		// 		x: -200,
+		// 		y: 0,
+		// 		scrollTrigger: {
+		// 			trigger: ".healthInsurance",
+		// 			start: "bottom bottom",
+		// 			end: "bottom top",
+		// 			scrub: 1,
+		// 		}
+		// 	},);
 
+		// gsap.fromTo(".Bulb",
+		// 	{ x: -100, y: 200 },
+		// 	{
+		// 		x: -700,
+		// 		y: -200,
+		// 		scrollTrigger: {
+		// 			trigger: ".healthInsurance",
+		// 			start: "bottom bottom",
+		// 			end: "bottom top",
+		// 			scrub: 1,
+		// 		}
+		// 	},);
 
-		gsap.fromTo(".Add",
-			{ x: 0, y: 550 },
-			{
-				x: -200,
-				y: 0,
-				scrollTrigger: {
-					trigger: ".healthInsurance",
-					start: "bottom bottom",
-					end: "bottom top",
-					scrub: 1,
-				}
-			},);
+		// gsap.fromTo(".Coverage",
+		// 	{ x: -130, y: -50 },
+		// 	{
+		// 		x: -400,
+		// 		y: -400,
+		// 		scrollTrigger: {
+		// 			trigger: ".healthInsurance",
+		// 			start: "bottom bottom",
+		// 			end: "bottom top",
+		// 			scrub: 1,
+		// 		}
+		// 	},);
 
-		gsap.fromTo(".And",
-			{ x: -200, y: 500 },
-			{
-				x: -200,
-				y: 0,
-				scrollTrigger: {
-					trigger: ".healthInsurance",
-					start: "bottom bottom",
-					end: "bottom top",
-					scrub: 1,
-				}
-			},);
+		// gsap.fromTo(".Health",
+		// 	{ x: -150, y: 0 },
+		// 	{
+		// 		x: -300,
+		// 		y: -300,
+		// 		scrollTrigger: {
+		// 			trigger: ".healthInsurance",
+		// 			start: "bottom bottom",
+		// 			end: "bottom top",
+		// 			scrub: 1,
+		// 		}
+		// 	},);
 
-		gsap.fromTo(".Arrow",
-			{ x: 0, y: 500 },
-			{
-				x: -200,
-				y: 0,
-				scrollTrigger: {
-					trigger: ".healthInsurance",
-					start: "bottom bottom",
-					end: "bottom top",
-					scrub: 1,
-				}
-			},);
+		// gsap.fromTo(".Mind",
+		// 	{ x: -300, y: -150 },
+		// 	{
+		// 		x: -600,
+		// 		y: -600,
+		// 		scrollTrigger: {
+		// 			trigger: ".healthInsurance",
+		// 			start: "bottom bottom",
+		// 			end: "bottom top",
+		// 			scrub: 1,
+		// 		}
+		// 	},);
 
-		gsap.fromTo(".Bulb",
-			{ x: -100, y: 200 },
-			{
-				x: -700,
-				y: -200,
-				scrollTrigger: {
-					trigger: ".healthInsurance",
-					start: "bottom bottom",
-					end: "bottom top",
-					scrub: 1,
-				}
-			},);
+		// gsap.fromTo(".Phonebook",
+		// 	{ x: 0, y: -300 },
+		// 	{
+		// 		x: -600,
+		// 		y: -900,
+		// 		scrollTrigger: {
+		// 			trigger: ".healthInsurance",
+		// 			start: "bottom bottom",
+		// 			end: "bottom top",
+		// 			scrub: 1,
+		// 		}
+		// 	},);
 
-		gsap.fromTo(".Coverage",
-			{ x: -130, y: -50 },
-			{
-				x: -400,
-				y: -400,
-				scrollTrigger: {
-					trigger: ".healthInsurance",
-					start: "bottom bottom",
-					end: "bottom top",
-					scrub: 1,
-				}
-			},);
+		// gsap.fromTo(".Safe",
+		// 	{ x: -250, y: -300 },
+		// 	{
+		// 		x: -800,
+		// 		y: -600,
+		// 		scrollTrigger: {
+		// 			trigger: ".healthInsurance",
+		// 			start: "bottom bottom",
+		// 			end: "bottom top",
+		// 			scrub: 1,
+		// 		}
+		// 	},);
 
-		gsap.fromTo(".Health",
-			{ x: -150, y: 0 },
-			{
-				x: -300,
-				y: -300,
-				scrollTrigger: {
-					trigger: ".healthInsurance",
-					start: "bottom bottom",
-					end: "bottom top",
-					scrub: 1,
-				}
-			},);
+		// gsap.fromTo(".Schedule",
+		// 	{ x: -100, y: -420 },
+		// 	{
+		// 		x: -600,
+		// 		y: -800,
+		// 		scrollTrigger: {
+		// 			trigger: ".healthInsurance",
+		// 			start: "bottom bottom",
+		// 			end: "bottom top",
+		// 			scrub: 1,
+		// 		}
+		// 	},);
 
-		gsap.fromTo(".Mind",
-			{ x: -300, y: -150 },
-			{
-				x: -600,
-				y: -600,
-				scrollTrigger: {
-					trigger: ".healthInsurance",
-					start: "bottom bottom",
-					end: "bottom top",
-					scrub: 1,
-				}
-			},);
+		// gsap.fromTo(".Secure",
+		// 	{ x: -200, y: -500 },
+		// 	{
+		// 		x: -250,
+		// 		y: -1200,
+		// 		scrollTrigger: {
+		// 			trigger: ".healthInsurance",
+		// 			start: "bottom bottom",
+		// 			end: "bottom top",
+		// 			scrub: 1,
+		// 		}
+		// 	},);
 
-		gsap.fromTo(".Phonebook",
-			{ x: 0, y: -300 },
-			{
-				x: -600,
-				y: -900,
-				scrollTrigger: {
-					trigger: ".healthInsurance",
-					start: "bottom bottom",
-					end: "bottom top",
-					scrub: 1,
-				}
-			},);
-
-		gsap.fromTo(".Safe",
-			{ x: -250, y: -300 },
-			{
-				x: -800,
-				y: -600,
-				scrollTrigger: {
-					trigger: ".healthInsurance",
-					start: "bottom bottom",
-					end: "bottom top",
-					scrub: 1,
-				}
-			},);
-
-		gsap.fromTo(".Schedule",
-			{ x: -100, y: -420 },
-			{
-				x: -600,
-				y: -800,
-				scrollTrigger: {
-					trigger: ".healthInsurance",
-					start: "bottom bottom",
-					end: "bottom top",
-					scrub: 1,
-				}
-			},);
-
-		gsap.fromTo(".Secure",
-			{ x: -200, y: -500 },
-			{
-				x: -250,
-				y: -1200,
-				scrollTrigger: {
-					trigger: ".healthInsurance",
-					start: "bottom bottom",
-					end: "bottom top",
-					scrub: 1,
-				}
-			},);
-
-		gsap.fromTo(".Teeth",
-			{ x: -350, y: -700 },
-			{
-				x: -600,
-				y: -1200,
-				scrollTrigger: {
-					trigger: ".healthInsurance",
-					start: "bottom bottom",
-					end: "bottom top",
-					scrub: 1,
-				}
-			},);
-
-
-
-
+		// gsap.fromTo(".Teeth",
+		// 	{ x: -350, y: -700 },
+		// 	{
+		// 		x: -600,
+		// 		y: -1200,
+		// 		scrollTrigger: {
+		// 			trigger: ".healthInsurance",
+		// 			start: "bottom bottom",
+		// 			end: "bottom top",
+		// 			scrub: 1,
+		// 		}
+		// 	},);
 
 
 	}, []);
@@ -1841,9 +1834,9 @@ const Landing = () => {
 				</div>
 
 
-				{/* <div className="xtream h-screen w-screen flex justify-center items-center">
+				<div className="xtream h-screen w-screen flex justify-center items-center">
 					<img className="image absolute h-[90%] w-[90%] z-10" src={xtream_full} alt="" />
-				</div> */}
+				</div>
 
 
 				<div ref={orchard} className="orchard h-[200vh] w-screen">
@@ -1899,50 +1892,102 @@ const Landing = () => {
 				</div>
 
 
-				{/* <div ref={healthInsurance} className="healthInsurance h-[200vh] w-screen">
-					<div className="healthScreens h-screen w-screen">
+				<div ref={healthInsurance} className="healthInsurance h-[200vh] w-screen">
 
-						<div className="screenContainer absolute top-0 left-0 z-10">
+					<div className="hlth-insur-main">
 
-							<div className="hiLogo w-screen">
-								<img className="" src={hiLogo} alt="" />
+						<div className="HI-phoneMock-screen">
+							<div className="HI-phoneMock">
+								<img src={phoneMockup} alt="" />
 							</div>
 
-							<div className="Screens-Graphs">
-								<div className="phoneScreens">
-									<img className="phoneMock" src={phoneMockup} alt="" />
-									<img className="statistics" src={statistics} alt="" />
+							<div className="HI-statistic-screen">
+								<img src={statistics} alt="" />
+							</div>
+						</div>
+
+						<div className="HI-header">
+							<div className="HI-heading-customize">
+
+								<div className="heads">
+									<h2>Health Insurance</h2>
+									<p>Carefully Crafted for Your Care: Simplifying Health Coverage</p>
+									<hr />
+									<div className="HI-work">
+										<span>UI/UX Design</span>
+										<span>Mobile Flow</span>
+										<span>Wireframes</span>
+									</div>
 								</div>
 
-								<div className="graph-customize">
-									<img src={lineGraph} alt="" />
-									<img className="" src={customize} alt="" />
+								<div className="HI-customize">
+									<img src={customize} alt="" />
 								</div>
+
+							</div>
+
+
+							<div className="HI-individual">
+								<img src={lineGraph} alt="" />
+							</div>
+
+						</div>
+
+						<div className="HI-widgets-container">
+
+							<div>
+								<img src={add} alt="" className="Add" />
+							</div>
+
+							<div>
+								<img src={and} alt="" className="And" />
+							</div>
+
+							<div>
+								<img src={arrow} alt="" className="Arrow" />
+							</div>
+
+							<div>
+								<img src={bulb} alt="" className="Bulb" />
+							</div>
+
+							<div>
+								<img src={coverage} alt="" className="Coverage" />
+							</div>
+
+							<div>
+								<img src={health} alt="" className="Health" />
+							</div>
+
+							<div>
+								<img src={mind} alt="" className="Mind" />
+							</div>
+
+							<div>
+								<img src={phonebook} alt="" className="Phonebook" />
+							</div>
+
+							<div>
+								<img src={safe} alt="" className="Safe" />
+							</div>
+
+							<div>
+								<img src={schedule} alt="" className="Schedule" />
+							</div>
+
+							<div>
+								<img src={secure} alt="" className="Secure" />
+							</div>
+
+							<div>
+								<img src={teeth} alt="" className="Teeth" />
 							</div>
 
 
 						</div>
-
-
-						<div className="widgets-container ml-[90%]">
-							<img src={add} alt="" className="Add" />
-							<img src={and} alt="" className="And" />
-							<img src={arrow} alt="" className="Arrow" />
-							<img src={bulb} alt="" className="Bulb" />
-							<img src={coverage} alt="" className="Coverage" />
-							<img src={health} alt="" className="Health" />
-							<img src={mind} alt="" className="Mind" />
-							<img src={phonebook} alt="" className="Phonebook" />
-							<img src={safe} alt="" className="Safe" />
-							<img src={schedule} alt="" className="Schedule" />
-							<img src={secure} alt="" className="Secure" />
-							<img src={teeth} alt="" className="Teeth" />
-						</div>
-
-
 					</div>
 
-				</div> */}
+				</div>
 
 
 				{/* <div className="dinaRollings-container h-[200vh] w-screen">

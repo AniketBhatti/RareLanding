@@ -71,7 +71,6 @@ import teeth from "../../assets/images/07_ourWorks/HEALTHINSURANCE/widgets/teeth
 
 
 import dinaHome from "../../assets/images/07_ourWorks/DINAROLLING/phone-mock-homeScreen.png"
-import dinaHomeFull from "../../assets/images/07_ourWorks/DINAROLLING/phone-mock-homeScreenFull.png"
 import dinaActual from "../../assets/images/07_ourWorks/DINAROLLING/dina-bonus-actual.png"
 import gameGraph from "../../assets/images/07_ourWorks/DINAROLLING/game-metrics-graph.png"
 import connectionsBuild from "../../assets/images/07_ourWorks/DINAROLLING/connection-building.png"
@@ -107,6 +106,7 @@ import circleAnimation from "../../assets/images/09_companyOverview/gifs/greenBa
 
 
 import arrowPinkHeadSmall from "../../assets/images/08_designProcess/arrowPinkHeadSmall.png"
+
 
 import onboarding from "../../assets/images/08_designProcess/onBoarding.png"
 import startProject from "../../assets/images/08_designProcess/startProject.png"
@@ -1990,54 +1990,61 @@ const Landing = () => {
 				</div>
 
 
-				{/* <div className="dinaRollings-container h-[200vh] w-screen">
-					<div ref={dinaRollings} className="dinaRollings h-screen w-screen overflow-hidden">
+				<div className="dinaRollings h-[200vh] w-screen">
+					<div className="dina-main">
 
-
-						<div className="dinaRollings-data-container">
-							<div className="dinaPhoneMock w-screen h-screen">
-								<img src={dinaHomeFull} alt="" />
+						<div className="dina-screens">
+							<div className="dina-phoneMock">
+								<img src={dinaHome} alt="" />
 							</div>
 
-							<div className="smallElements">
-								<img src={dinaActual} alt="" className="dina" />
-								<img src={connectionsBuild} alt="" className="connectionBuild" />
-								<img src={gameGraph} alt="" className="gameGraph" />
-								<img src={felindra} alt="" className="felindra" />
-								<img src={sessions} alt="" className="sessions " />
+							<div className="dina-screens-layouts">
+								<div className="dina-game-connect">
+									<div className='dina-gameGraph'>
+										<img src={gameGraph} alt="" />
+									</div>
+
+									<div className="connections">
+										<img src={connectionsBuild} alt="" />
+									</div>
+								</div>
+
+								<div className="dina-felindra">
+									<img src={felindra} alt="" />
+								</div>
+
+								<div className="dina-roll">
+									<img src={dinaActual} alt="" />
+								</div>	
+							</div>
+
+						</div>
+
+						<div className="dina-heading-session">
+
+							<div className="dina-hearder">
+								<h2>Gaming Dashboard</h2>
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, impedit!</p>
+								<hr />
+								<div className="dina-works">
+									<span>UI/UX Design</span>
+                                    <span>Mobile Dashboard Design</span>
+                                    <span>Frontend Development</span>
+								</div>
+							</div>
+
+							<div className="dina-session">
+								<img src={sessions} alt="" />
 							</div>
 						</div>
 
-
 					</div>
-				</div> */}
+				</div>
+
+
 
 				{/* <div className="vividContainer h-[200vh] w-screen">
-					<div className="vividSpark h-screen w-screen overflow-hidden">
-
-						<div className="vividText absolute top-0 left-0">
-
-							<div className="connectText">
-								<p className="connect">Connect</p>
-							</div>
-
-							<h2>
-								Vivid<span>spark</span>
-							</h2>
-
-						</div>
-
-
-						<img src={creativeInfo} alt="" className="creativeInfo absolute" />
-						<img src={continueInnovation} alt="" className="continueInnovation absolute" />
-						<img src={ladyModel} alt="" className="ladyModel absolute z-10" />
-
-						<div className="whyUsReveal absolute">
-							<h2>Why<span><br />us?</span></h2>
-						</div>
-
-
-					</div>
+					
 				</div> */}
 
 				{/* <div className="cocktailCultureContainer h-[200vh] w-screen">

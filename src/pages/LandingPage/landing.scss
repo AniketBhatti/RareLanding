@@ -2134,7 +2134,6 @@ main {
 
         }
 
-
         .xtream {
             background-color: #5A5A5A;
         }
@@ -2897,7 +2896,6 @@ main {
 
         }
 
-
         .healthInsurance {
 
             .hlth-insur-main {
@@ -3018,7 +3016,6 @@ main {
                     }
                 }
             }
-
 
             @media screen and (min-width: 1920px) {
                 .hlth-insur-main {
@@ -3575,7 +3572,7 @@ main {
                         .HI-heading-customize {
                             .heads {
                                 h2 {
-                                    font-size: 5vw;
+                                    font-size: 6vw;
                                 }
     
                                 p {
@@ -3694,451 +3691,822 @@ main {
     
                 }
             }
-
         }
 
+        .dinaRollings{
 
-
-        .dinaRollings {
-            position: sticky;
-            top: 0;
-            z-index: 1;
-            background-color: #F2F4F7;
-
-            // &::before {
-            //     content: "Mobile App";
-            //     display: flex;
-            //     align-items: center;
-            //     justify-content: center;
-            //     height: 100%;
-            //     font-size: 34vh;
-            //     font-family: satoshi;
-            //     color: #a2a2a210;
-            //     z-index: -1;
-            // }
-
-
-            .dinaPhoneMock {
-                display: flex;
-                align-items: center;
-                justify-content: start;
-            }
-
-            .smallElements {
-                position: absolute;
+            .dina-main{
+                padding: 50px;
+                position: sticky;
                 top: 0;
-                left: 0;
-                height: 100%;
                 width: 100%;
+                height: 100vh;
+                background-color: #F2F4F7;
                 display: flex;
-                justify-content: center;
-                align-items: center;
 
-                .dina {
-                    position: relative;
-                    width: 18%;
-                    top: -30%;
-                    left: 62%;
-                }
-
-                .connectionBuild {
-                    position: absolute;
-                    width: 20%;
-                    top: 8%;
-                    left: 56%;
-                }
-
-                .gameGraph {
-                    position: absolute;
-                    width: 16%;
-                    top: 8%;
-                    left: 38%;
-                }
-
-                .felindra {
-                    position: relative;
-                    width: 26%;
-                    left: 12%;
-
-                }
-
-                .sessions {
-                    position: relative;
-                    width: 25%;
-                    top: 5%;
-                    left: 10%;
-                }
-
-            }
-
-
-            @media screen and (min-width: 1927px) {
-                .dinaPhoneMock {
-                    img {
-                        width: 40%;
-                        margin-left: 50px;
-                    }
-                }
-            }
-
-            @media screen and (max-width: 1926px) and (min-width: 1440px) {
-                .dinaPhoneMock {
-
-                    img {
-                        width: 38%;
-                        margin-left: 50px;
-                    }
-                }
-
-
-                .smallElements {
-
-                    .dina {
-                        position: relative;
-                        width: 18%;
-                        top: -30%;
-                        left: 62%;
-                    }
-
-                    .connectionBuild {
-                        position: absolute;
-                        width: 20%;
-                        top: 10%;
-                        left: 56%;
-                    }
-
-                    .gameGraph {
-                        position: absolute;
-                        width: 16%;
-                        top: 10%;
-                        left: 38%;
-                    }
-
-                    .felindra {
-                        position: relative;
-                        width: 26%;
-                        left: 12%;
-
-                    }
-
-                    .sessions {
-                        position: relative;
-                        width: 25%;
-                        top: 5%;
-                        left: 10%;
-                    }
-
-                }
-            }
-
-            @media screen and (max-width: 1439px) and (min-width: 1024px) {
-                .dinaPhoneMock {
-
-                    img {
-                        padding-left: 50px;
-                        width: 38%;
-                    }
-                }
-
-                .smallElements {
-
-                    .dina {
-                        position: relative;
-                        width: 18%;
-                        top: -30%;
-                        left: 62%;
-                    }
-
-                    .connectionBuild {
-                        position: absolute;
-                        width: 20%;
-                        top: 15%;
-                        left: 56%;
-                    }
-
-                    .gameGraph {
-                        position: absolute;
-                        width: 16%;
-                        top: 15%;
-                        left: 38%;
-                    }
-
-                    .felindra {
-                        position: relative;
-                        width: 26%;
-                        left: 12%;
-
-                    }
-
-                    .sessions {
-                        position: relative;
-                        width: 25%;
-                        top: 5%;
-                        left: 10%;
-                    }
-
-                }
-            }
-
-            @media screen and (max-width: 1023px) and (min-width: 768px) {
-                .dinaPhoneMock {
-
-                    img {
-                        padding-left: 30px;
-                        width: 35%;
-                    }
-                }
-
-                .smallElements {
-
-                    .dina {
-                        position: relative;
-                        width: 22%;
-                        top: -15%;
-                        left: 64%;
-                    }
-
-                    .connectionBuild {
-                        position: absolute;
-                        width: 28%;
-                        top: 28%;
-                        left: 45%;
-                    }
-
-                    .gameGraph {
-                        position: absolute;
-                        width: 30%;
-                        top: 5%;
-                        left: 50%;
-                    }
-
-                    .felindra {
-                        position: relative;
-                        width: 28%;
-                        left: 15%;
-                        top: 5%;
-                    }
-
-                    .sessions {
-                        position: relative;
-                        width: 25%;
-                        top: 25%;
-                        left: 10%;
-                    }
-
-
-                }
-            }
-
-            @media screen and (max-width: 767px) and (min-width: 640px) {
-
-                .dinaPhoneMock {
+                .dina-screens{
+                    width: 70%;
+                    height: 100%;
                     display: flex;
-                    align-items: end;
-                    justify-content: start;
+                    align-items: center;
 
-                    img {
-                        padding-left: 25px;
-                        width: 55%;
+                    .dina-phoneMock{
+                        height: 100%;
+                        width: 50%;
+                        display: flex;
+                        align-items: center;
+                        padding: 10px;
+                    
+                    }
+
+                    .dina-screens-layouts{
+                        height: 100%;
+                        width: 50%;
+                        display: flex;
+                        flex-direction: column;
+                        padding: 20px;
+
+                        .dina-game-connect{
+                            width: 100%;
+                            display: flex;
+                            align-items: start;
+                            justify-content: start;
+                            gap: 20px;
+
+                            
+                        }
+                        
+                        .dina-felindra{
+                            width: 100%;
+                            display: flex;
+                            
+                            img{
+                                height: 100%;
+                            }
+                        }
+
+                        .dina-roll{
+                            width: 100%;
+                            position: relative;
+                            display: flex;
+                            justify-content: end;
+                        }
                     }
                 }
 
-                .smallElements {
+                .dina-heading-session{
+                    width: 30%;
+                    height: 100%;
+                    padding: 10px;
 
-                    .dina {
-                        position: relative;
-                        width: 25%;
-                        top: 0%;
-                        left: 65%;
+                    .dina-hearder{
+                        width: 100%;
+
+                        h2{
+                            font-size: 4vw;
+                            line-height: 5vw;
+                        }
+
+                        p{
+                            padding: 10px 0;
+                            font-size: 1vw;
+                            font-family: satoshi;
+                        }
+
+                        hr{
+                            border-color: black;
+                            width: 90%;
+                        }
+
+                        .dina-works{
+                            padding: 10px 0;
+                            span{
+                                font-family: satoshi;
+                                font-size: 1vw;
+                            }
+
+                            span + span{
+                                &::before{
+                                    content: " | ";
+                                }
+                            }
+                        }
                     }
 
-                    .connectionBuild {
-                        position: absolute;
-                        width: 35%;
-                        top: 22%;
-                        left: 25%;
-                    }
-
-                    .gameGraph {
-                        position: absolute;
-                        width: 30%;
-                        top: 15%;
-                        left: 65%;
-                    }
-
-                    .felindra {
-                        position: relative;
-                        width: 30%;
-                        left: 12%;
-                        top: 4%;
-                    }
-
-                    .sessions {
-                        position: relative;
-                        width: 35%;
-                        top: 25%;
-                        left: 0%;
-                    }
-
-
-                }
-
-            }
-
-            @media screen and (max-width: 639px) and (min-width: 530px) {
-
-                .dinaPhoneMock {
-                    display: flex;
-                    align-items: end;
-                    justify-content: start;
-
-                    img {
-                        padding-left: 20px;
-                        width: 55%;
-                    }
-                }
-
-                .smallElements {
-
-                    .dina {
-                        position: relative;
-                        width: 25%;
-                        top: 0%;
-                        left: 65%;
-                    }
-
-                    .connectionBuild {
-                        position: absolute;
-                        width: 35%;
-                        top: 32%;
-                        left: 25%;
-                    }
-
-                    .gameGraph {
-                        position: absolute;
-                        width: 30%;
-                        top: 25%;
-                        left: 65%;
-                    }
-
-                    .felindra {
-                        position: relative;
-                        width: 30%;
-                        left: 12%;
-                        top: 4%;
-                    }
-
-                    .sessions {
-                        position: relative;
-                        width: 35%;
-                        top: 25%;
-                        left: 0%;
-                    }
-
-
-                }
-
-            }
-
-            @media screen and (max-width: 529px) {
-                .dinaPhoneMock {
-                    display: flex;
-                    align-items: end;
-                    justify-content: center;
-
-                    img {
-                        width: 60%;
-                    }
-                }
-
-                .smallElements {
-                    .dina {
-                        position: relative;
-                        width: 32%;
-                        top: -12%;
-                        left: 55%;
-                    }
-
-                    .connectionBuild {
-                        position: absolute;
-                        width: 40%;
-                        top: 15%;
-                        left: 10%;
-                    }
-
-                    .gameGraph {
-                        position: absolute;
-                        width: 40%;
-                        top: 15%;
-                        left: 55%;
-                    }
-
-                    .felindra {
-                        position: relative;
-                        width: 40%;
-                        left: -20%;
-                        top: -10%;
-                    }
-
-                    .sessions {
-                        position: relative;
-                        width: 35%;
-                        top: 5%;
-                        left: -10%;
+                    .dina-session{
+                        width: 100%;
                     }
                 }
 
             }
 
-            @media screen and (min-width: 320px) and (max-width: 450px) {
-                .dinaPhoneMock {
+            @media screen and (min-width: 1921px){
+                .dina-main{
                     display: flex;
-                    align-items: end;
-                    justify-content: center;
-
-                    img {
+                    
+                    .dina-screens{ 
                         width: 70%;
-                    }
-                }
+                        height: 100%;
+                        
+                        .dina-phoneMock{
+                            scale: 1.1;
 
-                .smallElements {
-                    .dina {
-                        position: relative;
-                        width: 40%;
-                        top: -15%;
-                        left: 68%;
-                    }
+                            img{
+                                width: 100%;
+                            }
+                        }
 
-                    .connectionBuild {
-                        position: absolute;
-                        width: 50%;
-                        top: 17%;
-                        left: 6%;
-                    }
+                        .dina-screens-layouts{
+                            height: 100%;
+                            width: 50%;
+                            display: flex;
+                            flex-direction: column;
+                            padding: 20px;
+                            gap: 20px;
+    
+                            .dina-game-connect{
+                                width: 100%;
+                                height: 30%;
+                                display: flex;
+                                align-items: center;
+                                gap: 20px;
 
-                    .gameGraph {
-                        position: absolute;
-                        width: 50%;
-                        top: 2%;
-                        left: 45%;
-                    }
+                                .dina-gameGraph{
+                                    height: 35%;
+                                    width: 40%;
 
-                    .felindra {
-                        position: relative;
-                        width: 50%;
-                        left: -24%;
-                        top: -8%;
-                    }
+                                    img{
+                                        width: 100%;
+                                    }
+                                }
 
-                    .sessions {
-                        position: relative;
-                        width: 40%;
-                        top: 2%;
-                        left: -23%;
+                                .connections{
+                                    width: 60%;
+
+                                    img{
+                                        width: 100%;
+                                    }
+                                }
+                            }
+                            
+                            .dina-felindra{
+                                width: 100%;
+                                height: auto;
+                                display: flex;
+                                scale: 1.2;
+                                img{
+                                    width: 50%;
+                                }
+                                
+                            }
+    
+                            .dina-roll{
+                                width: 100%;
+                                height: auto;
+                                position: relative;
+                                display: flex;
+                                justify-content: end;
+                                transform: translate(0%, -15%);
+
+                                img{
+                                    width: 65%;
+                                }
+
+                            }
+                        }
                     }
+    
+                    .dina-heading-session{
+                        width: 30%;
+                        height: 100%;
+                        padding: 10px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+
+                        .dina-hearder{
+                            width: 100%;
+                        }
+    
+                        .dina-session{
+                            height: 50%;
+                            width: 100%;
+                            display: flex;
+                            align-items: center;
+
+                            img{
+                                width: 80%;
+                            }
+                        }
+                    }
+    
                 }
             }
+
+            @media screen and (max-width: 1920px) {
+                .dina-main{
+                    display: flex;
+                    
+                    .dina-screens{ 
+                        width: 70%;
+                        height: 100%;
+                        
+                        .dina-phoneMock{
+                            scale: 1.1;
+
+                            img{
+                                width: 100%;
+                            }
+                        }
+
+                        .dina-screens-layouts{
+                            height: 100%;
+                            width: 50%;
+                            display: flex;
+                            flex-direction: column;
+                            padding: 20px;
+                            gap: 20px;
+    
+                            .dina-game-connect{
+                                width: 100%;
+                                height: 30%;
+                                display: flex;
+                                align-items: center;
+                                gap: 20px;
+
+                                .dina-gameGraph{
+                                    height: 35%;
+                                    width: 40%;
+
+                                    img{
+                                        width: 100%;
+                                    }
+                                }
+
+                                .connections{
+                                    width: 60%;
+
+                                    img{
+                                        width: 100%;
+                                    }
+                                }
+                            }
+                            
+                            .dina-felindra{
+                                width: 100%;
+                                height: auto;
+                                display: flex;
+                                scale: 1.2;
+                                img{
+                                    width: 50%;
+                                }
+                                
+                            }
+    
+                            .dina-roll{
+                                width: 100%;
+                                height: auto;
+                                position: relative;
+                                display: flex;
+                                justify-content: end;
+                                transform: translate(0%, -15%);
+
+                                img{
+                                    width: 65%;
+                                }
+
+                            }
+                        }
+                    }
+    
+                    .dina-heading-session{
+                        width: 30%;
+                        height: 100%;
+                        padding: 10px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+
+                        .dina-hearder{
+                            width: 100%;
+                        }
+    
+                        .dina-session{
+                            height: 50%;
+                            width: 100%;
+                            display: flex;
+                            align-items: center;
+
+                            img{
+                                width: 80%;
+                            }
+                        }
+                    }
+    
+                }
+            }
+
+            @media screen and (max-width: 1800px) {
+                .dina-main{
+                    
+                    .dina-screens{
+                        width: 70%;
+                        height: 100%;
+                        
+                        .dina-phoneMock{
+                            width: 50%;
+
+                            img{
+                                width: 100%;
+                            }
+                        }
+    
+                        .dina-screens-layouts{
+                            height: 100%;
+                            width: 50%;
+                            padding: 20px;
+    
+                            .dina-game-connect{
+                                width: 100%;
+                                display: flex;
+                                align-items: center;
+                                justify-content: start;
+                                gap: 20px;
+                                scale: 1.2;
+                                transform: translateX(-10%);
+                            }
+                            
+                            .dina-felindra{
+                                width: 100%;
+                                display: flex;
+                                scale: 1.5;
+                                
+                                img{
+                                    height: 100%;
+                                }
+                            }
+    
+                            .dina-roll{
+                                width: 100%;
+                                position: relative;
+                                display: flex;
+                                justify-content: end;
+                                scale: 1.2;
+                                transform: translateY(2%);
+                            }
+                        }
+                    }
+    
+                    .dina-heading-session{
+                        width: 30%;
+                        height: 100%;
+                        padding: 10px;
+    
+                        .dina-hearder{
+                            width: 100%;   
+                            
+                            hr{
+                                width: 100%;
+                            }
+                        }
+    
+                        .dina-session{
+                            width: 100%;
+                            transform: translateX(-10%);
+                            position: relative;
+                            z-index: -1;
+                            img{
+                                width: 100%;
+                            }
+                        }
+                    }
+    
+                }
+            }
+
+            @media screen and (max-width: 1440px) {
+                .dina-main{
+                    .dina-heading-session{
+                        .dina-hearder{
+                            width: 100%;   
+                            
+                            p{
+                                font-size: 1.2vw;
+                            }
+
+                            hr{
+                                width: 100%;
+                            }
+
+                            .dina-works{
+                                span{
+                                    font-size: 1.2vw;
+                                }
+                            }
+
+                        }
+
+                    }
+    
+                }
+            }
+
+            @media screen and (max-width: 1199px) {
+                .dina-main{
+                    padding: 30px;
+                    flex-direction: column-reverse;
+                    height: auto;
+                    // overflow-x: hidden;
+
+                    .dina-screens{
+                        width: 100%;
+                        height: 70%;
+
+                        .dina-phoneMock{
+                            width: 40%;
+                            img{
+                                width: 90%;
+                            }
+                        }
+
+                        .dina-screens-layouts{
+                            height: 100%;
+                            width: 60%;
+                            padding: 10px;
+
+                            .dina-game-connect{
+                                width: 100%;
+                                height: 30%;
+                                gap: 20px;
+                                scale: 1;
+                                transform: translate(0%,0%);
+                                
+                                .dina-gameGraph{
+                                    scale: 1;
+                                    align-items: center;
+                                    justify-content: center; 
+                                    
+                                    img{
+                                        transform: translate(0%, 0%);
+                                        width: 90%;
+                                    }
+                                }
+                            }
+                            
+                            .dina-felindra{
+                                width: 100%;
+                                display: flex;
+                                scale: 1;
+                                justify-content: center;
+                                transform: translate(0%, 0%);
+                            }
+    
+                            .dina-roll{
+                                position: relative;
+                                display: flex;
+                                justify-content: center;
+                                scale: 1;
+                                transform: translate(0%, 0%);
+
+                                img{
+                                    width: 60%;
+                                }
+                            }
+                        }
+                    }
+
+                    .dina-heading-session{
+                        width: 100%;
+                        height: 30%;
+                        padding: 10px;
+                        flex-direction: row;
+    
+                        .dina-hearder{
+                            width: 40%;   
+
+                            h2{
+                                font-size: 5vw;
+                            }
+
+                            p{
+                                font-size: 1.7vw;
+                            }
+                            
+                            hr{
+                                width: 100%;
+                            }
+
+                            .dina-works{
+                                span{
+                                    font-size: 1.7vw;
+                                }
+                            }
+                        }
+    
+                        .dina-session{
+                            width: 60%;
+                            transform: translateX(0%);
+                            justify-content: center;
+                            scale: 1;
+
+                            img{
+                                width: 65%;
+                            }
+                        }
+                    }
+
+                }
+            }
+
+            @media screen and (max-width: 991px) {
+                .dina-main{
+                    flex-direction: column-reverse;
+                    align-items: center;
+                    justify-content: center;
+                    min-height: 100vh;
+                    height: auto;
+
+
+                    .dina-heading-session{
+                        .dina-hearder{
+                            p{
+                                font-size: 1.8vw;
+                            }
+
+                            .dina-works{
+                                span{
+                                    font-size: 1.8vw;
+                                }
+                            }
+                        }
+                    }
+
+                }
+            }
+
+            @media screen and (max-width: 767px) {
+                .dina-main{
+                    padding: 30px;
+
+                    .dina-screens{
+                        height: 70%;
+
+                        .dina-phoneMock{
+                            width: 40%;
+
+                            img{
+                                width: 100%;
+                            }
+                        }
+
+                        .dina-screens-layouts{
+
+                            .dina-game-connect{
+                                flex-direction: column;
+                                
+                                .dina-gameGraph{
+                                    width: 100%;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center; 
+                                    
+                                    img{
+                                        width: 70%;
+                                    }
+                                }
+
+                                .connections{
+                                    display: flex;
+                                    justify-content: center;
+                                    width: 100%;
+                                    img{
+                                        width: 70%;
+                                    }
+                                }
+                            }
+                            
+                            .dina-felindra{
+                                width: 100%;
+                                display: flex;
+                                scale: 1;
+                                justify-content: center;
+                                transform: translate(0%, 0%);
+                            }
+                        }
+                    }
+
+                    .dina-heading-session{
+                        padding: 10px;
+
+                        .dina-hearder{
+                            width: 40%;
+
+                            p{
+                                font-size: 2vw;
+                            }
+                            
+                            
+
+                            .dina-works{
+                                span{
+                                    font-size: 2vw;
+                                }
+                            }
+                        }
+    
+                        .dina-session{
+                            width: 60%;
+                            img{
+                                width: 80%;
+                            }
+                        }
+
+                    }
+
+                }
+            } 
+
+            @media screen and (max-width: 600px) {
+                .dina-main{
+                    padding: 30px;
+
+                    .dina-heading-session{
+                        .dina-hearder{
+
+                            h2{
+                                font-size: 6vw;
+                                line-height: normal;
+                            }
+
+                            p{
+                                font-size: 2vw;
+                            }
+                            
+                            
+
+                            .dina-works{
+                                span{
+                                    font-size: 2vw;
+                                }
+                            }
+                        }
+
+                    }
+
+                }
+            }
+
+            @media screen and (max-width: 500px) {
+                .dina-main{
+                    padding: 20px;
+
+                    .dina-screens{
+                        height: 70%;
+                        flex-direction: column;
+                        .dina-phoneMock{
+                            width: 100%;
+                            display: flex;
+                            justify-content: center;
+                            img{
+                                width: 50%;
+                            }
+                        }
+                        
+                        .dina-screens-layouts{
+                            width: 100%;
+                            
+                            .dina-game-connect{
+                                flex-direction: row;
+                                width: 100%;
+
+                                .dina-gameGraph{
+                                    width: 100%;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center; 
+                                    
+                                    img{
+                                        width: 80%;
+                                    }
+                                }
+
+                                .connections{
+                                    display: flex;
+                                    justify-content: center;
+                                    width: 100%;
+                                    img{
+                                        width: 100%;
+                                    }
+                                }
+                            }
+                            
+                            .dina-felindra{
+                                width: 100%;
+                                display: flex;
+                                scale: 1;
+                                justify-content: center;
+                                transform: translate(0%, 0%);
+                            }
+                        }
+                    }                    
+
+                    .dina-heading-session{
+                        flex-direction: column;
+
+                        .dina-hearder{
+                            width: 100%;
+                            height: auto;
+                            
+                            h2{
+                                font-size: 10vw;
+                                line-height: normal;
+                            }
+                            
+                            p{
+                                font-size: 4vw;
+                            }
+                            
+                            
+                            
+                            .dina-works{
+                                span{
+                                    font-size: 4vw;
+                                }
+                            }
+                        }
+
+                        .dina-session{
+                            width: 100%;
+                            img{
+                                width: 60%;
+                            }
+                        }
+
+                    }
+
+                }
+            }
+
+            @media screen and (max-width: 375px) {
+
+                .dina-main{
+
+                    .dina-screens{
+                        height: 70%;
+                        width: 100%;
+                        
+                        .dina-phoneMock{
+    
+                            img{
+                                width: 60%;
+                            }
+                        }
+    
+                        .dina-screens-layouts{
+    
+                            .dina-game-connect{
+                                flex-direction: column;
+                                
+                                .dina-gameGraph{
+                                    width: 100%;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center; 
+                                    
+                                    img{
+                                        width: 70%;
+                                    }
+                                }
+    
+                                .connections{
+                                    display: flex;
+                                    justify-content: center;
+                                    width: 100%;
+                                    img{
+                                        width: 70%;
+                                    }
+                                }
+                            }
+                            
+                            .dina-felindra{
+                                width: 100%;
+                                display: flex;
+                                scale: 1;
+                                justify-content: center;
+                                transform: translate(0%, 0%);
+                            }
+                        }
+                    }
+                }
+
+                
+            }
+
         }
+
+        
 
         .vividSpark {
             position: sticky;
@@ -4304,6 +4672,7 @@ main {
                 // }
             }
         }
+
 
         .cocktailCulture {
             position: sticky;

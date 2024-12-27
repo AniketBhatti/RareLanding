@@ -95,12 +95,6 @@ main {
                     opacity: 1;
                 }
 
-
-
-
-
-
-
             }
 
         }
@@ -463,7 +457,6 @@ main {
         position: relative;
 
         .welcome2rp {
-            // height: 100vh;
             margin-top: 400px;
             margin-bottom: 400px;
             display: flex;
@@ -619,7 +612,8 @@ main {
 
 
         .visually-captivating {
-            height: 100vh;
+            min-height: 100vh;
+            height: auto;
             background-color: black;
             color: white;
             display: flex;
@@ -807,240 +801,105 @@ main {
     }
 
     .transform-ideas {
-        margin: 200px 200px 0px 200px;
-
-        font-size: 64px;
-        font-weight: 300;
-        display: flex;
-        justify-content: center;
         position: relative;
+        margin: 0;
+        height: auto;
+        min-height: 70vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 100px;
 
         h2 {
-
-            width: 85%;
+            font-size: 4vw;
             text-align: center;
-            font-family: satoshi;
+        }
 
-            div {
+        .trnsfm-gifs {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            z-index: 2;
+
+
+            .blubs {
+                position: relative;
+                top: 15%;
+                left: 45%;
+                height: auto;
                 display: inline-block;
             }
 
-            .bulbs {
-                height: 90px;
-                width: 110px;
-                background-image: url("../../assets/images/04_transformIdeas/bulb.gif");
-                background-position: center;
-                background-repeat: no-repeat;
-            }
-
-            .squares {
-                height: 90px;
-                width: 80px;
-                background-image: url("../../assets/images/04_transformIdeas/blackWhiteSquare.gif");
-                background-position: center;
-                background-repeat: no-repeat;
+            .bwSquare {
+                position: relative;
+                top: 30%;
+                left: 0%;
+                display: inline-block;
             }
 
             .shapes {
-                height: 90px;
-                width: 70px;
-                background-image: url("../../assets/images/04_transformIdeas/jumpingShapes.gif");
-                background-position: center;
-                background-repeat: no-repeat;
+                position: absolute;
+                top: 60%;
+                left: 70%;
+                display: inline-block;
             }
         }
 
-        &::after {
-            content: "";
-            position: absolute;
-            top: -250px;
-            right: -200px;
-            height: 30vmax;
-            width: 30vmax;
-            background-image: url("../../assets/images/02_welcomeRP/left-rotating-cube.gif");
-            background-repeat: no-repeat;
-            background-size: cover;
-            // background: red;
-        }
-
-
-        @media screen and (min-width: 1927px) {
-            h2 {
-                font-size: 4vw;
-
-                .bulbs,
-                .squares,
-                .shapes {
-                    height: 120px;
-                    width: 120px;
-                    background-size: contain;
-                }
-            }
-
-            &::after {
-                top: -300px;
-                right: -220px;
-                height: 35vmax;
-                width: 35vmax;
-            }
-        }
-
-        @media screen and (max-width: 1439px) and (min-width: 1024px) {
-            h2 {
-                font-size: 3.5vw;
-
-                .bulbs,
-                .squares,
-                .shapes {
-                    height: 80px;
-                    width: 80px;
-                    background-size: contain;
-                }
-            }
-
-            &::after {
-                top: -200px;
-                right: -150px;
-                height: 25vmax;
-                width: 25vmax;
-            }
-        }
-
-        @media screen and (max-width: 1023px) and (min-width: 768px) {
-            h2 {
-                font-size: 4vw;
-                width: 90%;
-
-                .bulbs,
-                .squares,
-                .shapes {
-                    height: 70px;
-                    width: 70px;
-                    background-size: contain;
-                }
-            }
-
-            &::after {
-                top: -150px;
-                right: -100px;
-                height: 20vmax;
-                width: 20vmax;
-            }
-        }
-
-        @media screen and (max-width: 767px) and (min-width: 530px) {
-
-
-            margin: 200px 70px 0px 70px;
-
-            h2 {
-                font-size: 4.5vw;
-                width: 95%;
-                text-align: left;
-                padding-left: 20px;
-
-                .bulbs,
-                .squares,
-                .shapes {
-                    height: 60px;
-                    width: 60px;
-                    background-size: contain;
-                }
-            }
-
-            &::after {
-                top: -100px;
-                right: -50px;
-                height: 15vmax;
-                width: 15vmax;
-            }
-        }
-
-        @media screen and (max-width: 529px) {
-            margin: 200px 50px 0px 50px;
-
+        @media screen and (max-width: 1199px) {
             h2 {
                 font-size: 5vw;
-                width: 100%;
-                text-align: left;
-                padding-left: 15px;
+            }
 
-                .bulbs,
-                .squares,
+            .trnsfm-gifs {
+
+                .blubs {
+                    top: 10%;
+                    left: 35%;
+                }
+
+                .bwSquare {
+                    top: 70%;
+                    left: 0%;
+                }
+
                 .shapes {
-                    height: 50px;
-                    width: 50px;
-                    background-size: contain;
+                    top: 60%;
+                    left: 90%;
                 }
             }
 
-            &::after {
-                top: -80px;
-                right: -30px;
-                height: 12vmax;
-                width: 12vmax;
-            }
         }
 
-        @media screen and (min-width: 325px) and (max-width: 450px) {
-
-            margin: 100px 20px 0px 20px;
-
-            h2 {
-                font-size: 5.5vw;
-                text-align: left;
-                padding-left: 10px;
-                margin-right: 10px;
-
-                .bulbs,
-                .squares,
-                .shapes {
-                    height: 40px;
-                    width: 40px;
-                    background-size: contain;
-                }
-            }
-
-            &::after {
-                top: -60px;
-                right: -20px;
-                height: 10vmax;
-                width: 10vmax;
-            }
-        }
-
-        @media screen and (max-width: 324px) {
-            margin: 100px 20px 0px 20px;
-
+        @media screen and (max-width: 600px) {
             h2 {
                 font-size: 6vw;
-                text-align: left;
-                padding-left: 5px;
-                margin-right: 5px;
-
-                .bulbs,
-                .squares,
-                .shapes {
-                    height: 30px;
-                    width: 30px;
-                    background-size: contain;
-                }
             }
 
-            &::after {
-                top: -40px;
-                right: -10px;
-                height: 8vmax;
-                width: 8vmax;
+            .trnsfm-gifs {
+                display: none;
+            }
+
+        }
+
+        @media screen and (max-width:529px) {
+            padding: 40px;
+
+            h2 {
+                text-align: left;
             }
         }
 
-
+        @media screen and (max-width: 500px) {
+            h2 {
+                font-size: 10vw;
+            }
+        }
 
     }
 
     .our-work {
-
         .lmbr-container {
             background-color: #478590;
 
@@ -1469,7 +1328,6 @@ main {
             }
 
         }
-
 
         .regalFinance {
             background-color: #2C2C2C;
@@ -3298,12 +3156,12 @@ main {
                         .HI-phoneMock {
                             width: 50%;
                             height: 50%;
-                            
+
                             img {
                                 width: 100%;
                             }
                         }
-                        
+
                         .HI-statistic-screen {
                             width: 50%;
 
@@ -3361,7 +3219,7 @@ main {
                         width: 500px;
                         transform: rotate(50deg) scale(0.6);
 
-                        
+
                     }
                 }
             }
@@ -3386,7 +3244,7 @@ main {
                                 width: 65%;
                             }
                         }
-                        
+
                         .HI-statistic-screen {
                             width: 100%;
                             height: 40%;
@@ -3408,7 +3266,7 @@ main {
                             .heads {
                                 width: 100%;
 
-                                h2{
+                                h2 {
                                     font-size: 5vw;
                                 }
 
@@ -3451,7 +3309,7 @@ main {
                         width: 500px;
                         transform: rotate(20deg) scale(0.6);
 
-                        
+
                     }
                 }
             }
@@ -3477,10 +3335,11 @@ main {
                                 width: 50%;
                             }
                         }
-                        
+
                         .HI-statistic-screen {
                             width: 50%;
                             height: 100%;
+
                             img {
                                 width: 80%;
                             }
@@ -3494,7 +3353,7 @@ main {
                         align-items: start;
 
                         .HI-heading-customize {
-                            height: auto;   
+                            height: auto;
                             width: 50%;
 
                             .heads {
@@ -3539,7 +3398,7 @@ main {
                         width: 500px;
                         transform: rotate(50deg) scale(0.6);
 
-                        
+
                     }
                 }
             }
@@ -3554,14 +3413,16 @@ main {
                         flex-direction: row;
 
                         .HI-phoneMock {
-                            align-items: start; 
+                            align-items: start;
+
                             img {
                                 width: 60%;
                             }
                         }
-                        
+
                         .HI-statistic-screen {
                             justify-content: start;
+
                             img {
                                 width: 80%;
                             }
@@ -3574,27 +3435,27 @@ main {
                                 h2 {
                                     font-size: 6vw;
                                 }
-    
+
                                 p {
                                     font-size: 2vw;
                                 }
-    
+
                                 hr {
                                     width: 100%;
                                 }
-    
+
                                 .HI-work {
                                     span {
                                         font-size: 2vw;
                                     }
                                 }
-                            }    
+                            }
                         }
-    
-    
-                        
+
+
+
                     }
-    
+
                 }
             }
 
@@ -3606,15 +3467,17 @@ main {
                     display: flex;
                     align-items: start;
                     justify-content: center;
+
                     .HI-phoneMock-screen {
                         margin: 0;
                         width: 100%;
                         height: auto;
                         flex-direction: row;
-                        
+
 
                         .HI-phoneMock {
-                            align-items: start; 
+                            align-items: start;
+
                             img {
                                 width: 60%;
                             }
@@ -3622,6 +3485,7 @@ main {
 
                         .HI-statistic-screen {
                             justify-content: start;
+
                             img {
                                 width: 80%;
                             }
@@ -3633,7 +3497,7 @@ main {
                         flex-direction: column;
                         align-items: start;
                         justify-content: start;
-                        
+
                         .HI-heading-customize {
                             width: 100%;
                             height: auto;
@@ -3641,27 +3505,29 @@ main {
                             .heads {
                                 justify-content: start;
                                 height: auto;
+
                                 h2 {
                                     font-size: 10vw;
                                 }
-    
+
                                 p {
                                     font-size: 4vw;
                                 }
-    
+
                                 hr {
                                     width: 100%;
                                 }
-    
+
                                 .HI-work {
                                     span {
                                         font-size: 4vw;
                                     }
                                 }
-                            }   
-                            
+                            }
+
                             .HI-customize {
                                 height: auto;
+
                                 img {
                                     width: 60%;
                                 }
@@ -3680,22 +3546,22 @@ main {
                                 width: 60%;
                             }
                         }
-    
-    
-                        
+
+
+
                     }
 
                     .HI-widgets-container {
                         display: none;
                     }
-    
+
                 }
             }
         }
 
-        .dinaRollings{
+        .dinaRollings {
 
-            .dina-main{
+            .dina-main {
                 padding: 50px;
                 position: sticky;
                 top: 0;
@@ -3704,48 +3570,48 @@ main {
                 background-color: #F2F4F7;
                 display: flex;
 
-                .dina-screens{
+                .dina-screens {
                     width: 70%;
                     height: 100%;
                     display: flex;
                     align-items: center;
 
-                    .dina-phoneMock{
+                    .dina-phoneMock {
                         height: 100%;
                         width: 50%;
                         display: flex;
                         align-items: center;
                         padding: 10px;
-                    
+
                     }
 
-                    .dina-screens-layouts{
+                    .dina-screens-layouts {
                         height: 100%;
                         width: 50%;
                         display: flex;
                         flex-direction: column;
                         padding: 20px;
 
-                        .dina-game-connect{
+                        .dina-game-connect {
                             width: 100%;
                             display: flex;
                             align-items: start;
                             justify-content: start;
                             gap: 20px;
 
-                            
+
                         }
-                        
-                        .dina-felindra{
+
+                        .dina-felindra {
                             width: 100%;
                             display: flex;
-                            
-                            img{
+
+                            img {
                                 height: 100%;
                             }
                         }
 
-                        .dina-roll{
+                        .dina-roll {
                             width: 100%;
                             position: relative;
                             display: flex;
@@ -3754,113 +3620,115 @@ main {
                     }
                 }
 
-                .dina-heading-session{
+                .dina-heading-session {
                     width: 30%;
                     height: 100%;
                     padding: 10px;
 
-                    .dina-hearder{
+                    .dina-hearder {
                         width: 100%;
 
-                        h2{
+                        h2 {
                             font-size: 4vw;
                             line-height: 5vw;
                         }
 
-                        p{
+                        p {
                             padding: 10px 0;
                             font-size: 1vw;
                             font-family: satoshi;
                         }
 
-                        hr{
+                        hr {
                             border-color: black;
                             width: 90%;
                         }
 
-                        .dina-works{
+                        .dina-works {
                             padding: 10px 0;
-                            span{
+
+                            span {
                                 font-family: satoshi;
                                 font-size: 1vw;
                             }
 
-                            span + span{
-                                &::before{
+                            span+span {
+                                &::before {
                                     content: " | ";
                                 }
                             }
                         }
                     }
 
-                    .dina-session{
+                    .dina-session {
                         width: 100%;
                     }
                 }
 
             }
 
-            @media screen and (min-width: 1921px){
-                .dina-main{
+            @media screen and (min-width: 1921px) {
+                .dina-main {
                     display: flex;
-                    
-                    .dina-screens{ 
+
+                    .dina-screens {
                         width: 70%;
                         height: 100%;
-                        
-                        .dina-phoneMock{
+
+                        .dina-phoneMock {
                             scale: 1.1;
 
-                            img{
+                            img {
                                 width: 100%;
                             }
                         }
 
-                        .dina-screens-layouts{
+                        .dina-screens-layouts {
                             height: 100%;
                             width: 50%;
                             display: flex;
                             flex-direction: column;
                             padding: 20px;
                             gap: 20px;
-    
-                            .dina-game-connect{
+
+                            .dina-game-connect {
                                 width: 100%;
                                 height: 30%;
                                 display: flex;
                                 align-items: center;
                                 gap: 20px;
 
-                                .dina-gameGraph{
+                                .dina-gameGraph {
                                     height: 35%;
                                     width: 40%;
 
-                                    img{
+                                    img {
                                         width: 100%;
                                     }
                                 }
 
-                                .connections{
+                                .connections {
                                     width: 60%;
 
-                                    img{
+                                    img {
                                         width: 100%;
                                     }
                                 }
                             }
-                            
-                            .dina-felindra{
+
+                            .dina-felindra {
                                 width: 100%;
                                 height: auto;
                                 display: flex;
                                 scale: 1.2;
-                                img{
+
+                                img {
                                     width: 50%;
                                 }
-                                
+
                             }
-    
-                            .dina-roll{
+
+                            .dina-roll {
                                 width: 100%;
                                 height: auto;
                                 position: relative;
@@ -3868,15 +3736,15 @@ main {
                                 justify-content: end;
                                 transform: translate(0%, -15%);
 
-                                img{
+                                img {
                                     width: 65%;
                                 }
 
                             }
                         }
                     }
-    
-                    .dina-heading-session{
+
+                    .dina-heading-session {
                         width: 30%;
                         height: 100%;
                         padding: 10px;
@@ -3885,86 +3753,87 @@ main {
                         justify-content: center;
                         align-items: center;
 
-                        .dina-hearder{
+                        .dina-hearder {
                             width: 100%;
                         }
-    
-                        .dina-session{
+
+                        .dina-session {
                             height: 50%;
                             width: 100%;
                             display: flex;
                             align-items: center;
 
-                            img{
+                            img {
                                 width: 80%;
                             }
                         }
                     }
-    
+
                 }
             }
 
             @media screen and (max-width: 1920px) {
-                .dina-main{
+                .dina-main {
                     display: flex;
-                    
-                    .dina-screens{ 
+
+                    .dina-screens {
                         width: 70%;
                         height: 100%;
-                        
-                        .dina-phoneMock{
+
+                        .dina-phoneMock {
                             scale: 1.1;
 
-                            img{
+                            img {
                                 width: 100%;
                             }
                         }
 
-                        .dina-screens-layouts{
+                        .dina-screens-layouts {
                             height: 100%;
                             width: 50%;
                             display: flex;
                             flex-direction: column;
                             padding: 20px;
                             gap: 20px;
-    
-                            .dina-game-connect{
+
+                            .dina-game-connect {
                                 width: 100%;
                                 height: 30%;
                                 display: flex;
                                 align-items: center;
                                 gap: 20px;
 
-                                .dina-gameGraph{
+                                .dina-gameGraph {
                                     height: 35%;
                                     width: 40%;
 
-                                    img{
+                                    img {
                                         width: 100%;
                                     }
                                 }
 
-                                .connections{
+                                .connections {
                                     width: 60%;
 
-                                    img{
+                                    img {
                                         width: 100%;
                                     }
                                 }
                             }
-                            
-                            .dina-felindra{
+
+                            .dina-felindra {
                                 width: 100%;
                                 height: auto;
                                 display: flex;
                                 scale: 1.2;
-                                img{
+
+                                img {
                                     width: 50%;
                                 }
-                                
+
                             }
-    
-                            .dina-roll{
+
+                            .dina-roll {
                                 width: 100%;
                                 height: auto;
                                 position: relative;
@@ -3972,15 +3841,15 @@ main {
                                 justify-content: end;
                                 transform: translate(0%, -15%);
 
-                                img{
+                                img {
                                     width: 65%;
                                 }
 
                             }
                         }
                     }
-    
-                    .dina-heading-session{
+
+                    .dina-heading-session {
                         width: 30%;
                         height: 100%;
                         padding: 10px;
@@ -3989,46 +3858,46 @@ main {
                         justify-content: center;
                         align-items: center;
 
-                        .dina-hearder{
+                        .dina-hearder {
                             width: 100%;
                         }
-    
-                        .dina-session{
+
+                        .dina-session {
                             height: 50%;
                             width: 100%;
                             display: flex;
                             align-items: center;
 
-                            img{
+                            img {
                                 width: 80%;
                             }
                         }
                     }
-    
+
                 }
             }
 
             @media screen and (max-width: 1800px) {
-                .dina-main{
-                    
-                    .dina-screens{
+                .dina-main {
+
+                    .dina-screens {
                         width: 70%;
                         height: 100%;
-                        
-                        .dina-phoneMock{
+
+                        .dina-phoneMock {
                             width: 50%;
 
-                            img{
+                            img {
                                 width: 100%;
                             }
                         }
-    
-                        .dina-screens-layouts{
+
+                        .dina-screens-layouts {
                             height: 100%;
                             width: 50%;
                             padding: 20px;
-    
-                            .dina-game-connect{
+
+                            .dina-game-connect {
                                 width: 100%;
                                 display: flex;
                                 align-items: center;
@@ -4037,18 +3906,18 @@ main {
                                 scale: 1.2;
                                 transform: translateX(-10%);
                             }
-                            
-                            .dina-felindra{
+
+                            .dina-felindra {
                                 width: 100%;
                                 display: flex;
                                 scale: 1.5;
-                                
-                                img{
+
+                                img {
                                     height: 100%;
                                 }
                             }
-    
-                            .dina-roll{
+
+                            .dina-roll {
                                 width: 100%;
                                 position: relative;
                                 display: flex;
@@ -4058,50 +3927,51 @@ main {
                             }
                         }
                     }
-    
-                    .dina-heading-session{
+
+                    .dina-heading-session {
                         width: 30%;
                         height: 100%;
                         padding: 10px;
-    
-                        .dina-hearder{
-                            width: 100%;   
-                            
-                            hr{
+
+                        .dina-hearder {
+                            width: 100%;
+
+                            hr {
                                 width: 100%;
                             }
                         }
-    
-                        .dina-session{
+
+                        .dina-session {
                             width: 100%;
                             transform: translateX(-10%);
                             position: relative;
                             z-index: -1;
-                            img{
+
+                            img {
                                 width: 100%;
                             }
                         }
                     }
-    
+
                 }
             }
 
             @media screen and (max-width: 1440px) {
-                .dina-main{
-                    .dina-heading-session{
-                        .dina-hearder{
-                            width: 100%;   
-                            
-                            p{
+                .dina-main {
+                    .dina-heading-session {
+                        .dina-hearder {
+                            width: 100%;
+
+                            p {
                                 font-size: 1.2vw;
                             }
 
-                            hr{
+                            hr {
                                 width: 100%;
                             }
 
-                            .dina-works{
-                                span{
+                            .dina-works {
+                                span {
                                     font-size: 1.2vw;
                                 }
                             }
@@ -4109,109 +3979,110 @@ main {
                         }
 
                     }
-    
+
                 }
             }
 
             @media screen and (max-width: 1199px) {
-                .dina-main{
+                .dina-main {
                     padding: 30px;
                     flex-direction: column-reverse;
                     height: auto;
                     // overflow-x: hidden;
 
-                    .dina-screens{
+                    .dina-screens {
                         width: 100%;
                         height: 70%;
 
-                        .dina-phoneMock{
+                        .dina-phoneMock {
                             width: 40%;
-                            img{
+
+                            img {
                                 width: 90%;
                             }
                         }
 
-                        .dina-screens-layouts{
+                        .dina-screens-layouts {
                             height: 100%;
                             width: 60%;
                             padding: 10px;
 
-                            .dina-game-connect{
+                            .dina-game-connect {
                                 width: 100%;
                                 height: 30%;
                                 gap: 20px;
                                 scale: 1;
-                                transform: translate(0%,0%);
-                                
-                                .dina-gameGraph{
+                                transform: translate(0%, 0%);
+
+                                .dina-gameGraph {
                                     scale: 1;
                                     align-items: center;
-                                    justify-content: center; 
-                                    
-                                    img{
+                                    justify-content: center;
+
+                                    img {
                                         transform: translate(0%, 0%);
                                         width: 90%;
                                     }
                                 }
                             }
-                            
-                            .dina-felindra{
+
+                            .dina-felindra {
                                 width: 100%;
                                 display: flex;
                                 scale: 1;
                                 justify-content: center;
                                 transform: translate(0%, 0%);
                             }
-    
-                            .dina-roll{
+
+                            .dina-roll {
                                 position: relative;
                                 display: flex;
                                 justify-content: center;
                                 scale: 1;
                                 transform: translate(0%, 0%);
 
-                                img{
+                                img {
                                     width: 60%;
                                 }
                             }
                         }
                     }
 
-                    .dina-heading-session{
+                    .dina-heading-session {
                         width: 100%;
                         height: 30%;
                         padding: 10px;
                         flex-direction: row;
-    
-                        .dina-hearder{
-                            width: 40%;   
 
-                            h2{
+                        .dina-hearder {
+                            width: 40%;
+
+                            h2 {
                                 font-size: 5vw;
                             }
 
-                            p{
+                            p {
                                 font-size: 1.7vw;
                             }
-                            
-                            hr{
+
+                            hr {
                                 width: 100%;
                             }
 
-                            .dina-works{
-                                span{
+                            .dina-works {
+                                span {
                                     font-size: 1.7vw;
                                 }
                             }
                         }
-    
-                        .dina-session{
+
+                        .dina-session {
                             width: 60%;
                             transform: translateX(0%);
                             justify-content: center;
                             scale: 1;
 
-                            img{
+                            img {
                                 width: 65%;
                             }
                         }
@@ -4221,7 +4092,7 @@ main {
             }
 
             @media screen and (max-width: 991px) {
-                .dina-main{
+                .dina-main {
                     flex-direction: column-reverse;
                     align-items: center;
                     justify-content: center;
@@ -4229,14 +4100,14 @@ main {
                     height: auto;
 
 
-                    .dina-heading-session{
-                        .dina-hearder{
-                            p{
+                    .dina-heading-session {
+                        .dina-hearder {
+                            p {
                                 font-size: 1.8vw;
                             }
 
-                            .dina-works{
-                                span{
+                            .dina-works {
+                                span {
                                     font-size: 1.8vw;
                                 }
                             }
@@ -4247,47 +4118,48 @@ main {
             }
 
             @media screen and (max-width: 767px) {
-                .dina-main{
+                .dina-main {
                     padding: 30px;
 
-                    .dina-screens{
+                    .dina-screens {
                         height: 70%;
 
-                        .dina-phoneMock{
+                        .dina-phoneMock {
                             width: 40%;
 
-                            img{
+                            img {
                                 width: 100%;
                             }
                         }
 
-                        .dina-screens-layouts{
+                        .dina-screens-layouts {
 
-                            .dina-game-connect{
+                            .dina-game-connect {
                                 flex-direction: column;
-                                
-                                .dina-gameGraph{
+
+                                .dina-gameGraph {
                                     width: 100%;
                                     display: flex;
                                     align-items: center;
-                                    justify-content: center; 
-                                    
-                                    img{
+                                    justify-content: center;
+
+                                    img {
                                         width: 70%;
                                     }
                                 }
 
-                                .connections{
+                                .connections {
                                     display: flex;
                                     justify-content: center;
                                     width: 100%;
-                                    img{
+
+                                    img {
                                         width: 70%;
                                     }
                                 }
                             }
-                            
-                            .dina-felindra{
+
+                            .dina-felindra {
                                 width: 100%;
                                 display: flex;
                                 scale: 1;
@@ -4297,28 +4169,29 @@ main {
                         }
                     }
 
-                    .dina-heading-session{
+                    .dina-heading-session {
                         padding: 10px;
 
-                        .dina-hearder{
+                        .dina-hearder {
                             width: 40%;
 
-                            p{
+                            p {
                                 font-size: 2vw;
                             }
-                            
-                            
 
-                            .dina-works{
-                                span{
+
+
+                            .dina-works {
+                                span {
                                     font-size: 2vw;
                                 }
                             }
                         }
-    
-                        .dina-session{
+
+                        .dina-session {
                             width: 60%;
-                            img{
+
+                            img {
                                 width: 80%;
                             }
                         }
@@ -4326,28 +4199,28 @@ main {
                     }
 
                 }
-            } 
+            }
 
             @media screen and (max-width: 600px) {
-                .dina-main{
+                .dina-main {
                     padding: 30px;
 
-                    .dina-heading-session{
-                        .dina-hearder{
+                    .dina-heading-session {
+                        .dina-hearder {
 
-                            h2{
+                            h2 {
                                 font-size: 6vw;
                                 line-height: normal;
                             }
 
-                            p{
+                            p {
                                 font-size: 2vw;
                             }
-                            
-                            
 
-                            .dina-works{
-                                span{
+
+
+                            .dina-works {
+                                span {
                                     font-size: 2vw;
                                 }
                             }
@@ -4359,50 +4232,53 @@ main {
             }
 
             @media screen and (max-width: 500px) {
-                .dina-main{
+                .dina-main {
                     padding: 20px;
 
-                    .dina-screens{
+                    .dina-screens {
                         height: 70%;
                         flex-direction: column;
-                        .dina-phoneMock{
+
+                        .dina-phoneMock {
                             width: 100%;
                             display: flex;
                             justify-content: center;
-                            img{
+
+                            img {
                                 width: 50%;
                             }
                         }
-                        
-                        .dina-screens-layouts{
+
+                        .dina-screens-layouts {
                             width: 100%;
-                            
-                            .dina-game-connect{
+
+                            .dina-game-connect {
                                 flex-direction: row;
                                 width: 100%;
 
-                                .dina-gameGraph{
+                                .dina-gameGraph {
                                     width: 100%;
                                     display: flex;
                                     align-items: center;
-                                    justify-content: center; 
-                                    
-                                    img{
+                                    justify-content: center;
+
+                                    img {
                                         width: 80%;
                                     }
                                 }
 
-                                .connections{
+                                .connections {
                                     display: flex;
                                     justify-content: center;
                                     width: 100%;
-                                    img{
+
+                                    img {
                                         width: 100%;
                                     }
                                 }
                             }
-                            
-                            .dina-felindra{
+
+                            .dina-felindra {
                                 width: 100%;
                                 display: flex;
                                 scale: 1;
@@ -4410,36 +4286,37 @@ main {
                                 transform: translate(0%, 0%);
                             }
                         }
-                    }                    
+                    }
 
-                    .dina-heading-session{
+                    .dina-heading-session {
                         flex-direction: column;
 
-                        .dina-hearder{
+                        .dina-hearder {
                             width: 100%;
                             height: auto;
-                            
-                            h2{
+
+                            h2 {
                                 font-size: 10vw;
                                 line-height: normal;
                             }
-                            
-                            p{
+
+                            p {
                                 font-size: 4vw;
                             }
-                            
-                            
-                            
-                            .dina-works{
-                                span{
+
+
+
+                            .dina-works {
+                                span {
                                     font-size: 4vw;
                                 }
                             }
                         }
 
-                        .dina-session{
+                        .dina-session {
                             width: 100%;
-                            img{
+
+                            img {
                                 width: 60%;
                             }
                         }
@@ -4451,46 +4328,47 @@ main {
 
             @media screen and (max-width: 375px) {
 
-                .dina-main{
+                .dina-main {
 
-                    .dina-screens{
+                    .dina-screens {
                         height: 70%;
                         width: 100%;
-                        
-                        .dina-phoneMock{
-    
-                            img{
+
+                        .dina-phoneMock {
+
+                            img {
                                 width: 60%;
                             }
                         }
-    
-                        .dina-screens-layouts{
-    
-                            .dina-game-connect{
+
+                        .dina-screens-layouts {
+
+                            .dina-game-connect {
                                 flex-direction: column;
-                                
-                                .dina-gameGraph{
+
+                                .dina-gameGraph {
                                     width: 100%;
                                     display: flex;
                                     align-items: center;
-                                    justify-content: center; 
-                                    
-                                    img{
+                                    justify-content: center;
+
+                                    img {
                                         width: 70%;
                                     }
                                 }
-    
-                                .connections{
+
+                                .connections {
                                     display: flex;
                                     justify-content: center;
                                     width: 100%;
-                                    img{
+
+                                    img {
                                         width: 70%;
                                     }
                                 }
                             }
-                            
-                            .dina-felindra{
+
+                            .dina-felindra {
                                 width: 100%;
                                 display: flex;
                                 scale: 1;
@@ -4501,12 +4379,12 @@ main {
                     }
                 }
 
-                
+
             }
 
         }
 
-        
+
 
         .vividSpark {
             position: sticky;
@@ -4807,8 +4685,8 @@ main {
 
     .RPsolutions {
         padding: 50px 0 0 50px;
-        display: flex;
         overflow: hidden;
+        display: flex;
 
         .solutionsLeft {
             width: 50%;
@@ -4816,9 +4694,8 @@ main {
 
             h2 {
                 text-transform: uppercase;
-                font-size: 160px;
-                line-height: 220px;
-                font-family: satoshi-bold;
+                font-size: 4vw;
+                line-height: 5vw;
             }
 
             .para-mobileApp {
@@ -4827,8 +4704,9 @@ main {
                 height: 100%;
 
                 p {
+                    padding: 20px;
                     width: 40%;
-                    font-size: 32px;
+                    font-size: 1.5vw;
                     font-family: satoshi;
                 }
 
@@ -4840,12 +4718,10 @@ main {
                     width: 60%;
 
                     h3 {
-                        font-size: 64px;
-                        font-weight: 400;
-                        line-height: 74px;
+                        font-size: 3vw;
+                        line-height: 4vw;
                         text-align: center;
-                        padding-top: 20px;
-                        font-family: satoshi-bold;
+                        padding: 40px;
                     }
 
                     .messagesListMobile {
@@ -4855,7 +4731,8 @@ main {
                         .msg1 {
                             float: right;
                             margin-top: 20px;
-                            height: 25%;
+                            height: auto;
+                            min-height: 25%;
                             width: 80%;
                             background-color: #fff;
                             border-radius: 30px 0px 30px 30px;
@@ -4864,7 +4741,7 @@ main {
                             justify-content: center;
 
                             p {
-                                font-size: 24px;
+                                font-size: 1vw;
                                 width: 100%;
                                 padding: 20px;
                             }
@@ -6405,6 +6282,7 @@ main {
         }
 
         @media screen and (max-width: 425px) {}
+
     }
 
     .RPtestimonialsContainer {

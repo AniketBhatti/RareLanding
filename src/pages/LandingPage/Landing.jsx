@@ -9,6 +9,11 @@ import Slider from "react-slick";
 import Marquee from "react-fast-marquee";
 import { useScroll } from "framer-motion";
 
+import bulbs from "../../assets/images/04_transformIdeas/trybulb.gif"
+import bwSquare from "../../assets/images/04_transformIdeas/blackWhiteSquare.gif"
+import shapes from "../../assets/images/04_transformIdeas/jumpingShapes.gif"
+
+
 
 import research from "../../assets/images/06_ropeEffectPlayables/research_square.png"
 import strategy from "../../assets/images/06_ropeEffectPlayables/strategy_square.png"
@@ -143,7 +148,57 @@ const Landing = () => {
 
 
 
+	React.useEffect(() => {
+		gsap.registerPlugin(ScrollTrigger);
 
+		gsap.fromTo(".blubs",
+			{
+				y: 0,
+			},
+
+			{
+				y: -50,	
+				scrollTrigger:{
+					trigger: ".transform-ideas",
+                    start: "top bottom",
+                    end: "top top",
+                    scrub: 1,
+				}				
+			},
+		)
+
+		gsap.fromTo(".bwSquare",
+			{
+				y: 0,
+			},
+
+			{
+				y: -100,	
+				scrollTrigger:{
+					trigger: ".transform-ideas",
+                    start: "top bottom",
+                    end: "top top",
+                    scrub: 1,
+				}				
+			},
+		)
+
+		gsap.fromTo(".shapes",
+			{
+				y: 0,
+			},
+
+			{
+				y: -80,	
+				scrollTrigger:{
+					trigger: ".transform-ideas",
+                    start: "top bottom",
+                    end: "top top",
+                    scrub: 1,
+				}				
+			},
+		)
+	})
 
 
 	// FOR PATH
@@ -1741,15 +1796,28 @@ const Landing = () => {
 				</section>
 			</div>
 
-			<section className="transform-ideas h-full">
+			<section className="transform-ideas">
 				<h2>
-					We transform ideas <div className="bulbs" /> into memorable
-					experiences <div className="squares" /> through branding{" "}
-					<div className="shapes" /> web design, and digital strategy.
+					We transform ideas into memorable experiences through branding web design,  and digital strategy.
 				</h2>
+
+				<div className='trnsfm-gifs'>
+					<div className='blubs' >
+						<img src={bulbs} alt="" />
+					</div>
+
+					<div className="bwSquare">
+						<img src={bwSquare} alt="" />
+					</div>
+
+					<div className="shapes">
+						<img src={shapes} alt="" /> 
+					</div>
+				</div>
+
 			</section>
 
-			<section className="our-work mt-12">
+			<section className="our-work">
 
 				<div ref={lumberCraftRef} className="lmbr-container w-screen h-[150vh]">
 					<div className='lmbr-main'>
@@ -2015,7 +2083,7 @@ const Landing = () => {
 
 								<div className="dina-roll">
 									<img src={dinaActual} alt="" />
-								</div>	
+								</div>
 							</div>
 
 						</div>
@@ -2028,8 +2096,8 @@ const Landing = () => {
 								<hr />
 								<div className="dina-works">
 									<span>UI/UX Design</span>
-                                    <span>Mobile Dashboard Design</span>
-                                    <span>Frontend Development</span>
+									<span>Mobile Dashboard Design</span>
+									<span>Frontend Development</span>
 								</div>
 							</div>
 
@@ -2550,7 +2618,7 @@ const Landing = () => {
 
 					<div className='person3'>
 						<div className="peopleNameRole">
-							<h3>Silveniya</h3>
+							<h3>Silvqnia</h3>
 							<p>UX Head</p>
 						</div>
 

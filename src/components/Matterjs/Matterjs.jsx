@@ -32,9 +32,9 @@ const Matterjs = () => {
             isStatic: true,
             render: { fillStyle: "#ed1080" }, // Optional: Add color for debug
         });
-        const ceiling = Matter.Bodies.rectangle(960, 0, 1920, 60, { isStatic: true, render: { fillStyle: "#fff" }, }); // Top
-        const leftWall = Matter.Bodies.rectangle(0, 540, 60, 1080, { isStatic: true, render: { fillStyle: "#fff" }, }); // Left
-        const rightWall = Matter.Bodies.rectangle(1920, 540, 60, 1080, { isStatic: true, render: { fillStyle: "#fff" }, }); // Right
+        const ceiling = Matter.Bodies.rectangle(960, 0, 1920, 60, { isStatic: true, render: { fillStyle: "#ed1080" }, }); // Top
+        const leftWall = Matter.Bodies.rectangle(0, 540, 60, 1080, { isStatic: true, render: { fillStyle: "#ed1080" }, }); // Left
+        const rightWall = Matter.Bodies.rectangle(1920, 540, 60, 1080, { isStatic: true, render: { fillStyle: "#ed1080" }, }); // Right
 
 
 
@@ -129,17 +129,7 @@ const Matterjs = () => {
 
 
         // Add mouse control
-        const mouse = Matter.Mouse.create(render.canvas);
-        const mouseConstraint = Matter.MouseConstraint.create(engine, {
-            mouse: mouse,
-            constraint: {
-                render: {
-                    visible: false,
-                },
-            },
-        });
-
-        render.mouse = mouse;
+c
 
         // Add all bodies to the world
         Matter.World.add(engine.world, [ground, ceiling, leftWall, rightWall, ae_lo, ae_txt, dv_lo, ps_lo, ps_txt, fig_lo1, fig_lo2, fig_txt1, fig_txt2, illu_lo, illu_txt, mouseConstraint]);

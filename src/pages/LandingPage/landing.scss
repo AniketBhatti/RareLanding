@@ -900,28 +900,27 @@ main {
     }
 
     .our-work {
+
         .lmbr-container {
             background-color: #478590;
+            color: white;
 
             .lmbr-main {
                 position: sticky;
                 top: 0;
-                height: auto;
-                min-height: 100vh;
+                height: 100vh;
                 width: 100%;
+                overflow: hidden;
                 display: flex;
-                align-items: start;
+                padding: 50px;
+
 
                 .lmbr-header {
-                    width: 520px;
-                    overflow: hidden;
-                    color: white;
-                    padding: 40px;
+                    width: 30%;
+                    height: 100%;
 
                     h2 {
-                        height: 100%;
                         font-size: 4vw;
-                        line-height: normal;
                     }
 
                     p {
@@ -930,8 +929,13 @@ main {
                         padding: 10px 0;
                     }
 
-                    .lmbr-work {
+                    hr {
+                        width: 90%;
+                    }
+
+                    .lmbr-works {
                         padding: 10px 0;
+                        width: 90%;
 
                         span {
                             font-family: satoshi;
@@ -941,391 +945,611 @@ main {
                         span+span {
                             &::before {
                                 content: " | ";
-                                opacity: 0.5;
                             }
                         }
-
                     }
-
-
                 }
 
                 .lmbr-body {
-                    width: auto;
-                    min-width: calc(100% - 520px);
+                    width: 70%;
                     height: 100%;
-                    padding: 50px;
-                    padding-left: 0;
-                    display: flex;
-                    justify-content: start;
+                    padding: 10px;
 
                     .image-container {
+                        width: 100%;
+                        height: 100%;
                         display: flex;
 
                         .lmbr-all-prod {
-                            position: relative;
-                            z-index: 10;
+                            width: 20%;
                             display: flex;
                             align-items: center;
-                            justify-content: start;
-                            width: 33.33%;
-                            transform: translate(50%);
+                            position: relative;
+
+                            img {
+                                width: 100%;
+                            }
+
+                            .place-it {
+                                position: absolute;
+                                top: 70%;
+                                left: 75%;
+                                object-fit: contain;
+                                width: 70%;
+                            }
                         }
 
-                        .lmbr-main {
+                        .lmbr-mainProd {
+                            width: 60%;
+                            height: 100%;
                             display: flex;
                             align-items: center;
+
+                            img {
+                                width: 100%;
+                            }
                         }
 
                         .lmbr-review {
-                            width: 33.33%;
+                            width: 20%;
                             display: flex;
-                            align-items: center;
-                            transform: translate(-20%, 0%);
+                            align-items: start;
+
+                            img {
+                                width: 100%;
+                            }
                         }
                     }
-
                 }
 
-
-
-            }
-
-
-            @media screen and (min-width: 1920px) {
-
-                .lmbr-main {
-                    overflow: hidden;
-
-                    .lmbr-header {
-                        width: auto;
-                        min-width: 30%;
-                    }
-                }
             }
 
             @media screen and (max-width: 1440px) {
-
                 .lmbr-main {
+
                     .lmbr-header {
-                        width: 520px;
-                        padding-top: 100px;
+
+                        h2 {
+                            font-size: 4vw;
+                        }
 
                         p {
                             font-size: 1.2vw;
                         }
 
-                        .lmbr-work {
+                        hr {
+                            width: 100%;
+                        }
+
+                        .lmbr-works {
+                            width: 100%;
+
                             span {
                                 font-size: 1.2vw;
                             }
                         }
-
-
                     }
 
-
                     .lmbr-body {
-                        width: auto;
-                        min-width: calc(100% - 520px);
+                        width: 70%;
                         height: 100%;
-                        padding: 50px;
-                        padding-left: 0;
-                        display: flex;
-                        justify-content: start;
+                        padding: 10px;
 
                         .image-container {
+                            width: 100%;
+                            height: 100%;
                             display: flex;
 
                             .lmbr-all-prod {
-                                position: relative;
-                                z-index: 10;
+                                width: 20%;
                                 display: flex;
                                 align-items: center;
-                                justify-content: start;
-                                width: 33.33%;
-                                transform: translate(50%);
-                                padding-bottom: 100px;
+                                position: relative;
+
+                                img {
+                                    width: 100%;
+                                }
+
+                                .place-it {
+                                    position: absolute;
+                                    top: 70%;
+                                    left: 80%;
+                                    object-fit: contain;
+                                    width: 60%;
+                                }
                             }
 
-                            .lmbr-main {
+                            .lmbr-mainProd {
+                                width: 60%;
+                                height: 100%;
                                 display: flex;
                                 align-items: center;
-                                padding-bottom: 100px;
+
+                                img {
+                                    width: 100%;
+                                }
                             }
 
                             .lmbr-review {
-                                width: 33.33%;
+                                width: 20%;
                                 display: flex;
-                                align-items: center;
-                                transform: translate(-20%, 0%);
-                                padding-bottom: 100px;
+                                align-items: start;
+
+                                img {
+                                    width: 100%;
+                                }
                             }
                         }
-
                     }
+
+                }
+            }
+
+            @media screen and (max-width: 1300px){
+                .lmbr-main {
+
+
+                    .lmbr-body {
+                        width: 70%;
+                        height: 100%;
+                        padding: 10px;
+
+                        .image-container {
+                            width: 100%;
+                            height: 100%;
+                            display: flex;
+
+                            .lmbr-all-prod {
+                                width: 20%;
+                                display: flex;
+                                align-items: center;
+                                position: relative;
+
+                                img {
+                                    width: 100%;
+                                    scale: 1.1;
+                                }
+
+                                .place-it {
+                                    position: absolute;
+                                    top: 65%;
+                                    left: 85%;
+                                    object-fit: contain;
+                                    width: 60%;
+                                    z-index: 1;
+                                }
+                            }
+
+                            .lmbr-mainProd {
+                                width: 60%;
+                                height: 100%;
+                                display: flex;
+                                align-items: center;
+
+                                img {
+                                    width: 100%;
+                                    scale: 1.1;
+                                }
+                            }
+
+                            .lmbr-review {
+                                width: 20%;
+                                display: flex;
+                                align-items: center;
+
+                                img {
+                                    width: 100%;
+                                    scale: 1.1;
+                                }
+                            }
+                        }
+                    }
+
                 }
             }
 
             @media screen and (max-width: 1199px) {
-                .lmbr-main {
-                    flex-direction: column;
 
+                .lmbr-main {
+                    height: auto;
+                    min-height: 100vh;
+                    display: flex;
+                    gap: 20px;
+                    flex-direction: column;
+                    padding: 30px;
+                    justify-content: space-between;
+    
+    
                     .lmbr-header {
+                        height: 20%;
                         width: 100%;
                         display: flex;
                         flex-direction: column;
                         align-items: center;
-                        padding-top: 50px;
 
                         h2 {
-                            height: 100%;
-                            font-size: 5vw;
+                            font-size: 4vw;
                         }
-
+    
                         p {
                             font-size: 1.7vw;
                         }
-
+    
                         hr {
-                            width: 70%;
+                            width: 60%;
                         }
-
-                        .lmbr-work {
+    
+                        .lmbr-works {
+                            width: 100%;
+                            text-align: center;
+    
                             span {
                                 font-size: 1.7vw;
                             }
+    
                         }
-
-
                     }
-
+    
                     .lmbr-body {
                         width: 100%;
-                        padding: 50px;
-                        display: flex;
-                        justify-content: start;
-
+                        height: 80%;
+                        padding: 10px;
+    
                         .image-container {
+                            width: 100%;
+                            // height: auto
                             display: flex;
                             align-items: center;
-
+                            justify-content: center;
+    
                             .lmbr-all-prod {
-                                display: block;
-                            }
+                                width: 20%;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                position: relative;
+    
+                                img {
+                                    width: 100%;
+                                    scale: 1;
 
-                            .lmbr-main {
-                                display: block;
-                                transform: translate(0, 10%);
+                                }
+    
+                                .place-it {
+                                    top: 70%;
+                                    left: 75%;
+                                    width: 50%;
+                                }
                             }
-
+    
+                            .lmbr-mainProd {
+                                max-width: 60%;
+                                height: 100%;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+    
+                                img {
+                                    width: 100%;
+                                    scale: 1;
+                                }
+                            }
+    
                             .lmbr-review {
-                                display: block;
-                                transform: translate(-20%, -10%);
+                                width: 20%;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;    
+    
+                                img {
+                                    width: 100%;
+                                    scale: 1;
+                                }
                             }
+                            
                         }
-
                     }
+    
                 }
+
             }
 
             @media screen and (max-width: 991px) {
                 .lmbr-main {
-                    min-height: 0px;
+                    height: auto;
+                    min-height: 100vh;
+                    display: flex;
+                    gap: 30px;
+                    flex-direction: column;
+                    padding: 30px;
+                    justify-content: center;
 
                     .lmbr-header {
+                        height: 20%;
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+
+                        h2 {
+                            font-size: 4vw;
+                        }
+    
                         p {
                             font-size: 1.8vw;
                         }
-
+    
                         hr {
                             width: 70%;
                         }
-
-                        .lmbr-work {
+    
+                        .lmbr-works {
+    
                             span {
                                 font-size: 1.8vw;
                             }
+    
                         }
-
                     }
 
                     .lmbr-body {
+                        width: 100%;
+                        height: 80%;
+                        padding: 10px;
 
                         .image-container {
+                            width: 100%;
+                            // height: auto
                             display: flex;
-                            align-items: start;
+                            align-items: center;
+                            justify-content: center;
 
                             .lmbr-all-prod {
-                                display: block;
+                                width: 20%;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                position: relative;
+    
+                                img {
+                                    width: 100%;
+                                }
+    
+                                .place-it {
+                                    top: 70%;
+                                    left: 75%;
+                                    width: 50%;
+                                }
                             }
-
-                            .lmbr-main {
-                                display: block;
-                                transform: translateY(-5%);
-                                padding-bottom: 0px;
+    
+                            .lmbr-mainProd {
+                                max-width: 60%;
+                                height: 100%;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+    
+                                img {
+                                    width: 100%;
+                                }
                             }
-
+    
                             .lmbr-review {
-                                display: block;
+                                width: 20%;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;    
+    
+                                img {
+                                    width: 100%;
+                                    scale: 1;
+                                }
                             }
+                            
                         }
-
                     }
+    
                 }
             }
 
             @media screen and (max-width: 767px) {
                 .lmbr-main {
-                    min-height: 0px;
 
                     .lmbr-header {
-                        width: 100%;
-
-                        h2 {
+                        h2{
                             font-size: 5vw;
                         }
-
                     }
 
-                    .lmbr-body {
-                        padding: 0;
-                        margin: 0;
-                        margin-top: 100px;
-                    }
                 }
             }
 
-            @media screen and (max-width: 600px) {
+            @media screen and (max-width: 640px) {
                 .lmbr-main {
-                    overflow: hidden;
+                    
+                    height: auto;
+                    min-height: 100vh;
+                    display: flex;
+                    gap: 30px;
+                    flex-direction: column;
+                    padding: 30px;
+                    justify-content: start;
 
                     .lmbr-header {
-                        width: 100%;
-
-                        h2 {
+                        h2{
                             font-size: 6vw;
                         }
 
-                        p {
+                        p{
                             font-size: 2vw;
                         }
 
-                        .lmbr-work {
-                            span {
+                        .lmbr-works{
+                            span{
                                 font-size: 2vw;
                             }
                         }
-
                     }
 
                     .lmbr-body {
-                        width: 100%;
-                        height: 100%;
-                        padding: 0px;
-                        margin: 0;
 
-                        .image-container {
-                            display: flex;
+                        .image-container{
                             flex-direction: column;
-                            align-items: center;
                             gap: 20px;
+                            width: 100%;
 
-                            .lmbr-all-prod {
-                                position: relative;
-                                z-index: 10;
-                                display: block;
-                                transform: translate(0%, 0%);
-                                width: 30%;
-                                margin: 0;
-                                padding: 0;
+                            .lmbr-all-prod{
+                                width: 100%;
+
+                                img{
+                                    width: 25%;
+                                }
+
+                                .place-it{
+                                    width: 18%;
+                                    top: 70%;
+                                    left: 50%;
+                                }
                             }
 
-                            .lmbr-main {
-                                display: block;
-                                width: 70%;
+                            .lmbr-mainProd{
+                                min-width: 100%;
+
+                                img{
+                                    width: 100%;
+                                }
                             }
 
-                            .lmbr-review {
-                                display: block;
-                                transform: translate(0%, 0%);
-                                width: 30%;
-                                height: 10px;
-                                transform: translateY(0%)
+                            .lmbr-review{
+                                width: 100%;
+
+                                img{
+                                    width: 25%;
+                                }
                             }
                         }
-
                     }
 
                 }
             }
 
             @media screen and (max-width: 550px) {
-
                 .lmbr-main {
-                    overflow: hidden;
 
                     .lmbr-header {
-                        width: 100%;
+
                         align-items: start;
 
-                        h2 {
+                        h2{
                             font-size: 10vw;
                         }
 
-                        p {
+                        p{
                             font-size: 4vw;
-                            // text-align: center;
                         }
 
-                        hr {
+                        hr{
                             width: 100%;
                         }
 
-                        .lmbr-work {
-                            span {
+                        .lmbr-works{
+                            text-align: left;
+                            span{
                                 font-size: 4vw;
-                                text-align: center;
                             }
                         }
+                    }
 
+                    .lmbr-body {
+
+                        .image-container{
+                            flex-direction: column;
+                            gap: 20px;
+                            width: 100%;
+
+                            .lmbr-all-prod{
+                                width: 100%;
+
+                                img{
+                                    width: 30%;
+                                }
+
+                                .place-it{
+                                    width: 20%;
+                                    top: 75%;
+                                    left: 55%;
+                                }
+                            }
+
+                            .lmbr-mainProd{
+                                min-width: 100%;
+
+                                img{
+                                    width: 100%;
+                                }
+                            }
+
+                            .lmbr-review{
+                                width: 100%;
+
+                                img{
+                                    width: 30%;
+                                }
+                            }
+                        }
                     }
                 }
-
             }
 
-            @media screen and (max-width: 425px) {
-
+            @media screen and (max-width: 375px) {
+                min-height: 200vh;
+                height: auto;
                 .lmbr-main {
-                    overflow: hidden;
 
-                    .lmbr-header {
-                        width: 100%;
-                        align-items: start;
+                    .lmbr-body {
 
-                        h2 {
-                            font-size: 10vw;
-                        }
-
-                        p {
-                            font-size: 4vw;
-                        }
-
-                        hr {
+                        .image-container{
+                            flex-direction: column;
+                            gap: 20px;
                             width: 100%;
-                        }
 
-                        .lmbr-work {
-                            span {
-                                font-size: 4vw;
-                                text-align: center;
+                            .lmbr-all-prod{
+                                width: 100%;
+
+                                img{
+                                    width: 40%;
+                                }
+
+                                .place-it{
+                                    width: 25%;
+                                    top: 75%;
+                                    left: 60%;
+                                }
+                            }
+
+                            .lmbr-mainProd{
+                                min-width: 100%;
+
+                                img{
+                                    width: 100%;
+                                    scale: 1;
+                                }
+                            }
+
+                            .lmbr-review{
+                                width: 100%;
+
+                                img{
+                                    width: 40%;
+                                }
                             }
                         }
-
                     }
                 }
-
             }
+
+            
+
 
         }
 
@@ -1992,8 +2216,690 @@ main {
 
         }
 
-        .xtream {
+        .xtreme {
             background-color: #5A5A5A;
+
+            .xtreme-main {
+                position: sticky;
+                top: 0;
+                height: 100vh;
+                width: 100%;
+                padding: 50px;
+                display: flex;
+                gap: 10px;
+                overflow: hidden;
+                color: white;
+
+
+                .xtrm-headings-saleStatus {
+                    padding: 20px;
+                    width: 25%;
+
+                    .xtrm-header {
+
+                        h2 {
+                            font-size: 4vw;
+                            line-height: 5vw;
+                        }
+
+                        p {
+                            font-size: 1vw;
+                            font-family: satoshi;
+                            padding: 10px 0;
+                        }
+
+                        hr {
+                            width: 100%;
+                        }
+
+                        .xtrm-work {
+                            padding: 10px 0;
+
+                            span {
+                                font-size: 1vw;
+                                font-family: satoshi;
+                            }
+
+                            span+span {
+                                &::before {
+                                    content: " | ";
+                                }
+                            }
+                        }
+
+                    }
+
+                    .xtrm-saleStatus {
+                        width: 100%;
+                        height: 60%;
+                        margin-top: 50px;
+                        display: flex;
+                        align-items: start;
+                        justify-content: end;
+
+                        img {
+                            width: 80%;
+                        }
+                    }
+                }
+
+                .xtrm-charts {
+                    height: 100%;
+                    width: 30%;
+                    padding: 30px;
+
+                    .xtrm-activity {
+                        display: flex;
+                        justify-content: end;
+
+                        img {
+                            width: 60%;
+                        }
+                    }
+
+                    .xtrm-country {
+
+                        img {
+                            width: 90%;
+                            object-fit: contain;
+                        }
+                    }
+                }
+
+                .xtrm-homepage {
+                    width: 45%;
+                    height: 100%;
+                    padding: 30px;
+                    position: relative;
+
+                    .xtrm-navbar {
+                        position: absolute;
+                        top: -20px;
+                        left: -20%;
+                        width: 100%;
+
+                        img {
+                            width: 100%;
+                        }
+                    }
+
+                    .xtrm-screens-tabMock {
+                        display: flex;
+                        gap: 10px;
+                        width: 100%;
+                        height: 100%;
+
+                        .xtrm-sessions-analysis {
+                            width: 40%;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-around;
+
+                            .xtrm-sessions {
+                                width: 100%;
+
+                                img {
+                                    width: 70%;
+                                }
+                            }
+
+                            .xtrm-analystics {
+                                width: 100%;
+
+                                img {
+                                    scale: 1.4;
+                                    transform: translate(-25%, 10%);
+                                }
+                            }
+                        }
+
+                        .xtrm-tabMock {
+                            width: 60%;
+                            display: flex;
+                            align-items: center;
+
+                            img {
+                                scale: 1.2;
+                            }
+
+                        }
+                    }
+                }
+            }
+
+            @media screen and (min-width: 1921px) {
+                .xtreme-main {
+
+                    .xtrm-headings-saleStatus {
+                        padding: 20px;
+                        width: 25%;
+
+                        .xtrm-header {
+
+                            h2 {
+                                font-size: 4vw;
+                            }
+
+                            p {
+                                font-size: 1vw;
+                            }
+
+                            hr {
+                                width: 100%;
+                            }
+
+                            .xtrm-work {
+                                padding: 10px 0;
+
+                                span {
+                                    font-size: 1vw;
+                                }
+                            }
+
+                        }
+
+                        .xtrm-saleStatus {
+                            width: 100%;
+                            height: 60%;
+                            margin-top: 50px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: end;
+
+                            img {
+                                width: 80%;
+                            }
+                        }
+                    }
+
+                    .xtrm-charts {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        width: 30%;
+
+                        .xtrm-activity {
+                            display: flex;
+                            justify-content: end;
+
+                            img {
+                                width: 60%;
+                            }
+                        }
+
+                        .xtrm-country {
+
+                            img {
+                                width: 90%;
+                                object-fit: contain;
+                            }
+                        }
+                    }
+
+                    .xtrm-homepage {
+                        width: 45%;
+
+                        .xtrm-navbar {
+                            top: 0px;
+                            left: -20%;
+
+                            img {
+                                width: 100%;
+                                scale: 1.2;
+                            }
+                        }
+
+
+                        .xtrm-screens-tabMock {
+                            display: flex;
+                            gap: 10px;
+                            width: 100%;
+                            height: 100%;
+
+                            .xtrm-sessions-analysis {
+                                width: 40%;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: space-around;
+
+                                .xtrm-sessions {
+                                    width: 100%;
+
+                                    img {
+                                        width: 100%;
+                                    }
+                                }
+
+                                .xtrm-analystics {
+                                    width: 100%;
+
+                                    img {
+                                        width: 100%;
+                                        scale: 1.4;
+                                        transform: translate(-25%, 10%);
+                                    }
+                                }
+                            }
+
+                            .xtrm-tabMock {
+                                width: 60%;
+                                display: flex;
+                                align-items: center;
+
+                                img {
+                                    width: 100%;
+                                    scale: 1.2;
+                                }
+
+                            }
+                        }
+                    }
+                }
+            }
+
+            @media screen and (max-width: 1920px) {
+                .xtreme-main {
+
+                    .xtrm-headings-saleStatus {
+                        padding: 20px;
+                        width: 25%;
+
+                        .xtrm-header {
+
+                            h2 {
+                                font-size: 4vw;
+                            }
+
+                            p {
+                                font-size: 1vw;
+                            }
+
+                            hr {
+                                width: 100%;
+                            }
+
+                            .xtrm-work {
+                                padding: 10px 0;
+
+                                span {
+                                    font-size: 1vw;
+                                }
+                            }
+
+                        }
+
+                        .xtrm-saleStatus {
+                            width: 100%;
+                            height: 60%;
+                            margin-top: 50px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: end;
+
+                            img {
+                                width: 80%;
+                            }
+                        }
+                    }
+
+                    .xtrm-charts {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        width: 30%;
+
+                        .xtrm-activity {
+                            display: flex;
+                            justify-content: end;
+
+                            img {
+                                width: 60%;
+                            }
+                        }
+
+                        .xtrm-country {
+
+                            img {
+                                width: 90%;
+                                object-fit: contain;
+                            }
+                        }
+                    }
+
+                    .xtrm-homepage {
+                        width: 45%;
+
+                        .xtrm-navbar {
+                            top: 0px;
+                            left: -20%;
+
+                            img {
+                                width: 100%;
+                                scale: 1.2;
+                            }
+                        }
+
+
+                        .xtrm-screens-tabMock {
+                            display: flex;
+                            gap: 10px;
+                            width: 100%;
+                            height: 100%;
+
+                            .xtrm-sessions-analysis {
+                                width: 40%;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: space-around;
+
+                                .xtrm-sessions {
+                                    width: 100%;
+
+                                    img {
+                                        width: 100%;
+                                    }
+                                }
+
+                                .xtrm-analystics {
+                                    width: 100%;
+
+                                    img {
+                                        width: 100%;
+                                        scale: 1.4;
+                                        transform: translate(-25%, 10%);
+                                    }
+                                }
+                            }
+
+                            .xtrm-tabMock {
+                                width: 60%;
+                                display: flex;
+                                align-items: center;
+
+                                img {
+                                    width: 100%;
+                                    scale: 1.2;
+                                }
+
+                            }
+                        }
+                    }
+                }
+            }
+
+            @media screen and (max-width: 1440px) {
+                .xtreme-main {
+
+                    .xtrm-headings-saleStatus {
+                        padding: 20px;
+                        width: 25%;
+
+                        .xtrm-header {
+
+                            h2 {
+                                font-size: 4vw;
+                            }
+
+                            p {
+                                font-size: 1.2vw;
+                            }
+
+                            hr {
+                                width: 100%;
+                            }
+
+                            .xtrm-work {
+                                span {
+                                    font-size: 1.2vw;
+                                }
+                            }
+
+                        }
+
+                        .xtrm-saleStatus {
+                            width: 100%;
+                            height: 60%;
+                            margin-top: 0px;
+
+                            img {
+                                width: 100%;
+                            }
+                        }
+                    }
+
+                    .xtrm-charts {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+
+                        .xtrm-activity {
+                            display: flex;
+
+                            img {
+                                width: 80%;
+                            }
+                        }
+
+                        .xtrm-country {
+
+                            img {
+                                width: 100%;
+                                object-fit: contain;
+                            }
+                        }
+                    }
+
+                    .xtrm-homepage {
+                        width: 45%;
+                        position: static;
+
+                        .xtrm-navbar {
+                            position: absolute;
+                            top: 0px;
+                            left: 0%;
+                            width: 100%;
+                            display: flex;
+                            justify-content: center;
+                            padding: 10px 0px;
+
+                            img {
+                                width: 60%;
+                                scale: 1;
+                            }
+                        }
+
+
+                        .xtrm-screens-tabMock {
+                            display: flex;
+                            gap: 10px;
+                            width: 100%;
+                            height: 100%;
+
+                            .xtrm-sessions-analysis {
+                                width: 40%;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: space-evenly;
+
+                                .xtrm-sessions {
+                                    width: 100%;
+
+                                    img {
+                                        width: 100%;
+                                        scale: 1.1;
+                                    }
+                                }
+
+                                .xtrm-analystics {
+                                    width: 100%;
+
+                                    img {
+                                        width: 100%;
+                                        scale: 1.4;
+                                        transform: translate(-20%, 10%);
+                                    }
+                                }
+                            }
+
+                            .xtrm-tabMock {
+                                width: 60%;
+                                display: flex;
+                                align-items: center;
+
+                                img {
+                                    width: 100%;
+                                    scale: 1.2;
+                                }
+
+                            }
+                        }
+                    }
+                }
+            }
+
+            @media screen and (max-width: 1366px) {
+                .xtreme-main {
+
+                    height: auto;
+                    min-height: 100vh;
+                    align-items: center;
+
+                    .xtrm-headings-saleStatus {
+                        padding: 20px;
+                        width: 25%;
+
+                        .xtrm-header {
+
+                            h2 {
+                                font-size: 4vw;
+                            }
+
+                            p {
+                                font-size: 1.2vw;
+                            }
+
+                            hr {
+                                width: 100%;
+                            }
+
+                            .xtrm-work {
+                                span {
+                                    font-size: 1.2vw;
+                                }
+                            }
+
+                        }
+
+                        .xtrm-saleStatus {
+                            width: 100%;
+                            height: 60%;
+                            margin-top: 0px;
+
+                            img {
+                                scale: 1.2;
+                                width: 100%;
+                            }
+                        }
+                    }
+
+                    .xtrm-charts {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+
+                        .xtrm-activity {
+                            display: flex;
+
+                            img {
+                                width: 100%;
+                            }
+                        }
+
+                        .xtrm-country {
+
+                            img {
+                                width: 100%;
+                                object-fit: contain;
+                                scale: 1.2;
+
+                                transform: translate(-5%, 10%);
+                            }
+                        }
+                    }
+
+                    .xtrm-homepage {
+                        height: 100%;
+                        width: 45%;
+                        position: static;
+                        background-color: red;
+
+                        .xtrm-navbar {
+                            position: absolute;
+                            top: 0px;
+                            left: 0%;
+                            width: 100%;
+                            display: flex;
+                            justify-content: center;
+                            padding: 10px 0px;
+
+                            img {
+                                width: 60%;
+                                scale: 1;
+                            }
+                        }
+
+
+                        .xtrm-screens-tabMock {
+                            display: flex;
+                            gap: 10px;
+                            width: 100%;
+                            height: 100%;
+
+                            .xtrm-sessions-analysis {
+                                width: 40%;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: space-evenly;
+
+                                .xtrm-sessions {
+                                    width: 100%;
+
+                                    img {
+                                        width: 100%;
+                                        scale: 1.1;
+                                    }
+                                }
+
+                                .xtrm-analystics {
+                                    width: 100%;
+
+                                    img {
+                                        width: 100%;
+                                        scale: 1.4;
+                                        transform: translate(-20%, 10%);
+                                    }
+                                }
+                            }
+
+                            .xtrm-tabMock {
+                                width: 60%;
+                                display: flex;
+                                align-items: center;
+
+                                img {
+                                    width: 100%;
+                                    scale: 1.2;
+                                }
+
+                            }
+                        }
+                    }
+                }
+            }
+
+            @media screen and (max-width: 1199px) {}
+
+
         }
 
         .orchard {
@@ -2030,25 +2936,26 @@ main {
                     }
 
                     .orcd-infinity-scrl {
+                        
                         .scroller {
                             height: 100%;
 
                             .orcd-custom-scroll {
                                 display: flex;
                                 flex-direction: column;
-                                animation: scroll-up 20s linear infinite;
+                                animation: scroll-up 10s linear infinite;
                                 position: relative;
-                                top: 100%;
-
+                                top: 90%;
+                                
                                 img~img {
                                     margin-top: 50px;
                                 }
-
+                                
                                 @keyframes scroll-up {
                                     0% {
                                         transform: translateY(0);
                                     }
-
+                                    
                                     100% {
                                         transform: translateY(-100%);
                                     }
@@ -4384,209 +5291,656 @@ main {
 
         }
 
-
-
         .vividSpark {
-            position: sticky;
-            top: 0;
-            z-index: 1;
             background-color: #1E1E1E;
-            font-family: satoshi-bold;
+            color: #FFF5DE;
 
-
-            // &::before {
-            //     content: "Branding";
-            //     display: flex;
-            //     align-items: center;
-            //     justify-content: center;
-            //     height: 100%;
-            //     font-size: 34vh;
-            //     font-family: satoshi;
-            //     color: #a2a2a210;
-            //     z-index: -1;
-            // }
-
-
-            .vividText {
-                height: 30%;
+            .vivid-main {
+                position: sticky;
+                top: 0;
+                height: 100vh;
                 width: 100%;
-                background: #FF3302;
-                display: flex;
-                justify-content: space-around;
 
-                h2 {
-                    font-family: satoshi-bold;
-
-                    span {
-                        font-family: satoshi-bold;
-
-                    }
-                }
-
-                .connectText {
-                    margin-top: 100px;
+                .vivid-headings {
+                    padding: 50px;
+                    width: 100%;
+                    height: 30%;
+                    background-color: #FF3302;
                     display: flex;
+                    justify-content: space-evenly;
 
-                    p {
-                        font-family: satoshi-bold;
-                    }
+                    .vivid-connect {
+                        width: 40%;
+                        background-color: #FFF5DE;
+                        display: flex;
+                        align-items: center;
 
-                    .connect {
-                        text-transform: uppercase;
-                        font-size: 120px;
-                        position: relative;
-                        z-index: 10;
-                        color: #FF3302;
-
-                        &::after {
-                            content: "";
-                            position: absolute;
-                            height: 100%;
+                        p {
                             width: 100%;
-                            left: 0%;
-                            background-color: #FFF5DE;
-                            z-index: -1;
+                            text-align: center;
+                            font-size: 4vw;
+                            font-family: satoshi;
+                            text-transform: uppercase;
+                            font-weight: bold;
+                            color: #FF3302;
                         }
                     }
-                }
-
-
-                h2 {
-                    text-transform: uppercase;
-                    font-size: 200px;
-                    margin-right: 5%;
-
-                    span {
-                        color: #FFF5DE;
-                    }
-                }
-
-
-            }
-
-            .connectRevealSquare {
-                top: 80px;
-                left: 50px;
-                height: 205px;
-                width: 620px;
-            }
-
-            .creativeInfo {
-                top: 0px;
-            }
-
-            .continueInnovation {
-                top: 0px;
-            }
-
-            .ladyModel {
-                top: 150px;
-                right: 0px;
-            }
-
-            .whyUsReveal {
-                font-size: 100px;
-                background-color: #FF3302;
-                width: 400px;
-                z-index: 1;
-                top: 0;
-                right: 0;
-
-                h2 {
-                    text-wrap: wrap;
-                    line-height: 100px;
-                    text-align: center;
-
-                    font-family: satoshi-bold;
-
-                    span {
-                        text-transform: uppercase;
-                        color: #FFF5DE;
-
-                        font-family: satoshi-bold;
-                    }
-                }
-            }
-
-
-            @media screen and (min-width: 1927px) {
-
-                .vividText {
-                    height: 30%;
-                    width: 100%;
-                    background: #FF3302;
-                    display: flex;
-                    justify-content: space-around;
-
-                    p {
-                        text-transform: uppercase;
-                        font-size: 6vmax;
-                        display: flex;
-                        justify-content: center;
-                        align-items: end;
-                        position: relative;
-                        z-index: 10;
-                        // color: #FF3302;
-                        color: green;
-                    }
-
 
                     h2 {
+                        font-size: 6vw;
                         text-transform: uppercase;
-                        font-size: 250px;
-                        margin-right: 5%;
+                        color: black;
+                        width: 60%;
+                        text-align: right;
 
                         span {
                             color: #FFF5DE;
                         }
                     }
+
                 }
 
-                // .connectRevealSquare{
-                //     top: 220px;
-                //     left: 100px;
-                //     height: 180px;
-                //     width: 650px;
-                // }
-            }
-        }
 
+                .vividBottom {
+                    width: 100%;
+                    height: 70%;
+
+                    .vivid-crtiv-cotnue {
+                        width: 50%;
+                        height: 100%;
+
+
+                        .vivid-creative-dsgn {
+                            padding: 50px;
+                            width: 70%;
+                            height: 70%;
+                            background-color: black;
+                            border-radius: 20px;
+                            transform: translate(20%, -15%);
+
+                            h3 {
+                                width: 70%;
+                                font-size: 2vw;
+                                line-height: 2vw;
+                                text-transform: uppercase;
+
+                                span {
+                                    color: #FF3302;
+                                }
+                            }
+
+                            p {
+                                width: 70%;
+                                padding: 20px;
+                                padding-left: 0;
+                                font-family: satoshi;
+                                font-size: 1vw;
+                            }
+                        }
+
+
+                        .vivid-continued {
+                            width: 50%;
+                            height: 25%;
+                            background-color: black;
+                            display: flex;
+                            padding: 10px;
+                            border-radius: 10px;
+                            transform: translate(100%, -100%);
+
+                            .vivid-con-left {
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: space-between;
+
+                                p {
+                                    color: #FF3302;
+                                    font-family: satoshi;
+                                    font-weight: bold;
+                                    width: 100%;
+                                }
+
+                                p+p {
+                                    font-weight: normal;
+                                }
+                            }
+
+                            .vivid-con-right {
+                                display: flex;
+                                align-items: center;
+
+                                h4 {
+                                    font-size: 3vw;
+                                    text-align: center;
+                                    line-height: 3vw;
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+
+        }
 
         .cocktailCulture {
-            position: sticky;
-            top: 0;
-            z-index: 1;
+
             background-color: #575757;
 
-            // &::before {
-            //     content: "Branding";
-            //     display: flex;
-            //     align-items: center;
-            //     justify-content: center;
-            //     height: 100%;
-            //     font-size: 34vh;
-            //     font-family: satoshi;
-            //     color: #9e8a8a10;
-            //     z-index: -1;
-            // }
+            .cktl-main {
+                height: 100vh;
+                position: sticky;
+                top: 0;
+                overflow: hidden;
 
-            .layerForReadablity {
-                background: linear-gradient(90deg, rgba(255, 255, 255, 0), rgb(0, 0, 0, 0.30));
-            }
+                .cktl-rainbow {
+                    position: absolute;
+                    top: 0;
+                    left: 45%;
+                    height: 100%;
+                    width: 100%;
+                    z-index: 1;
 
-            .cocktailData {
+                    img {
+                        height: 100%;
+                    }
+                }
 
-
-                .cockTailLogoAndTextContainer {
-                    margin-top: 100px;
+                .cktl-container {
+                    padding: 50px;
+                    height: 100%;
+                    width: 100%;
+                    position: relative;
+                    z-index: 3;
+                    color: white;
                     display: flex;
-                    flex-wrap: wrap;
-                    align-items: center;
-                    justify-content: space-around;
+
+                    .cktl-headings-details {
+                        height: 100%;
+                        width: 50%;
+                        display: flex;
+
+                        .cktl-headers {
+                            width: 70%;
+                            height: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-evenly;
+
+                            .cktl-heads {
+                                .cktl-logo {
+                                    img {
+                                        width: 100%;
+                                    }
+                                }
+
+                                p {
+                                    font-family: satoshi;
+                                    font-size: 1vw;
+                                    padding: 10px 0;
+                                }
+
+                                hr {
+                                    width: 80%;
+                                }
+
+                                .cktl-works {
+                                    padding: 10px 0;
+                                    width: 80%;
+
+                                    span {
+                                        font-family: satoshi;
+                                        font-size: 1vw;
+                                    }
+
+                                    span+span {
+                                        &::before {
+                                            content: " | ";
+                                        }
+                                    }
+                                }
+                            }
+
+                            .cktl-showcase {
+
+                                .cktl-strt-mking {
+                                    width: 100%;
+                                    margin-bottom: 20px;
+
+                                    img {
+                                        width: 80%;
+                                    }
+                                }
+
+                                .cktl-behappy-orng {
+                                    display: flex;
+                                    width: 100%;
+
+                                    .cktl-behappy {
+                                        width: 60%;
+                                        height: 100%;
+
+                                        img {
+                                            width: 70%;
+                                        }
+                                    }
+
+                                    .cktl-orange {
+                                        width: 40%;
+                                        height: 100%;
+
+                                        img {
+                                            width: 60%;
+                                        }
+                                    }
+                                }
+                            }
+
+                        }
+
+                        .cktl-details {
+                            width: 30%;
+                            height: 100%;
+                            display: flex;
+                            align-items: center;
+                            scale: 1.8;
+
+                            img {
+                                transform: translate(0%, 25%);
+                                width: 100%;
+                            }
+                        }
+
+
+                    }
+
+                    .cktl-paras {
+                        height: 100%;
+                        width: 50%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-around;
+                        align-items: center;
+                        // background-color: green;
+
+                        .cktl-paraContainer {
+                            height: 80%;
+                            width: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: end;
+                            justify-content: space-around;
+
+                            .cktl-experience {
+                                width: 50%;
+
+                                img {
+                                    width: 80%;
+                                }
+                            }
+
+                            .cktl-restro {
+                                width: 50%;
+
+                                img {
+                                    transform: translate(20%, 0%);
+                                    width: 80%;
+                                }
+                            }
+
+                        }
+
+
+                        .cktl-sipSavor-strip {
+                            height: 10%;
+                            width: 100%;
+
+                            img {
+                                width: 100%;
+                            }
+                        }
+                    }
                 }
             }
-        }
 
+            @media screen and (max-width: 1440px) {
+                .cktl-main {
+
+                    .cktl-rainbow {
+                        left: 40%;
+                    }
+
+                    .cktl-container {
+
+                        .cktl-headings-details {
+
+                            .cktl-headers {
+                                .cktl-heads {
+
+                                    .cktl-logo {
+                                        img {
+                                            width: 100%;
+                                        }
+                                    }
+
+                                    p {
+                                        font-family: satoshi;
+                                        font-size: 1.2vw;
+                                        padding: 10px 0;
+                                    }
+
+                                    hr {
+                                        width: 100%;
+                                    }
+
+                                    .cktl-works {
+                                        padding: 10px 0;
+                                        width: 100%;
+
+                                        span {
+                                            font-family: satoshi;
+                                            font-size: 1.2vw;
+                                        }
+                                    }
+                                }
+
+
+
+                            }
+
+                            .cktl-details {
+                                scale: 1.8;
+                                // background-color: red;
+
+                                img {
+
+                                    width: 100%;
+                                }
+                            }
+
+
+                        }
+
+                    }
+                }
+            }
+
+            @media screen and (max-width: 1366px) {
+                .cktl-main {
+
+                    .cktl-rainbow {
+                        left: 35%;
+                    }
+
+                    .cktl-container {
+
+                        .cktl-headings-details {
+
+                            .cktl-headers {
+                                .cktl-heads {
+
+                                    .cktl-logo {
+                                        img {
+                                            width: 100%;
+                                        }
+                                    }
+
+                                    p {
+                                        font-size: 1.2vw;
+                                    }
+
+                                    hr {
+                                        width: 100%;
+                                    }
+
+                                    .cktl-works {
+                                        padding: 10px 0;
+                                        width: 100%;
+
+                                        span {
+                                            font-size: 1.2vw;
+                                        }
+                                    }
+                                }
+
+
+
+                            }
+
+                            .cktl-details {
+                                scale: 1.8;
+
+                                img {
+
+                                    width: 100%;
+                                }
+                            }
+
+
+                        }
+
+                        .cktl-paras {
+                            .cktl-paraContainer {
+
+                                .cktl-experience {
+                                    img {
+                                        width: 100%;
+                                    }
+                                }
+
+                                .cktl-restro {
+                                    img {
+                                        width: 100%;
+                                        transform: translate(0%, 0%);
+                                    }
+                                }
+                            }
+                        }
+
+                    }
+                }
+            }
+
+            @media screen and (max-width: 1279px) {
+
+                .cktl-main {
+
+                    .cktl-container {
+
+                        .cktl-headings-details {
+
+                            .cktl-headers {
+
+                                .cktl-heads {
+                                    .cktl-logo {
+
+                                        img {
+                                            width: 100%;
+                                            scale: 1.2;
+                                            transform: translate(8%, 0%);
+                                        }
+                                    }
+
+                                }
+
+                                .cktl-showcase {
+
+                                    .cktl-strt-mking {
+
+                                        img {
+                                            width: 100%;
+                                        }
+                                    }
+
+                                    .cktl-behappy-orng {
+                                        display: flex;
+                                        width: 100%;
+
+                                        .cktl-behappy {
+                                            width: 60%;
+                                            height: 100%;
+
+                                            img {
+                                                width: 80%;
+                                            }
+                                        }
+
+                                        .cktl-orange {
+                                            width: 40%;
+                                            height: 100%;
+
+                                            img {
+                                                width: 70%;
+                                            }
+                                        }
+                                    }
+                                }
+
+                            }
+
+                            .cktl-details {
+                                scale: 2;
+
+                                img {
+                                    transform: translate(0%, 25%);
+                                    width: 100%;
+                                }
+                            }
+
+
+                        }
+
+                        .cktl-paras {
+                            height: 100%;
+
+                            .cktl-paraContainer {
+
+                                .cktl-experience {
+                                    width: 50%;
+
+                                    img {
+                                        width: 100%;
+                                    }
+                                }
+
+                                .cktl-restro {
+                                    width: 50%;
+
+                                    img {
+                                        transform: translate(0%, 0%);
+                                        width: 100%;
+                                    }
+                                }
+
+                            }
+
+
+                            .cktl-sipSavor-strip {
+                                height: 10%;
+                                width: 100%;
+                                position: relative;
+                                z-index: 4;
+
+                                img {
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            @media screen and (max-width: 1199px) {
+                .cktl-main {
+                    height: 100vh;
+
+                    .cktl-rainbow {
+                        left: 28%;
+
+                        img {
+                            height: 100%;
+                        }
+                    }
+
+                    .cktl-container {
+                        padding: 50px;
+                        height: 100%;
+                        width: 100%;
+                        position: relative;
+                        z-index: 3;
+                        color: white;
+                        display: flex;
+
+                        .cktl-headings-details {
+                            height: 100%;
+                            width: 50%;
+                            display: flex;
+
+                            .cktl-headers {
+
+
+                                .cktl-heads {
+                                    .cktl-logo {
+                                        img {
+                                            width: 100%;
+                                        }
+                                    }
+
+                                    p {
+                                        font-size: 1.7vw;
+                                    }
+
+                                    hr {
+                                        width: 100%;
+                                    }
+
+                                    .cktl-works {
+                                        width: 100%;
+
+                                        span {
+                                            font-family: satoshi;
+                                            font-size: 1.7vw;
+                                        }
+
+                                    }
+                                }
+                            }
+
+                        }
+
+                        .cktl-paras {
+
+                            .cktl-sipSavor-strip {
+                                height: 10%;
+                                width: 100%;
+
+                                img {
+                                    width: 100%;
+                                    scale: 1.1;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            @media screen and (max-width: 991px) {
+                .cktl-main {
+
+                    .cktl-rainbow {
+                        display: none;
+                    }
+
+
+
+                }
+            }
+
+            @media screen and (max-width: 767px) {}
+
+
+
+        }
     }
 
     .design-process {

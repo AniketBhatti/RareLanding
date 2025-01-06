@@ -2438,7 +2438,7 @@ const Landing = () => {
 
 			</section>
 
-			{/* <section className="design-process">
+			<section className="design-process">
 				<div className="data">
 
 					<div className="dp-headers h-screen w-screen bg-white h-full">
@@ -2516,10 +2516,10 @@ const Landing = () => {
 
 
 				</div>
-			</section> */}
+			</section>
 			
 
-			{/* <section className="relative z-10 companyOverview">
+			<section className="relative z-10 companyOverview">
 				<div className="boxContainer h-screen w-screen flex">
 
 					<div className="left h-screen w-[50%]">
@@ -2687,7 +2687,7 @@ const Landing = () => {
 					</div>
 
 				</div>
-			</section> */}
+			</section>
 
 			{/* <section className="RPtools h-screen w-screen">
 				<h2>OUR AMAZING TOOL</h2>

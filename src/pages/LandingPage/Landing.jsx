@@ -9,6 +9,8 @@ import Slider from "react-slick";
 import Marquee from "react-fast-marquee";
 import { useScroll } from "framer-motion";
 
+
+
 import bulbs from "../../assets/images/04_transformIdeas/trybulb.gif"
 import bwSquare from "../../assets/images/04_transformIdeas/blackWhiteSquare.gif"
 import shapes from "../../assets/images/04_transformIdeas/jumpingShapes.gif"
@@ -304,7 +306,7 @@ const Landing = () => {
 
 
 	React.useEffect(() => {
-		
+
 		// gsap.fromTo(".lmbr-container",
 		// 	{
 		// 		x: "100%"
@@ -327,8 +329,8 @@ const Landing = () => {
 			},
 
 			{
-				x:0,
-				y:0,
+				x: 0,
+				y: 0,
 				scrollTrigger: {
 					trigger: ".lmbr-container",
 					start: "top top",
@@ -344,8 +346,8 @@ const Landing = () => {
 			},
 
 			{
-				x:0,
-				y:0,
+				x: 0,
+				y: 0,
 				opacity: 1,
 				scrollTrigger: {
 					trigger: ".lmbr-container",
@@ -360,10 +362,10 @@ const Landing = () => {
 				scale: 0,
 				rotation: 260,
 			},
-			
+
 			{
-				x:0,
-				y:0,
+				x: 0,
+				y: 0,
 				scale: 1,
 				rotation: 0,
 				scrollTrigger: {
@@ -378,13 +380,13 @@ const Landing = () => {
 			{
 				x: "-30%",
 				y: "30%",
-				opacity:0,
+				opacity: 0,
 			},
 
 			{
-				x:0,
-				y:0,
-				opacity:1,
+				x: 0,
+				y: 0,
+				opacity: 1,
 				scrollTrigger: {
 					trigger: ".lmbr-container",
 					start: "top -40%",
@@ -397,13 +399,13 @@ const Landing = () => {
 			{
 				x: "30%",
 				y: "30%",
-				opacity:0,
+				opacity: 0,
 			},
 
 			{
-				x:0,
-				y:0,
-				opacity:1,
+				x: 0,
+				y: 0,
+				opacity: 1,
 				scrollTrigger: {
 					trigger: ".lmbr-container",
 					start: "top -60%",
@@ -415,7 +417,7 @@ const Landing = () => {
 	})
 
 
-	
+
 
 
 	const regalFinance = useRef(null);
@@ -540,7 +542,7 @@ const Landing = () => {
 
 
 	React.useEffect(() => {
-		
+
 		gsap.fromTo(".orcd-headings",
 			{
 				x: "-100%",
@@ -854,146 +856,150 @@ const Landing = () => {
 	}, []);
 
 
+	// Dina Gaming
+
+	// React.useEffect(() => {
+
+
+	// 	gsap.fromTo(".dina-hearder",
+	// 		{
+	// 			x: 200,
+	// 			opacity: 0,
+	// 		},
+
+	// 		{
+	// 			x: 0,
+	// 			y: 0,
+	// 			opacity: 1,
+	// 			scrollTrigger: {
+	// 				trigger: ".dinaRollings",
+	// 				start: "top 30%",
+	// 				end: "top top",
+	// 				scrub: true,
+	// 			}
+	// 		})
+
+	// 	gsap.fromTo(".dina-phoneMock",
+	// 		{
+	// 			x: "-100%",
+	// 			opacity: 0,
+	// 		},
+
+	// 		{
+	// 			x: 0,
+	// 			y: 0,
+	// 			opacity: 1,
+	// 			scrollTrigger: {
+	// 				trigger: ".dinaRollings",
+	// 				start: "top 10%",
+	// 				end: "top -10%",
+	// 				scrub: true,
+	// 			}
+	// 		})
+
+	// 	gsap.fromTo(".dina-gameGraph",
+	// 		{
+	// 			x: -100,
+	// 			opacity: 0,
+	// 		},
+
+	// 		{
+	// 			x: 0,
+	// 			y: 0,
+	// 			opacity: 1,
+	// 			scrollTrigger: {
+	// 				trigger: ".dinaRollings",
+	// 				start: "top -20%",
+	// 				end: "top -40%",
+	// 				scrub: 1,
+	// 			}
+	// 		})
+
+	// 	gsap.fromTo(".connections",
+	// 		{
+	// 			x: -150,
+	// 			opacity: 0,
+	// 		},
+
+	// 		{
+	// 			x: 0,
+	// 			y: 0,
+	// 			opacity: 1,
+	// 			scrollTrigger: {
+	// 				trigger: ".dinaRollings",
+	// 				start: "top -20%",
+	// 				end: "top -40%",
+	// 				scrub: 1,
+	// 			}
+	// 		})
+
+
+	// 	gsap.fromTo(".dina-felindra",
+	// 		{
+	// 			x: -150,
+	// 			y: 150,
+	// 			opacity: 0,
+	// 		},
+
+	// 		{
+	// 			x: 0,
+	// 			y: 0,
+	// 			opacity: 1,
+	// 			scrollTrigger: {
+	// 				trigger: ".dinaRollings",
+	// 				start: "top -30%",
+	// 				end: "top -50%",
+	// 				scrub: 1,
+	// 			}
+	// 		})
+
+	// 	gsap.fromTo(".dina-session",
+	// 		{
+	// 			x: 150,
+	// 			y: 150,
+	// 			opacity: 0,
+	// 		},
+
+	// 		{
+	// 			x: 0,
+	// 			y: 0,
+	// 			opacity: 1,
+	// 			scrollTrigger: {
+	// 				trigger: ".dinaRollings",
+	// 				start: "top -30%",
+	// 				end: "top -50%",
+	// 				scrub: 1,
+	// 			}
+	// 		})
+
+	// 	gsap.fromTo(".dina-roll",
+	// 		{
+	// 			x: 0,
+	// 			y: 150,
+	// 			opacity: 0,
+	// 		},
+
+	// 		{
+	// 			x: 0,
+	// 			y: 0,
+	// 			opacity: 1,
+	// 			scrollTrigger: {
+	// 				trigger: ".dinaRollings",
+	// 				start: "top -60%",
+	// 				end: "top -80%",
+	// 				scrub: 1,
+	// 			}
+	// 		})
+
+
+	// }, []);
+
+	console.log("Howdy RP");
+
+	// VIVIDSPARK SCREEN ANIMATIONS
 	React.useEffect(() => {
 
 
-		gsap.fromTo(".dina-hearder",
-			{
-				x: 200,
-				opacity: 0,
-			},
-
-			{
-				x: 0,
-				y: 0,
-				opacity: 1,
-				scrollTrigger: {
-					trigger: ".dinaRollings",
-					start: "top 30%",
-					end: "top top",
-					scrub: true,
-				}
-		})
-
-		gsap.fromTo(".dina-phoneMock",
-			{
-				x: "-100%",
-				opacity: 0,
-			},
-
-			{
-				x: 0,
-				y: 0,
-				opacity: 1,
-				scrollTrigger: {
-					trigger: ".dinaRollings",
-					start: "top 10%",
-					end: "top -10%",
-					scrub: true,
-				}
-		})
-
-		gsap.fromTo(".dina-gameGraph",
-			{
-				x: -100,
-				opacity: 0,
-			},
-
-			{
-				x: 0,
-				y: 0,
-				opacity: 1,
-				scrollTrigger: {
-					trigger: ".dinaRollings",
-					start: "top -20%",
-					end: "top -40%",
-					scrub: 1,
-				}
-		})
-
-		gsap.fromTo(".connections",
-			{
-				x: -150,
-				opacity: 0,
-			},
-
-			{
-				x: 0,
-				y: 0,
-				opacity: 1,
-				scrollTrigger: {
-					trigger: ".dinaRollings",
-					start: "top -20%",
-					end: "top -40%",
-					scrub: 1,
-				}
-		})
-
-
-		gsap.fromTo(".dina-felindra",
-			{
-				x: -150,
-				y: 150,
-				opacity: 0,
-			},
-
-			{
-				x: 0,
-				y: 0,
-				opacity: 1,
-				scrollTrigger: {
-					trigger: ".dinaRollings",
-					start: "top -30%",
-					end: "top -50%",
-					scrub: 1,
-				}
-		})
-
-		gsap.fromTo(".dina-session",
-			{
-				x: 150,
-				y: 150,
-				opacity: 0,
-			},
-
-			{
-				x: 0,
-				y: 0,
-				opacity: 1,
-				scrollTrigger: {
-					trigger: ".dinaRollings",
-					start: "top -30%",
-					end: "top -50%",
-					scrub: 1,
-				}
-		})
-
-		gsap.fromTo(".dina-roll",
-			{
-				x: 0,
-				y: 150,
-				opacity: 0,
-			},
-
-			{
-				x: 0,
-				y: 0,
-				opacity: 1,
-				scrollTrigger: {
-					trigger: ".dinaRollings",
-					start: "top -60%",
-					end: "top -80%",
-					scrub: 1,
-				}
-		})
-
-
-	}, []);
-
-
-	React.useEffect(() => {
-		
-		
 
 		gsap.fromTo(".vivid-headings",
 			{
@@ -1011,7 +1017,7 @@ const Landing = () => {
 					end: "top 20%",
 					scrub: 1,
 				}
-		})
+			})
 
 		gsap.fromTo(".vivid-heads",
 			{
@@ -1029,7 +1035,7 @@ const Landing = () => {
 					end: "top top",
 					scrub: 1,
 				}
-		})
+			})
 
 		gsap.fromTo(".connect-reveal",
 			{
@@ -1046,7 +1052,7 @@ const Landing = () => {
 					end: "top 10%",
 					scrub: 1,
 				}
-		})
+			})
 
 		gsap.fromTo(".vivid-creative-dsgn",
 			{
@@ -1063,7 +1069,7 @@ const Landing = () => {
 					end: "top -20%",
 					scrub: 1,
 				}
-		})
+			})
 
 		gsap.fromTo(".vivid-crtv-h2",
 			{
@@ -1081,7 +1087,7 @@ const Landing = () => {
 					end: "top -25%",
 					scrub: 1,
 				}
-		})
+			})
 
 		gsap.fromTo(".vivid-crtv-p",
 			{
@@ -1099,7 +1105,7 @@ const Landing = () => {
 					end: "top -30%",
 					scrub: 1,
 				}
-		})
+			})
 
 		gsap.fromTo(".vivid-continued",
 			{
@@ -1117,7 +1123,7 @@ const Landing = () => {
 					end: "top -40%",
 					scrub: 1,
 				}
-		})
+			})
 
 		gsap.fromTo(".vivid-lady-img",
 			{
@@ -1135,7 +1141,7 @@ const Landing = () => {
 					end: "top -50%",
 					scrub: 1,
 				}
-		})
+			})
 
 		gsap.fromTo(".whyUs",
 			{
@@ -1153,7 +1159,7 @@ const Landing = () => {
 					end: "top -60%",
 					scrub: 1,
 				}
-		})
+			})
 
 	});
 
@@ -1185,7 +1191,7 @@ const Landing = () => {
 			},
 
 			{
-				x:0,
+				x: 0,
 				y: 0,
 				scrollTrigger: {
 					trigger: ".cocktailCulture",
@@ -1203,7 +1209,7 @@ const Landing = () => {
 			},
 
 			{
-				x:0,
+				x: 0,
 				y: 0,
 				scrollTrigger: {
 					trigger: ".cocktailCulture",
@@ -1258,14 +1264,14 @@ const Landing = () => {
 
 		gsap.fromTo(".cktl-details",
 			{
-				y: "50%",	
+				y: "50%",
 				opacity: 0,
 			},
 
 			{
 				x: 0,
 				y: 0,
-				opacity:1,
+				opacity: 1,
 				scrollTrigger: {
 					trigger: ".cocktailCulture",
 					start: "top -50%",
@@ -1278,14 +1284,14 @@ const Landing = () => {
 
 		gsap.fromTo(".cktl-experience",
 			{
-				y: "50%",	
+				y: "50%",
 				opacity: 0,
 			},
 
 			{
 				x: 0,
 				y: 0,
-				opacity:1,
+				opacity: 1,
 				scrollTrigger: {
 					trigger: ".cocktailCulture",
 					start: "top -60%",
@@ -1298,14 +1304,14 @@ const Landing = () => {
 
 		gsap.fromTo(".cktl-restro",
 			{
-				y: "-50%",	
+				y: "-50%",
 				opacity: 0,
 			},
 
 			{
 				x: 0,
 				y: 0,
-				opacity:1,
+				opacity: 1,
 				scrollTrigger: {
 					trigger: ".cocktailCulture",
 					start: "top -60%",
@@ -1338,6 +1344,7 @@ const Landing = () => {
 
 
 	});
+
 
 	// DESIGN PROCESS SECTION ANIMATIONS
 	React.useEffect(() => {
@@ -1876,13 +1883,6 @@ const Landing = () => {
 
 
 
-
-
-
-
-
-
-
 	return (
 		<main>
 
@@ -1900,7 +1900,8 @@ const Landing = () => {
 						<p>Bringing your ideas to life where</p>
 					</div>
 
-					<div className="evry-pxl">
+					<div className="evry-pxl">					
+
 						<h1>Every Pixel</h1>
 					</div>
 
@@ -2252,6 +2253,7 @@ const Landing = () => {
 
 				</div>
 
+
 				<div className="dinaRollings h-[200vh] w-screen">
 					<div className="dina-main">
 
@@ -2303,6 +2305,7 @@ const Landing = () => {
 					</div>
 				</div>
 
+
 				<div className="vividSpark h-[200vh] w-screen">
 					<div className="vivid-main">
 
@@ -2327,7 +2330,7 @@ const Landing = () => {
 								</div>
 							</div>
 
-						
+
 						</div>
 
 						<div className="vividBottom">
@@ -2360,6 +2363,7 @@ const Landing = () => {
 
 					</div>
 				</div>
+
 
 				<div className="cocktailCulture h-[200vh] w-screen">
 					<div className="cktl-main">
@@ -2438,7 +2442,7 @@ const Landing = () => {
 
 			</section>
 
-			<section className="design-process">
+			{/* <section className="design-process">
 				<div className="data">
 
 					<div className="dp-headers h-screen w-screen bg-white h-full">
@@ -2516,10 +2520,9 @@ const Landing = () => {
 
 
 				</div>
-			</section>
-			
+			</section> */}
 
-			<section className="relative z-10 companyOverview">
+			{/* <section className="relative z-10 companyOverview">
 				<div className="boxContainer h-screen w-screen flex">
 
 					<div className="left h-screen w-[50%]">
@@ -2687,7 +2690,7 @@ const Landing = () => {
 					</div>
 
 				</div>
-			</section>
+			</section> */}
 
 			{/* <section className="RPtools h-screen w-screen">
 				<h2>OUR AMAZING TOOL</h2>
@@ -2892,6 +2895,8 @@ const Landing = () => {
 					</div>
 				</div>
 			</section>
+
+
 
 		</main>
 	);

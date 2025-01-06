@@ -6,7 +6,6 @@
 
 h1,
 h2 {
-    // font-family: satoshi-bold;
     font-family: impact;
 }
 
@@ -127,9 +126,23 @@ main {
                 line-height: 14vw;
                 text-align: center;
 
+                position: relative;
+                display: inline-block;
+
+
                 h1 {
-                    font-family: impact;
+                    font-family: impact, sans-serif;
+                    background-image: url("../../assets/images/01_everyPixel/typo_animations/neon_fluid_BLUE.gif");
+                    background-size: cover;
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-position: 0% 0%;
                 }
+
+
+
+
             }
 
             .tls-yr-stry {
@@ -297,30 +310,29 @@ main {
             }
 
             .landing-main-headings {
-    
+
                 .brng-yr-idea {
                     font-size: 5.5vw;
                     transform: translate(0);
                 }
-    
+
                 .evry-pxl {
                     // font-size: 15.6vw;
                     // line-height: 14vw;
-    
+
                     h1 {
                         font-family: impact;
                     }
                 }
-    
+
                 .tls-yr-stry {
                     // font-size: 4vw;
                     transform: translate(0);
                 }
             }
         }
- 
-    
     }
+
 
     .intro {
         position: relative;
@@ -703,15 +715,15 @@ main {
 
             .bwSquare {
                 position: relative;
-                top: 30%;
-                left: 0%;
+                top: 40%;
+                left: -5%;
                 display: inline-block;
             }
 
             .shapes {
                 position: absolute;
-                top: 60%;
-                left: 70%;
+                top: 80%;
+                left: 80%;
                 display: inline-block;
             }
         }
@@ -790,6 +802,13 @@ main {
 
                     h2 {
                         font-size: 4vw;
+                        background-image: url("../../assets/images/01_everyPixel/typo_animations/fluid_BW.gif");
+                        background-size: cover;
+                        background-clip: text;
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        background-position: 0% 0%;
+
                     }
 
                     p {
@@ -2630,6 +2649,7 @@ main {
             }
 
             @media screen and (max-width: 1366px) {
+
                 .xtreme-main {
 
                     .xtrm-charts {
@@ -2641,7 +2661,7 @@ main {
                             display: flex;
 
                             img {
-                                width: 90%;
+                                width: 80%;
                             }
                         }
 
@@ -2651,6 +2671,60 @@ main {
                                 scale: 1.2;
                                 width: 100%;
                                 object-fit: contain;
+                            }
+                        }
+                    }
+
+                    .xtrm-homepage {
+
+                        .xtrm-navbar {
+                            left: 20%;
+
+                            img {
+                                width: 50%;
+                            }
+
+                        }
+
+                        .xtrm-screens-tabMock {
+                            display: flex;
+                            gap: 10px;
+                            width: 100%;
+                            height: 100%;
+
+                            .xtrm-sessions-analysis {
+                                width: 40%;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: space-around;
+
+                                .xtrm-sessions {
+                                    width: 100%;
+
+                                    img {
+                                        width: 70%;
+                                    }
+                                }
+
+                                .xtrm-analystics {
+                                    width: 100%;
+
+                                    img {
+                                        scale: 1.4;
+                                        transform: translate(-25%, 10%);
+                                    }
+                                }
+                            }
+
+                            .xtrm-tabMock {
+                                width: 60%;
+                                display: flex;
+                                align-items: center;
+
+                                img {
+                                    scale: 1.2;
+                                }
+
                             }
                         }
                     }
@@ -2715,11 +2789,551 @@ main {
 
                     .xtrm-homepage {
                         width: 40%;
+
+                        .xtrm-navbar {
+                            left: 15%;
+
+                            img {
+                                width: 60%;
+                            }
+                        }
+
+                        .xtrm-screens-tabMock {
+                            display: flex;
+                            gap: 10px;
+                            width: 100%;
+                            height: 100%;
+
+                            .xtrm-sessions-analysis {
+                                width: 40%;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: space-around;
+
+                                .xtrm-sessions {
+                                    width: 100%;
+
+                                    img {
+                                        scale: 1.5;
+                                        width: 100%;
+                                    }
+                                }
+
+                                .xtrm-analystics {
+                                    width: 100%;
+
+                                    img {
+                                        scale: 1.8;
+                                        transform: translate(-25%, 10%);
+                                    }
+                                }
+                            }
+
+                            .xtrm-tabMock {
+                                width: 60%;
+                                display: flex;
+                                align-items: center;
+
+                                img {
+                                    scale: 1.4;
+                                }
+
+                            }
+                        }
+
                     }
                 }
             }
 
-            @media screen and (max-width: 991px) {}
+            @media screen and (max-width: 991px) {
+                .xtreme-main {
+
+                    .xtrm-headings-saleStatus {
+                        width: 30%;
+
+                        .xtrm-header {
+
+                            p {
+                                font-size: 1.8vw;
+                            }
+
+                            hr {
+                                width: 100%;
+                            }
+
+                            .xtrm-work {
+
+                                span {
+                                    font-size: 1.8vw;
+                                }
+
+                            }
+
+                        }
+
+                        .xtrm-saleStatus {
+                            width: 100%;
+                            height: auto;
+                            margin-top: 0px;
+                            display: flex;
+                            justify-content: start;
+
+                            img {
+                                width: 100%;
+                                scale: 1.3;
+                            }
+                        }
+                    }
+
+                    .xtrm-charts {
+                        width: 40%;
+
+                        .xtrm-activity {
+                            
+                            img{
+                                width: 100%;
+                            }
+                        }
+
+                        .xtrm-country {
+                            width:100;
+
+                            img{
+                                width: 100%;
+                                scale: 1.3;
+                            }
+                        }
+
+                    }
+
+                    .xtrm-homepage {
+                        width: 30%;
+
+                        .xtrm-navbar {
+                            left: 0;
+
+                            img {
+                                width: 90%;
+                            }
+                        }
+
+                        .xtrm-screens-tabMock {
+
+                            .xtrm-sessions-analysis {
+                                width: 50%;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: space-around;
+
+                                .xtrm-sessions {
+                                    width: 100%;
+
+                                    img {
+                                        width: 100%;
+                                        scale: 2;
+                                        transform: translate(0);
+                                    }
+                                }
+
+                                .xtrm-analystics {
+                                    width: 100%;
+
+                                    img {
+                                        scale: 1.4;
+                                        transform: translate(0);
+                                        scale: 3;
+                                    }
+                                }
+                            }
+
+                            .xtrm-tabMock {
+                                width: 50%;
+                                display: flex;
+                                align-items: center;
+
+                                img {
+                                    scale: 3;
+                                }
+
+                            }
+                        }
+                    }
+                }
+            }
+
+            @media screen and (max-width: 767px) {
+                .xtreme-main {
+                    height: auto;
+                    min-height: 100vh;
+                    flex-direction: column;
+
+                    .xtrm-headings-saleStatus {
+                        width: 100%;
+                        height: 30%;
+                        flex-direction: row;
+                        margin-top: 40px;
+                        justify-content: space-between;
+
+                        .xtrm-header {
+
+                            h2{
+                                font-size: 6vw;
+                            }
+
+                            p {
+                                font-size: 2vw;
+                            }
+
+                            hr {
+                                width: 100%;
+                            }
+
+                            .xtrm-work {
+
+                                span {
+                                    font-size: 2vw;
+                                }
+
+                            }
+
+                        }
+
+                        .xtrm-saleStatus {
+                            width: 100%;
+                            height: auto;
+                            margin-top: 0px;
+                            display: flex;
+                            justify-content: center;
+
+                            img {
+                                width: 70%;
+                                scale: 1;
+                            }
+                        }
+                    }
+
+                    .xtrm-charts {
+                        width: 100%;
+                        height: 30%;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+
+                        .xtrm-activity {
+                            
+                            img{
+                                width: 100%;
+                                scale: 1;
+                            }
+                        }
+
+                        .xtrm-country {
+                            width:100;
+
+                            img{
+                                width: 100%;
+                                scale: 1;
+                            }
+                        }
+
+                    }
+
+                    .xtrm-homepage {
+                        width: 100%;
+                        height: 40%;
+
+                        .xtrm-navbar {
+                            left: 0;
+
+                            img {
+                                width: 90%;
+                            }
+                        }
+
+                        .xtrm-screens-tabMock {
+
+                            flex-direction: column-reverse;
+                            gap: 40px;
+
+                            .xtrm-sessions-analysis {
+                                width: 100%;
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: space-between;
+
+                                .xtrm-sessions {
+                                    width: 100%;
+                                    display: flex;
+                                    justify-content: center;
+
+                                    img {
+                                        width: 70%;
+                                        scale: 1;
+                                        transform: translate(0);
+                                    }
+                                }
+
+                                .xtrm-analystics {
+                                    width: 100%;
+                                    display: flex;
+                                    justify-content: center;
+
+                                    img {
+                                        width: 70%;
+                                        transform: translate(0);
+                                        scale: 1;
+                                    }
+                                }
+                            }
+
+                            .xtrm-tabMock {
+                                width: 100%;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+
+                                img {
+                                    scale: 1;
+                                    width: 60%;
+                                }
+
+                            }
+                        }
+                    }
+                }
+            }
+
+
+            @media screen and (max-width: 575px) {
+                .xtreme-main {
+                    padding: 20px;
+                    height: auto;
+                    min-height: 100vh;
+                    flex-direction: column;
+
+                    .xtrm-headings-saleStatus {
+                        
+                        flex-direction: column;
+                        justify-content: space-between;
+                        gap: 10px;
+
+                        .xtrm-header {
+                            width: 100%;
+                            text-align: center;
+
+                            h2{
+                                font-size: 10vw;
+                            }
+
+                            p {
+                                font-size: 4vw;
+                            }
+
+                            hr {
+                                width: 100%;
+                            }
+
+                            .xtrm-work {
+
+                                span {
+                                    font-size: 4vw;
+                                }
+
+                            }
+
+                        }
+
+                        .xtrm-saleStatus {
+                            width: 100%;
+                            height: auto;
+                            margin-top: 0px;
+                            display: flex;
+                            justify-content: center;
+
+                            img {
+                                width: 60%;
+                            }
+                        }
+                    }
+
+                    .xtrm-charts {
+                        width: 100%;
+                        height: 30%;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 20px;
+
+                        .xtrm-activity {
+                            
+                            img{
+                                width: 100%;
+                                scale: 1;
+                            }
+                        }
+
+                        .xtrm-country {
+                            width:100;
+
+                            img{
+                                width: 100%;
+                                scale: 1;
+                            }
+                        }
+
+                    }
+
+                    .xtrm-homepage {
+
+                        .xtrm-navbar {
+                            top: 20px;
+                            left: 0;
+
+                            img {
+                                width: 96%;
+                            }
+                        }
+
+                        .xtrm-screens-tabMock {
+
+                            flex-direction: column-reverse;
+                            gap: 40px;
+
+                            .xtrm-sessions-analysis {
+                                justify-content: space-between;
+
+                                .xtrm-sessions {
+                                    width: 100%;
+                                    display: flex;
+                                    justify-content: center;
+
+                                    img {
+                                        width: 90%;
+                                    }
+                                }
+
+                                .xtrm-analystics {
+
+                                    img {
+                                        width: 90%;
+                                    }
+                                }
+                            }
+
+                            .xtrm-tabMock {
+                                width: 100%;
+
+                                img {
+                                    width: 70%;
+                                }
+
+                            }
+                        }
+                    }
+                }
+            }
+
+
+            @media screen and (max-width: 321px) {
+                .xtreme-main {
+                    padding: 20px;
+                    height: auto;
+                    min-height: 100vh;
+                    flex-direction: column;
+
+                    .xtrm-headings-saleStatus {
+
+                        .xtrm-saleStatus {
+                            width: 100%;
+                            height: auto;
+                            margin-top: 0px;
+                            display: flex;
+                            justify-content: center;
+
+                            img {
+                                width: 70%;
+                            }
+                        }
+                    }
+
+                    .xtrm-charts {
+                        flex-direction: column;
+                        padding: 10px;
+                        gap: 10px;
+
+                        .xtrm-activity {
+                            justify-content: center;
+                            
+                            img{
+                                width: 80%;
+                                scale: 1;
+                            }
+                        }
+                        
+                        .xtrm-country {
+                            width: 100%;
+                            display: flex;
+                            justify-content: center;
+
+                            img{
+                                width: 80%;
+                                scale: 1;
+                            }
+                        }
+
+                    }
+
+                    .xtrm-homepage {
+                        padding: 10px;
+
+                        .xtrm-navbar {
+                            top: 20px;
+                            left: 0;
+
+                            img {
+                                width: 96%;
+                            }
+                        }
+
+                        .xtrm-screens-tabMock {
+
+                            flex-direction: column-reverse;
+                            gap: 20px;
+
+                            .xtrm-sessions-analysis {
+                                flex-direction: column;
+                                justify-content: space-between;
+                                gap: 20px;
+
+                                .xtrm-sessions {
+                                    width: 100%;
+                                    display: flex;
+
+                                    img {
+                                        width: 100%;
+                                    }
+                                }
+
+                                .xtrm-analystics {
+
+                                    img {
+                                        width: 100%;
+                                    }
+                                }
+                            }
+
+                            .xtrm-tabMock {
+                                width: 100%;
+
+                                img {
+                                    width: 80%;
+                                }
+
+                            }
+                        }
+                    }
+                }
+            }
 
         }
 
@@ -5809,6 +6423,7 @@ main {
     .design-process {
         height: 340vh;
         width: 100%;
+        // overflow: hidden;
 
         .data {
             position: sticky;
@@ -8364,6 +8979,7 @@ main {
         }
 
     }
+
 
 
 }

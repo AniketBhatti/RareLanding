@@ -94,6 +94,7 @@ import sessions from "../../assets/images/07_ourWorks/DINAROLLING/sessions.png"
 import creativeInfo from "../../assets/images/07_ourWorks/VIVIDSPARK/creativedesigninfo.png"
 import continueInnovation from "../../assets/images/07_ourWorks/VIVIDSPARK/continueInnovation.png"
 import ladyModel from "../../assets/images/07_ourWorks/VIVIDSPARK/ladyCutout.png"
+import whyUS from "../../assets/images/07_ourWorks/VIVIDSPARK/whyUS.png"
 
 
 import cktl_rainbow from "../../assets/images/07_ourWorks/COCKTAILCULTURE/pngs/rainbow.png"
@@ -161,6 +162,132 @@ const Landing = () => {
 
 
 
+	const is4k = window.innerWidth < 2700 && window.innerWidth > 1927;
+	const isLargeLaptop = window.innerWidth < 1926 && window.innerWidth > 1440;
+	const isMediumLaptop = window.innerWidth < 1440 && window.innerWidth > 1024;
+	const isSmallLaptop = window.innerWidth < 1024 && window.innerWidth > 768;
+	const isTablet = window.innerWidth < 768 && window.innerWidth > 530;
+	const isLargeMobile = window.innerWidth < 530;
+	const isAnyMobile = window.innerWidth < 450 && window.innerWidth > 320;
+
+
+	React.useEffect(() => {
+		gsap.registerPlugin(ScrollTrigger);
+
+		gsap.fromTo(".blubs",
+			{
+				y: 0,
+			},
+
+			{
+				y: -50,
+				scrollTrigger: {
+					trigger: ".transform-ideas",
+					start: "top bottom",
+					end: "top top",
+					scrub: 1,
+				}
+			},
+		)
+
+		gsap.fromTo(".bwSquare",
+			{
+				y: 0,
+			},
+
+			{
+				y: -100,
+				scrollTrigger: {
+					trigger: ".transform-ideas",
+					start: "top bottom",
+					end: "top top",
+					scrub: 1,
+				}
+			},
+		)
+
+		gsap.fromTo(".shapes",
+			{
+				y: 0,
+			},
+
+			{
+				y: -80,
+				scrollTrigger: {
+					trigger: ".transform-ideas",
+					start: "top bottom",
+					end: "top top",
+					scrub: 1,
+				}
+			},
+		)
+	})
+
+
+	// FOR PATH
+	const pathRef = useRef(null);
+	React.useEffect(() => {
+		gsap.registerPlugin(ScrollTrigger);
+
+		gsap.to(pathRef.current, {
+			scrollTrigger: {
+				trigger: pathRef.current,
+				start: "top center",
+				end: "bottom center",
+				scrub: 1,
+			},
+			attr: {
+				d: "M0 4.5C1902.08 3.82732 5151.34 2.67819 7273 1.92785",
+				// d: "M3017 1C3005.17 50.3333 2970.6 146.4 2927 136C2872.5 123 2715 197 2763.5 242C2802.3 278 2779.67 308.333 2763.5 319C2732.33 339.333 2663.6 374.2 2638 351C2606 322 2465 303 2452 351C2439 399 2330 421.5 2330 351C2330 280.5 2166 351 2160 283.5C2154 216 1996 177.5 1919 197C1842 216.5 1835.5 303 1758.5 283.5C1696.9 267.9 1580.83 322 1530.5 351C1479.17 404.5 1329.6 479.4 1142 351H0",
+			},
+			ease: "none",
+		});
+	}, []);
+
+
+
+	// For HORIZONTAL SCROLL
+	React.useEffect(() => {
+		realPageAnimation();
+	}, []);
+
+	function realPageAnimation() {
+		gsap.to(".slide", {
+			scrollTrigger: {
+				trigger: ".our-services",
+				start: "top top",
+				end: "bottom bottom",
+				scrub: 1,
+			},
+			xPercent: -200,
+			ease: "power4.inOut", // Ensure ease is a string
+		});
+	}
+
+	React.useEffect(() => {
+		gsap.registerPlugin(MotionPathPlugin);
+
+		gsap.set(".item-1, .item-2, .item-3, .item-4, .item-5, .item-6", {
+			xPercent: -50, yPercent: -50, transformOrigin: "50% 50%"
+		})
+
+		gsap.to(".item-1, .item-2, .item-3, .item-4, .item-5, .item-6", {
+			motionPath: "#myPath",
+			transformOrigin: "50% 50%",
+			scrollTrigger: {
+				trigger: ".usp-list",
+				start: "top top",
+				end: "bottom top",
+				scrub: 1,
+			},
+			duration: 5,
+
+		});
+
+	}, []);
+
+
+
 	// Hide the horizontal scrollbar during the transition
 	const hideScrollbar = () => {
 		document.body.style.overflowX = 'hidden';
@@ -176,10 +303,1569 @@ const Landing = () => {
 	}, []);
 
 
-	const lumberCraftRef = useRef(null);
+	React.useEffect(() => {
+		
+		// gsap.fromTo(".lmbr-container",
+		// 	{
+		// 		x: "100%"
+		// 	},
+
+		// 	{
+		// 		x:0,
+		// 		y:0,
+		// 		scrollTrigger: {
+		// 			trigger: ".lmbr-container",
+		// 			start: "top 50%",
+		// 			end: "top top",
+		// 		}
+		// 	}
+		// )
+
+		gsap.fromTo(".lmbr-header",
+			{
+				x: "150%"
+			},
+
+			{
+				x:0,
+				y:0,
+				scrollTrigger: {
+					trigger: ".lmbr-container",
+					start: "top top",
+					end: "top -20%",
+				}
+			}
+		)
+
+		gsap.fromTo(".lmbr-all-prod",
+			{
+				x: "-100%",
+				opacity: 0,
+			},
+
+			{
+				x:0,
+				y:0,
+				opacity: 1,
+				scrollTrigger: {
+					trigger: ".lmbr-container",
+					start: "top -20%",
+					end: "top -30%",
+				}
+			}
+		)
+
+		gsap.fromTo(".place-it",
+			{
+				scale: 0,
+				rotation: 260,
+			},
+			
+			{
+				x:0,
+				y:0,
+				scale: 1,
+				rotation: 0,
+				scrollTrigger: {
+					trigger: ".lmbr-container",
+					start: "top -30%",
+					end: "top -40%",
+				}
+			}
+		)
+
+		gsap.fromTo(".lmbr-mainProd",
+			{
+				x: "-30%",
+				y: "30%",
+				opacity:0,
+			},
+
+			{
+				x:0,
+				y:0,
+				opacity:1,
+				scrollTrigger: {
+					trigger: ".lmbr-container",
+					start: "top -40%",
+					end: "top -60%",
+				}
+			}
+		)
+
+		gsap.fromTo(".lmbr-review",
+			{
+				x: "30%",
+				y: "30%",
+				opacity:0,
+			},
+
+			{
+				x:0,
+				y:0,
+				opacity:1,
+				scrollTrigger: {
+					trigger: ".lmbr-container",
+					start: "top -60%",
+					end: "top -70%",
+				}
+			}
+		)
+
+	})
+
+
+	
+
+
 	const regalFinance = useRef(null);
-	const orchard = useRef(null);
-	const healthInsurance = useRef(null)
+	React.useEffect(() => {
+		gsap.fromTo(regalFinance.current,
+			{ x: 100, y: 100, opacity: 0 },
+			{
+				x: 0,
+				y: 0,
+				opacity: 1,
+				scrollTrigger: {
+					trigger: regalFinance.current,
+					start: "top 80%", // Trigger when the top of the section is 80% down the viewport
+					end: "top top", // End when the top of the section is 30% down the viewport
+					scrub: 1,
+				}
+			}
+		);
+
+		gsap.fromTo(".headings",
+			{
+				x: "-120%",
+			},
+			{
+				x: 0,
+				y: 0,
+				scrollTrigger: {
+					trigger: ".regalFinance",
+					start: "top 20%",
+					end: "top top",
+					// scrub: true,
+				}
+			});
+
+		gsap.fromTo(".regal-mobileApp",
+			{
+				x: "-120%",
+			},
+			{
+				x: 0,
+				y: 0,
+				scrollTrigger: {
+					trigger: ".regalFinance",
+					start: "top top",
+					end: "top -10%",
+					// scrub: true,
+				}
+			});
+
+		gsap.fromTo(".rgl-nav",
+			{
+				opacity: 0,
+				scale: 0,
+			},
+			{
+				x: 0,
+				y: 0,
+				opacity: 1,
+				scale: 1,
+				scrollTrigger: {
+					trigger: ".regalFinance",
+					start: "top top",
+					end: "top -10%",
+					// scrub: true,
+				}
+			});
+
+		gsap.fromTo(".rgl-explr",
+			{
+				y: "-100%",
+				scale: 0,
+			},
+			{
+				x: 0,
+				y: 0,
+				scale: 1,
+				scrollTrigger: {
+					trigger: ".regalFinance",
+					start: "top -20%",
+					end: "top -50%",
+					// scrub: true,
+				}
+			});
+
+		gsap.fromTo(".rgl-frdm",
+			{
+				y: "100%",
+				opacity: 0,
+			},
+			{
+				x: 0,
+				y: 0,
+				opacity: 1,
+				scrollTrigger: {
+					trigger: ".regalFinance",
+					start: "top -20%",
+					end: "top -50%",
+					// scrub: true,
+				}
+			});
+
+		gsap.fromTo(".rgl-ast",
+			{
+				x: "100%",
+				opacity: 0,
+			},
+			{
+				x: 0,
+				y: 0,
+				opacity: 1,
+				scrollTrigger: {
+					trigger: ".regalFinance",
+					start: "top -50%",
+					end: "top -70%",
+					// scrub: true,
+				}
+			});
+
+	}, []);
+
+
+
+
+	React.useEffect(() => {
+		
+		gsap.fromTo(".orcd-headings",
+			{
+				x: "-100%",
+			},
+
+			{
+				x: 0,
+				scrollTrigger: {
+					trigger: ".orchard",
+					start: "top 30%",
+					end: "top top",
+				}
+			}
+		)
+
+		gsap.fromTo(".orcd-crnr",
+			{ x: -300, opacity: 0 },
+			{
+				x: 0,
+				opacity: 1,
+				scrollTrigger: {
+					trigger: ".orchard",
+					start: "top top",
+					end: "top -20%",
+				}
+			}
+		);
+
+		gsap.fromTo(".orcd-findProducts",
+			{ y: 300, opacity: 0 },
+			{
+				x: 0,
+				y: 0,
+				opacity: 1,
+				scrollTrigger: {
+					trigger: ".orchard",
+					start: "top -20%",
+					end: "top -40%",
+				}
+			}
+		);
+
+		gsap.fromTo(".orcd-infinity-scrl",
+			{ display: "none" },
+			{
+				x: 0,
+				y: 0,
+				display: "block",
+				scrollTrigger: {
+					trigger: ".orchard",
+					start: "top -50%",
+					end: "top -50%",
+				}
+			}
+		);
+
+		gsap.fromTo(".orcd-home",
+			{ x: "100%", opacity: 0 },
+			{
+				x: 0,
+				y: 0,
+				opacity: 1,
+				scrollTrigger: {
+					trigger: ".orchard",
+					start: "top -60%",
+					end: "top -70%",
+				}
+			}
+		);
+
+
+
+
+	}, []);
+
+
+	React.useEffect(() => {
+
+
+		gsap.fromTo(".heads",
+			{ x: "-50%", opacity: 0, },
+			{
+				x: 0,
+				y: 0,
+				opacity: 1,
+				scrollTrigger: {
+					trigger: ".healthInsurance",
+					start: "top 50%",
+					end: "top 30%",
+				}
+			}
+		);
+
+		gsap.fromTo(".HI-phoneMock",
+			{ x: "-50%", opacity: 0, },
+			{
+				x: 0,
+				y: 0,
+				opacity: 1,
+				scrollTrigger: {
+					trigger: ".healthInsurance",
+					start: "top 20%",
+					end: "top top",
+				}
+			}
+		);
+
+		gsap.fromTo(".HI-statistic-screen",
+			{ x: "-30%", opacity: 0, },
+			{
+				x: 0,
+				y: 0,
+				opacity: 1,
+				scrollTrigger: {
+					trigger: ".healthInsurance",
+					start: "top top",
+					end: "top -20%",
+				}
+			}
+		);
+
+		gsap.fromTo(".HI-customize",
+			{ y: "-50%", opacity: 0, },
+			{
+				x: 0,
+				y: 0,
+				opacity: 1,
+				scrollTrigger: {
+					trigger: ".healthInsurance",
+					start: "top -30%",
+					end: "top -50%",
+				}
+			}
+		);
+
+		gsap.fromTo(".HI-individual",
+			{ y: "50%", opacity: 0, },
+			{
+				x: 0,
+				y: 0,
+				opacity: 1,
+				scrollTrigger: {
+					trigger: ".healthInsurance",
+					start: "top -30%",
+					end: "top -50%",
+				}
+			}
+		);
+
+
+
+
+
+		gsap.fromTo(".Add",
+			{ x: 0, y: 0 },
+			{
+				x: -800,
+				y: -200,
+				scrollTrigger: {
+					trigger: ".healthInsurance",
+					start: "bottom bottom",
+					end: "bottom top",
+					scrub: 1,
+				}
+			},);
+
+		gsap.fromTo(".And",
+			{ x: 0, y: 0 },
+			{
+				x: -200,
+				y: 0,
+				scrollTrigger: {
+					trigger: ".healthInsurance",
+					start: "bottom bottom",
+					end: "bottom top",
+					scrub: 1,
+				}
+			},);
+
+		gsap.fromTo(".Arrow",
+			{ x: 0, y: 0 },
+			{
+				x: -200,
+				y: 0,
+				scrollTrigger: {
+					trigger: ".healthInsurance",
+					start: "bottom bottom",
+					end: "bottom top",
+					scrub: 1,
+				}
+			},);
+
+		gsap.fromTo(".Bulb",
+			{ x: 0, y: 0 },
+			{
+				x: -700,
+				y: -200,
+				scrollTrigger: {
+					trigger: ".healthInsurance",
+					start: "bottom bottom",
+					end: "bottom top",
+					scrub: 1,
+				}
+			},);
+
+		gsap.fromTo(".Coverage",
+			{ x: 0, y: 0 },
+			{
+				x: -400,
+				y: -100,
+				scrollTrigger: {
+					trigger: ".healthInsurance",
+					start: "bottom bottom",
+					end: "bottom top",
+					scrub: 1,
+				}
+			},);
+
+		gsap.fromTo(".Health",
+			{ x: 0, y: 0 },
+			{
+				x: -400,
+				y: -300,
+				scrollTrigger: {
+					trigger: ".healthInsurance",
+					start: "bottom bottom",
+					end: "bottom top",
+					scrub: 1,
+				}
+			},);
+
+		gsap.fromTo(".Mind",
+			{ x: 0, y: 0 },
+			{
+				x: -600,
+				y: -600,
+				scrollTrigger: {
+					trigger: ".healthInsurance",
+					start: "bottom bottom",
+					end: "bottom top",
+					scrub: 1,
+				}
+			},);
+
+		gsap.fromTo(".Phonebook",
+			{ x: 0, y: 0 },
+			{
+				x: -600,
+				y: -900,
+				scrollTrigger: {
+					trigger: ".healthInsurance",
+					start: "bottom bottom",
+					end: "bottom top",
+					scrub: 1,
+				}
+			},);
+
+		gsap.fromTo(".Safe",
+			{ x: 0, y: 0 },
+			{
+				x: -800,
+				y: -600,
+				scrollTrigger: {
+					trigger: ".healthInsurance",
+					start: "bottom bottom",
+					end: "bottom top",
+					scrub: 1,
+				}
+			},);
+
+		gsap.fromTo(".Schedule",
+			{ x: 0, y: 0 },
+			{
+				x: -600,
+				y: -800,
+				scrollTrigger: {
+					trigger: ".healthInsurance",
+					start: "bottom bottom",
+					end: "bottom top",
+					scrub: 1,
+				}
+			},);
+
+		gsap.fromTo(".Secure",
+			{ x: 0, y: 0 },
+			{
+				x: -250,
+				y: -1200,
+				scrollTrigger: {
+					trigger: ".healthInsurance",
+					start: "bottom bottom",
+					end: "bottom top",
+					scrub: 1,
+				}
+			},);
+
+		gsap.fromTo(".Teeth",
+			{ x: 0, y: 0 },
+			{
+				x: -600,
+				y: -1200,
+				scrollTrigger: {
+					trigger: ".healthInsurance",
+					start: "bottom bottom",
+					end: "bottom top",
+					scrub: 1,
+				}
+			},);
+
+
+	}, []);
+
+
+	React.useEffect(() => {
+
+
+		gsap.fromTo(".dina-hearder",
+			{
+				x: 200,
+				opacity: 0,
+			},
+
+			{
+				x: 0,
+				y: 0,
+				opacity: 1,
+				scrollTrigger: {
+					trigger: ".dinaRollings",
+					start: "top 30%",
+					end: "top top",
+					scrub: true,
+				}
+		})
+
+		gsap.fromTo(".dina-phoneMock",
+			{
+				x: "-100%",
+				opacity: 0,
+			},
+
+			{
+				x: 0,
+				y: 0,
+				opacity: 1,
+				scrollTrigger: {
+					trigger: ".dinaRollings",
+					start: "top 10%",
+					end: "top -10%",
+					scrub: true,
+				}
+		})
+
+		gsap.fromTo(".dina-gameGraph",
+			{
+				x: -100,
+				opacity: 0,
+			},
+
+			{
+				x: 0,
+				y: 0,
+				opacity: 1,
+				scrollTrigger: {
+					trigger: ".dinaRollings",
+					start: "top -20%",
+					end: "top -40%",
+					scrub: 1,
+				}
+		})
+
+		gsap.fromTo(".connections",
+			{
+				x: -150,
+				opacity: 0,
+			},
+
+			{
+				x: 0,
+				y: 0,
+				opacity: 1,
+				scrollTrigger: {
+					trigger: ".dinaRollings",
+					start: "top -20%",
+					end: "top -40%",
+					scrub: 1,
+				}
+		})
+
+
+		gsap.fromTo(".dina-felindra",
+			{
+				x: -150,
+				y: 150,
+				opacity: 0,
+			},
+
+			{
+				x: 0,
+				y: 0,
+				opacity: 1,
+				scrollTrigger: {
+					trigger: ".dinaRollings",
+					start: "top -30%",
+					end: "top -50%",
+					scrub: 1,
+				}
+		})
+
+		gsap.fromTo(".dina-session",
+			{
+				x: 150,
+				y: 150,
+				opacity: 0,
+			},
+
+			{
+				x: 0,
+				y: 0,
+				opacity: 1,
+				scrollTrigger: {
+					trigger: ".dinaRollings",
+					start: "top -30%",
+					end: "top -50%",
+					scrub: 1,
+				}
+		})
+
+		gsap.fromTo(".dina-roll",
+			{
+				x: 0,
+				y: 150,
+				opacity: 0,
+			},
+
+			{
+				x: 0,
+				y: 0,
+				opacity: 1,
+				scrollTrigger: {
+					trigger: ".dinaRollings",
+					start: "top -60%",
+					end: "top -80%",
+					scrub: 1,
+				}
+		})
+
+
+	}, []);
+
+
+	React.useEffect(() => {
+		
+		
+
+		gsap.fromTo(".vivid-headings",
+			{
+				x: -150,
+				opacity: 0,
+			},
+
+			{
+				x: 0,
+				y: 0,
+				opacity: 1,
+				scrollTrigger: {
+					trigger: ".vividSpark",
+					start: "top 40%",
+					end: "top 20%",
+					scrub: 1,
+				}
+		})
+
+		gsap.fromTo(".vivid-heads",
+			{
+				x: -150,
+				opacity: 0,
+			},
+
+			{
+				x: 0,
+				y: 0,
+				opacity: 1,
+				scrollTrigger: {
+					trigger: ".vividSpark",
+					start: "top 20%",
+					end: "top top",
+					scrub: 1,
+				}
+		})
+
+		gsap.fromTo(".connect-reveal",
+			{
+				x: "-110%",
+			},
+
+			{
+				x: 0,
+				y: 0,
+				opacity: 1,
+				scrollTrigger: {
+					trigger: ".vividSpark",
+					start: "top top",
+					end: "top 10%",
+					scrub: 1,
+				}
+		})
+
+		gsap.fromTo(".vivid-creative-dsgn",
+			{
+				x: "-110%",
+			},
+
+			{
+				x: "20%",
+				y: "-15%",
+				opacity: 1,
+				scrollTrigger: {
+					trigger: ".vividSpark",
+					start: "top -10%",
+					end: "top -20%",
+					scrub: 1,
+				}
+		})
+
+		gsap.fromTo(".vivid-crtv-h2",
+			{
+				y: 50,
+				opacity: 0,
+			},
+
+			{
+				x: 0,
+				y: 0,
+				opacity: 1,
+				scrollTrigger: {
+					trigger: ".vividSpark",
+					start: "top -20%",
+					end: "top -25%",
+					scrub: 1,
+				}
+		})
+
+		gsap.fromTo(".vivid-crtv-p",
+			{
+				y: 50,
+				opacity: 0,
+			},
+
+			{
+				x: 0,
+				y: 0,
+				opacity: 1,
+				scrollTrigger: {
+					trigger: ".vividSpark",
+					start: "top -25%",
+					end: "top -30%",
+					scrub: 1,
+				}
+		})
+
+		gsap.fromTo(".vivid-continued",
+			{
+				x: -100,
+				opacity: 0,
+			},
+
+			{
+				x: 0,
+				y: "-60%",
+				opacity: 1,
+				scrollTrigger: {
+					trigger: ".vividSpark",
+					start: "top -30%",
+					end: "top -40%",
+					scrub: 1,
+				}
+		})
+
+		gsap.fromTo(".vivid-lady-img",
+			{
+				x: -100,
+				opacity: 0,
+			},
+
+			{
+				x: 0,
+				y: 0,
+				opacity: 1,
+				scrollTrigger: {
+					trigger: ".vividSpark",
+					start: "top -40%",
+					end: "top -50%",
+					scrub: 1,
+				}
+		})
+
+		gsap.fromTo(".whyUs",
+			{
+				x: 100,
+				opacity: 0,
+			},
+
+			{
+				x: 0,
+				y: 0,
+				opacity: 1,
+				scrollTrigger: {
+					trigger: ".vividSpark",
+					start: "top -50%",
+					end: "top -60%",
+					scrub: 1,
+				}
+		})
+
+	});
+
+
+	// const cocktailCulture = useRef(null)
+	React.useEffect(() => {
+
+		gsap.fromTo(".cktl-rainbow-reveal",
+			{
+				y: 0,
+			},
+
+			{
+				y: "100%",
+				scrollTrigger: {
+					trigger: ".cocktailCulture",
+					start: "top top",
+					end: "top -20%",
+					scrub: 1,
+				},
+			},
+
+		);
+
+
+		gsap.fromTo(".cktl-heads",
+			{
+				x: "-150%",
+			},
+
+			{
+				x:0,
+				y: 0,
+				scrollTrigger: {
+					trigger: ".cocktailCulture",
+					start: "top -20%",
+					end: "top -30%",
+					scrub: 1,
+				},
+			},
+
+		);
+
+		gsap.fromTo(".cktl-strt-mking",
+			{
+				x: "-150%",
+			},
+
+			{
+				x:0,
+				y: 0,
+				scrollTrigger: {
+					trigger: ".cocktailCulture",
+					start: "top -30%",
+					end: "top -35%",
+					scrub: 1,
+				},
+			},
+
+		);
+
+		gsap.fromTo(".cktl-behappy",
+			{
+				x: "30%",
+				scale: 0,
+			},
+
+			{
+				x: 0,
+				y: 0,
+				scale: 1,
+				scrollTrigger: {
+					trigger: ".cocktailCulture",
+					start: "top -35%",
+					end: "top -45%",
+					scrub: 1,
+				},
+			},
+
+		);
+
+		gsap.fromTo(".cktl-orange",
+			{
+				x: "-100%",
+				y: "50%",
+				scale: 0,
+			},
+
+			{
+				x: 0,
+				y: 0,
+				scale: 1,
+				scrollTrigger: {
+					trigger: ".cocktailCulture",
+					start: "top -35%",
+					end: "top -45%",
+					scrub: 1,
+				},
+			},
+
+		);
+
+		gsap.fromTo(".cktl-details",
+			{
+				y: "50%",	
+				opacity: 0,
+			},
+
+			{
+				x: 0,
+				y: 0,
+				opacity:1,
+				scrollTrigger: {
+					trigger: ".cocktailCulture",
+					start: "top -50%",
+					end: "top -60%",
+					scrub: 1,
+				},
+			},
+
+		);
+
+		gsap.fromTo(".cktl-experience",
+			{
+				y: "50%",	
+				opacity: 0,
+			},
+
+			{
+				x: 0,
+				y: 0,
+				opacity:1,
+				scrollTrigger: {
+					trigger: ".cocktailCulture",
+					start: "top -60%",
+					end: "top -70%",
+					scrub: 1,
+				},
+			},
+
+		);
+
+		gsap.fromTo(".cktl-restro",
+			{
+				y: "-50%",	
+				opacity: 0,
+			},
+
+			{
+				x: 0,
+				y: 0,
+				opacity:1,
+				scrollTrigger: {
+					trigger: ".cocktailCulture",
+					start: "top -60%",
+					end: "top -70%",
+					scrub: 1,
+				},
+			},
+
+		);
+
+
+		gsap.fromTo(".cktl-sipSavor-strip",
+			{
+				x: "110%",
+			},
+
+			{
+				x: 0,
+				y: 0,
+				scrollTrigger: {
+					trigger: ".cocktailCulture",
+					start: "top -70%",
+					end: "top -80%",
+					scrub: 1,
+				},
+			},
+
+		);
+
+
+
+	});
+
+	// DESIGN PROCESS SECTION ANIMATIONS
+	React.useEffect(() => {
+		gsap.fromTo(".designRevealAnimation",
+			{
+				x: -1000,
+			},
+			{
+				x: 0,
+				scrollTrigger: {
+					trigger: ".design-process",
+					start: "top top",
+					end: "top -0.2%",
+					scrub: 1
+				}
+			},
+		);
+
+		gsap.fromTo(".dp-headers h2 span",
+			{
+				color: "black",
+			},
+			{
+				color: "white",
+				scrollTrigger: {
+					trigger: ".design-process",
+					start: "top top",
+					end: "top -0.2%",
+					scrub: 1,
+				}
+			},
+		);
+
+
+		gsap.set(".arrowBlack", {
+			xPercent: -50,
+			yPercent: -1500,
+			transformOrigin: "50% 50%"
+		});
+		gsap.to(".arrowBlack", {
+			motionPath: {
+				path: ".arrowPath svg path",
+				autoRotate: true,
+			},
+			transformOrigin: "50% 50%",
+			scrollTrigger: {
+				trigger: ".design-process",
+				start: "top -15%",
+				end: "top -25%",
+				scrub: 1,
+			},
+		});
+
+	}, []);
+
+
+	// MOVING SCREEN ANIMATION EFFECT
+	React.useEffect(() => {
+
+		// PAGE BLACK AND WHITE ANIMATION SO LEFTSCREEN WILL APPEAR WITH B/W  MOVING SQUARE
+		gsap.fromTo(".processAnimationStart",
+			{
+				background: "black",
+			},
+
+			{
+				background: "white",
+				scrollTrigger: {
+					trigger: ".design-process",
+					start: "top -60%",
+					end: "top -65%",
+					scrub: 1,
+				},
+			}
+		);
+
+
+		// MOVING SQUARE SET TO THE MIDDILE AND ROTATE THERE
+		gsap.fromTo(".movingSquare",
+			{
+				opacity: 1,
+				x: 500,
+				y: 0,
+				rotation: 45,
+			},
+
+			{
+				opacity: 1,
+				x: 385,
+				y: 0,
+				rotation: 135,
+				zIndex: 200,
+				scrollTrigger: {
+					trigger: ".design-process",
+					start: "top -55%",
+					end: "top -60%",
+					scrub: 1,
+				},
+			}
+		);
+
+		// SACLLING UP THE INNER SQUARE
+		gsap.fromTo(".innerSquare",
+			{
+				scale: 1,
+			},
+			{
+				scale: 2,
+				scrollTrigger: {
+					trigger: ".design-process",
+					start: "top -55%",
+					end: "top -60%",
+					scrub: 1,
+				},
+			}
+		);
+
+
+
+
+		// ACCTUAL SLIDES ROTATION ANIMATION STARTS FROM HERE
+
+
+		// MOVING WHOLE DIV 0 DEGREE FROM -90 DEGREE
+		gsap.fromTo(".movableDiv",
+			{
+				opacity: 1,
+				rotation: -90,
+			},
+
+			{
+				opacity: 1,
+				rotation: 0,
+				scrollTrigger: {
+					trigger: ".design-process",
+					start: "top -60%",
+					end: "top -70%",
+					scrub: 1,
+				},
+			}
+		);
+
+		// SET OPACITY 0 TO 1 FOR LEFT SCREEN FOR VISIBLE IMPACT
+		gsap.fromTo(".leftScreen",
+			{
+				opacity: 0,
+			},
+
+			{
+				opacity: 1,
+				scrollTrigger: {
+					trigger: ".design-process",
+					start: "top -60%",
+					end: "top -70%",
+					scrub: 1,
+				},
+			}
+		);
+
+		// ONBOARDING TEXT REVEAL EFFECT
+		gsap.fromTo(".onboarding",
+			{
+				x: "-100%",
+				y: "-110%",
+				opacity: 0,
+			},
+
+			{
+				x: 50,
+				opacity: 1,
+				scrollTrigger: {
+					trigger: ".design-process",
+					start: "top -70%",
+					end: "top -75%",
+					scrub: 1,
+				},
+			}
+		);
+
+		// ONBOARDING TEXT HIDE AGAIN EFFECT
+		gsap.fromTo(".onboarding",
+			{
+				x: 50,
+			},
+
+			{
+				x: "-100%",
+				scrollTrigger: {
+					trigger: ".design-process",
+					start: "top -100%",
+					end: "top -120%",
+					scrub: 1,
+				},
+			}
+		);
+
+		// SET OPACITY 1 TO 0 FOR LEFT SCREEN FOR VISIBLE IMPACT
+		gsap.fromTo(".leftScreen",
+			{
+				opacity: 1,
+			},
+
+			{
+				opacity: 0,
+				scrollTrigger: {
+					trigger: ".design-process",
+					start: "top -110%",
+					end: "top -120%",
+					scrub: 1,
+				},
+			}
+		);
+
+
+
+		// ROTATION 222222222222222222222222
+
+		// MOVING WHOLE DIV 180 DEGREE FROM 0 DEGREE
+		gsap.fromTo(".movableDiv",
+			{
+				rotation: 0,
+			},
+
+			{
+				rotation: 180,
+				scrollTrigger: {
+					trigger: ".design-process",
+					start: "top -120%",
+					end: "top -140%",
+					scrub: 1,
+				},
+			}
+		);
+
+		// SET OPACITY 0 TO 1 FOR LEFT SCREEN FOR VISIBLE IMPACT
+		gsap.fromTo(".leftScreen",
+			{
+				opacity: 0,
+			},
+
+			{
+				opacity: 1,
+				scrollTrigger: {
+					trigger: ".design-process",
+					start: "top -130%",
+					end: "top -140%",
+					scrub: 1,
+				},
+			}
+		);
+
+		// START PROJECT TEXT REVEAL EFFECT
+		gsap.fromTo(".startProject",
+			{
+				x: 0,
+				y: 100,
+				zIndex: -1,
+			},
+
+			{
+				x: "-110%",
+				zIndex: 10,
+				y: 100,
+				scrollTrigger: {
+					trigger: ".design-process",
+					start: "top -140%",
+					end: "top -145%",
+					scrub: 1,
+				},
+			}
+		);
+
+		// START PROJECT TEXT HIDE AGAIN SCALE-0 EFFECT
+		gsap.fromTo(".startProject",
+			{
+
+			},
+			{
+				x: 0,
+				y: 100,
+				scrollTrigger: {
+					trigger: ".design-process",
+					start: "top -150%",
+					end: "top -165%",
+					scrub: 1,
+				},
+			}
+		);
+
+		// SET OPACITY 1 TO 0 FOR LEFT SCREEN FOR VISIBLE IMPACT
+		gsap.fromTo(".leftScreen",
+			{
+				opacity: 1,
+			},
+
+			{
+				opacity: 0,
+				scrollTrigger: {
+					trigger: ".design-process",
+					start: "top -155%",
+					end: "top -165%",
+					scrub: 1,
+				},
+			}
+		);
+
+
+		// ROTATION 3333333333333333333333
+
+		// MOVING WHOLE DIV 360 DEGREE FROM 180 DEGREE
+		gsap.fromTo(".movableDiv",
+			{
+				rotation: 180,
+			},
+
+			{
+				rotation: 360,
+				scrollTrigger: {
+					trigger: ".design-process",
+					start: "top -160%",
+					end: "top -170%",
+					scrub: 1,
+				},
+			}
+		);
+
+		// SET OPACITY 0 TO 1 FOR LEFT SCREEN FOR VISIBLE IMPACT
+		gsap.fromTo(".leftScreen",
+			{
+				opacity: 0,
+			},
+
+			{
+				opacity: 1,
+				scrollTrigger: {
+					trigger: ".design-process",
+					start: "top -165%",
+					end: "top -170%",
+					scrub: 1,
+				},
+			}
+		);
+
+		// DESIGN TEXT REVEAL EFFECT
+		gsap.fromTo(".design",
+			{
+				x: "-100%",
+				// y:"-110%",
+				opacity: 0,
+			},
+
+			{
+				x: 0,
+				y: 0,
+				opacity: 1,
+				scrollTrigger: {
+					trigger: ".design-process",
+					start: "top -170%",
+					end: "top -180%",
+					scrub: 1,
+				},
+			}
+		);
+
+		// DESIGN TEXT HIDE AGAIN SCALE-0 EFFECT
+		gsap.fromTo(".design",
+			{
+
+			},
+
+			{
+				x: "-100%",
+				scrollTrigger: {
+					trigger: ".design-process",
+					start: "top -185%",
+					end: "top -190%",
+					scrub: 1,
+				},
+			}
+		);
+
+		// SET OPACITY 1 TO 0 FOR LEFT SCREEN FOR VISIBLE IMPACT
+		gsap.fromTo(".leftScreen",
+			{
+				opacity: 1,
+			},
+
+			{
+				opacity: 0,
+				scrollTrigger: {
+					trigger: ".design-process",
+					start: "top -190%",
+					end: "top -200%",
+					scrub: 1,
+				},
+			}
+		);
+
+
+
+		// ROTATION 44444444444444444444
+
+		// MOVING WHOLE DIV 360 DEGREE FROM 180 DEGREE
+		gsap.fromTo(".movableDiv",
+			{
+				rotation: 0,
+			},
+
+			{
+				rotation: 180,
+				scrollTrigger: {
+					trigger: ".design-process",
+					start: "top -195%",
+					end: "top -205%",
+					scrub: 1,
+				},
+			}
+		);
+
+		gsap.fromTo(".leftScreen",
+			{
+				opacity: 0,
+			},
+
+			{
+				opacity: 1,
+				scrollTrigger: {
+					trigger: ".design-process",
+					start: "top -200%",
+					end: "top -205%",
+					scrub: 1,
+				},
+			}
+		);
+
+		gsap.fromTo(".delivery",
+			{
+				x: 0,
+				opacity: 0,
+			},
+
+			{
+				x: "-100%",
+				y: "10%",
+				opacity: 1,
+				scrollTrigger: {
+					trigger: ".design-process",
+					start: "top -205%",
+					end: "top -215%",
+					scrub: 1,
+				},
+			}
+		);
+
+
+
+	}, []);
+
+
+	// TESTIMONIAL BLACK AND WHITE ANIMATIONS
+
+	React.useEffect(() => {
+
+		// BLACK TO WHITE TEXT
+		gsap.fromTo(".ttmnalWhiteBlack",
+			{
+				x: "-100%",
+			},
+
+			{
+				x: 0,
+				scrollTrigger: {
+					trigger: ".RPtestimonialsContainer",
+					start: "top 30%",
+					end: "top 20%",
+					scrub: 1,
+				},
+			}
+		);
+
+
+		// TEXT BLACK TO WHITE
+		gsap.to(".testimonialText h2",
+			{
+				color: "#fff",
+				scrollTrigger: {
+					trigger: ".RPtestimonialsContainer",
+					start: "top 30%",
+					end: "top 20%",
+					scrub: 1,
+				},
+			}
+		)
+
+
+		// BLACK BG HEIGHT INCREASE
+		gsap.fromTo(".ttmnalWhiteBlack",
+			{
+				height: "300px",
+			},
+			{
+				height: "100vh",
+				scrollTrigger: {
+					trigger: ".RPtestimonialsContainer",
+					start: "top 10%",
+					end: "top top",
+					scrub: 1,
+				},
+			}
+		)
+
+
+		gsap.fromTo(".testimonialsList",
+			{
+				scale: 0
+			},
+			{
+				scale: 1,
+				scrollTrigger: {
+					trigger: ".RPtestimonialsContainer",
+					start: "top top",
+					end: "bottom bottom",
+					scrub: 1,
+				},
+			},
+		);
+
+	}, []);
 
 
 
@@ -194,22 +1880,38 @@ const Landing = () => {
 
 
 
+
+
+
 	return (
 		<main>
 
-			{/* <section className="every-pixel">
-				<Link className="start-your-project">Start your Project</Link>
+			<section className='every-pixels'>
 
-				<p className="bring-idea">Bringing your ideas to life where</p>
-
-				<div className="headers">
-					<h1>
-						Every <span>pixels</span>
-					</h1>
+				<div className="strt-prjct-link">
+					<a href=''>
+						Start your Project
+					</a>
 				</div>
 
-				<p className="tells-your-story">Tells Your Story</p>
-			</section> */}
+				<div className="landing-main-headings">
+
+					<div className="brng-yr-idea">
+						<p>Bringing your ideas to life where</p>
+					</div>
+
+					<div className="evry-pxl">
+						<h1>Every Pixel</h1>
+					</div>
+
+					<div className="tls-yr-stry">
+						<p>Tells Your story</p>
+					</div>
+				</div>
+
+
+
+			</section>
 
 			<div className="intro">
 				{/* <section className="welcome2rp">
@@ -233,9 +1935,9 @@ const Landing = () => {
 			</div>
 
 			<section className="transform-ideas">
-				<h2>
+				<h3>
 					We transform ideas into memorable experiences through branding web design,  and digital strategy.
-				</h2>
+				</h3>
 
 				<div className='trnsfm-gifs'>
 					<div className='blubs' >
@@ -255,7 +1957,7 @@ const Landing = () => {
 
 			<section className="our-work">
 
-				<div ref={lumberCraftRef} className="lmbr-container w-screen h-[200vh]">
+				<div className="lmbr-container w-screen h-[200vh]">
 					<div className='lmbr-main'>
 
 						<div className="lmbr-header">
@@ -292,7 +1994,7 @@ const Landing = () => {
 				</div>
 
 
-				<div ref={regalFinance} className="regalFinance w-screen h-[200vh]">
+				<div className="regalFinance w-screen h-[200vh]">
 					<div className='regal-main'>
 
 						<div className="regal-header">
@@ -400,7 +2102,7 @@ const Landing = () => {
 				</div>
 
 
-				<div ref={orchard} className="orchard h-[200vh] w-screen">
+				<div className="orchard h-[200vh] w-screen">
 
 					<div className="orcd-main">
 						<div className='orcd-crnr'>
@@ -432,7 +2134,7 @@ const Landing = () => {
 						</div>
 
 						<div className='orcd-header'>
-							<div className="headings">
+							<div className="orcd-headings">
 								<h2>Orchard</h2>
 								<p>Fresh Picks, Seamless Clicks: Designed for Everyday Ease</p>
 								<hr />
@@ -453,7 +2155,7 @@ const Landing = () => {
 				</div>
 
 
-				<div ref={healthInsurance} className="healthInsurance h-[200vh] w-screen">
+				<div className="healthInsurance h-[200vh] w-screen">
 
 					<div className="hlth-insur-main">
 
@@ -550,7 +2252,6 @@ const Landing = () => {
 
 				</div>
 
-
 				<div className="dinaRollings h-[200vh] w-screen">
 					<div className="dina-main">
 
@@ -602,18 +2303,31 @@ const Landing = () => {
 					</div>
 				</div>
 
-
 				<div className="vividSpark h-[200vh] w-screen">
 					<div className="vivid-main">
 
 						<div className="vivid-headings">
 
-							<div className="vivid-connect">
+							<div className="vivid-connect relative">
 								<p>connect</p>
+
+								<div className='connect-reveal h-[100%] w-[100%] absolute top-0 left-0 bg-[#FFF5DE] z-[-1]'></div>
 							</div>
 
-							<h2>Vivid<span>spark</span></h2>
+							<div className="vivid-heads">
+								<h2>Vivid<span>spark</span></h2>
+								<p>Transforming Ideas into Impactful Designs, Seamlessly</p>
+								<hr />
+								<div className="vivid-works">
+									<span>Research</span>
+									<span>Typography</span>
+									<span>UI/UX design</span>
+									<span>Website Layout</span>
+									<span>Frontend Development</span>
+								</div>
+							</div>
 
+						
 						</div>
 
 						<div className="vividBottom">
@@ -621,26 +2335,28 @@ const Landing = () => {
 							<div className="vivid-crtiv-cotnue">
 
 								<div className="vivid-creative-dsgn">
-									<h3>Creative Design <span>Service that</span> </h3>
-									<p>Good design isn't just about looks—it’s about combining style with function. Our talented team creates visuals that grab attention and encourage people to take action. Whether it’s a logo, website, or brand identity, we make sure your message comes through clearly, leaving a strong impression on your customers.</p>
+									<h3 className='vivid-crtv-h2'>Creative Design <span>Service that</span> </h3>
+									<p className='vivid-crtv-p'>Good design isn't just about looks—it’s about combining style with function. Our talented team creates visuals that grab attention and encourage people to take action. Whether it’s a logo, website, or brand identity, we make sure your message comes through clearly, leaving a strong impression on your customers.</p>
 								</div>
 
 								<div className="vivid-continued">
-									<div className="vivid-con-left">
-										<p>2024 Present</p>
-										<p>We believe that effective marketing can be simple and powerful.</p>
-									</div>
-
-									<div className="vivid-con-right">
-										<h4>Continued Innovation.</h4>
-									</div>
+									<img src={continueInnovation} alt="" />
 								</div>
 
 							</div>
 
+							<div className="vivid-whyus">
+
+								<div className="whyUs">
+									<img src={whyUS} alt="" />
+								</div>
+
+								<div className="vivid-lady-img">
+									<img src={ladyModel} alt="" />
+								</div>
+							</div>
+
 						</div>
-
-
 
 					</div>
 				</div>
@@ -650,6 +2366,8 @@ const Landing = () => {
 
 						<div className="cktl-rainbow">
 							<img src={cktl_rainbow} alt="" />
+
+							<div className="cktl-rainbow-reveal absolute top-0 left-0 z-2 bg-[#575757] h-screen w-screen"></div>
 						</div>
 
 						<div className="cktl-container">
@@ -659,7 +2377,7 @@ const Landing = () => {
 
 									<div className="cktl-heads">
 										<div className="cktl-logo">
-											<img src={cktl_cocktailCultureLogo} alt="" />
+											<h2>Cocktail Culture</h2>
 										</div>
 
 										<p>Stirring Up Creativity: A Menu as Bold as Your Cocktails</p>
@@ -746,8 +2464,6 @@ const Landing = () => {
 
 						</div>
 
-
-
 						<div className="processPoints ml-9 text-white">
 
 							<div className="onboarding w-[50vw] h-[80vh]">
@@ -801,6 +2517,7 @@ const Landing = () => {
 
 				</div>
 			</section> */}
+			
 
 			{/* <section className="relative z-10 companyOverview">
 				<div className="boxContainer h-screen w-screen flex">
@@ -1053,7 +2770,6 @@ const Landing = () => {
 					</div>
 				</div>
 			</section>
-
 
 			{/* <section className="RPtestimonialsContainer h-[100vh]">
 				<div className="testimonialStick">

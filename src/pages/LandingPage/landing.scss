@@ -5,13 +5,19 @@
 }
 
 h1,
-h2,
+h2 {
+    // font-family: satoshi-bold;
+    font-family: impact;
+}
+
+
 h3,
 h4,
 h5,
 h6 {
     font-family: satoshi-bold;
 }
+
 
 @font-face {
     font-family: satoshi;
@@ -21,6 +27,11 @@ h6 {
 @font-face {
     font-family: satoshi-bold;
     src: url("../../assets/fonts/Satoshi/Satoshi-Bold.otf");
+}
+
+@font-face {
+    font-family: impact;
+    src: url("../../assets/fonts/Impact-Font/impact.ttf");
 }
 
 @keyframes rotateSquare {
@@ -36,421 +47,279 @@ h6 {
 main {
 
 
-    .every-pixel {
+    .every-pixels {
         height: auto;
         min-height: 100vh;
-        padding: 120px 50px 0px 50px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        padding: 50px;
+        overflow: hidden;
 
-        .start-your-project {
-            position: absolute;
-            top: 50px;
-            right: 100px;
-            font-size: 36px;
-            font-weight: 600;
-            font-family: satoshi;
-            text-decoration: none;
-            color: black;
-            transition: 0.5s ease-in-out;
+        .strt-prjct-link {
+            position: relative;
+            width: 100%;
+            height: 10%;
+            text-align: right;
 
-
-            &::before {
-                content: "";
-                position: absolute;
-                height: 3px;
-                width: 100%;
-                background-color: #ed1080;
-                left: -50%;
-                top: calc(100% + 10px);
-                transition: 0.5s ease-in-out;
-                opacity: 0;
-            }
-
-            &::after {
-                right: -15%;
-                top: 30%;
-                position: absolute;
-                content: "";
-                height: 20px;
-                width: 20px;
-                background-color: black;
-                transition: 1s ease-in-out;
-            }
-
-
-            &:hover {
-                color: #ed1080;
-                transition: 1s ease-in-out;
+            a {
+                font-size: 2vw;
+                font-family: satoshi-bold;
+                text-transform: uppercase;
+                transition: all .5s ease-in-out;
+                padding-right: 70px;
+                display: inline-block;
 
                 &::after {
-                    background-color: #ed1080;
-                    transition: 1s ease-in-out;
-                    animation: rotateSquare 4s linear infinite;
+                    content: "";
+                    height: 1vw;
+                    width: 1vw;
+                    position: absolute;
+                    top: 1vw;
+                    background-color: black;
+                    margin-left: 20px;
+                    transition: all .5s ease-in-out;
                 }
 
-                &::before {
-                    left: 0%;
-                    opacity: 1;
-                }
+                &:hover {
+                    color: #ed0180;
 
+                    &::after {
+                        background-color: #ed0180;
+                        animation: rotateSquare 2s infinite linear;
+                    }
+                }
+            }
+
+
+            @media screen and (max-width: 1440px) {
+                height: auto;
+
+                a {
+                    font-size: 30px;
+                    padding-right: 50px;
+
+                    &::after {
+                        height: 1.2vw;
+                        width: 1.2vw;
+                        top: calc(50% - 0.6vw);
+                    }
+                }
             }
 
         }
 
-        .bring-idea {
-            margin: 290px 0 0 27px;
-            font-size: 48px;
-            line-height: 58px;
-            letter-spacing: 4px;
-            position: relative;
-            width: fit-content;
-            font-family: satoshi-bold;
 
-            &::before {
-                top: -400px;
-                left: 490px;
-                position: absolute;
-                content: "";
-                height: 800px;
-                width: 800px;
-                background-image: url("../../assets/images/01_everyPixel/RareLanding-BG-cube.png");
-                background-repeat: no-repeat;
-                background-position: center;
-                z-index: -1;
-                animation: rotate 3s ease-in-out, slideDown 3s ease-in-out;
-
-                /* Add animation */
-
-            }
-
-            @keyframes slideDown {
-                from {
-                    top: -700px;
-                    left: 10px;
-                }
-
-                to {
-                    top: -400px;
-                    left: 490px;
-                }
-            }
-        }
-
-        .headers {
-            width: calc(100%);
+        .landing-main-headings {
+            height: auto;
+            min-height: 90vh;
+            width: 100%;
             display: flex;
-            align-items: center;
+            flex-direction: column;
             justify-content: center;
 
-
-            h1 {
-                display: inline-block;
-                text-transform: uppercase;
-                font-size: 220px;
-                letter-spacing: 25px;
-                font-family: satoshi-bold;
-                line-height: 100%;
-
-                span {
-                    background-image: url("../../assets/images/01_everyPixel/RareLanding-PIXEL-BG.png");
-                    background-clip: text;
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                    background-position: 20% 10%;
-                    font-family: satoshi-bold;
-
-                }
-            }
-
-            // @keyframes background-scroll {
-            //     0% {
-            //         background-position: 0% 0%;
-            //     }
-            //     50% {
-            //         background-position: 0% 100%;
-            //     }
-            //     100% {
-            //         background-position: 0% 0%;
-            //     }
-            // }
-
-        }
-
-        .tells-your-story {
-            padding-right: 5%;
-            font-weight: 400;
-            font-size: 100px;
-            letter-spacing: 8px;
-            text-align: right;
-            font-family: satoshi-bold;
-        }
-
-
-
-        @media screen and (min-width: 1927px) {
-
-            .bring-idea {
-                margin: 290px 0 0 130px;
-                font-size: 70px;
-                line-height: 58px;
-                letter-spacing: 4px;
-                position: relative;
-
-                &::before {
-                    top: -400px;
-                    left: 706px;
-                    position: absolute;
-                    content: "";
-                    height: 800px;
-                    width: 800px;
-                    background-image: url("../../assets/images/01_everyPixel/RareLanding-BG-cube.png");
-                    background-repeat: no-repeat;
-                    background-position: center;
-                    z-index: -1;
-                }
-            }
-
-            .tells-your-story {
-                padding-right: 4%;
-                font-size: 100px;
-            }
-        }
-
-        @media screen and (max-width: 1926px) and (min-width: 1440px) {
-
-            .bring-idea {
-                margin: 300px 0 0 10px;
-                font-size: 48px;
-                line-height: 58px;
-                letter-spacing: 4px;
-                position: relative;
-
-                &::before {
-                    top: -400px;
-                    left: 490px;
-                    position: absolute;
-                    content: "";
-                    height: 800px;
-                    width: 800px;
-                    background-image: url("../../assets/images/01_everyPixel/RareLanding-BG-cube.png");
-                    background-repeat: no-repeat;
-                    background-position: center;
-                    z-index: -1;
-                }
-            }
-
-
-            .headers {
-                width: calc(100%);
-                display: flex;
-                align-items: center;
-                justify-content: center;
-
-                h1 {
-                    font-size: 10vw;
-                }
-
-            }
-
-            .tells-your-story {
-                padding-right: 2%;
-                font-weight: 400;
-                font-size: 5vw;
-                letter-spacing: 8px;
-                text-align: right;
-            }
-        }
-
-        @media screen and (max-width: 1439px) and (min-width: 1024px) {
-
-            // height: 80vh;
-            .start-your-project {
-                position: absolute;
-                top: 50px;
-                right: 100px;
-                font-size: 30px;
-                font-weight: 600;
-                width: fit-content;
-            }
-
-            .bring-idea {
-                margin: 380px 0 0 20px;
-                font-size: 40px;
-                line-height: 58px;
-                letter-spacing: 4px;
-                position: relative;
-
-                &::before {
-                    top: -400px;
-                    left: 100px;
-                    position: absolute;
-                    content: "";
-                    height: 600px;
-                    background-image: url("../../assets/images/01_everyPixel/RareLanding-BG-cube.png");
-                    background-repeat: no-repeat;
-                    background-position: center;
-                    z-index: -1;
-                    background-size: contain;
-                }
-            }
-
-
-            .headers {
-                width: calc(100%);
-                display: flex;
-                align-items: center;
-                justify-content: center;
-
-                h1 {
-                    font-size: 9vw;
-                }
-
-            }
-
-            .tells-your-story {
-                padding-right: 2%;
-                font-weight: 400;
-                font-size: 5vw;
-                letter-spacing: 8px;
-                text-align: right;
-            }
-
-        }
-
-        @media screen and (max-width: 1023px) and (min-width: 768px) {
-            // height: 80vh;
-
-            .start-your-project {
-                position: absolute;
-                top: 50px;
-                right: 60px;
-                font-size: 20px;
-                font-weight: 600;
-                width: fit-content;
-
-                &::after {
-                    right: -15%;
-                    top: 30%;
-                    position: absolute;
-                    content: "";
-                    height: 15px;
-                    width: 15px;
-                    background-color: black;
-                    transition: 0.5s ease-in-out;
-                }
-            }
-
-            .bring-idea {
-                margin: 150px 0 0 60px;
-                font-size: 30px;
-                line-height: 58px;
-                letter-spacing: 4px;
-                position: relative;
-
-                &::before {
-                    top: -200px;
-                    left: 200px;
-                    position: absolute;
-                    content: "";
-                    height: 300px;
-                    width: 300px;
-                    background-image: url("../../assets/images/01_everyPixel/RareLanding-BG-cube.png");
-                    background-repeat: no-repeat;
-                    background-position: center;
-                    z-index: -1;
-                    background-size: contain;
-                }
-            }
-
-
-            .headers {
-
-                h1 {
-                    font-size: 7vw;
-                    font-weight: bold;
-                }
-
-            }
-
-            .tells-your-story {
-                padding-right: 4%;
-                font-weight: 400;
+            .brng-yr-idea {
+                font-family: satoshi;
                 font-size: 4vw;
-                letter-spacing: 8px;
+                transform: translate(12%);
+            }
+
+            .evry-pxl {
+                font-size: 15.6vw;
+                text-transform: uppercase;
+                line-height: 14vw;
+                text-align: center;
+
+                h1 {
+                    font-family: impact;
+                }
+            }
+
+            .tls-yr-stry {
+                font-family: satoshi;
+                font-size: 4vw;
                 text-align: right;
+                transform: translate(-12%);
+            }
+        }
+
+
+        @media screen and (max-width: 1000px) {
+
+            .strt-prjct-link {
+
+                a {
+                    font-size: 25px;
+
+                    &::after {
+                        content: "";
+                        height: 1.4vw;
+                        width: 1.4vw;
+                        top: calc(50% - 0.7vw);
+                        ;
+                    }
+
+                }
+
+            }
+
+
+            .landing-main-headings {
+
+                .brng-yr-idea {
+                    font-size: 5vw;
+                    transform: translate(5%);
+                }
+
+                .evry-pxl {
+                    font-size: 18vw;
+                    line-height: 20vw;
+
+                    h1 {
+                        font-family: impact;
+                    }
+                }
+
+                .tls-yr-stry {
+                    font-size: 5vw;
+                    transform: translate(-5%);
+                }
+            }
+        }
+
+        @media screen and (max-width: 700px) {
+
+            .strt-prjct-link {
+
+                a {
+                    font-size: 20px;
+
+                    &::after {
+                        content: "";
+                        height: 2.2vw;
+                        width: 2.2vw;
+                        top: calc(50% - 1.1vw);
+                        ;
+                    }
+
+                }
+
+            }
+
+
+            .landing-main-headings {
+
+                .brng-yr-idea {
+                    font-size: 5vw;
+                    transform: translate(0%);
+                }
+
+                .evry-pxl {
+                    font-size: 18vw;
+                    line-height: 20vw;
+
+                    h1 {
+                        font-family: impact;
+                    }
+                }
+
+                .tls-yr-stry {
+                    font-size: 5vw;
+                    transform: translate(0%);
+                }
+            }
+        }
+
+        @media screen and (max-width: 590px) {
+
+            padding: 30px;
+
+            .strt-prjct-link {
+
+                a {
+                    font-size: 20px;
+
+                    &::after {
+                        content: "";
+                        height: 2.2vw;
+                        width: 2.2vw;
+                        top: calc(50% - 1.1vw);
+                        ;
+                    }
+
+                }
+
+            }
+
+            .landing-main-headings {
+
+                .brng-yr-idea {
+                    font-size: 5vw;
+                    transform: translate(5%);
+                }
+
+                .evry-pxl {
+                    font-size: 17vw;
+                    line-height: 20vw;
+
+                    h1 {
+                        font-family: impact;
+                    }
+                }
+
+                .tls-yr-stry {
+                    font-size: 5vw;
+                    transform: translate(-5%);
+                }
             }
 
         }
 
-        @media screen and (max-width: 767px) {
-            // height: 50vh;
+        @media screen and (max-width: 425px) {
 
-            .start-your-project {
-                position: absolute;
-                top: 50px;
-                right: 40px;
-                font-size: 14px;
-                font-weight: 600;
-                width: fit-content;
-
-                &::after {
-                    right: -15%;
-                    top: 30%;
-                    position: absolute;
-                    content: "";
-                    height: 10px;
-                    width: 10px;
-                    background-color: black;
-                    transition: 0.5s ease-in-out;
-                }
-            }
-
-            .bring-idea {
-                margin: 60px 0 0 -10px;
-                font-size: 18px;
-                line-height: 28px;
-                letter-spacing: 4px;
+            .strt-prjct-link {
                 position: relative;
                 width: 100%;
+                height: 10%;
+                text-align: right;
 
-                &::before {
-                    top: -100px;
-                    left: 15px;
-                    position: absolute;
-                    content: "";
-                    height: 200px;
-                    width: 200px;
-                    background-image: url("../../assets/images/01_everyPixel/RareLanding-BG-cube.png");
-                    background-repeat: no-repeat;
-                    background-position: center;
-                    z-index: -1;
-                    background-size: contain;
-                }
-            }
+                a {
+                    font-size: 5vw;
+                    font-family: satoshi-bold;
+                    text-transform: uppercase;
+                    transition: all .5s ease-in-out;
+                    padding-right: 0px;
+                    display: inline-block;
 
+                    &::after {
+                        display: none;
+                    }
 
-            .headers {
-                h1 {
-                    margin-left: 30px;
-                    font-size: 22vw;
-                    font-weight: bold;
-                    letter-spacing: 20px;
                 }
 
             }
 
-            .tells-your-story {
-                margin-left: -10px;
-                font-size: 8vw;
-                letter-spacing: 5px;
-                text-align: left;
-                width: 100%;
+            .landing-main-headings {
+    
+                .brng-yr-idea {
+                    font-size: 5.5vw;
+                    transform: translate(0);
+                }
+    
+                .evry-pxl {
+                    // font-size: 15.6vw;
+                    // line-height: 14vw;
+    
+                    h1 {
+                        font-family: impact;
+                    }
+                }
+    
+                .tls-yr-stry {
+                    // font-size: 4vw;
+                    transform: translate(0);
+                }
             }
-
         }
-
+ 
+    
     }
 
     .intro {
@@ -810,7 +679,7 @@ main {
         justify-content: center;
         padding: 0 100px;
 
-        h2 {
+        h3 {
             font-size: 4vw;
             text-align: center;
         }
@@ -848,7 +717,7 @@ main {
         }
 
         @media screen and (max-width: 1199px) {
-            h2 {
+            h3 {
                 font-size: 5vw;
             }
 
@@ -873,7 +742,7 @@ main {
         }
 
         @media screen and (max-width: 600px) {
-            h2 {
+            h3 {
                 font-size: 6vw;
             }
 
@@ -886,13 +755,13 @@ main {
         @media screen and (max-width:529px) {
             padding: 40px;
 
-            h2 {
+            h3 {
                 text-align: left;
             }
         }
 
         @media screen and (max-width: 500px) {
-            h2 {
+            h3 {
                 font-size: 10vw;
             }
         }
@@ -965,6 +834,7 @@ main {
                             display: flex;
                             align-items: center;
                             position: relative;
+                            z-index: 10;
 
                             img {
                                 width: 100%;
@@ -1085,7 +955,7 @@ main {
                 }
             }
 
-            @media screen and (max-width: 1300px){
+            @media screen and (max-width: 1300px) {
                 .lmbr-main {
 
 
@@ -1158,8 +1028,8 @@ main {
                     flex-direction: column;
                     padding: 30px;
                     justify-content: space-between;
-    
-    
+
+
                     .lmbr-header {
                         height: 20%;
                         width: 100%;
@@ -1170,86 +1040,86 @@ main {
                         h2 {
                             font-size: 4vw;
                         }
-    
+
                         p {
                             font-size: 1.7vw;
                         }
-    
+
                         hr {
                             width: 60%;
                         }
-    
+
                         .lmbr-works {
                             width: 100%;
                             text-align: center;
-    
+
                             span {
                                 font-size: 1.7vw;
                             }
-    
+
                         }
                     }
-    
+
                     .lmbr-body {
                         width: 100%;
                         height: 80%;
                         padding: 10px;
-    
+
                         .image-container {
                             width: 100%;
                             // height: auto
                             display: flex;
                             align-items: center;
                             justify-content: center;
-    
+
                             .lmbr-all-prod {
                                 width: 20%;
                                 display: flex;
                                 align-items: center;
                                 justify-content: center;
                                 position: relative;
-    
+
                                 img {
                                     width: 100%;
                                     scale: 1;
 
                                 }
-    
+
                                 .place-it {
                                     top: 70%;
                                     left: 75%;
                                     width: 50%;
                                 }
                             }
-    
+
                             .lmbr-mainProd {
                                 max-width: 60%;
                                 height: 100%;
                                 display: flex;
                                 align-items: center;
                                 justify-content: center;
-    
+
                                 img {
                                     width: 100%;
                                     scale: 1;
                                 }
                             }
-    
+
                             .lmbr-review {
                                 width: 20%;
                                 display: flex;
                                 align-items: center;
-                                justify-content: center;    
-    
+                                justify-content: center;
+
                                 img {
                                     width: 100%;
                                     scale: 1;
                                 }
                             }
-                            
+
                         }
                     }
-    
+
                 }
 
             }
@@ -1274,21 +1144,21 @@ main {
                         h2 {
                             font-size: 4vw;
                         }
-    
+
                         p {
                             font-size: 1.8vw;
                         }
-    
+
                         hr {
                             width: 70%;
                         }
-    
+
                         .lmbr-works {
-    
+
                             span {
                                 font-size: 1.8vw;
                             }
-    
+
                         }
                     }
 
@@ -1310,45 +1180,45 @@ main {
                                 align-items: center;
                                 justify-content: center;
                                 position: relative;
-    
+
                                 img {
                                     width: 100%;
                                 }
-    
+
                                 .place-it {
                                     top: 70%;
                                     left: 75%;
                                     width: 50%;
                                 }
                             }
-    
+
                             .lmbr-mainProd {
                                 max-width: 60%;
                                 height: 100%;
                                 display: flex;
                                 align-items: center;
                                 justify-content: center;
-    
+
                                 img {
                                     width: 100%;
                                 }
                             }
-    
+
                             .lmbr-review {
                                 width: 20%;
                                 display: flex;
                                 align-items: center;
-                                justify-content: center;    
-    
+                                justify-content: center;
+
                                 img {
                                     width: 100%;
                                     scale: 1;
                                 }
                             }
-                            
+
                         }
                     }
-    
+
                 }
             }
 
@@ -1356,7 +1226,7 @@ main {
                 .lmbr-main {
 
                     .lmbr-header {
-                        h2{
+                        h2 {
                             font-size: 5vw;
                         }
                     }
@@ -1366,7 +1236,7 @@ main {
 
             @media screen and (max-width: 640px) {
                 .lmbr-main {
-                    
+
                     height: auto;
                     min-height: 100vh;
                     display: flex;
@@ -1376,16 +1246,16 @@ main {
                     justify-content: start;
 
                     .lmbr-header {
-                        h2{
+                        h2 {
                             font-size: 6vw;
                         }
 
-                        p{
+                        p {
                             font-size: 2vw;
                         }
 
-                        .lmbr-works{
-                            span{
+                        .lmbr-works {
+                            span {
                                 font-size: 2vw;
                             }
                         }
@@ -1393,37 +1263,37 @@ main {
 
                     .lmbr-body {
 
-                        .image-container{
+                        .image-container {
                             flex-direction: column;
                             gap: 20px;
                             width: 100%;
 
-                            .lmbr-all-prod{
+                            .lmbr-all-prod {
                                 width: 100%;
 
-                                img{
+                                img {
                                     width: 25%;
                                 }
 
-                                .place-it{
+                                .place-it {
                                     width: 18%;
                                     top: 70%;
                                     left: 50%;
                                 }
                             }
 
-                            .lmbr-mainProd{
+                            .lmbr-mainProd {
                                 min-width: 100%;
 
-                                img{
+                                img {
                                     width: 100%;
                                 }
                             }
 
-                            .lmbr-review{
+                            .lmbr-review {
                                 width: 100%;
 
-                                img{
+                                img {
                                     width: 25%;
                                 }
                             }
@@ -1440,21 +1310,22 @@ main {
 
                         align-items: start;
 
-                        h2{
+                        h2 {
                             font-size: 10vw;
                         }
 
-                        p{
+                        p {
                             font-size: 4vw;
                         }
 
-                        hr{
+                        hr {
                             width: 100%;
                         }
 
-                        .lmbr-works{
+                        .lmbr-works {
                             text-align: left;
-                            span{
+
+                            span {
                                 font-size: 4vw;
                             }
                         }
@@ -1462,37 +1333,37 @@ main {
 
                     .lmbr-body {
 
-                        .image-container{
+                        .image-container {
                             flex-direction: column;
                             gap: 20px;
                             width: 100%;
 
-                            .lmbr-all-prod{
+                            .lmbr-all-prod {
                                 width: 100%;
 
-                                img{
+                                img {
                                     width: 30%;
                                 }
 
-                                .place-it{
+                                .place-it {
                                     width: 20%;
                                     top: 75%;
                                     left: 55%;
                                 }
                             }
 
-                            .lmbr-mainProd{
+                            .lmbr-mainProd {
                                 min-width: 100%;
 
-                                img{
+                                img {
                                     width: 100%;
                                 }
                             }
 
-                            .lmbr-review{
+                            .lmbr-review {
                                 width: 100%;
 
-                                img{
+                                img {
                                     width: 30%;
                                 }
                             }
@@ -1504,42 +1375,43 @@ main {
             @media screen and (max-width: 375px) {
                 min-height: 200vh;
                 height: auto;
+
                 .lmbr-main {
 
                     .lmbr-body {
 
-                        .image-container{
+                        .image-container {
                             flex-direction: column;
                             gap: 20px;
                             width: 100%;
 
-                            .lmbr-all-prod{
+                            .lmbr-all-prod {
                                 width: 100%;
 
-                                img{
+                                img {
                                     width: 40%;
                                 }
 
-                                .place-it{
+                                .place-it {
                                     width: 25%;
                                     top: 75%;
                                     left: 60%;
                                 }
                             }
 
-                            .lmbr-mainProd{
+                            .lmbr-mainProd {
                                 min-width: 100%;
 
-                                img{
+                                img {
                                     width: 100%;
                                     scale: 1;
                                 }
                             }
 
-                            .lmbr-review{
+                            .lmbr-review {
                                 width: 100%;
 
-                                img{
+                                img {
                                     width: 40%;
                                 }
                             }
@@ -1548,7 +1420,7 @@ main {
                 }
             }
 
-            
+
 
 
         }
@@ -2695,7 +2567,7 @@ main {
 
                         .xtrm-navbar {
                             position: absolute;
-                            top: 0px;
+                            top: 50px;
                             left: 0%;
                             width: 100%;
                             display: flex;
@@ -2760,22 +2632,51 @@ main {
             @media screen and (max-width: 1366px) {
                 .xtreme-main {
 
-                    height: auto;
-                    min-height: 100vh;
-                    align-items: center;
+                    .xtrm-charts {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 40px;
+
+                        .xtrm-activity {
+                            display: flex;
+
+                            img {
+                                width: 90%;
+                            }
+                        }
+
+                        .xtrm-country {
+
+                            img {
+                                scale: 1.2;
+                                width: 100%;
+                                object-fit: contain;
+                            }
+                        }
+                    }
+                }
+            }
+
+            @media screen and (max-width: 1199px) {
+
+                .xtreme-main {
 
                     .xtrm-headings-saleStatus {
-                        padding: 20px;
-                        width: 25%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 40px;
 
                         .xtrm-header {
 
                             h2 {
-                                font-size: 4vw;
+                                font-size: 5vw;
+                                line-height: 5vw;
                             }
 
                             p {
-                                font-size: 1.2vw;
+                                font-size: 1.7vw;
                             }
 
                             hr {
@@ -2783,20 +2684,23 @@ main {
                             }
 
                             .xtrm-work {
+
                                 span {
-                                    font-size: 1.2vw;
+                                    font-size: 1.7vw;
                                 }
+
                             }
 
                         }
 
                         .xtrm-saleStatus {
                             width: 100%;
-                            height: 60%;
+                            height: auto;
                             margin-top: 0px;
+                            display: flex;
+                            justify-content: start;
 
                             img {
-                                scale: 1.2;
                                 width: 100%;
                             }
                         }
@@ -2805,100 +2709,17 @@ main {
                     .xtrm-charts {
                         display: flex;
                         flex-direction: column;
-                        gap: 10px;
-
-                        .xtrm-activity {
-                            display: flex;
-
-                            img {
-                                width: 100%;
-                            }
-                        }
-
-                        .xtrm-country {
-
-                            img {
-                                width: 100%;
-                                object-fit: contain;
-                                scale: 1.2;
-
-                                transform: translate(-5%, 10%);
-                            }
-                        }
+                        gap: 40px;
+                        width: 35%;
                     }
 
                     .xtrm-homepage {
-                        height: 100%;
-                        width: 45%;
-                        position: static;
-                        background-color: red;
-
-                        .xtrm-navbar {
-                            position: absolute;
-                            top: 0px;
-                            left: 0%;
-                            width: 100%;
-                            display: flex;
-                            justify-content: center;
-                            padding: 10px 0px;
-
-                            img {
-                                width: 60%;
-                                scale: 1;
-                            }
-                        }
-
-
-                        .xtrm-screens-tabMock {
-                            display: flex;
-                            gap: 10px;
-                            width: 100%;
-                            height: 100%;
-
-                            .xtrm-sessions-analysis {
-                                width: 40%;
-                                display: flex;
-                                flex-direction: column;
-                                justify-content: space-evenly;
-
-                                .xtrm-sessions {
-                                    width: 100%;
-
-                                    img {
-                                        width: 100%;
-                                        scale: 1.1;
-                                    }
-                                }
-
-                                .xtrm-analystics {
-                                    width: 100%;
-
-                                    img {
-                                        width: 100%;
-                                        scale: 1.4;
-                                        transform: translate(-20%, 10%);
-                                    }
-                                }
-                            }
-
-                            .xtrm-tabMock {
-                                width: 60%;
-                                display: flex;
-                                align-items: center;
-
-                                img {
-                                    width: 100%;
-                                    scale: 1.2;
-                                }
-
-                            }
-                        }
+                        width: 40%;
                     }
                 }
             }
 
-            @media screen and (max-width: 1199px) {}
-
+            @media screen and (max-width: 991px) {}
 
         }
 
@@ -2936,7 +2757,7 @@ main {
                     }
 
                     .orcd-infinity-scrl {
-                        
+
                         .scroller {
                             height: 100%;
 
@@ -2946,16 +2767,16 @@ main {
                                 animation: scroll-up 10s linear infinite;
                                 position: relative;
                                 top: 90%;
-                                
+
                                 img~img {
                                     margin-top: 50px;
                                 }
-                                
+
                                 @keyframes scroll-up {
                                     0% {
                                         transform: translateY(0);
                                     }
-                                    
+
                                     100% {
                                         transform: translateY(-100%);
                                     }
@@ -2970,7 +2791,7 @@ main {
                     width: 50%;
                     color: white;
 
-                    .headings {
+                    .orcd-headings {
                         width: 100%;
                         display: flex;
                         flex-direction: column;
@@ -3084,6 +2905,7 @@ main {
                 }
             }
 
+
             @media screen and (max-width: 1919px) {
                 .orcd-main {
 
@@ -3145,7 +2967,7 @@ main {
                 .orcd-main {
 
                     .orcd-header {
-                        .headings {
+                        .orcd-headings {
                             h2 {
                                 font-size: 4vw;
                             }
@@ -3210,7 +3032,7 @@ main {
 
                     .orcd-header {
 
-                        .headings {
+                        .orcd-headings {
 
                             h2 {
                                 font-size: 4vw;
@@ -3268,7 +3090,7 @@ main {
                     .orcd-header {
                         width: 45%;
 
-                        .headings {
+                        .orcd-headings {
 
                             h2 {
                                 font-size: 5vw;
@@ -3381,7 +3203,7 @@ main {
                         flex-direction: row;
                         // display: none;
 
-                        .headings {
+                        .orcd-headings {
                             width: auto;
                             display: flex;
                             flex-direction: column;
@@ -3455,7 +3277,7 @@ main {
                     .orcd-header {
                         height: 45%;
 
-                        .headings {
+                        .orcd-headings {
                             width: 50%;
 
                             h2 {
@@ -3528,7 +3350,7 @@ main {
                         height: 55%;
                         display: block;
 
-                        .headings {
+                        .orcd-headings {
                             width: 100%;
                             display: flex;
                             align-items: center;
@@ -3615,7 +3437,7 @@ main {
                         height: auto;
                         display: block;
 
-                        .headings {
+                        .orcd-headings {
                             width: 100%;
                             display: block;
 
@@ -5300,6 +5122,7 @@ main {
                 top: 0;
                 height: 100vh;
                 width: 100%;
+                overflow: hidden;
 
                 .vivid-headings {
                     padding: 50px;
@@ -5307,18 +5130,17 @@ main {
                     height: 30%;
                     background-color: #FF3302;
                     display: flex;
-                    justify-content: space-evenly;
+                    justify-content: space-between;
 
                     .vivid-connect {
                         width: 40%;
-                        background-color: #FFF5DE;
                         display: flex;
                         align-items: center;
 
                         p {
                             width: 100%;
                             text-align: center;
-                            font-size: 4vw;
+                            font-size: 5vw;
                             font-family: satoshi;
                             text-transform: uppercase;
                             font-weight: bold;
@@ -5326,24 +5148,53 @@ main {
                         }
                     }
 
-                    h2 {
-                        font-size: 6vw;
-                        text-transform: uppercase;
-                        color: black;
-                        width: 60%;
-                        text-align: right;
+                    .vivid-heads {
 
-                        span {
-                            color: #FFF5DE;
+                        h2 {
+                            font-size: 4vw;
+                            text-transform: uppercase;
+                            color: black;
+                            width: 100%;
+                            text-align: center;
+
+                            span {
+                                color: #FFF5DE;
+                            }
+                        }
+
+                        p {
+                            font-family: satoshi;
+                            font-size: 1vw;
+                            padding: 10px 0;
+                            text-align: center;
+                        }
+
+                        hr {
+                            border-color: black;
+                        }
+
+                        .vivid-works {
+                            padding: 10px 0;
+
+                            span {
+                                font-family: satoshi;
+                                font-size: 1vw;
+                            }
+
+                            span+span {
+                                &::before {
+                                    content: " | ";
+                                }
+                            }
                         }
                     }
 
                 }
 
-
                 .vividBottom {
                     width: 100%;
                     height: 70%;
+                    display: flex;
 
                     .vivid-crtiv-cotnue {
                         width: 50%;
@@ -5378,44 +5229,56 @@ main {
                             }
                         }
 
-
                         .vivid-continued {
-                            width: 50%;
-                            height: 25%;
-                            background-color: black;
                             display: flex;
-                            padding: 10px;
-                            border-radius: 10px;
-                            transform: translate(100%, -100%);
+                            justify-content: end;
+                            transform: translate(0%, -60%);
+                            width: 100%;
+                            height: 30%;
 
-                            .vivid-con-left {
-                                display: flex;
-                                flex-direction: column;
-                                justify-content: space-between;
 
-                                p {
-                                    color: #FF3302;
-                                    font-family: satoshi;
-                                    font-weight: bold;
-                                    width: 100%;
-                                }
-
-                                p+p {
-                                    font-weight: normal;
-                                }
+                            img {
+                                width: 70%;
+                                object-fit: contain;
                             }
 
-                            .vivid-con-right {
-                                display: flex;
-                                align-items: center;
 
-                                h4 {
-                                    font-size: 3vw;
-                                    text-align: center;
-                                    line-height: 3vw;
-                                }
+                        }
+
+                    }
+
+                    .vivid-whyus {
+                        width: 50%;
+                        height: 100%;
+                        padding: 20px;
+                        display: flex;
+
+                        .whyUs {
+                            width: 40%;
+                            height: 100%;
+                            display: flex;
+                            align-items: end;
+                            position: relative;
+                            z-index: -1;
+                            left: 10%;
+
+                            img {
+                                width: 100%;
                             }
                         }
+
+                        .vivid-lady-img {
+                            width: 60%;
+                            height: 100%;
+                            display: flex;
+                            justify-content: end;
+                            align-items: center;
+
+                            img {
+                                width: 100%;
+                            }
+                        }
+
                     }
                 }
 
@@ -5469,8 +5332,8 @@ main {
 
                             .cktl-heads {
                                 .cktl-logo {
-                                    img {
-                                        width: 100%;
+                                    h2 {
+                                        font-size: 4vw;
                                     }
                                 }
 

@@ -1,10 +1,2 @@
 1. EveryPixels Cube change to a seprate DIV, from ::after selector.
-2. HealthInsurance Small widgets floating fix.
-3. LumberCraft Responsive Images Set and GSAP Triggers Value Change.
-4. RegalFinance Height Width Check for the Responsive purposes.
-5. VividSpark CONNECT Text Fixing BG with Text.
-6. BeHappy Cocktail move to left and text on a little side to increase visibility.
-7. Check Right Block Down for Responsiveness and height adjustment to acquire full screen View
-		IF NOT
-	RE-STRUCTURE THE WHOLE BLOCKS IN SCREEN.
-8. Design Process Inner and Outter Square remove and attach OG cube over there and then rotate as usual.
+2. Design Process Inner and Outter Square remove and attach OG cube over there and then rotate as usual.

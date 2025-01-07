@@ -2152,7 +2152,7 @@ const Landing = () => {
 				</div>
 
 
-				<div className="xtreme h-[200vh] w-screen">
+				{/* <div className="xtreme h-[200vh] w-screen">
 					<div className="xtreme-main">
 
 						<div className="xtrm-headings-saleStatus">
@@ -2208,7 +2208,7 @@ const Landing = () => {
 						</div>
 
 					</div>
-				</div>
+				</div> */}
 
 
 				<div className="orchard h-[200vh] w-screen">

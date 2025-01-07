@@ -4073,6 +4073,7 @@ main {
                         flex-direction: column;
                         align-items: center;
                         justify-content: space-around;
+                        gap: 10px;
 
                         .orcd-findProducts {
                             height: 35%;
@@ -4084,7 +4085,7 @@ main {
                         }
 
                         .orcd-infinity-scrl {
-                            width: 60%;
+                            width: 100%;
 
                             .scroller {
                                 height: 100%;
@@ -4092,7 +4093,7 @@ main {
                                 .orcd-custom-scroll {
 
                                     img {
-                                        width: 55%;
+                                        width: 35%;
                                     }
                                 }
                             }
@@ -4136,83 +4137,6 @@ main {
 
                 }
             }
-
-            // @media screen and (max-width: 375px) {
-            //     .orcd-main {
-            //         padding: 30px;
-            //         align-items: center;
-            //         gap: 20px;
-
-            //         .orcd-crnr {
-            //             width: 30%;
-            //         }
-
-            //         .orcd-screens {
-            //             height: auto;
-            //             padding: 0px;
-            //             display: flex;
-            //             align-items: center;
-
-            //             .orcd-findProducts {
-            //                 align-items: center;
-
-            //                 img {
-            //                     width: 100%;
-            //                 }
-            //             }
-
-            //             .orcd-infinity-scrl {
-            //                 width: 60%;
-
-            //                 .scroller {
-            //                     height: 100%;
-
-            //                     .orcd-custom-scroll {
-
-            //                         img {
-            //                             width: 55%;
-            //                         }
-            //                     }
-            //                 }
-            //             }
-            //         }
-
-            //         .orcd-header {
-            //             height: auto;
-            //             display: block;
-
-            //             .orcd-headings {
-            //                 width: 100%;
-            //                 display: block;
-
-            //                 h2 {
-            //                     font-size: 10vw;
-            //                     text-align: left;
-            //                 }
-
-            //                 p {
-            //                     font-size: 4vw;
-            //                 }
-
-            //                 hr {
-            //                     width: 100%;
-            //                 }
-
-            //                 .orcd-works {
-
-            //                     span {
-            //                         font-size: 4vw;
-            //                     }
-            //                 }
-            //             }
-
-            //             .orcd-home {
-            //                 display: none;
-            //             }
-            //         }
-
-            //     }
-            // }
 
 
         }
@@ -4441,6 +4365,7 @@ main {
             @media screen and (max-width: 1800px) {
 
                 .hlth-insur-main {
+                    padding: 50px;
 
                     .HI-widgets-container {
                         height: 150px;
@@ -4504,7 +4429,7 @@ main {
             @media screen and (max-width: 1199px) {
                 .hlth-insur-main {
                     display: flex;
-                    padding: 30px;
+                    padding: 50px;
 
                     .HI-phoneMock-screen {
                         width: 55%;
@@ -4689,7 +4614,7 @@ main {
 
             @media screen and (max-width: 767px) {
                 .hlth-insur-main {
-
+                    padding: 30px;
                     .HI-phoneMock-screen {
                         height: 100%;
                         width: 50%;
@@ -4926,7 +4851,7 @@ main {
                 .hlth-insur-main {
                     min-height: 100vh;
                     height: auto;
-                    padding: 20px;
+                    padding: 30px;
                     display: flex;
                     align-items: start;
                     justify-content: center;

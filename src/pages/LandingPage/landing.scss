@@ -128,19 +128,23 @@ main {
 
                 position: relative;
                 display: inline-block;
-
+                display: flex;
+                justify-content: center;
 
                 h1 {
-                    font-family: impact, sans-serif;
-                    background-image: url("../../assets/images/01_everyPixel/typo_animations/neon_fluid_BLUE.gif");
-                    background-size: cover;
+                    font-family: impact;
+                    transition: background-image 0.5s ease-in-out;
+                    background-image: url("../../assets/images/01_everyPixel/typo_animations/neon_fluid_BLUE.gif");                        background-size: cover;
                     background-clip: text;
                     -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
+                    -webkit-text-fill-color: black;
                     background-position: 0% 0%;
+                    transition: all 0.5s ease-in-out;
+
+                    &:hover{
+                        -webkit-text-fill-color: transparent;
+                    }
                 }
-
-
 
 
             }
@@ -287,6 +291,8 @@ main {
 
         @media screen and (max-width: 425px) {
 
+            min-height: 50vh;
+
             .strt-prjct-link {
                 position: relative;
                 width: 100%;
@@ -310,7 +316,7 @@ main {
             }
 
             .landing-main-headings {
-
+                min-height: 40vh;
                 .brng-yr-idea {
                     font-size: 5.5vw;
                     transform: translate(0);
@@ -336,161 +342,6 @@ main {
 
     .intro {
         position: relative;
-
-        .welcome2rp {
-            margin-top: 400px;
-            margin-bottom: 400px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: sticky;
-            top: 0;
-
-            h2 {
-                font-size: 8vmax;
-                font-weight: 300;
-                text-align: center;
-                font-family: satoshi;
-                position: relative;
-
-                span {
-                    font-family: roboto-slab;
-                    display: block;
-                    font-weight: 400;
-                    font-size: 9vmax;
-
-                    .x {
-                        margin: 5px;
-                        display: inline-block;
-                        position: relative;
-                        margin-right: 15px;
-                        margin-left: 10px;
-                        height: 6vmax;
-                        width: 6vmax;
-                        background-image: url("../../assets/images/02_welcomeRP/X-pixels-moving.gif");
-                        background-position: center;
-                        background-repeat: no-repeat;
-                        background-size: cover;
-                        transition: 1s ease-in-out;
-                        animation: rotate 4s linear infinite;
-
-                        // &:hover {
-                        //     // background-image: url("../../assets/images/02_welcomeRP/rotating-cube-hover.gif");
-
-                        // }
-
-                        @keyframes rotate {
-                            from {
-                                transform: rotate(0deg);
-                            }
-
-                            to {
-                                transform: rotate(360deg);
-                            }
-                        }
-                    }
-
-                }
-
-                &::before {
-                    position: absolute;
-                    content: "";
-                    height: 50vmax;
-                    width: 50vmax;
-                    top: -80%;
-                    left: -98%;
-                    background-image: url("../../assets/images/02_welcomeRP/left-rotating-cube.gif");
-                    background-repeat: no-repeat;
-                    background-size: cover;
-                    overflow-y: hidden;
-                }
-            }
-
-            @media screen and (min-width: 1927px) {
-
-                h2 {
-                    font-size: 8vmax;
-                    font-weight: 300;
-                    text-align: center;
-                    font-family: satoshi;
-                    position: relative;
-
-                    span {
-                        font-family: roboto-slab;
-                        display: block;
-                        font-weight: 400;
-                        font-size: 9vmax;
-                    }
-
-                    &::before {
-                        position: absolute;
-                        content: "";
-                        height: 50vmax;
-                        width: 50vmax;
-                        top: -80%;
-                        left: -98%;
-                        background-image: url("../../assets/images/02_welcomeRP/left-rotating-cube.gif");
-                        background-repeat: no-repeat;
-                        background-size: cover;
-                        overflow-y: hidden;
-                    }
-                }
-            }
-
-            @media screen and (max-width: 1439px) and (min-width: 1024px) {
-                margin-top: 200px;
-            }
-
-            @media screen and (max-width: 1023px) and (min-width: 768px) {
-                margin-top: 180px;
-            }
-
-            @media screen and (max-width: 767px) and (min-width: 530px) {
-                margin-top: 160px;
-            }
-
-            @media screen and (max-width: 529px) {
-                margin-top: 140px;
-            }
-
-
-            @media screen and (min-width: 325px) and (max-width: 450px) {
-                margin-top: 150px;
-                margin-bottom: 150px;
-
-                h2 {
-                    font-size: 7.5vmax;
-                    font-weight: 300;
-                    text-align: center;
-                    font-family: satoshi;
-                    position: relative;
-
-                    span {
-                        font-size: 8vmax;
-                    }
-
-                    &::before {
-                        position: absolute;
-                        content: "";
-                        height: 50vmax;
-                        width: 50vmax;
-                        top: -80%;
-                        left: -50%;
-                        background-image: url("../../assets/images/02_welcomeRP/left-rotating-cube.gif");
-                        background-repeat: no-repeat;
-                        background-size: cover;
-                        overflow-y: hidden;
-                    }
-                }
-            }
-
-            @media screen and (max-width: 324px) {
-                margin-top: 80px;
-            }
-
-        }
-
-
 
         .visually-captivating {
             min-height: 100vh;
@@ -656,9 +507,12 @@ main {
             }
 
             @media screen and (max-width: 479px) {
+                height: auto;
+                min-height: 50vh;
+
                 h2 {
                     font-size: 32px;
-                    line-height: 80px;
+                    line-height: 50px;
                     width: 95%;
                     text-align: left;
                     margin: 20px;
@@ -802,13 +656,6 @@ main {
 
                     h2 {
                         font-size: 4vw;
-                        background-image: url("../../assets/images/01_everyPixel/typo_animations/fluid_BW.gif");
-                        background-size: cover;
-                        background-clip: text;
-                        -webkit-background-clip: text;
-                        -webkit-text-fill-color: transparent;
-                        background-position: 0% 0%;
-
                     }
 
                     p {
@@ -5898,6 +5745,271 @@ main {
 
             }
 
+            @media screen and (max-width: 1600px) {
+                .vivid-main {
+
+                    .vividBottom {
+                        .vivid-whyus {
+                            .whyUs {
+                                left: 16%;
+                            }    
+                        }
+                    }
+
+                }
+            }
+
+            @media screen and (max-width: 1440px) {
+                .vivid-main {
+    
+                    .vivid-headings {
+                        padding: 50px;
+                        width: 100%;
+                        height: 30%;
+                        background-color: #FF3302;
+                        display: flex;
+                        justify-content: space-between;
+    
+                        .vivid-connect {
+                            width: 40%;
+                            display: flex;
+                            align-items: center;
+    
+                            p {
+                                width: 100%;
+                                text-align: center;
+                                font-size: 5vw;
+                                font-family: satoshi;
+                                text-transform: uppercase;
+                                font-weight: bold;
+                                color: #FF3302;
+                            }
+                        }
+    
+                        .vivid-heads {
+    
+    
+                            p {
+                                font-size: 1.2vw;
+                            }
+    
+    
+                            .vivid-works {
+                                span {
+                                    font-size: 1.2vw;
+                                }
+                            }
+                        }
+    
+                    }
+    
+                    .vividBottom {
+    
+                        .vivid-crtiv-cotnue {
+                            width: 50%;
+                            height: 100%;
+    
+    
+                            .vivid-creative-dsgn {
+                                padding: 50px;
+                                width: 70%;
+                                height: 70%;
+                                background-color: black;
+                                border-radius: 20px;
+                                transform: translate(20%, -15%);
+    
+                                h3 {
+                                    width: 70%;
+                                    font-size: 2vw;
+                                    line-height: 2vw;
+                                    text-transform: uppercase;
+    
+                                    span {
+                                        color: #FF3302;
+                                    }
+                                }
+    
+                                p {
+                                    width: 70%;
+                                    padding: 20px;
+                                    padding-left: 0;
+                                    font-family: satoshi;
+                                    font-size: 1vw;
+                                }
+                            }
+    
+                            .vivid-continued {
+                                display: flex;
+                                justify-content: end;
+                                transform: translate(0%, -60%);
+                                width: 100%;
+                                height: 30%;
+    
+    
+                                img {
+                                    width: 70%;
+                                    object-fit: contain;
+                                }
+    
+    
+                            }
+    
+                        }
+    
+                    }
+    
+                }
+            }
+
+            @media screen and (max-width: 1199px) {
+                .vivid-main {
+    
+                    .vivid-headings {
+                        padding: 20px;
+                        width: 100%;
+                        height: 30%;
+                        background-color: #FF3302;
+                        display: flex;
+                        justify-content: space-between;
+    
+                        .vivid-connect {
+                            height: 100%;
+                            width: 40%;
+    
+                            p {
+                                font-size: 6vw;
+                            }
+                        }
+    
+                        .vivid-heads {
+
+                            width:50%;
+                            height: 100%;
+                            text-align: center;
+    
+                            h2 {
+                                font-size: 5vw;
+    
+                                span {
+                                    color: #FFF5DE;
+                                }
+                            }
+    
+                            p {
+                                font-size: 1.7vw;
+                            }
+    
+                            hr {
+                                border-color: black;
+                            }
+    
+                            .vivid-works {
+                                span {
+                                    font-size: 1.7vw;
+                                }
+    
+                            }
+                        }
+    
+                    }
+    
+                    .vividBottom {
+                        width: 100%;
+                        height: 70%;
+                        display: flex;
+    
+                        .vivid-crtiv-cotnue {
+                            width: 50%;
+                            height: 100%;
+    
+    
+                            .vivid-creative-dsgn {
+                                padding: 50px;
+                                width: 70%;
+                                height: 70%;
+                                background-color: black;
+                                border-radius: 20px;
+                                transform: translate(20%, -15%);
+    
+                                h3 {
+                                    width: 70%;
+                                    font-size: 2vw;
+                                    line-height: 2vw;
+                                    text-transform: uppercase;
+    
+                                    span {
+                                        color: #FF3302;
+                                    }
+                                }
+    
+                                p {
+                                    width: 70%;
+                                    padding: 20px;
+                                    padding-left: 0;
+                                    font-family: satoshi;
+                                    font-size: 1vw;
+                                }
+                            }
+    
+                            .vivid-continued {
+                                display: flex;
+                                justify-content: end;
+                                transform: translate(0%, -60%);
+                                width: 100%;
+                                height: 30%;
+    
+    
+                                img {
+                                    width: 80%;
+                                    object-fit: contain;
+                                }
+    
+    
+                            }
+    
+                        }
+    
+                        .vivid-whyus {
+                            width: 50%;
+                            height: 100%;
+                            padding: 20px;
+                            display: flex;
+    
+                            .whyUs {
+                                width: 40%;
+                                height: 100%;
+                                display: flex;
+                                align-items: end;
+                                position: relative;
+                                z-index: -1;
+                                left: 0%;
+                                
+                                img {
+                                    transform: translate(0%, -10%);
+                                    width: 100%;
+                                    scale: 1.2;
+                                }
+                            }
+    
+                            .vivid-lady-img {
+                                width: 60%;
+                                height: 100%;
+                                display: flex;
+                                justify-content: end;
+                                align-items: end;
+    
+                                img {
+                                    width: 100%;
+                                    scale: 1.2;
+                                }
+                            }
+    
+                        }
+                    }
+    
+                }
+            }
+
         }
 
         .cocktailCulture {
@@ -8223,10 +8335,12 @@ main {
     }
 
     .RPpeoples {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
 
         h2 {
             padding-top: 100px;
-            font-family: satoshi-bold;
             font-size: 68px;
             color: #646464;
             text-align: center;
@@ -8238,6 +8352,7 @@ main {
             height: calc(100% - 200px);
             display: flex;
             align-items: end;
+            justify-content: end;
             padding: 0px 100px;
 
 
@@ -8245,7 +8360,7 @@ main {
             .person2,
             .person3,
             .person4 {
-                height: 85%;
+                height: auto;
                 width: 100%;
                 transition: 1s ease-in-out;
                 border-radius: 250px 250px 0px 0px;
@@ -8980,6 +9095,15 @@ main {
 
     }
 
+
+
+    #container3D{
+        position: fixed;
+        inset: 0;
+        z-index: 1000;
+        pointer-events: none;
+        display: none;
+    }
 
 
 }

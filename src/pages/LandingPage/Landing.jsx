@@ -3,7 +3,10 @@ import "./landing.scss";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { MotionPathPlugin } from "gsap/MotionPathPlugin";
-import { Link } from "react-router-dom";
+import * as THREE from 'three'
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
+
+
 
 import Slider from "react-slick";
 import Marquee from "react-fast-marquee";
@@ -1877,9 +1880,93 @@ const Landing = () => {
 
 
 
-
-
 	/********* GSAP ENDS *********/
+	
+	
+	
+	
+	/********* OG CUBE THREE 3D MODELING START *********/
+
+		useEffect(() => {
+			// Initialize camera
+			const camera = new THREE.PerspectiveCamera(
+				75, // Adjusted field of view for better visibility
+				window.innerWidth / window.innerHeight,
+				0.1,
+				1000
+			);
+			camera.position.z = 5; // Adjusted position for better visibility
+
+			// Initialize scene
+			const scene = new THREE.Scene();
+
+			// Load 3D model
+			const loader = new GLTFLoader();
+			const modelPath = `${window.location.origin}/assets/cube3Dmodel/bee3DModel.glb`; // Use window.location.origin for correct path
+			loader.load(
+				modelPath,
+				(gltf) => {
+					const cube = gltf.scene;
+					cube.position.y = -1;
+					scene.add(cube);
+				},
+				(xhr) => {
+					console.log((xhr.loaded / xhr.total) * 100 + '% loaded');
+				},
+				(error) => {
+					console.error('An error occurred while loading the model', error);
+				}
+			);
+
+			// Initialize renderer
+			const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+			renderer.setSize(window.innerWidth, window.innerHeight);
+
+			// Append renderer to DOM
+			const container = document.getElementById('container3D');
+			if (container) {
+				container.appendChild(renderer.domElement);
+			} else {
+				console.error('container3D element not found');
+			}
+
+			const ambientLight = new THREE.AmbientLight(0xffffff, 1.3);
+			scene.add(ambientLight);
+			
+			const topLight = new THREE.DirectionalLight(0xffffff, 1);
+			topLight.position.set(500, 500, 500)
+			scene.add(topLight);
+
+			// Render loop
+			const reRender3D = () => {
+				requestAnimationFrame(reRender3D);
+				renderer.render(scene, camera);
+			};
+
+			reRender3D();
+
+			// Handle window resize
+			const handleResize = () => {
+				camera.aspect = window.innerWidth / window.innerHeight;
+				camera.updateProjectionMatrix();
+				renderer.setSize(window.innerWidth, window.innerHeight);
+			};
+
+			window.addEventListener('resize', handleResize);
+
+			// Cleanup on component unmount
+			return () => {
+				window.removeEventListener('resize', handleResize);
+				if (container) {
+					container.removeChild(renderer.domElement);
+				}
+			};
+		}, []);
+
+
+
+	/********* OG CUBE THREE 3D MODELING END *********/
+
 
 
 
@@ -2520,9 +2607,9 @@ const Landing = () => {
 
 
 				</div>
-			</section> */}
+			</section>
 
-			{/* <section className="relative z-10 companyOverview">
+			<section className="relative z-10 companyOverview">
 				<div className="boxContainer h-screen w-screen flex">
 
 					<div className="left h-screen w-[50%]">
@@ -2826,7 +2913,7 @@ const Landing = () => {
 			</section> */}
 
 			<section className="RPpeoples h-screen w-screen">
-				<h2>Kind words from people we have worked with</h2>
+				<h2>People we have worked with</h2>
 
 				<div className="Peopleslist">
 					<div className='person1'>
@@ -2895,6 +2982,9 @@ const Landing = () => {
 					</div>
 				</div>
 			</section>
+
+
+			<div id="container3D"></div>
 
 
 

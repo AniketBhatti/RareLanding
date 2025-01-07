@@ -129,7 +129,16 @@ const Matterjs = () => {
 
 
         // Add mouse control
-c
+        const mouse = Matter.Mouse.create(render.canvas);
+        const mouseConstraint = Matter.MouseConstraint.create(engine, {
+            mouse: mouse,
+            constraint: {
+                stiffness: 0.2,
+                render: {
+                    visible: false,
+                },
+            },
+        });
 
         // Add all bodies to the world
         Matter.World.add(engine.world, [ground, ceiling, leftWall, rightWall, ae_lo, ae_txt, dv_lo, ps_lo, ps_txt, fig_lo1, fig_lo2, fig_txt1, fig_txt2, illu_lo, illu_txt, mouseConstraint]);

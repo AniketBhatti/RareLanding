@@ -3480,7 +3480,6 @@ main {
                 }
             }
 
-
             @media screen and (max-width: 1919px) {
                 .orcd-main {
 
@@ -3928,7 +3927,6 @@ main {
                         .orcd-headings {
                             width: 100%;
                             display: flex;
-                            align-items: center;
 
                             h2 {
                                 font-size: 6vw;
@@ -4011,6 +4009,7 @@ main {
                     .orcd-header {
                         height: auto;
                         display: block;
+                        padding: 20px;
 
                         .orcd-headings {
                             width: 100%;
@@ -4018,12 +4017,11 @@ main {
 
                             h2 {
                                 font-size: 10vw;
-                                text-align: right;
+                                text-align: left;
                             }
 
                             p {
                                 font-size: 4vw;
-                                text-align: right;
                             }
 
                             hr {
@@ -4031,7 +4029,92 @@ main {
                             }
 
                             .orcd-works {
-                                text-align: right;
+
+                                span {
+                                    font-size: 4vw;
+                                }
+                            }
+                        }
+
+                        .orcd-home {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 100%;
+                            padding: 0px;
+
+                            img {
+                                width: 55%;
+                            }
+                        }
+                    }
+
+                }
+            }
+
+            @media screen and (max-width: 375px) {
+                .orcd-main {
+                    padding: 20px;
+                    align-items: center;
+                    gap: 20px;
+
+                    .orcd-crnr {
+                        width: 30%;
+                    }
+
+                    .orcd-screens {
+                        height: auto;
+                        padding: 0px;
+                        display: flex;
+                        align-items: center;
+
+                        .orcd-findProducts {
+                            align-items: center;
+
+                            img {
+                                width: 100%;
+                            }
+                        }
+
+                        .orcd-infinity-scrl {
+                            width: 60%;
+
+                            .scroller {
+                                height: 100%;
+
+                                .orcd-custom-scroll {
+
+                                    img {
+                                        width: 55%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .orcd-header {
+                        height: auto;
+                        display: block;
+                        padding: 20px;
+
+                        .orcd-headings {
+                            width: 100%;
+                            display: block;
+
+                            h2 {
+                                font-size: 10vw;
+                                text-align: left;
+                            }
+
+                            p {
+                                font-size: 4vw;
+                            }
+
+                            hr {
+                                width: 100%;
+                            }
+
+                            .orcd-works {
 
                                 span {
                                     font-size: 4vw;

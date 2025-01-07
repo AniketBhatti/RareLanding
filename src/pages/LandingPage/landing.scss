@@ -1989,6 +1989,11 @@ main {
                     padding: 30px;
 
                     .regal-header {
+
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+
                         .headings {
                             padding: 0;
 
@@ -2021,8 +2026,11 @@ main {
                     }
 
                     .regal-body {
+                        padding: 0;
+
                         .regal-navbar {
                             .rgl-nav {
+                                display: none;
                                 img {
                                     width: 100%;
                                 }
@@ -2061,6 +2069,7 @@ main {
                             .rgl-ast {
                                 transform: translate(0%, 0%);
                                 width: 80%;
+                                display: none;
                             }
 
                         }
@@ -3356,7 +3365,7 @@ main {
                                     }
 
                                     100% {
-                                        transform: translateY(-100%);
+                                        transform: translateY(-90%);
                                     }
                                 }
                             }
@@ -3733,7 +3742,6 @@ main {
                         }
 
                         .orcd-infinity-scrl {
-                            // display: none;
                             width: 60%;
                             overflow-x: hidden;
 
@@ -3743,9 +3751,9 @@ main {
                                 .orcd-custom-scroll {
                                     display: flex;
                                     flex-direction: row;
-                                    animation: scroll-right 15s linear infinite;
+                                    animation: scroll-right 12s linear infinite;
                                     position: relative;
-                                    right: -100%;
+                                    right: -10%;
                                     top: 0%;
 
                                     img {
@@ -3761,9 +3769,9 @@ main {
 
                                     @keyframes scroll-right {
                                         0% {
-                                            transform: translateX(-800%);
+                                            transform: translateX(-400%);
                                         }
-
+                                        
                                         100% {
                                             transform: translateX(0%);
                                         }

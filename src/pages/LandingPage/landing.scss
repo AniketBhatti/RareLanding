@@ -552,6 +552,7 @@ main {
             h3 {
                 font-size: 4vw;
                 text-align: center;
+                font-weight: 300;
             }
     
             .trnsfm-gifs {
@@ -633,7 +634,11 @@ main {
             @media screen and (max-width: 500px) {
                 height: auto;
                 min-height: 60vh;
+                text-align: left;
+                padding: 0px;
+
                 h3 {
+                    margin: 20px;
                     font-size: 28px;
                     line-height: 44px;
                 }

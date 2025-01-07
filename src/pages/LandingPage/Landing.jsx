@@ -861,143 +861,339 @@ const Landing = () => {
 
 	// Dina Gaming
 
-	// React.useEffect(() => {
+	React.useEffect(() => {
+
+		if (window.innerWidth <= 425) {
+			gsap.fromTo(".dina-session", 
+				{
+					y: 0,
+					opacity: 1,
+				}, 
+	
+				{
+					y: -100,
+					opacity: 0,
+					scrollTrigger: {
+						trigger: ".dinaRollings",
+						start: "top top",
+						end: "top -20%",
+						scrub: true,
+					}
+			});
+			
+			gsap.fromTo(".dina-gameGraph",
+				{
+					y: 0,
+					opacity: 0,
+				}, 
+	
+				{
+					y: -50,
+					opacity: 1,
+					scrollTrigger: {
+						trigger: ".dinaRollings",
+						start: "top -20%",
+						end: "top -30%",
+						scrub: true,
+					}
+			});
+
+			gsap.fromTo(".dina-gameGraph",
+				{
+					y: -50,
+				}, 
+	
+				{
+					y: -100,
+					opacity: 0,
+					scrollTrigger: {
+						trigger: ".dinaRollings",
+						start: "top -30%",
+						end: "top -40%",
+						scrub: true,
+					}
+			});
+
+			gsap.fromTo(".connections",
+				{
+					y: 0,
+					opacity: 0,
+					scale: 0.8,
+				}, 
+	
+				{
+					y: -180,
+					opacity: 1,
+					scrollTrigger: {
+						trigger: ".dinaRollings",
+						start: "top -40%",
+						end: "top -50%",
+						scrub: true,
+					}
+			});
+
+			gsap.fromTo(".connections",
+				{
+					y: -120,
+				}, 
+	
+				{
+					y: -200,
+					opacity: 0,
+					scrollTrigger: {
+						trigger: ".dinaRollings",
+						start: "top -50%",
+						end: "top -60%",
+						scrub: true,
+					}
+			});
+
+			gsap.fromTo(".dina-felindra",
+				{
+					y: "40%",
+					opacity: 0,
+				},
+	
+				{
+					y: -50,
+					opacity: 1,
+					scrollTrigger: {
+						trigger: ".dinaRollings",
+						start: "top -60%",
+						end: "top -70%",
+						scrub: true,
+					}
+			});
+
+			gsap.fromTo(".dina-felindra",
+				{
+					y: 10,
+				}, 
+	
+				{
+					y: -100,
+					opacity: 0,
+					scrollTrigger: {
+						trigger: ".dinaRollings",
+						start: "top -70%",
+						end: "top -80%",
+						scrub: true,
+					}
+			});
+
+			gsap.fromTo(".dina-roll",
+				{
+					y: -200,
+					opacity: 0,
+					scale: 0.8,
+				},
+	
+				{
+					y: -300,
+					opacity: 1,
+					scrollTrigger: {
+						trigger: ".dinaRollings",
+						start: "top -80%",
+						end: "top -90%",
+						scrub: true,
+					}
+			});
+
+		}
 
 
-	// 	gsap.fromTo(".dina-hearder",
-	// 		{
-	// 			x: 200,
-	// 			opacity: 0,
-	// 		},
+		if (window.innerWidth <= 375) {
 
-	// 		{
-	// 			x: 0,
-	// 			y: 0,
-	// 			opacity: 1,
-	// 			scrollTrigger: {
-	// 				trigger: ".dinaRollings",
-	// 				start: "top 30%",
-	// 				end: "top top",
-	// 				scrub: true,
-	// 			}
-	// 		})
+			gsap.fromTo(".dina-felindra",
+				{
+					y: 100,
+					opacity: 0,
+				},
+	
+				{
+					y: 0,
+					opacity: 1,
+					scrollTrigger: {
+						trigger: ".dinaRollings",
+						start: "top -60%",
+						end: "top -70%",
+						scrub: true,
+					}
+			});
 
-	// 	gsap.fromTo(".dina-phoneMock",
-	// 		{
-	// 			x: "-100%",
-	// 			opacity: 0,
-	// 		},
-
-	// 		{
-	// 			x: 0,
-	// 			y: 0,
-	// 			opacity: 1,
-	// 			scrollTrigger: {
-	// 				trigger: ".dinaRollings",
-	// 				start: "top 10%",
-	// 				end: "top -10%",
-	// 				scrub: true,
-	// 			}
-	// 		})
-
-	// 	gsap.fromTo(".dina-gameGraph",
-	// 		{
-	// 			x: -100,
-	// 			opacity: 0,
-	// 		},
-
-	// 		{
-	// 			x: 0,
-	// 			y: 0,
-	// 			opacity: 1,
-	// 			scrollTrigger: {
-	// 				trigger: ".dinaRollings",
-	// 				start: "top -20%",
-	// 				end: "top -40%",
-	// 				scrub: 1,
-	// 			}
-	// 		})
-
-	// 	gsap.fromTo(".connections",
-	// 		{
-	// 			x: -150,
-	// 			opacity: 0,
-	// 		},
-
-	// 		{
-	// 			x: 0,
-	// 			y: 0,
-	// 			opacity: 1,
-	// 			scrollTrigger: {
-	// 				trigger: ".dinaRollings",
-	// 				start: "top -20%",
-	// 				end: "top -40%",
-	// 				scrub: 1,
-	// 			}
-	// 		})
+			gsap.fromTo(".dina-felindra",
+				{
+					y: 10,
+				}, 
+	
+				{
+					y: -100,
+					opacity: 0,
+					scrollTrigger: {
+						trigger: ".dinaRollings",
+						start: "top -70%",
+						end: "top -80%",
+						scrub: true,
+					}
+			});
 
 
-	// 	gsap.fromTo(".dina-felindra",
-	// 		{
-	// 			x: -150,
-	// 			y: 150,
-	// 			opacity: 0,
-	// 		},
+			gsap.fromTo(".dina-roll",
+				{
+					y: -150,
+					opacity: 0,
+					scale: 0.8,
+				},
+	
+				{
+					y: -200,
+					opacity: 1,
+					scrollTrigger: {
+						trigger: ".dinaRollings",
+						start: "top -80%",
+						end: "top -90%",
+						scrub: true,
+					}
+			});
 
-	// 		{
-	// 			x: 0,
-	// 			y: 0,
-	// 			opacity: 1,
-	// 			scrollTrigger: {
-	// 				trigger: ".dinaRollings",
-	// 				start: "top -30%",
-	// 				end: "top -50%",
-	// 				scrub: 1,
-	// 			}
-	// 		})
-
-	// 	gsap.fromTo(".dina-session",
-	// 		{
-	// 			x: 150,
-	// 			y: 150,
-	// 			opacity: 0,
-	// 		},
-
-	// 		{
-	// 			x: 0,
-	// 			y: 0,
-	// 			opacity: 1,
-	// 			scrollTrigger: {
-	// 				trigger: ".dinaRollings",
-	// 				start: "top -30%",
-	// 				end: "top -50%",
-	// 				scrub: 1,
-	// 			}
-	// 		})
-
-	// 	gsap.fromTo(".dina-roll",
-	// 		{
-	// 			x: 0,
-	// 			y: 150,
-	// 			opacity: 0,
-	// 		},
-
-	// 		{
-	// 			x: 0,
-	// 			y: 0,
-	// 			opacity: 1,
-	// 			scrollTrigger: {
-	// 				trigger: ".dinaRollings",
-	// 				start: "top -60%",
-	// 				end: "top -80%",
-	// 				scrub: 1,
-	// 			}
-	// 		})
+		}
 
 
-	// }, []);
+		// gsap.fromTo(".dina-hearder",
+		// 	{
+		// 		x: 200,
+		// 		opacity: 0,
+		// 	},
 
-	console.log("Howdy RP");
+		// 	{
+		// 		x: 0,
+		// 		y: 0,
+		// 		opacity: 1,
+		// 		scrollTrigger: {
+		// 			trigger: ".dinaRollings",
+		// 			start: "top 30%",
+		// 			end: "top top",
+		// 			scrub: true,
+		// 		}
+		// 	})
+
+		// gsap.fromTo(".dina-phoneMock",
+		// 	{
+		// 		x: "-100%",
+		// 		opacity: 0,
+		// 	},
+
+		// 	{
+		// 		x: 0,
+		// 		y: 0,
+		// 		opacity: 1,
+		// 		scrollTrigger: {
+		// 			trigger: ".dinaRollings",
+		// 			start: "top 10%",
+		// 			end: "top -10%",
+		// 			scrub: true,
+		// 		}
+		// 	})
+
+		// gsap.fromTo(".dina-gameGraph",
+		// 	{
+		// 		x: -100,
+		// 		opacity: 0,
+		// 	},
+
+		// 	{
+		// 		x: 0,
+		// 		y: 0,
+		// 		opacity: 1,
+		// 		scrollTrigger: {
+		// 			trigger: ".dinaRollings",
+		// 			start: "top -20%",
+		// 			end: "top -40%",
+		// 			scrub: 1,
+		// 		}
+		// 	})
+
+		// gsap.fromTo(".connections",
+		// 	{
+		// 		x: -150,
+		// 		opacity: 0,
+		// 	},
+
+		// 	{
+		// 		x: 0,
+		// 		y: 0,
+		// 		opacity: 1,
+		// 		scrollTrigger: {
+		// 			trigger: ".dinaRollings",
+		// 			start: "top -20%",
+		// 			end: "top -40%",
+		// 			scrub: 1,
+		// 		}
+		// 	})
+
+		// gsap.fromTo(".dina-felindra",
+		// 	{
+		// 		x: -150,
+		// 		y: 150,
+		// 		opacity: 0,
+		// 	},
+
+		// 	{
+		// 		x: 0,
+		// 		y: 0,
+		// 		opacity: 1,
+		// 		scrollTrigger: {
+		// 			trigger: ".dinaRollings",
+		// 			start: "top -30%",
+		// 			end: "top -50%",
+		// 			scrub: 1,
+		// 		}
+		// 	})
+
+		// gsap.fromTo(".dina-session",
+		// 	{
+		// 		x: 150,
+		// 		y: 150,
+		// 		opacity: 0,
+		// 	},
+
+		// 	{
+		// 		x: 0,
+		// 		y: 0,
+		// 		opacity: 1,
+		// 		scrollTrigger: {
+		// 			trigger: ".dinaRollings",
+		// 			start: "top -30%",
+		// 			end: "top -50%",
+		// 			scrub: 1,
+		// 		}
+		// 	})
+
+		// gsap.fromTo(".dina-roll",
+		// 	{
+		// 		x: 0,
+		// 		y: 150,
+		// 		opacity: 0,
+		// 	},
+
+		// 	{
+		// 		x: 0,
+		// 		y: 0,
+		// 		opacity: 1,
+		// 		scrollTrigger: {
+		// 			trigger: ".dinaRollings",
+		// 			start: "top -60%",
+		// 			end: "top -80%",
+		// 			scrub: 1,
+		// 		}
+		// 	})
+
+		
+
+
+	}, []);
+
+
 
 	// VIVIDSPARK SCREEN ANIMATIONS
 	React.useEffect(() => {
@@ -1876,6 +2072,7 @@ const Landing = () => {
 		);
 
 	}, []);
+
 
 
 

@@ -4392,7 +4392,8 @@ main {
 
             @media screen and (max-width: 1440px) {
                 .hlth-insur-main {
-
+                    height: auto;
+                    min-height: 100vh;
                     .HI-header {
                         .HI-heading-customize {
                             .heads {
@@ -5836,34 +5837,45 @@ main {
                 }
             }
 
-            @media screen and (max-width: 375px) {
+            @media screen and (max-width: 425px) {
 
                 .dina-main {
+                    padding: 20px;
 
                     .dina-screens {
                         height: 70%;
-                        width: 100%;
-
+                        flex-direction: column;
+                        
                         .dina-phoneMock {
-
+                            width: 100%;
+                            display: flex;
+                            justify-content: center;
+                            margin-top: 50px;
                             img {
-                                width: 60%;
+                                width: 70%;
                             }
                         }
-
+                        
                         .dina-screens-layouts {
+                            width: 100%;
+                            position: absolute;
+                            top: 0;
+                            z-index: 100;
 
                             .dina-game-connect {
                                 flex-direction: column;
+                                width: 100%;
 
                                 .dina-gameGraph {
                                     width: 100%;
                                     display: flex;
                                     align-items: center;
                                     justify-content: center;
+                                    position: relative;
+                                    top: 150%;
 
                                     img {
-                                        width: 70%;
+                                        width: 80%;
                                     }
                                 }
 
@@ -5871,9 +5883,11 @@ main {
                                     display: flex;
                                     justify-content: center;
                                     width: 100%;
+                                    position: relative;
+                                    top: 130%;
 
                                     img {
-                                        width: 70%;
+                                        width: 100%;
                                     }
                                 }
                             }
@@ -5883,14 +5897,122 @@ main {
                                 display: flex;
                                 scale: 1;
                                 justify-content: center;
-                                transform: translate(0%, 0%);
+                                transform: translate(0%, 10%);
+
+                                img{
+                                    width: 70%;
+                                }
                             }
+
+							.dina-roll{
+                                transform: translate(0%, 0%);
+                                img{
+                                    width: 80%;
+                                }
+                            }
+                        
                         }
                     }
+
+                    .dina-heading-session {
+                        flex-direction: column;
+                        gap: 40px;
+                        position: relative;
+
+                        .dina-hearder {
+                            width: 100%;
+                            height: auto;
+
+                            h2 {
+                                font-size: 10vw;
+                                line-height: normal;
+                            }
+
+                            p {
+                                font-size: 4vw;
+                            }
+
+
+
+                            .dina-works {
+                                span {
+                                    font-size: 4vw;
+                                }
+                            }
+                        }
+
+                        .dina-session {
+                            width: 100%;
+                            z-index: 1;
+
+                            img {
+                                width: 90%;
+                            }
+                        }
+
+                    }
+
                 }
 
-
             }
+
+
+
+            // @media screen and (max-width: 375px) {
+
+            //     .dina-main {
+
+            //         .dina-screens {
+            //             height: 70%;
+            //             width: 100%;
+
+            //             .dina-phoneMock {
+
+            //                 img {
+            //                     width: 60%;
+            //                 }
+            //             }
+
+            //             .dina-screens-layouts {
+
+            //                 .dina-game-connect {
+            //                     flex-direction: column;
+
+            //                     .dina-gameGraph {
+            //                         width: 100%;
+            //                         display: flex;
+            //                         align-items: center;
+            //                         justify-content: center;
+
+            //                         img {
+            //                             width: 70%;
+            //                         }
+            //                     }
+
+            //                     .connections {
+            //                         display: flex;
+            //                         justify-content: center;
+            //                         width: 100%;
+
+            //                         img {
+            //                             width: 70%;
+            //                         }
+            //                     }
+            //                 }
+
+            //                 .dina-felindra {
+            //                     width: 100%;
+            //                     display: flex;
+            //                     scale: 1;
+            //                     justify-content: center;
+            //                     transform: translate(0%, 0%);
+            //                 }
+            //             }
+            //         }
+            //     }
+
+
+            // }
 
         }
 

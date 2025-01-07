@@ -134,14 +134,15 @@ main {
                 h1 {
                     font-family: impact;
                     transition: background-image 0.5s ease-in-out;
-                    background-image: url("../../assets/images/01_everyPixel/typo_animations/neon_fluid_BLUE.gif");                        background-size: cover;
+                    background-image: url("../../assets/images/01_everyPixel/typo_animations/neon_fluid_BLUE.gif");
+                    background-size: cover;
                     background-clip: text;
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: black;
                     background-position: 0% 0%;
                     transition: all 0.5s ease-in-out;
 
-                    &:hover{
+                    &:hover {
                         -webkit-text-fill-color: transparent;
                     }
                 }
@@ -317,6 +318,7 @@ main {
 
             .landing-main-headings {
                 min-height: 40vh;
+
                 .brng-yr-idea {
                     font-size: 5.5vw;
                     transform: translate(0);
@@ -548,13 +550,13 @@ main {
             background-color: white;
             font-weight: 300;
 
-    
+
             h3 {
                 font-size: 4vw;
                 text-align: center;
                 font-weight: 300;
             }
-    
+
             .trnsfm-gifs {
                 position: absolute;
                 top: 0;
@@ -562,8 +564,8 @@ main {
                 height: 100%;
                 width: 100%;
                 z-index: 2;
-    
-    
+
+
                 .blubs {
                     position: relative;
                     top: 15%;
@@ -571,14 +573,14 @@ main {
                     height: auto;
                     display: inline-block;
                 }
-    
+
                 .bwSquare {
                     position: relative;
                     top: 40%;
                     left: -5%;
                     display: inline-block;
                 }
-    
+
                 .shapes {
                     position: absolute;
                     top: 80%;
@@ -586,51 +588,51 @@ main {
                     display: inline-block;
                 }
             }
-    
+
             @media screen and (max-width: 1199px) {
                 h3 {
                     font-size: 5vw;
                 }
-    
+
                 .trnsfm-gifs {
-    
+
                     .blubs {
                         top: 10%;
                         left: 35%;
                     }
-    
+
                     .bwSquare {
                         top: 70%;
                         left: 0%;
                     }
-    
+
                     .shapes {
                         top: 60%;
                         left: 90%;
                     }
                 }
-    
+
             }
-    
+
             @media screen and (max-width: 600px) {
                 h3 {
                     font-size: 6vw;
                 }
-    
+
                 .trnsfm-gifs {
                     display: none;
                 }
-    
+
             }
-    
+
             @media screen and (max-width:529px) {
                 padding: 40px;
-    
+
                 h3 {
                     text-align: left;
                 }
             }
-    
+
             @media screen and (max-width: 500px) {
                 height: auto;
                 min-height: 55vh;
@@ -643,7 +645,7 @@ main {
                     line-height: 44px;
                 }
             }
-    
+
         }
 
     }
@@ -2031,6 +2033,7 @@ main {
                         .regal-navbar {
                             .rgl-nav {
                                 display: none;
+
                                 img {
                                     width: 100%;
                                 }
@@ -2862,16 +2865,16 @@ main {
                         width: 40%;
 
                         .xtrm-activity {
-                            
-                            img{
+
+                            img {
                                 width: 100%;
                             }
                         }
 
                         .xtrm-country {
-                            width:100;
+                            width: 100;
 
-                            img{
+                            img {
                                 width: 100%;
                                 scale: 1.3;
                             }
@@ -2949,7 +2952,7 @@ main {
 
                         .xtrm-header {
 
-                            h2{
+                            h2 {
                                 font-size: 6vw;
                             }
 
@@ -2993,17 +2996,17 @@ main {
                         align-items: center;
 
                         .xtrm-activity {
-                            
-                            img{
+
+                            img {
                                 width: 100%;
                                 scale: 1;
                             }
                         }
 
                         .xtrm-country {
-                            width:100;
+                            width: 100;
 
-                            img{
+                            img {
                                 width: 100%;
                                 scale: 1;
                             }
@@ -3085,7 +3088,7 @@ main {
                     flex-direction: column;
 
                     .xtrm-headings-saleStatus {
-                        
+
                         flex-direction: column;
                         justify-content: space-between;
                         gap: 10px;
@@ -3094,7 +3097,7 @@ main {
                             width: 100%;
                             text-align: center;
 
-                            h2{
+                            h2 {
                                 font-size: 10vw;
                             }
 
@@ -3138,17 +3141,17 @@ main {
                         padding: 20px;
 
                         .xtrm-activity {
-                            
-                            img{
+
+                            img {
                                 width: 100%;
                                 scale: 1;
                             }
                         }
 
                         .xtrm-country {
-                            width:100;
+                            width: 100;
 
-                            img{
+                            img {
                                 width: 100%;
                                 scale: 1;
                             }
@@ -3236,19 +3239,19 @@ main {
 
                         .xtrm-activity {
                             justify-content: center;
-                            
-                            img{
+
+                            img {
                                 width: 80%;
                                 scale: 1;
                             }
                         }
-                        
+
                         .xtrm-country {
                             width: 100%;
                             display: flex;
                             justify-content: center;
 
-                            img{
+                            img {
                                 width: 80%;
                                 scale: 1;
                             }
@@ -3771,7 +3774,7 @@ main {
                                         0% {
                                             transform: translateX(-400%);
                                         }
-                                        
+
                                         100% {
                                             transform: translateX(0%);
                                         }
@@ -4623,6 +4626,7 @@ main {
             @media screen and (max-width: 767px) {
                 .hlth-insur-main {
                     padding: 30px;
+
                     .HI-phoneMock-screen {
                         height: 100%;
                         width: 50%;
@@ -4893,6 +4897,7 @@ main {
                         flex-direction: column;
                         align-items: start;
                         justify-content: start;
+                        position: relative;
 
                         .HI-heading-customize {
                             width: 100%;
@@ -4923,9 +4928,10 @@ main {
 
                             .HI-customize {
                                 height: auto;
+                                justify-content: start;
 
                                 img {
-                                    width: 60%;
+                                    width: 50%;
                                 }
 
                             }
@@ -4935,11 +4941,15 @@ main {
                             width: 100%;
                             height: auto;
                             display: flex;
-                            justify-content: center;
+                            justify-content: start;
                             align-items: center;
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(0%, 0%);
 
                             img {
-                                width: 60%;
+                                width: 45%;
                             }
                         }
 
@@ -4953,6 +4963,110 @@ main {
 
                 }
             }
+
+            @media screen and (max-width: 425px) {
+                .hlth-insur-main {
+                    min-height: 100vh;
+                    height: auto;
+                    padding: 30px;
+                    display: flex;
+                    align-items: start;
+                    justify-content: space-around;
+
+                    .HI-phoneMock-screen {
+                        margin: 0;
+                        width: 100%;
+                        height: 50%;
+                        flex-direction: row;
+                        padding: 0;
+
+
+                        .HI-phoneMock {
+                            align-items: start;
+
+                            img {
+                                width: 100%;
+                            }
+                        }
+
+                        .HI-statistic-screen {
+                            
+                            img {
+                                transform: translate(0%, 25%);
+                                width: 100%;
+                            }
+                        }
+                    }
+
+                    .HI-header {
+                        height: 50%;
+                        flex-direction: column;
+                        align-items: start;
+                        justify-content: start;
+                        position: relative;
+
+                        .HI-heading-customize {
+                            width: 100%;
+                            height: auto;
+                            gap: 20px;
+
+                            .heads {
+                                justify-content: start;
+                                height: auto;
+
+                                h2 {
+                                    font-size: 10vw;
+                                }
+
+                                p {
+                                    font-size: 4vw;
+                                }
+
+                                hr {
+                                    width: 100%;
+                                }
+
+                                .HI-work {
+                                    span {
+                                        font-size: 4vw;
+                                    }
+                                }
+                            }
+
+                            .HI-customize {
+                                height: auto;
+                                justify-content: start;
+
+                                img {
+                                    width: 50%;
+                                }
+
+                            }
+                        }
+
+                        .HI-individual {
+                            width: 100%;
+                            height: auto;
+                            display: flex;
+                            justify-content: start;
+                            align-items: center;
+                            position: absolute;
+                            top: 55%;
+                            left: 50%;
+
+                            img {
+                                width: 45%;
+                            }
+                        }
+
+
+
+                    }
+
+                }
+            }
+
+
         }
 
         .dinaRollings {
@@ -5958,7 +6072,7 @@ main {
                         .vivid-whyus {
                             .whyUs {
                                 left: 16%;
-                            }    
+                            }
                         }
                     }
 
@@ -5967,7 +6081,7 @@ main {
 
             @media screen and (max-width: 1440px) {
                 .vivid-main {
-    
+
                     .vivid-headings {
                         padding: 50px;
                         width: 100%;
@@ -5975,12 +6089,12 @@ main {
                         background-color: #FF3302;
                         display: flex;
                         justify-content: space-between;
-    
+
                         .vivid-connect {
                             width: 40%;
                             display: flex;
                             align-items: center;
-    
+
                             p {
                                 width: 100%;
                                 text-align: center;
@@ -5991,31 +6105,31 @@ main {
                                 color: #FF3302;
                             }
                         }
-    
+
                         .vivid-heads {
-    
-    
+
+
                             p {
                                 font-size: 1.2vw;
                             }
-    
-    
+
+
                             .vivid-works {
                                 span {
                                     font-size: 1.2vw;
                                 }
                             }
                         }
-    
+
                     }
-    
+
                     .vividBottom {
-    
+
                         .vivid-crtiv-cotnue {
                             width: 50%;
                             height: 100%;
-    
-    
+
+
                             .vivid-creative-dsgn {
                                 padding: 50px;
                                 width: 70%;
@@ -6023,18 +6137,18 @@ main {
                                 background-color: black;
                                 border-radius: 20px;
                                 transform: translate(20%, -15%);
-    
+
                                 h3 {
                                     width: 70%;
                                     font-size: 2vw;
                                     line-height: 2vw;
                                     text-transform: uppercase;
-    
+
                                     span {
                                         color: #FF3302;
                                     }
                                 }
-    
+
                                 p {
                                     width: 70%;
                                     padding: 20px;
@@ -6043,33 +6157,33 @@ main {
                                     font-size: 1vw;
                                 }
                             }
-    
+
                             .vivid-continued {
                                 display: flex;
                                 justify-content: end;
                                 transform: translate(0%, -60%);
                                 width: 100%;
                                 height: 30%;
-    
-    
+
+
                                 img {
                                     width: 70%;
                                     object-fit: contain;
                                 }
-    
-    
+
+
                             }
-    
+
                         }
-    
+
                     }
-    
+
                 }
             }
 
             @media screen and (max-width: 1199px) {
                 .vivid-main {
-    
+
                     .vivid-headings {
                         padding: 20px;
                         width: 100%;
@@ -6077,58 +6191,58 @@ main {
                         background-color: #FF3302;
                         display: flex;
                         justify-content: space-between;
-    
+
                         .vivid-connect {
                             height: 100%;
                             width: 40%;
-    
+
                             p {
                                 font-size: 6vw;
                             }
                         }
-    
+
                         .vivid-heads {
 
-                            width:50%;
+                            width: 50%;
                             height: 100%;
                             text-align: center;
-    
+
                             h2 {
                                 font-size: 5vw;
-    
+
                                 span {
                                     color: #FFF5DE;
                                 }
                             }
-    
+
                             p {
                                 font-size: 1.7vw;
                             }
-    
+
                             hr {
                                 border-color: black;
                             }
-    
+
                             .vivid-works {
                                 span {
                                     font-size: 1.7vw;
                                 }
-    
+
                             }
                         }
-    
+
                     }
-    
+
                     .vividBottom {
                         width: 100%;
                         height: 70%;
                         display: flex;
-    
+
                         .vivid-crtiv-cotnue {
                             width: 50%;
                             height: 100%;
-    
-    
+
+
                             .vivid-creative-dsgn {
                                 padding: 50px;
                                 width: 70%;
@@ -6136,18 +6250,18 @@ main {
                                 background-color: black;
                                 border-radius: 20px;
                                 transform: translate(20%, -15%);
-    
+
                                 h3 {
                                     width: 70%;
                                     font-size: 2vw;
                                     line-height: 2vw;
                                     text-transform: uppercase;
-    
+
                                     span {
                                         color: #FF3302;
                                     }
                                 }
-    
+
                                 p {
                                     width: 70%;
                                     padding: 20px;
@@ -6156,31 +6270,31 @@ main {
                                     font-size: 1vw;
                                 }
                             }
-    
+
                             .vivid-continued {
                                 display: flex;
                                 justify-content: end;
                                 transform: translate(0%, -60%);
                                 width: 100%;
                                 height: 30%;
-    
-    
+
+
                                 img {
                                     width: 80%;
                                     object-fit: contain;
                                 }
-    
-    
+
+
                             }
-    
+
                         }
-    
+
                         .vivid-whyus {
                             width: 50%;
                             height: 100%;
                             padding: 20px;
                             display: flex;
-    
+
                             .whyUs {
                                 width: 40%;
                                 height: 100%;
@@ -6189,30 +6303,30 @@ main {
                                 position: relative;
                                 z-index: -1;
                                 left: 0%;
-                                
+
                                 img {
                                     transform: translate(0%, -10%);
                                     width: 100%;
                                     scale: 1.2;
                                 }
                             }
-    
+
                             .vivid-lady-img {
                                 width: 60%;
                                 height: 100%;
                                 display: flex;
                                 justify-content: end;
                                 align-items: end;
-    
+
                                 img {
                                     width: 100%;
                                     scale: 1.2;
                                 }
                             }
-    
+
                         }
                     }
-    
+
                 }
             }
 
@@ -9303,7 +9417,7 @@ main {
 
 
 
-    #container3D{
+    #container3D {
         position: fixed;
         inset: 0;
         z-index: 1000;

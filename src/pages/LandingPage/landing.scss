@@ -633,7 +633,7 @@ main {
     
             @media screen and (max-width: 500px) {
                 height: auto;
-                min-height: 60vh;
+                min-height: 55vh;
                 text-align: left;
                 padding: 0px;
 
@@ -1354,21 +1354,20 @@ main {
                 }
             }
 
-            @media screen and (max-width: 375px) {
-                min-height: 200vh;
-                height: auto;
-
+            @media screen and (max-width: 425px) {
                 .lmbr-main {
 
                     .lmbr-body {
 
                         .image-container {
                             flex-direction: column;
-                            gap: 20px;
+                            gap: 100px;
                             width: 100%;
+                            position: relative;
 
                             .lmbr-all-prod {
                                 width: 100%;
+                                justify-content: start;
 
                                 img {
                                     width: 40%;
@@ -1377,7 +1376,7 @@ main {
                                 .place-it {
                                     width: 25%;
                                     top: 75%;
-                                    left: 60%;
+                                    left: 30%;
                                 }
                             }
 
@@ -1392,6 +1391,10 @@ main {
 
                             .lmbr-review {
                                 width: 100%;
+                                position: absolute;
+                                top: 0;
+                                left: 60%;
+                                display: block;
 
                                 img {
                                     width: 40%;
@@ -1402,7 +1405,53 @@ main {
                 }
             }
 
+            // @media screen and (max-width: 375px) {
 
+            //     .lmbr-main {
+
+            //         .lmbr-body {
+
+            //             .image-container {
+            //                 flex-direction: column;
+            //                 gap: 20px;
+            //                 width: 100%;
+            //                 position: relative;
+
+            //                 .lmbr-all-prod {
+            //                     width: 100%;
+
+            //                     img {
+            //                         width: 40%;
+                                    
+            //                     }
+
+            //                     .place-it {
+            //                         width: 25%;
+            //                         top: 75%;
+            //                         left: 60%;
+            //                     }
+            //                 }
+
+            //                 .lmbr-mainProd {
+            //                     min-width: 100%;
+
+            //                     img {
+            //                         width: 100%;
+            //                         scale: 1;
+            //                     }
+            //                 }
+
+            //                 .lmbr-review {
+            //                     width: 100%;
+
+            //                     img {
+            //                         width: 40%;
+            //                     }
+            //                 }
+            //             }
+            //         }
+            //     }
+            // }
 
 
         }

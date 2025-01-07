@@ -2020,9 +2020,30 @@ const Landing = () => {
 						and visually captivating <div className="eye" /> solutions
 					</h2>
 				</section>
+
+				<section className="transform-ideas">
+					<h3>
+						We transform ideas into memorable experiences through branding web design,  and digital strategy.
+					</h3>
+
+					<div className='trnsfm-gifs'>
+						<div className='blubs' >
+							<img src={bulbs} alt="" />
+						</div>
+
+						<div className="bwSquare">
+							<img src={bwSquare} alt="" />
+						</div>
+
+						<div className="shapes">
+							<img src={shapes} alt="" />
+						</div>
+					</div>
+
+				</section>
 			</div>
 
-			<section className="transform-ideas">
+			{/* <section className="transform-ideas">
 				<h3>
 					We transform ideas into memorable experiences through branding web design,  and digital strategy.
 				</h3>
@@ -2041,7 +2062,7 @@ const Landing = () => {
 					</div>
 				</div>
 
-			</section>
+			</section> */}
 
 			<section className="our-work">
 

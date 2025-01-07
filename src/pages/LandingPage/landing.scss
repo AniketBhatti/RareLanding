@@ -1986,8 +1986,11 @@ main {
             @media screen and (max-width: 500px) {
                 .regal-main {
 
+                    padding: 30px;
+
                     .regal-header {
                         .headings {
+                            padding: 0;
 
                             h2 {
                                 font-size: 10vw;
@@ -3967,7 +3970,7 @@ main {
 
             @media screen and (max-width: 500px) {
                 .orcd-main {
-                    padding: 20px;
+                    padding: 30px;
                     align-items: center;
                     justify-content: center;
                     gap: 20px;
@@ -4009,7 +4012,7 @@ main {
                     .orcd-header {
                         height: auto;
                         display: block;
-                        padding: 20px;
+                        padding: 0px;
 
                         .orcd-headings {
                             width: 100%;
@@ -4052,10 +4055,11 @@ main {
                 }
             }
 
-            @media screen and (max-width: 375px) {
+            @media screen and (max-width: 425px) {
                 .orcd-main {
-                    padding: 20px;
+                    padding: 30px;
                     align-items: center;
+                    justify-content: space-between;
                     gap: 20px;
 
                     .orcd-crnr {
@@ -4063,12 +4067,15 @@ main {
                     }
 
                     .orcd-screens {
-                        height: auto;
+                        height: 70%;
                         padding: 0px;
                         display: flex;
+                        flex-direction: column;
                         align-items: center;
+                        justify-content: space-around;
 
                         .orcd-findProducts {
+                            height: 35%;
                             align-items: center;
 
                             img {
@@ -4093,9 +4100,9 @@ main {
                     }
 
                     .orcd-header {
-                        height: auto;
+                        height: 30%;
                         display: block;
-                        padding: 20px;
+                        padding: 0px;
 
                         .orcd-headings {
                             width: 100%;
@@ -4123,20 +4130,89 @@ main {
                         }
 
                         .orcd-home {
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-                            width: 100%;
-                            padding: 0px;
-
-                            img {
-                                width: 55%;
-                            }
+                            display: none;
                         }
                     }
 
                 }
             }
+
+            // @media screen and (max-width: 375px) {
+            //     .orcd-main {
+            //         padding: 30px;
+            //         align-items: center;
+            //         gap: 20px;
+
+            //         .orcd-crnr {
+            //             width: 30%;
+            //         }
+
+            //         .orcd-screens {
+            //             height: auto;
+            //             padding: 0px;
+            //             display: flex;
+            //             align-items: center;
+
+            //             .orcd-findProducts {
+            //                 align-items: center;
+
+            //                 img {
+            //                     width: 100%;
+            //                 }
+            //             }
+
+            //             .orcd-infinity-scrl {
+            //                 width: 60%;
+
+            //                 .scroller {
+            //                     height: 100%;
+
+            //                     .orcd-custom-scroll {
+
+            //                         img {
+            //                             width: 55%;
+            //                         }
+            //                     }
+            //                 }
+            //             }
+            //         }
+
+            //         .orcd-header {
+            //             height: auto;
+            //             display: block;
+
+            //             .orcd-headings {
+            //                 width: 100%;
+            //                 display: block;
+
+            //                 h2 {
+            //                     font-size: 10vw;
+            //                     text-align: left;
+            //                 }
+
+            //                 p {
+            //                     font-size: 4vw;
+            //                 }
+
+            //                 hr {
+            //                     width: 100%;
+            //                 }
+
+            //                 .orcd-works {
+
+            //                     span {
+            //                         font-size: 4vw;
+            //                     }
+            //                 }
+            //             }
+
+            //             .orcd-home {
+            //                 display: none;
+            //             }
+            //         }
+
+            //     }
+            // }
 
 
         }

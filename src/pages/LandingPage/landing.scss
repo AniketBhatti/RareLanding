@@ -6800,7 +6800,7 @@ main {
 
             @media screen and (max-width: 500px) {
                 .vivid-main {
-
+                    
                     .vivid-headings {
                         padding: 30px;
                         width: 100%;
@@ -6855,8 +6855,76 @@ main {
     
                     }
 
-                    .vividBottom{
-                        position: relative;
+                    .vividBottom {
+                        width: 100%;
+                        height: 75%;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+
+                        .vivid-crtiv-cotnue {
+                            width: 100%;
+                            height: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: start;
+                            align-items: center;
+
+
+                            .vivid-creative-dsgn {
+                                height: auto;
+                                padding: 20px;
+                                width: 100%;
+                                transform: translate(0%);
+
+                                h3 {
+                                    font-size: 7vw;
+                                    line-height: 7.2vw;
+
+                                    span {
+                                        color: #FF3302;
+                                    }
+                                }
+
+                                p {
+                                    height: 100%;
+                                    width: 100%;
+                                    padding: 20px;
+                                    padding-left: 0;
+                                    font-size: 3vw;
+                                }
+                            }
+
+                            .vivid-continued {
+                                display: none;
+                            }
+
+                        }
+
+                        .vivid-whyus {
+                            width: 100%;
+                            height: 40%;
+
+                            .vivid-lady-img {
+                                width: 100%;
+                                height: 100%;
+                                display: block;
+                                justify-content: end;
+                                align-items: end;
+                                position: relative;
+                                left: 20%;
+                                z-index: 2;
+
+                                img {
+                                    transform: translate(0%, 30%);
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: contain;
+                                    scale: 2;
+                                }
+                            }
+
+                        }
                     }
                 }
             }

@@ -549,6 +549,7 @@ main {
             z-index: 10;
             background-color: white;
             font-weight: 300;
+            overflow: hidden;
 
 
             h3 {
@@ -6086,6 +6087,8 @@ main {
                             display: flex;
                             justify-content: end;
                             align-items: center;
+                            position: relative;
+                            z-index: 1;
 
                             img {
                                 width: 100%;
@@ -6809,7 +6812,7 @@ main {
                         
                         .vivid-connect {
                             width: 100%;
-                            display: flex;
+                            display: none;
                             align-items: center;
     
                             p {
@@ -6841,11 +6844,6 @@ main {
                             p {
                                 font-size: 4vw;
                             }
-    
-                            hr {
-                                border-color: black;
-                                width: 80%;
-                            }
                             
                             .vivid-works {    
                                 span {
@@ -6858,7 +6856,7 @@ main {
                     }
 
                     .vividBottom{
-                        // display: none;
+                        position: relative;
                     }
                 }
             }
@@ -9026,49 +9024,49 @@ main {
 
                     // .enterpriseUI {
 
-                    //     // .itemsList {
-                    //     //     width: 100%;
-                    //     //     height: 15%;
-                    //     //     display: flex;
-                    //     //     gap: 20px;
+                        // .itemsList {
+                        //     width: 100%;
+                        //     height: 15%;
+                        //     display: flex;
+                        //     gap: 20px;
 
-                    //     //     .rect1 {
-                    //     //         height: 100%;
-                    //     //         width: 20%;
-                    //     //         background-color: white;
-                    //     //     }
+                        //     .rect1 {
+                        //         height: 100%;
+                        //         width: 20%;
+                        //         background-color: white;
+                        //     }
 
-                    //     //     .rect2 {
-                    //     //         height: 100%;
-                    //     //         width: 20%;
-                    //     //         background-color: white;
-                    //     //     }
+                        //     .rect2 {
+                        //         height: 100%;
+                        //         width: 20%;
+                        //         background-color: white;
+                        //     }
 
-                    //     //     .rect3 {
-                    //     //         height: 100%;
-                    //     //         width: 20%;
-                    //     //         background-color: white;
-                    //     //     }
+                        //     .rect3 {
+                        //         height: 100%;
+                        //         width: 20%;
+                        //         background-color: white;
+                        //     }
 
-                    //     //     .rect4 {
-                    //     //         height: 100%;
-                    //     //         width: 20%;
-                    //     //         background-color: white;
-                    //     //     }
+                        //     .rect4 {
+                        //         height: 100%;
+                        //         width: 20%;
+                        //         background-color: white;
+                        //     }
 
-                    //     //     .rect5 {
-                    //     //         height: 100%;
-                    //     //         width: 20%;
-                    //     //         background-color: white;
-                    //     //     }
-                    //     // }
+                        //     .rect5 {
+                        //         height: 100%;
+                        //         width: 20%;
+                        //         background-color: white;
+                        //     }
+                        // }
 
-                    //     // .enterpriseContent {
+                        // .enterpriseContent {
 
-                    //     //     // .EPsidebar {
-                    //     //     //     height: 100%;
-                    //     //     // }
-                    //     // }
+                            // .EPsidebar {
+                            //     height: 100%;
+                            // }
+                        // }
                     // }
                 }
 
@@ -9947,8 +9945,6 @@ main {
 
     }
 
-
-
     #container3D {
         position: fixed;
         inset: 0;
@@ -9956,6 +9952,5 @@ main {
         pointer-events: none;
         display: none;
     }
-
 
 }

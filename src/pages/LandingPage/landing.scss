@@ -4319,11 +4319,7 @@ main {
                                 }
                             }
 
-
                         }
-
-
-
                     }
 
                     .HI-widgets-container {
@@ -4333,7 +4329,6 @@ main {
                         right: -15%;
                         transform: rotate(40deg) scale(0.8);
                     }
-
 
                 }
 
@@ -7363,6 +7358,7 @@ main {
             }
 
             @media screen and (max-width: 1199px) {
+
                 .cktl-main {
                     height: 100vh;
 
@@ -7434,21 +7430,456 @@ main {
                         }
                     }
                 }
+            
             }
 
             @media screen and (max-width: 991px) {
                 .cktl-main {
 
+                    padding: 30px;
+                    
                     .cktl-rainbow {
-                        display: none;
+                        left: 50%;
                     }
 
+                    .cktl-container {
+                        padding: 0;
+                        position: relative;
+                        display: flex;
+    
+                        .cktl-headings-details {
+                            display: flex;
+                            
+                            .cktl-headers {
+                                width: 70%;
+                                height: 100%;
+                                justify-content: space-between;
+    
+                                .cktl-heads {
+                                    height: 50%;
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: center;
+
+                                    p {
+                                        font-size: 1.8vw;
+                                    }
+    
+                                    hr {
+                                        width: 100%;
+                                    }
+    
+                                    .cktl-works {
+                                        padding: 10px 0;
+                                        width: 110%;
+    
+                                        span {
+                                            font-size: 1.8vw;
+                                        }
+                                    }
+                                }
+    
+                                .cktl-showcase {
+                                    height: 50%;
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: space-evenly;
+    
+                                    .cktl-strt-mking {
+                                        width: 120%;
+                                        margin-bottom: 0px;
+    
+                                        img {
+                                            width: 100%;
+                                        }
+                                    }
+    
+                                    .cktl-behappy-orng {
+                                        display: flex;
+                                        width: 100%;
+    
+                                        .cktl-behappy {
+                                            width: 60%;
+                                            height: 100%;
+    
+                                            img {
+                                                width: 80%;
+                                            }
+                                        }
+    
+                                        .cktl-orange {
+                                            width: 40%;
+                                            height: 100%;
+    
+                                            img {
+                                                width: 100%;
+                                            }
+                                        }
+                                    }
+                                }
+
+                            }
+    
+                            .cktl-details {
+                                width: 30%;
+                                height: 100%;
+                                display: flex;
+                                align-items: center;
+                                scale: 1.8;
+    
+                                img {
+                                    transform: translate(10%, 70%);
+                                    width: 100%;
+                                    scale: 1.3;
+                                }
+                            }
+    
+    
+                        }
+    
+                        .cktl-paras {
+                            height: 100%;
+                            width: 50%;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-around;
+                            align-items: center;
+    
+                            .cktl-paraContainer {
+                                height: 80%;
+                                width: 100%;
+                                display: flex;
+                                flex-direction: column;
+                                align-items: end;
+                                justify-content: space-around;
+    
+                                .cktl-experience {
+                                    width: 100%;
+    
+                                    img {
+                                        width: 80%;
+                                    }
+                                }
+    
+                                .cktl-restro {
+                                    width: 50%;
+                                    display: none;
+                                }
+    
+                            }
+    
+    
+                            .cktl-sipSavor-strip {
+                                height: 10%;
+                                width: 100%;
+                                z-index: -1;
+
+                                top: 4%;
+                                left: 14%;
+    
+                                img {
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+
+                    
+
+                }
+            }
+
+            @media screen and (max-width: 640px) {
+                .cktl-main {
+
+                    padding: 30px;
+
+                    .cktl-rainbow {
+                        left: 50%;
+                    }
+
+                    .cktl-container {
+                        padding: 0;
+                        position: relative;
+                        display: flex;
+    
+                        .cktl-headings-details {
+                            display: flex;
+                            
+                            .cktl-headers {
+                                width: 70%;
+                                height: 100%;
+                                justify-content: space-between;
+    
+                                .cktl-heads {
+                                    height: 50%;
+
+                                    .cktl-logo{
+                                        h2{
+                                            font-size: 6vw;
+                                            line-height: 7vw;
+                                        }   
+                                    }
+                                    p {
+                                        font-size: 2vw;
+                                    }
+    
+                                    hr {
+                                        width: 100%;
+                                    }
+    
+                                    .cktl-works {
+                                        padding: 10px 0;
+                                        width: 110%;
+    
+                                        span {
+                                            font-size: 2vw;
+                                        }
+                                    }
+                                }
+    
+                                .cktl-showcase {
+                                    height: 50%;
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: space-between;
+    
+                                    .cktl-strt-mking {
+                                        width: 150%;
+                                        margin-bottom: 0px;
+    
+                                        img {
+                                            width: 100%;
+                                        }
+                                    }
+    
+                                    .cktl-behappy-orng {
+                                        display: flex;
+                                        gap: 10px;
+                                        width: 100%;
+    
+                                        .cktl-behappy {
+                                            width: 60%;
+                                            height: 100%;
+    
+                                            img {
+                                                width: 100%;
+                                                scale: 1.2;
+                                            }
+                                        }
+    
+                                        .cktl-orange {
+                                            width: 40%;
+                                            height: 100%;
+                                            z-index: 1;
+
+                                            img {
+                                                width: 100%;
+                                                scale: 1.2;
+                                            }
+                                        }
+                                    }
+                                }
+
+                            }
+    
+                            .cktl-details {
+                                width: 30%;
+                                height: 100%;
+                                display: flex;
+                                align-items: center;
+                                scale: 1.8;
+    
+                                img {
+                                    transform: translate(10%, 70%);
+                                    width: 100%;
+                                    scale: 1.6;
+                                }
+                            }
+    
+    
+                        }
+    
+                        .cktl-paras {
+                            height: 100%;
+                            width: 50%;
+    
+                            .cktl-paraContainer {
+                                height: 80%;
+                                width: 100%;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: start;
+                                transform: translate(0%, 20%);
+                                
+                                .cktl-experience {
+                                    width: 100%;
+    
+                                    img {
+                                        width: 100%;
+                                    }
+                                }
+    
+                            }
+    
+                            .cktl-sipSavor-strip {
+                                display: none;
+                            }
+                        }
+                    }
 
 
                 }
             }
 
-            @media screen and (max-width: 767px) {}
+            @media screen and (max-width: 550px) {
+                .cktl-main {
+
+                    padding: 30px;
+
+                    .cktl-rainbow {
+                        left: 40%;
+                    }
+
+                    .cktl-container {
+                        padding: 0;
+                        position: relative;
+                        display: flex;
+                        flex-direction: column;
+    
+                        .cktl-headings-details {
+                            display: flex;
+                            flex-direction: column;
+                            width: 100%;
+                            gap: 20px;
+                            
+                            .cktl-headers {
+                                width: 100%;
+                                height: auto;
+                                justify-content: start;
+                                gap: 20px;
+
+                                .cktl-heads {
+                                    justify-content: start;
+                                    height: auto;
+
+                                    .cktl-logo{
+                                        h2{
+                                            font-size: 10vw;
+                                            line-height: 10.5vw;
+                                        }   
+                                    }
+
+                                    p {
+                                        font-size: 4vw;
+                                    }
+    
+                                    hr {
+                                        width: 100%;
+                                    }
+    
+                                    .cktl-works {
+                                        padding: 10px 0;
+                                        width: 100%;
+    
+                                        span {
+                                            font-size: 4vw;
+                                        }
+                                    }
+                                }
+    
+                                .cktl-showcase {
+                                    height: auto;
+                                    display: flex;
+                                    flex-direction: column-reverse;
+                                    justify-content: center;
+                                    gap: 20px;
+    
+                                    .cktl-strt-mking {
+                                        width: 100%;
+    
+                                        img {
+                                            width: 80%;
+                                        }
+                                    }
+    
+                                    .cktl-behappy-orng {
+                                        display: flex;
+                                        gap: 10px;
+                                        width: auto;
+    
+                                        .cktl-behappy {
+                                            width: 50%;
+                                            height: auto;
+    
+                                            img {
+                                                width: 60%;
+                                                scale: 1;
+                                            }
+                                        }
+    
+                                        .cktl-orange {
+                                            width: 50%;
+                                            height: auto;
+                                            z-index: 1;
+
+                                            img {
+                                                width: 50%;
+                                                scale: 1;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            .cktl-details {
+                                width: 100%;
+                                height: auto;
+                                display: flex;
+                                align-items: center;
+                                scale: 1;
+                                display: none;
+    
+                                img {
+                                    transform: translate(0%, 0%);
+                                    width: 50%;
+                                    scale: 1;
+                                }
+                            }
+                        }
+    
+                        .cktl-paras {
+                            height: 100%;
+                            width: 100%;
+    
+                            .cktl-paraContainer {
+                                height: auto;
+                                width: 100%;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: start;
+                                transform: translate(0%, 0%);
+                                
+                                .cktl-experience {
+                                    width: 100%;
+    
+                                    img {
+                                        width: 100%;
+                                    }
+                                }
+    
+                            }
+    
+                            .cktl-sipSavor-strip {
+                                display: none;
+                            }
+                        }
+
+                    }
+
+
+                }
+            }
 
 
 
@@ -9148,7 +9579,7 @@ main {
 
         }
 
-        @media screen and (max-width: 425px) {}
+        // @media screen and (max-width: 425px) {}
 
     }
 

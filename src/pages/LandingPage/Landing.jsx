@@ -292,7 +292,6 @@ const Landing = () => {
 	}, []);
 
 
-
 	// Hide the horizontal scrollbar during the transition
 	const hideScrollbar = () => {
 		document.body.style.overflowX = 'hidden';
@@ -310,21 +309,6 @@ const Landing = () => {
 
 	React.useEffect(() => {
 
-		// gsap.fromTo(".lmbr-container",
-		// 	{
-		// 		x: "100%"
-		// 	},
-
-		// 	{
-		// 		x:0,
-		// 		y:0,
-		// 		scrollTrigger: {
-		// 			trigger: ".lmbr-container",
-		// 			start: "top 50%",
-		// 			end: "top top",
-		// 		}
-		// 	}
-		// )
 
 		gsap.fromTo(".lmbr-header",
 			{
@@ -418,10 +402,6 @@ const Landing = () => {
 		)
 
 	})
-
-
-
-
 
 	const regalFinance = useRef(null);
 	React.useEffect(() => {
@@ -540,7 +520,6 @@ const Landing = () => {
 			});
 
 	}, []);
-
 
 
 
@@ -858,7 +837,6 @@ const Landing = () => {
 
 	}, []);
 
-
 	// Dina Gaming
 
 	React.useEffect(() => {
@@ -1000,7 +978,6 @@ const Landing = () => {
 			});
 
 		}
-
 
 		if (window.innerWidth <= 375) {
 
@@ -1253,112 +1230,112 @@ const Landing = () => {
 				}
 			})
 
-		gsap.fromTo(".vivid-creative-dsgn",
-			{
-				x: "-110%",
-			},
+		// gsap.fromTo(".vivid-creative-dsgn",
+		// 	{
+		// 		x: "-110%",
+		// 	},
 
-			{
-				x: "20%",
-				y: "-15%",
-				opacity: 1,
-				scrollTrigger: {
-					trigger: ".vividSpark",
-					start: "top -10%",
-					end: "top -20%",
-					scrub: 1,
-				}
-			})
+		// 	{
+		// 		x: "20%",
+		// 		y: "-15%",
+		// 		opacity: 1,
+		// 		scrollTrigger: {
+		// 			trigger: ".vividSpark",
+		// 			start: "top -10%",
+		// 			end: "top -20%",
+		// 			scrub: 1,
+		// 		}
+		// 	})
 
-		gsap.fromTo(".vivid-crtv-h2",
-			{
-				y: 50,
-				opacity: 0,
-			},
+		// gsap.fromTo(".vivid-crtv-h2",
+		// 	{
+		// 		y: 50,
+		// 		opacity: 0,
+		// 	},
 
-			{
-				x: 0,
-				y: 0,
-				opacity: 1,
-				scrollTrigger: {
-					trigger: ".vividSpark",
-					start: "top -20%",
-					end: "top -25%",
-					scrub: 1,
-				}
-			})
+		// 	{
+		// 		x: 0,
+		// 		y: 0,
+		// 		opacity: 1,
+		// 		scrollTrigger: {
+		// 			trigger: ".vividSpark",
+		// 			start: "top -20%",
+		// 			end: "top -25%",
+		// 			scrub: 1,
+		// 		}
+		// 	})
 
-		gsap.fromTo(".vivid-crtv-p",
-			{
-				y: 50,
-				opacity: 0,
-			},
+		// gsap.fromTo(".vivid-crtv-p",
+		// 	{
+		// 		y: 50,
+		// 		opacity: 0,
+		// 	},
 
-			{
-				x: 0,
-				y: 0,
-				opacity: 1,
-				scrollTrigger: {
-					trigger: ".vividSpark",
-					start: "top -25%",
-					end: "top -30%",
-					scrub: 1,
-				}
-			})
+		// 	{
+		// 		x: 0,
+		// 		y: 0,
+		// 		opacity: 1,
+		// 		scrollTrigger: {
+		// 			trigger: ".vividSpark",
+		// 			start: "top -25%",
+		// 			end: "top -30%",
+		// 			scrub: 1,
+		// 		}
+		// 	})
 
-		gsap.fromTo(".vivid-continued",
-			{
-				x: -100,
-				opacity: 0,
-			},
+		// gsap.fromTo(".vivid-continued",
+		// 	{
+		// 		x: -100,
+		// 		opacity: 0,
+		// 	},
 
-			{
-				x: 0,
-				y: "-60%",
-				opacity: 1,
-				scrollTrigger: {
-					trigger: ".vividSpark",
-					start: "top -30%",
-					end: "top -40%",
-					scrub: 1,
-				}
-			})
+		// 	{
+		// 		x: 0,
+		// 		y: "-60%",
+		// 		opacity: 1,
+		// 		scrollTrigger: {
+		// 			trigger: ".vividSpark",
+		// 			start: "top -30%",
+		// 			end: "top -40%",
+		// 			scrub: 1,
+		// 		}
+		// 	})
 
-		gsap.fromTo(".vivid-lady-img",
-			{
-				x: -100,
-				opacity: 0,
-			},
+		// gsap.fromTo(".vivid-lady-img",
+		// 	{
+		// 		x: -100,
+		// 		opacity: 0,
+		// 	},
 
-			{
-				x: 0,
-				y: 0,
-				opacity: 1,
-				scrollTrigger: {
-					trigger: ".vividSpark",
-					start: "top -40%",
-					end: "top -50%",
-					scrub: 1,
-				}
-			})
+		// 	{
+		// 		x: 0,
+		// 		y: 0,
+		// 		opacity: 1,
+		// 		scrollTrigger: {
+		// 			trigger: ".vividSpark",
+		// 			start: "top -40%",
+		// 			end: "top -50%",
+		// 			scrub: 1,
+		// 		}
+		// 	})
 
-		gsap.fromTo(".whyUs",
-			{
-				x: 100,
-				opacity: 0,
-			},
+		// gsap.fromTo(".whyUs",
+		// 	{
+		// 		x: 100,
+		// 		opacity: 0,
+		// 	},
 
-			{
-				x: 0,
-				y: 0,
-				opacity: 1,
-				scrollTrigger: {
-					trigger: ".vividSpark",
-					start: "top -50%",
-					end: "top -60%",
-					scrub: 1,
-				}
-			})
+		// 	{
+		// 		x: 0,
+		// 		y: 0,
+		// 		opacity: 1,
+		// 		scrollTrigger: {
+		// 			trigger: ".vividSpark",
+		// 			start: "top -50%",
+		// 			end: "top -60%",
+		// 			scrub: 1,
+		// 		}
+		// 	})
 
 	});
 
@@ -2619,7 +2596,7 @@ const Landing = () => {
 							<div className="vivid-connect relative">
 								<p>connect</p>
 
-								<div className='connect-reveal h-[100%] w-[100%] absolute top-0 left-0 bg-[#FFF5DE] z-[-1]'></div>
+								<div className='connect-reveal absolute top-0 left-0 bg-[#FFF5DE] z-[-1]'></div>
 							</div>
 
 							<div className="vivid-heads">

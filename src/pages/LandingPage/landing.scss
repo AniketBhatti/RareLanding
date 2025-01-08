@@ -650,108 +650,7 @@ main {
 
     }
 
-    // .transform-ideas {
-    //     position: relative;
-    //     margin: 0;
-    //     height: auto;
-    //     min-height: 70vh;
-    //     display: flex;
-    //     align-items: center;
-    //     justify-content: center;
-    //     padding: 0 100px;
-
-    //     h3 {
-    //         font-size: 4vw;
-    //         text-align: center;
-    //     }
-
-    //     .trnsfm-gifs {
-    //         position: absolute;
-    //         top: 0;
-    //         left: 0;
-    //         height: 100%;
-    //         width: 100%;
-    //         z-index: 2;
-
-
-    //         .blubs {
-    //             position: relative;
-    //             top: 15%;
-    //             left: 45%;
-    //             height: auto;
-    //             display: inline-block;
-    //         }
-
-    //         .bwSquare {
-    //             position: relative;
-    //             top: 40%;
-    //             left: -5%;
-    //             display: inline-block;
-    //         }
-
-    //         .shapes {
-    //             position: absolute;
-    //             top: 80%;
-    //             left: 80%;
-    //             display: inline-block;
-    //         }
-    //     }
-
-    //     @media screen and (max-width: 1199px) {
-    //         h3 {
-    //             font-size: 5vw;
-    //         }
-
-    //         .trnsfm-gifs {
-
-    //             .blubs {
-    //                 top: 10%;
-    //                 left: 35%;
-    //             }
-
-    //             .bwSquare {
-    //                 top: 70%;
-    //                 left: 0%;
-    //             }
-
-    //             .shapes {
-    //                 top: 60%;
-    //                 left: 90%;
-    //             }
-    //         }
-
-    //     }
-
-    //     @media screen and (max-width: 600px) {
-    //         h3 {
-    //             font-size: 6vw;
-    //         }
-
-    //         .trnsfm-gifs {
-    //             display: none;
-    //         }
-
-    //     }
-
-    //     @media screen and (max-width:529px) {
-    //         padding: 40px;
-
-    //         h3 {
-    //             text-align: left;
-    //         }
-    //     }
-
-    //     @media screen and (max-width: 500px) {
-    //         height: auto;
-    //         min-height: 50vh;
-    //         h3 {
-    //             font-size: 28px;
-    //             line-height: 46px;
-    //         }
-    //     }
-
-    // }
-
+    
     .our-work {
 
         .lmbr-container {
@@ -4146,6 +4045,7 @@ main {
                         }
                     }
 
+
                 }
             }
 
@@ -4394,6 +4294,7 @@ main {
                 .hlth-insur-main {
                     height: auto;
                     min-height: 100vh;
+
                     .HI-header {
                         .HI-heading-customize {
                             .heads {
@@ -4991,7 +4892,7 @@ main {
                         }
 
                         .HI-statistic-screen {
-                            
+
                             img {
                                 transform: translate(0%, 25%);
                                 width: 100%;
@@ -5845,17 +5746,18 @@ main {
                     .dina-screens {
                         height: 70%;
                         flex-direction: column;
-                        
+
                         .dina-phoneMock {
                             width: 100%;
                             display: flex;
                             justify-content: center;
                             margin-top: 50px;
+
                             img {
                                 width: 70%;
                             }
                         }
-                        
+
                         .dina-screens-layouts {
                             width: 100%;
                             position: absolute;
@@ -5899,18 +5801,19 @@ main {
                                 justify-content: center;
                                 transform: translate(0%, 10%);
 
-                                img{
+                                img {
                                     width: 70%;
                                 }
                             }
 
-							.dina-roll{
+                            .dina-roll {
                                 transform: translate(0%, 0%);
-                                img{
+
+                                img {
                                     width: 80%;
                                 }
                             }
-                        
+
                         }
                     }
 
@@ -6049,6 +5952,12 @@ main {
                             font-weight: bold;
                             color: #FF3302;
                         }
+
+                        .connect-reveal{
+                            height: 100%;
+                            width: 100%;
+                            border-radius: 10px;
+                        }
                     }
 
                     .vivid-heads {
@@ -6057,8 +5966,8 @@ main {
                             font-size: 4vw;
                             text-transform: uppercase;
                             color: black;
+                            line-height: 5vw;
                             width: 100%;
-                            text-align: center;
 
                             span {
                                 color: #FFF5DE;
@@ -6069,14 +5978,15 @@ main {
                             font-family: satoshi;
                             font-size: 1vw;
                             padding: 10px 0;
-                            text-align: center;
                         }
 
                         hr {
                             border-color: black;
+                            width: 80%;
                         }
-
+                        
                         .vivid-works {
+                            width: 80%;
                             padding: 10px 0;
 
                             span {
@@ -6321,13 +6231,20 @@ main {
                             p {
                                 font-size: 6vw;
                             }
+
+                            .connect-reveal{
+                                top: auto;
+                                height: 60%;
+                            }
                         }
 
                         .vivid-heads {
 
                             width: 50%;
                             height: 100%;
-                            text-align: center;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
 
                             h2 {
                                 font-size: 5vw;
@@ -6363,20 +6280,21 @@ main {
                         .vivid-crtiv-cotnue {
                             width: 50%;
                             height: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
 
 
                             .vivid-creative-dsgn {
-                                padding: 50px;
-                                width: 70%;
-                                height: 70%;
-                                background-color: black;
-                                border-radius: 20px;
-                                transform: translate(20%, -15%);
+                                padding: 30px;
+                                width: 100%;
+                                height: auto;
+                                transform: translate(10%,);
 
                                 h3 {
-                                    width: 70%;
-                                    font-size: 2vw;
-                                    line-height: 2vw;
+                                    width: 100%;
+                                    font-size: 4vw;
+                                    line-height: 5vw;
                                     text-transform: uppercase;
 
                                     span {
@@ -6385,24 +6303,23 @@ main {
                                 }
 
                                 p {
-                                    width: 70%;
+                                    width: 100%;
                                     padding: 20px;
                                     padding-left: 0;
-                                    font-family: satoshi;
-                                    font-size: 1vw;
+                                    font-size: 1.5vw;
                                 }
                             }
 
                             .vivid-continued {
                                 display: flex;
                                 justify-content: end;
-                                transform: translate(0%, -60%);
+                                transform: translate(35%, -50%);
                                 width: 100%;
                                 height: 30%;
 
 
                                 img {
-                                    width: 80%;
+                                    width: 90%;
                                     object-fit: contain;
                                 }
 
@@ -6415,33 +6332,27 @@ main {
                             width: 50%;
                             height: 100%;
                             padding: 20px;
+                            padding-bottom: 0px;
                             display: flex;
+                            position: relative;
 
                             .whyUs {
-                                width: 40%;
-                                height: 100%;
-                                display: flex;
-                                align-items: end;
-                                position: relative;
-                                z-index: -1;
-                                left: 0%;
-
-                                img {
-                                    transform: translate(0%, -10%);
-                                    width: 100%;
-                                    scale: 1.2;
-                                }
+                                display: none;
                             }
 
                             .vivid-lady-img {
-                                width: 60%;
+                                width: 100%;
                                 height: 100%;
                                 display: flex;
                                 justify-content: end;
                                 align-items: end;
+                                position: relative;
+                                z-index: 2;
 
                                 img {
                                     width: 100%;
+                                    height: 100%;
+                                    object-fit: contain;
                                     scale: 1.2;
                                 }
                             }
@@ -6452,6 +6363,505 @@ main {
                 }
             }
 
+            @media screen and (max-width: 991px) {
+                .vivid-main {
+
+                    .vivid-headings {
+                        padding: 20px;
+                        width: 100%;
+                        height: 25%;
+
+                        .vivid-connect {
+                            height: 100%;
+                            width: 40%;
+
+                            p {
+                                font-size: 6vw;
+                            }
+
+                            .connect-reveal{
+                                top: auto;
+                                height: 60%;
+                            }
+                        }
+
+                        .vivid-heads {
+
+                            h2 {
+                                font-size: 5vw;
+                            }
+
+                            p {
+                                font-size: 1.8vw;
+                            }
+
+                            hr{
+                                width: 100%;
+                            }
+
+                            .vivid-works {
+                                width: 100%;
+
+                                span {
+                                    font-size: 1.8vw;
+                                }
+
+                            }
+                        }
+
+                    }
+
+                    .vividBottom {
+                        width: 100%;
+                        height: 75%;
+                        display: flex;
+
+                        .vivid-crtiv-cotnue {
+                            width: 50%;
+                            height: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-around;
+
+
+                            .vivid-creative-dsgn {
+                                padding: 20px;
+                                width: 100%;
+                                transform: translate(10%,);
+
+                                h3 {
+                                    font-size: 4.5vw;
+                                    line-height: 5vw;
+
+                                    span {
+                                        color: #FF3302;
+                                    }
+                                }
+
+                                p {
+                                    width: 100%;
+                                    padding: 20px;
+                                    padding-left: 0;
+                                    font-size: 2vw;
+                                }
+                            }
+
+                            .vivid-continued {
+                                display: flex;
+                                justify-content: end;
+                                transform: translate(15%, -50%);
+                                width: 100%;
+                                height: 30%;
+
+
+                                img {
+                                    width: 100%;
+                                    object-fit: contain;
+                                }
+
+
+                            }
+
+                        }
+
+                        .vivid-whyus {
+
+                            .vivid-lady-img {
+                                width: 100%;
+                                height: 100%;
+                                display: flex;
+                                justify-content: end;
+                                align-items: end;
+                                position: relative;
+                                z-index: 2;
+
+                                img {
+                                    width: 100%;
+                                    height: auto;
+                                    object-fit: unset;
+                                    scale: 1;
+                                }
+                            }
+
+                        }
+                    }
+
+                }
+            }
+
+            @media screen and (max-width: 767px) {
+
+                .vivid-main {
+
+                    .vivid-headings {
+                        padding: 20px;
+                        width: 100%;
+                        height: 25%;
+
+                        .vivid-connect {
+                            height: 100%;
+                            width: 40%;
+
+                            p {
+                                font-size: 6vw;
+                            }
+
+                            .connect-reveal{
+                                top: auto;
+                                height: 60%;
+                            }
+                        }
+
+                        .vivid-heads {
+
+                            h2 {
+                                font-size: 5vw;
+                            }
+
+                            p {
+                                font-size: 1.8vw;
+                            }
+
+                            hr{
+                                width: 100%;
+                            }
+
+                            .vivid-works {
+                                width: 100%;
+
+                                span {
+                                    font-size: 1.8vw;
+                                }
+
+                            }
+                        }
+
+                    }
+
+                    .vividBottom {
+                        width: 100%;
+                        height: 75%;
+                        display: flex;
+
+                        .vivid-crtiv-cotnue {
+                            width: 50%;
+                            height: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-around;
+
+
+                            .vivid-creative-dsgn {
+                                padding: 20px;
+                                width: 120%;
+                                transform: translate(10%,);
+
+                                h3 {
+                                    font-size: 4.5vw;
+                                    line-height: 5vw;
+
+                                    span {
+                                        color: #FF3302;
+                                    }
+                                }
+
+                                p {
+                                    width: 100%;
+                                    padding: 20px;
+                                    padding-left: 0;
+                                    font-size: 2vw;
+                                }
+                            }
+
+                            .vivid-continued {
+                                padding: 30px;
+                                display: flex;
+                                justify-content: end;
+                                transform: translate(0%, -70%);
+                                width: 120%;
+                                height: 30%;
+
+
+                                img {
+                                    width: 100%;
+                                    object-fit: contain;
+                                }
+
+
+                            }
+
+                        }
+
+                        .vivid-whyus {
+
+                            .vivid-lady-img {
+                                width: 100%;
+                                height: 100%;
+                                display: flex;
+                                justify-content: end;
+                                align-items: end;
+                                position: relative;
+                                z-index: 2;
+
+                                img {
+                                    width: 100%;
+                                    height: auto;
+                                    object-fit: unset;
+                                    scale: 1.5;
+                                }
+                            }
+
+                        }
+                    }
+
+                }
+
+            }
+
+            @media screen and (max-width: 640px) {
+                .vivid-main {
+
+                    .vivid-headings {
+                        padding: 20px;
+                        width: 100%;
+                        height: 25%;
+
+                        .vivid-connect {
+                            height: 100%;
+                            width: 40%;
+
+                            p {
+                                font-size: 6vw;
+                            }
+
+                            .connect-reveal{
+                                top: auto;
+                                height: 60%;
+                            }
+                        }
+
+                        .vivid-heads {
+
+                            h2 {
+                                font-size: 6vw;
+                            }
+
+                            p {
+                                font-size: 2vw;
+                            }
+
+                            hr{
+                                width: 100%;
+                            }
+
+                            .vivid-works {
+                                width: 100%;
+
+                                span {
+                                    font-size: 2vw;
+                                }
+
+                            }
+                        }
+
+                    }
+
+                }
+            }
+            
+            @media screen and (max-width: 575px) {
+                .vivid-main {
+                    display: flex;      
+                    flex-direction: column;
+                    gap: 20px;
+
+                    .vivid-headings {
+                        padding: 20px;
+                        width: 100%;
+                        height: 25%;
+
+                        .vivid-connect {
+                            height: 100%;
+                            width: 40%;
+
+                            p {
+                                font-size: 6vw;
+                            }
+
+                            .connect-reveal{
+                                top: auto;
+                                height: 60%;
+                            }
+                        }
+
+                        .vivid-heads {
+
+
+                            hr{
+                                width: 100%;
+                            }
+
+                            .vivid-works {
+                                width: 100%;
+                            }
+                        }
+
+                    }
+
+                    .vividBottom {
+                        width: 100%;
+                        height: 75%;
+                        display: flex;
+                        flex-direction: column;
+
+                        .vivid-crtiv-cotnue {
+                            width: 100%;
+                            height: 60%;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-around;
+                            align-items: center;
+
+
+                            .vivid-creative-dsgn {
+                                padding: 20px;
+                                width: 90%;
+                                transform: translate(0%);
+
+                                h3 {
+                                    font-size: 7vw;
+                                    line-height: 7.2vw;
+
+                                    span {
+                                        color: #FF3302;
+                                    }
+                                }
+
+                                p {
+                                    width: 100%;
+                                    padding: 20px;
+                                    padding-left: 0;
+                                    font-size: 3vw;
+                                }
+                            }
+
+                            .vivid-continued {
+                                padding: 0px;
+                                display: flex;
+                                justify-content: start;
+                                padding-top: 10px;
+                                padding-left: 30px;
+                                transform: translate(0%, 0%);
+                                width: 100%;
+                                height: 30%;
+
+
+                                img {
+                                    width: 70%;
+                                    object-fit: contain;
+                                }
+
+
+                            }
+
+                        }
+
+                        .vivid-whyus {
+                            width: 100%;
+                            height: 40%;
+
+                            .vivid-lady-img {
+                                width: 100%;
+                                height: 100%;
+                                display: block;
+                                justify-content: end;
+                                align-items: end;
+                                position: relative;
+                                left: 20%;
+                                z-index: 2;
+
+                                img {
+                                    transform: translate(0%, 0%);
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: contain;
+                                    scale: 1.5;
+                                }
+                            }
+
+                        }
+                    }
+
+                }
+            }
+
+            @media screen and (max-width: 500px) {
+                .vivid-main {
+
+                    .vivid-headings {
+                        padding: 30px;
+                        width: 100%;
+                        height: 40%;
+                        background-color: #FF3302;
+                        display: flex;
+                        flex-direction: column-reverse;
+                        justify-content: center;
+                        
+                        .vivid-connect {
+                            width: 100%;
+                            display: flex;
+                            align-items: center;
+    
+                            p {
+                                width: 100%;
+                                text-align: center;
+                                font-size: 10vw;
+                                font-family: satoshi;
+                                text-transform: uppercase;
+                                font-weight: bold;
+                                color: #FF3302;
+                            }
+    
+                            .connect-reveal{
+                                height: 100%;
+                                width: 100%;
+                                border-radius: 10px;
+                            }
+                        }
+    
+                        .vivid-heads {
+
+                            width: 100%;
+    
+                            h2 {
+                                font-size: 10vw;
+    
+                            }
+    
+                            p {
+                                font-size: 4vw;
+                            }
+    
+                            hr {
+                                border-color: black;
+                                width: 80%;
+                            }
+                            
+                            .vivid-works {    
+                                span {
+                                    font-size: 4vw;
+                                }
+    
+                            }
+                        }
+    
+                    }
+
+                    .vividBottom{
+                        // display: none;
+                    }
+                }
+            }
         }
 
         .cocktailCulture {

@@ -6869,9 +6869,10 @@ main {
                             flex-direction: column;
                             justify-content: start;
                             align-items: center;
-
-
+                            
+                            
                             .vivid-creative-dsgn {
+                                background-color: transparent;
                                 height: auto;
                                 padding: 20px;
                                 width: 100%;
@@ -6912,7 +6913,8 @@ main {
                                 justify-content: end;
                                 align-items: end;
                                 position: relative;
-                                left: 20%;
+                                left: 0%;
+                                top: 60%;
                                 z-index: 2;
 
                                 img {

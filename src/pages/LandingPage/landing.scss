@@ -6797,7 +6797,7 @@ main {
 
                 }
             }
-
+            
             @media screen and (max-width: 500px) {
                 .vivid-main {
                     
@@ -6864,7 +6864,7 @@ main {
 
                         .vivid-crtiv-cotnue {
                             width: 100%;
-                            height: 100%;
+                            height: 80%;
                             display: flex;
                             flex-direction: column;
                             justify-content: start;
@@ -6875,12 +6875,15 @@ main {
                                 background-color: transparent;
                                 height: auto;
                                 padding: 20px;
-                                width: 100%;
-                                transform: translate(0%);
+                                width: 200%;
+                                transform: translate(20%);
+                                padding-left: 50px;
 
                                 h3 {
                                     font-size: 7vw;
                                     line-height: 7.2vw;
+                                    top: 10%;
+                                    width: 100%;
 
                                     span {
                                         color: #FF3302;
@@ -6888,8 +6891,8 @@ main {
                                 }
 
                                 p {
-                                    height: 100%;
-                                    width: 100%;
+                                    height: auto;
+                                    width: 50%;
                                     padding: 20px;
                                     padding-left: 0;
                                     font-size: 3vw;
@@ -6904,7 +6907,7 @@ main {
 
                         .vivid-whyus {
                             width: 100%;
-                            height: 40%;
+                            height: 100%;
 
                             .vivid-lady-img {
                                 width: 100%;
@@ -6914,11 +6917,11 @@ main {
                                 align-items: end;
                                 position: relative;
                                 left: 0%;
-                                top: 60%;
+                                top: 0%;
                                 z-index: 2;
 
                                 img {
-                                    transform: translate(0%, 30%);
+                                    transform: translate(0%, 0%);
                                     width: 100%;
                                     height: 100%;
                                     object-fit: contain;
@@ -9092,52 +9095,52 @@ main {
                         font-size: 30px;
                     }
 
-                    // .enterpriseUI {
+                    .enterpriseUI {
 
-                        // .itemsList {
-                        //     width: 100%;
-                        //     height: 15%;
-                        //     display: flex;
-                        //     gap: 20px;
+                        .itemsList {
+                            width: 100%;
+                            height: 15%;
+                            display: flex;
+                            gap: 20px;
 
-                        //     .rect1 {
-                        //         height: 100%;
-                        //         width: 20%;
-                        //         background-color: white;
-                        //     }
+                            .rect1 {
+                                height: 100%;
+                                width: 20%;
+                                background-color: white;
+                            }
 
-                        //     .rect2 {
-                        //         height: 100%;
-                        //         width: 20%;
-                        //         background-color: white;
-                        //     }
+                            .rect2 {
+                                height: 100%;
+                                width: 20%;
+                                background-color: white;
+                            }
 
-                        //     .rect3 {
-                        //         height: 100%;
-                        //         width: 20%;
-                        //         background-color: white;
-                        //     }
+                            .rect3 {
+                                height: 100%;
+                                width: 20%;
+                                background-color: white;
+                            }
 
-                        //     .rect4 {
-                        //         height: 100%;
-                        //         width: 20%;
-                        //         background-color: white;
-                        //     }
+                            .rect4 {
+                                height: 100%;
+                                width: 20%;
+                                background-color: white;
+                            }
 
-                        //     .rect5 {
-                        //         height: 100%;
-                        //         width: 20%;
-                        //         background-color: white;
-                        //     }
-                        // }
+                            .rect5 {
+                                height: 100%;
+                                width: 20%;
+                                background-color: white;
+                            }
+                        }
 
-                        // .enterpriseContent {
+                        .enterpriseContent {
 
-                            // .EPsidebar {
-                            //     height: 100%;
-                            // }
-                        // }
-                    // }
+                            .EPsidebar {
+                                height: 100%;
+                            }
+                        }
+                    }
                 }
 
 
